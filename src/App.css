@@ -7,7 +7,11 @@
 body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
-  color: #333;
+  color: #ffffff;
+  background-image: url(/public/images/bg3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .container {
@@ -15,6 +19,14 @@ body {
   margin: 0 auto;
   padding: 0 20px;
 }
+
+.py-5 {
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  text-align: center;
+}
+
+.py-5 > * {margin: 1rem;}
 
 /* Header */
 .header {
@@ -25,7 +37,7 @@ body {
 
 .header .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -73,6 +85,7 @@ body {
 
 .session-content {
   padding: 1.5rem;
+  color: black;
 }
 
 .session-meta {
@@ -96,16 +109,17 @@ body {
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
 }
+
 @media (max-width: 768px) {
   .header .container {
     flex-direction: column;
     gap: 1rem;
   }
-  
+
   .header nav a {
     margin: 0 0.5rem;
   }
-  
+
   .sessions-grid {
     grid-template-columns: 1fr;
   }

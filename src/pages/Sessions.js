@@ -15,6 +15,7 @@ const Sessions = () => {
         </div>
       </div>
     </div>
+    
   );
 };
 

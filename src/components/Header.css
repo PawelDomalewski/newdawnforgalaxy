@@ -3,6 +3,7 @@
   color: white;
   padding: 1rem 0;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: relative;
 }
 
 .header .container {
@@ -10,8 +11,9 @@
   margin: 0 auto;
   padding: 0 20px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .logo {
@@ -19,15 +21,117 @@
   font-weight: bold;
   text-decoration: none;
   color: white;
+  z-index: 1001;
 }
 
-.header nav a {
+/* Stylowanie hamburger menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 3px 0;
+  transition: 0.3s;
+  border-radius: 2px;
+}
+
+/* Animacja hamburgera w stanie aktywnym */
+.hamburger--active span:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger--active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger--active span:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Menu nawigacyjne - wersja desktop */
+.nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav a {
   color: white;
   text-decoration: none;
-  margin-left: 2rem;
   transition: color 0.3s ease;
+  font-weight: 500;
 }
 
-.header nav a:hover {
+.nav a:hover {
   color: #3498db;
+}
+
+/* Overlay dla menu mobilnego */
+.nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+}
+
+/* Responsywność - wersja mobilna */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background: #2c3e50;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 80px 2rem 2rem;
+    transition: right 0.3s ease;
+    z-index: 1000;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav--active {
+    right: 0;
+  }
+
+  .nav a {
+    padding: 1rem 0;
+    font-size: 1.1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+  }
+
+  .nav a:last-child {
+    border-bottom: none;
+  }
+
+  .header .container {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav {
+    width: 85%;
+  }
+  
+  .logo {
+    font-size: 1.3rem;
+  }
 }
