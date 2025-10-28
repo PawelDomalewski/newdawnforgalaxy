@@ -5,7 +5,7 @@ export const sessions = [
     date: "2024-01-15",
     players: ["Anna", "Bartek", "Czarek", "Daria"],
     rating: 9,
-    summary: "Intensywna sesja z wieloma strategiami korporacyjnymi...",
+    summary: "Intensywna sesja z wieloma strategiami korporacyjnymi. Bartek zdominował produkcję energii, podczas gdy Daria skupiła się na terraformowaniu.",
     image: "/images/terraforming-mars.jpg",
     tags: ["Strategia", "Nauka", "Konkurencyjna"],
     fullContent: "Pełny opis sesji..."
@@ -16,7 +16,7 @@ export const sessions = [
     date: "2024-01-10",
     players: ["Ewa", "Filip", "Gosia"],
     rating: 8,
-    summary: "Relaksująca sesja budowania średniowiecznego krajobrazu...",
+    summary: "Relaksująca sesja budowania średniowiecznego krajobrazu. Filip zaskoczył wszystkich strategicznym ułożeniem ostatniego kafelka.",
     image: "/images/carcassonne.jpg",
     tags: ["Rodzinna", "Tile-laying", "Relaksująca"]
   }
