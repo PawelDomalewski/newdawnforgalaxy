@@ -51,18 +51,27 @@ const SessionDetail = () => {
                 <span className="meta-value">{session.players.join(', ')}</span>
               </div>
               <div className="meta-item">
-                <span className="meta-label">⭐ Ocena:</span>
-                <span className="meta-value rating">{session.rating}/10</span>
+                <span className="meta-label">🕓 Czas:</span>
+                <span className="meta-value">{session.rating}</span>
               </div>
             </div>
           </header>
 
           <div className="session-image-large">
-            <div className="image-placeholder-large">
-              🎲 {session.game}
-            </div>
+            {session.image ? (
+              <img 
+                src={session.image} 
+                alt={`Sesja gry ${session.game}`}
+                className="session-image-real-large"
+              />
+            ) : (
+              <div className="image-placeholder-large">
+                🎲 {session.game}
+              </div>
+            )}
           </div>
 
+          {/* Reszta kodu pozostaje bez zmian */}
           <div className="session-content-detailed">
             <section className="summary-section">
               <h2>Podsumowanie</h2>

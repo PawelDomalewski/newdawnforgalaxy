@@ -32,7 +32,7 @@ const Header = () => {
         <nav className={`nav ${isMenuOpen ? 'nav--active' : ''}`}>
           <Link to="/" onClick={closeMenu}>Strona główna</Link>
           <Link to="/sesje" onClick={closeMenu}>Relacje</Link>
-          <Link to="/gry" onClick={closeMenu}>Gry</Link>
+          <Link to="/zasady-poradnik" onClick={closeMenu}>Zasady i Poradnik</Link>
           <Link to="/o-mnie" onClick={closeMenu}>O mnie</Link>
         </nav>
 

@@ -7,6 +7,18 @@ const SessionCard = ({ session }) => {
     <Link to={`/sesje/${session.id}`} className="session-card-link">
       <article className="session-card">
         <div className="session-image">
+          {session.image ? (
+            <img 
+              src={session.image} 
+              alt={`Sesja gry ${session.game}`}
+              className="session-image-real"
+              onError={(e) => {
+                // Fallback jeśli zdjęcie się nie ładuje
+                e.target.style.display = 'none';
+                e.target.nextSibling.style.display = 'flex';
+              }}
+            />
+          ) : null}
           <div className="image-placeholder">
             🎲 {session.game}
           </div>
@@ -16,14 +28,10 @@ const SessionCard = ({ session }) => {
           <div className="session-meta">
             <span>📅 {session.date}</span>
             <span>👥 {session.players.join(', ')}</span>
-            <span>⭐ Ocena: {session.rating}/10</span>
+            <span>🕓 Czas: {session.rating}</span>
           </div>
           <p>{session.summary}</p>
-          <div className="session-tags">
-            {session.tags.map(tag => (
-              <span key={tag} className="tag">{tag}</span>
-            ))}
-          </div>
+          
           <div className="read-more">Czytaj więcej →</div>
         </div>
       </article>

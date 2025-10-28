@@ -1,6 +1,7 @@
 .session-detail {
   padding: 2rem 0;
   min-height: 80vh;
+  background-color: #dddddd;
 }
 
 .breadcrumb {
@@ -202,4 +203,16 @@
   .image-placeholder-large {
     font-size: 1.5rem;
   }
+}
+
+.session-image-real-large {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Upewnij się że placeholder jest wyświetlany tylko gdy nie ma zdjęcia */
+.session-image-large:has(.session-image-real-large) .image-placeholder-large {
+  display: none;
 }

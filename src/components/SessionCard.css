@@ -26,6 +26,19 @@
   width: 100%;
   height: 200px;
   flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.session-image-real {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.session-card:hover .session-image-real {
+  transform: scale(1.05);
 }
 
 .image-placeholder {
@@ -40,6 +53,16 @@
   font-weight: bold;
   text-align: center;
   padding: 1rem;
+}
+
+/* Jeśli jest zdjęcie, placeholder jest ukryty */
+.session-image:has(.session-image-real) .image-placeholder {
+  display: none;
+}
+
+/* Jeśli zdjęcie się nie załaduje, pokaż placeholder */
+.session-image-real:error + .image-placeholder {
+  display: flex;
 }
 
 .session-content {
