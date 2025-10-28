@@ -5,7 +5,10 @@ const SessionCard = ({ session }) => {
   return (
     <article className="session-card">
       <div className="session-image">
-        <img src={session.image} alt={session.game} />
+        {/* Tymczasowy placeholder zamiast obrazka */}
+        <div className="image-placeholder">
+          🎲 {session.game}
+        </div>
       </div>
       <div className="session-content">
         <h3>{session.game}</h3>

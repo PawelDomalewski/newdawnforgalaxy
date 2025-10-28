@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import Sessions from './pages/Sessions';
-import Games from './pages/Games';
-import About from './pages/About';
+import Header from './components/Header.js';
+import Footer from './components/Footer.js';
+import Home from './pages/Home.js';
+import Sessions from './pages/Sessions.js';
+import Games from './pages/Games.js';
+import About from './pages/About.js';
 import './App.css';
 
 function App() {
