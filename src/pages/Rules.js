@@ -50,7 +50,7 @@ const Rules = () => {
         pink: 3,
         brown: 3
       },
-      difficulty: 4,
+      difficulty: 2,
       gamesPlayed: 10,
       firstPlaces: 2,
       secondPlaces: 3
@@ -84,7 +84,7 @@ const Rules = () => {
         pink: 2,
         brown: 4
       },
-      difficulty: 3,
+      difficulty: 5,
       gamesPlayed: 8,
       firstPlaces: 1,
       secondPlaces: 2
@@ -101,7 +101,7 @@ const Rules = () => {
         pink: 5,
         brown: 2
       },
-      difficulty: 3,
+      difficulty: 2,
       gamesPlayed: 8,
       firstPlaces: 1,
       secondPlaces: 2
@@ -135,7 +135,7 @@ const Rules = () => {
         pink: 2,
         brown: 3
       },
-      difficulty: 3,
+      difficulty: 1,
       gamesPlayed: 8,
       firstPlaces: 1,
       secondPlaces: 2
@@ -186,7 +186,7 @@ const Rules = () => {
         pink: 4,
         brown: 3
       },
-      difficulty: 3,
+      difficulty: 4,
       gamesPlayed: 8,
       firstPlaces: 1,
       secondPlaces: 2
