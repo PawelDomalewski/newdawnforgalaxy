@@ -156,6 +156,40 @@ const Rules = () => {
       gamesPlayed: 8,
       firstPlaces: 1,
       secondPlaces: 2
+    },
+    {
+      id: 10,
+      name: "Syndykat Rho Indi",
+      image: "/images/races/rhoindi.jpg",
+      description: "Kosmicznie piraci i grabieżcy",
+      features: ["Zaczyna dwoma myśliwcami", "4 aktywacje ruchu", "Otrzymuje pieniądze za zniszczone statki"],
+      technologies: ["Baza Gwiezdna", "Tarcza Gaussa -1"],
+      resources: {
+        orange: 2,
+        pink: 3,
+        brown: 3
+      },
+      difficulty: 3,
+      gamesPlayed: 8,
+      firstPlaces: 1,
+      secondPlaces: 2
+    },
+    {
+      id: 11,
+      name: "Oświeceni Lyry",
+      image: "/images/races/lyra.jpg",
+      description: "Rasa oświecona, budująca świątynie",
+      features: ["Może budować świątynie", "Mogą statku kolonizacyjnego aby przerzucić jedną własną kostkę w walce", "1 pkt za każdą świątynię"],
+      technologies: ["Osłona zniekształcająca"],
+      resources: {
+        orange: 2,
+        pink: 4,
+        brown: 3
+      },
+      difficulty: 3,
+      gamesPlayed: 8,
+      firstPlaces: 1,
+      secondPlaces: 2
     }
   ];
 
@@ -211,16 +245,16 @@ const Rules = () => {
               </div>
               
               <p className="race-description">{race.description}</p>
-              
-              <div className="race-details">
-                <div className="detail-section">
+              <div className="detail-section">
                   <h4>Najważniejsze cechy:</h4>
-                  <ul className="features-list">
+                  <ol className="features-list">
                     {race.features.map((feature, index) => (
                       <li key={index}>{feature}</li>
                     ))}
-                  </ul>
+                  </ol>
                 </div>
+              <div className="race-details">
+                
                 
                 <div className="detail-section">
                   <h4>Startowe technologie:</h4>

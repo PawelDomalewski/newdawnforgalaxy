@@ -269,6 +269,8 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .features-list li {
@@ -278,12 +280,7 @@
   padding-left: 1rem;
 }
 
-.features-list li:before {
-  content: "•";
-  color: #3498db;
-  position: absolute;
-  left: 0;
-}
+
 
 .technologies {
   display: flex;
