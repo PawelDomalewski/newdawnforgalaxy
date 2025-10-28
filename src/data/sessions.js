@@ -7,7 +7,20 @@ export const sessions = [
     rating: 9,
     summary: "Intensywna sesja z wieloma strategiami korporacyjnymi. Bartek zdominował produkcję energii, podczas gdy Daria skupiła się na terraformowaniu.",
     tags: ["Strategia", "Nauka", "Konkurencyjna"],
-    fullContent: "Pełny opis sesji z Terraforming Mars..."
+    fullContent: `
+      <h3>Przebieg rozgrywki</h3>
+      <p>Rozpoczęliśmy grę o godzinie 19:00. Bartek od razu postawił na produkcję energii, co dało mu przewagę w późniejszych rundach. Daria skupiła się na kartach związanych z terraformowaniem, systematycznie podnosząc temperaturę i poziom tlenu.</p>
+      
+      <h3>Kluczowe momenty</h3>
+      <ul>
+        <li>Runda 3: Czarek zagrał kartę "Giant Ice Asteroid", co zmieniło układ planszy</li>
+        <li>Runda 6: Anna zbudowała imponującą sieć miast</li>
+        <li>Runda 9: Bartek aktywował projekt, który dał mu przewagę w produkcji megacreditów</li>
+      </ul>
+      
+      <h3>Wnioski</h3>
+      <p>Gra okazała się bardziej złożona niż się spodziewaliśmy. Strategia skupienia się na terraformowaniu od początku okazała się kluczowa dla zwycięstwa Darii.</p>
+    `
   },
   {
     id: 2,
@@ -16,42 +29,14 @@ export const sessions = [
     players: ["Ewa", "Filip", "Gosia"],
     rating: 8,
     summary: "Relaksująca sesja budowania średniowiecznego krajobrazu. Filip zaskoczył wszystkich strategicznym ułożeniem ostatniego kafelka.",
-    tags: ["Rodzinna", "Tile-laying", "Relaksująca"]
+    tags: ["Rodzinna", "Tile-laying", "Relaksująca"],
+    fullContent: `
+      <h3>Budowanie krajobrazu</h3>
+      <p>Sesja rozpoczęła się spokojnie, z każdy gracz skupiał się na budowaniu własnych zamków i dróg. Ewa zdominowała początkową fazę gry, tworząc rozległe pola.</p>
+      
+      <h3>Zaskakujące zakończenie</h3>
+      <p>W ostatniej rundzie Filip, który przez większość gry wydawał się pozostawać w tyle, zagrał idealny kafelek który połączył trzy istniejące zamki i dał mu zwycięstwo.</p>
+    `
   },
-  {
-    id: 3,
-    game: "Scythe",
-    date: "2024-01-12",
-    players: ["Kasia", "Marek", "Tomek", "Zosia"],
-    rating: 9.5,
-    summary: "Epicka rozgrywka w alternatywnej Europie lat 20. Walka o zasoby i terytorium była bardzo zacięta.",
-    tags: ["Strategia", "Alternatywna historia", "Mechanicy"]
-  },
-  {
-    id: 4,
-    game: "7 Wonders",
-    date: "2024-01-10",
-    players: ["Ola", "Piotr", "Robert", "Sylwia"],
-    rating: 8.5,
-    summary: "Szybka sesja budowania cywilizacji. Wszyscy gracze skupili się na różnych strategiach rozwoju.",
-    tags: ["Karty", "Cywilizacja", "Szybka gra"]
-  },
-  {
-    id: 5,
-    game: "Twilight Imperium",
-    date: "2024-01-08",
-    players: ["Tomasz", "Ula", "Wojtek", "Zenon"],
-    rating: 10,
-    summary: "Maraton kosmicznej strategii trwający 8 godzin! Niezwykle intensywna walka o galaktyczną dominację.",
-    tags: ["Kosmos", "Epicka", "Długa gra"]
-  },
-  {
-    id: 6,
-    game: "Azul",
-    date: "2024-01-05",
-    players: ["Agnieszka", "Błażej", "Celina"],
-    rating: 8,
-    summary: "Estetyczna sesja układania płytek. Proste zasady, ale głęboka strategia.",
-    tags: ["Abstrakcyjna", "Estetyka", "Rodzinna"]
-  }
+  // ... pozostałe sesje z fullContent
 ];

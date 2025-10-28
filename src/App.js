@@ -4,6 +4,7 @@ import Header from './components/Header.js';
 import Footer from './components/Footer.js';
 import Home from './pages/Home.js';
 import Sessions from './pages/Sessions.js';
+import SessionDetail from './pages/SessionDetail.js';
 import Games from './pages/Games.js';
 import About from './pages/About.js';
 import './App.css';
@@ -17,6 +18,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/sesje" element={<Sessions />} />
+            <Route path="/sesje/:sessionId" element={<SessionDetail />} />
             <Route path="/gry" element={<Games />} />
             <Route path="/o-mnie" element={<About />} />
           </Routes>
