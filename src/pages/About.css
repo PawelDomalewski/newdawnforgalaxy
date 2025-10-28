@@ -1,0 +1,23 @@
+.about-page {
+  padding: 2rem 0;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.about-text h2 {
+  color: #2c3e50;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-text ul {
+  padding-left: 2rem;
+}
+
+.about-text li {
+  margin-bottom: 0.5rem;
+}
