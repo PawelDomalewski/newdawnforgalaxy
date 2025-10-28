@@ -26,5 +26,14 @@ export const sessions = [
     rating: 9.5,
     summary: "Epicka rozgrywka w alternatywnej Europie lat 20. Walka o zasoby i terytorium była bardzo zacięta.",
     tags: ["Strategia", "Alternatywna historia", "Mechanicy"]
+  },
+  {
+    id: 4,
+    game: "Scythe",
+    date: "2024-01-08",
+    players: ["Kasia", "Marek", "Tomek", "Zosia"],
+    rating: 9.5,
+    summary: "Epicka rozgrywka w alternatywnej Europie lat 20. Walka o zasoby i terytorium była bardzo zacięta.",
+    tags: ["Strategia", "Alternatywna historia", "Mechanicy"]
   }
 ];
