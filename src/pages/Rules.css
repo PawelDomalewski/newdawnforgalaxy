@@ -168,6 +168,7 @@
   font-size: 1.1rem;
   max-width: 600px;
   margin: 0 auto;
+  margin-bottom: 1rem;
 }
 
 /* Sekcja Ras */
@@ -301,6 +302,7 @@
 .resources {
   display: flex;
   gap: 1rem;
+  justify-content: center;
 }
 
 .resource {
