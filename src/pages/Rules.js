@@ -179,7 +179,7 @@ const Rules = () => {
       name: "Oświeceni Lyry",
       image: "/images/races/lyra.jpg",
       description: "Rasa oświecona, budująca świątynie",
-      features: ["Może budować świątynie", "Mogą statku kolonizacyjnego aby przerzucić jedną własną kostkę w walce", "1 pkt za każdą świątynię"],
+      features: ["Może budować świątynie", "Mogą użyć statek kolonizacyjny aby przerzucić jedną własną kostkę w walce", "1 pkt za każdą świątynię"],
       technologies: ["Osłona zniekształcająca"],
       resources: {
         orange: 2,
@@ -190,6 +190,57 @@ const Rules = () => {
       gamesPlayed: 8,
       firstPlaces: 1,
       secondPlaces: 2
+    },
+    {
+      id: 12,
+      name: "Octanis",
+      image: "/images/races/octanis.jpg",
+      description: "Rasa wszechstronna, adaptująca się do warunków i ewoluująca",
+      features: ["Ewolucje i mutacje", "Dodatkowy surowiec - mutagen (4 na początku gry, +2 co rundę)", "Może użyć statku kolonizacyjnego by wymienić żeton ewolucji w swojej puli"],
+      technologies: ["Fusion Drive"],
+      resources: {
+        orange: 2,
+        pink: 3,
+        brown: 3
+      },
+      difficulty: 4,
+      gamesPlayed: 2,
+      firstPlaces: 2,
+      secondPlaces: 0
+    },
+    {
+      id: 13,
+      name: "Shaperzy z Dorado",
+      image: "/images/races/dorado.jpg",
+      description: "Rasa manipulująca czasem i przestrzenią",
+      features: ["Zniekształcanie czasu", "+1 pkt za każde wypełnione zniekształcenie czasu", "Może użyć statku kolonizacyjnego by wymienić żeton zniekształcenia czasu w swojej puli"],
+      technologies: ["Soliton Cannon"],
+      resources: {
+        orange: 3,
+        pink: 4,
+        brown: 2
+      },
+      difficulty: 4,
+      gamesPlayed: 2,
+      firstPlaces: 2,
+      secondPlaces: 0
+    },
+    {
+      id: 14,
+      name: "Jedność Pyxis",
+      image: "/images/races/pyxis.jpg",
+      description: "Rasa nanomaszyn korzystająca z transmaterii",
+      features: ["Połączone akcje", "Tylko jeden surowiec - transmateria (8 na początku gry)", "Mogą łączyć mniejsze statki w większy lub na odwrót"],
+      technologies: ["Advanced Robotics"],
+      resources: {
+        orange: 0,
+        pink: 0,
+        brown: 0
+      },
+      difficulty: 4,
+      gamesPlayed: 2,
+      firstPlaces: 2,
+      secondPlaces: 0
     }
   ];
 
