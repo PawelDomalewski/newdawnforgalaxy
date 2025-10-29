@@ -424,7 +424,6 @@
     gap: 1rem;
   }
 }
-
 .guides-subtitle {
   text-align: center;
   color: #666;
@@ -436,22 +435,84 @@
   max-width: 1000px;
 }
 
-.guide-article {
+/* Nagłówek poradnika - klikalny */
+.guide-header {
   background: white;
   border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  margin-bottom: 1rem;
+}
+
+.guide-header:hover {
+  border-color: #3498db;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.guide-header--expanded {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.guide-title {
+  color: #2c3e50;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.guide-toggle-icon {
+  background: #3498db;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.guide-header:hover .guide-toggle-icon {
+  background: #2980b9;
+  transform: scale(1.1);
+}
+
+.guide-description {
+  color: #666;
+  margin: 0;
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
+/* Kontener zawartości poradnika */
+.guide-content-wrapper {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.guide-content-wrapper--expanded {
+  max-height: 5000px; /* Wystarczająco duża wartość dla płynnej animacji */
+}
+
+/* Zawartość poradnika */
+.guide-article {
+  background: white;
+  border-radius: 0 0 12px 12px;
   padding: 3rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   line-height: 1.7;
-  color: #2c3e50;
-}
-
-.guide-article h2 {
-  color: #2c3e50;
-  text-align: center;
-  margin-bottom: 2rem;
-  font-size: 2rem;
-  border-bottom: 3px solid #3498db;
-  padding-bottom: 1rem;
+  color:#2c3e50;
 }
 
 .guide-intro {
@@ -497,7 +558,7 @@
 
 .guide-chapter h3 {
   color: #2c3e50;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-bottom: 1.5rem;
   display: flex;
   align-items: center;
@@ -605,16 +666,20 @@
 
 /* Responsywność dla poradników */
 @media (max-width: 768px) {
-  .guide-article {
-    padding: 2rem 1.5rem;
+  .guide-header {
+    padding: 1.5rem;
   }
   
-  .guide-article h2 {
-    font-size: 1.7rem;
+  .guide-title {
+    font-size: 1.3rem;
+  }
+  
+  .guide-article {
+    padding: 1.5rem;
   }
   
   .guide-chapter h3 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   
   .guide-grid {
@@ -631,21 +696,31 @@
 }
 
 @media (max-width: 480px) {
-  .guide-article {
-    padding: 1.5rem 1rem;
+  .guide-header {
+    padding: 1rem;
   }
   
-  .guide-article h2 {
-    font-size: 1.5rem;
+  .guide-title {
+    font-size: 1.2rem;
+  }
+  
+  .guide-article {
+    padding: 1rem;
   }
   
   .guide-chapter h3 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   
   .guide-intro,
   .guide-note,
   .guide-warning {
     padding: 1rem;
+  }
+  
+  .guide-toggle-icon {
+    width: 25px;
+    height: 25px;
+    font-size: 1rem;
   }
 }
