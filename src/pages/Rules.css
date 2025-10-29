@@ -502,7 +502,7 @@
 }
 
 .guide-content-wrapper--expanded {
-  max-height: 5000px; /* Wystarczająco duża wartość dla płynnej animacji */
+  max-height: 50000px; /* Wystarczająco duża wartość dla płynnej animacji */
 }
 
 /* Zawartość poradnika */
