@@ -73,9 +73,9 @@ const Rules = () => {
         brown: 3
       },
       difficulty: 2,
-      gamesPlayed: 10,
-      firstPlaces: 2,
-      secondPlaces: 3
+      gamesPlayed: 1,
+      firstPlaces: 0,
+      secondPlaces: 1
     },
     {
       id: 4,
@@ -90,9 +90,9 @@ const Rules = () => {
         brown: 5
       },
       difficulty: 3,
-      gamesPlayed: 8,
-      firstPlaces: 1,
-      secondPlaces: 2
+      gamesPlayed: 2,
+      firstPlaces: 2,
+      secondPlaces: 0
     },
     {
       id: 5,
@@ -107,9 +107,9 @@ const Rules = () => {
         brown: 4
       },
       difficulty: 5,
-      gamesPlayed: 8,
-      firstPlaces: 1,
-      secondPlaces: 2
+      gamesPlayed: 1,
+      firstPlaces: 0,
+      secondPlaces: 0
     },
     {
       id: 6,
@@ -124,8 +124,8 @@ const Rules = () => {
         brown: 2
       },
       difficulty: 2,
-      gamesPlayed: 8,
-      firstPlaces: 1,
+      gamesPlayed: 2,
+      firstPlaces: 0,
       secondPlaces: 2
     },
     {
@@ -141,9 +141,9 @@ const Rules = () => {
         brown: 3
       },
       difficulty: 3,
-      gamesPlayed: 8,
-      firstPlaces: 1,
-      secondPlaces: 2
+      gamesPlayed: 1,
+      firstPlaces: 0,
+      secondPlaces: 0
     },
     {
       id: 8,
@@ -158,9 +158,9 @@ const Rules = () => {
         brown: 3
       },
       difficulty: 1,
-      gamesPlayed: 8,
-      firstPlaces: 1,
-      secondPlaces: 2
+      gamesPlayed: 2,
+      firstPlaces: 0,
+      secondPlaces: 0
     },
     {
       id: 9,
@@ -175,9 +175,9 @@ const Rules = () => {
         brown: 4
       },
       difficulty: 3,
-      gamesPlayed: 8,
-      firstPlaces: 1,
-      secondPlaces: 2
+      gamesPlayed: 0,
+      firstPlaces: 0,
+      secondPlaces: 0
     },
     {
       id: 10,
@@ -192,9 +192,9 @@ const Rules = () => {
         brown: 3
       },
       difficulty: 3,
-      gamesPlayed: 8,
-      firstPlaces: 1,
-      secondPlaces: 2
+      gamesPlayed: 1,
+      firstPlaces: 0,
+      secondPlaces: 0
     },
     {
       id: 11,
@@ -209,9 +209,9 @@ const Rules = () => {
         brown: 3
       },
       difficulty: 4,
-      gamesPlayed: 8,
-      firstPlaces: 1,
-      secondPlaces: 2
+      gamesPlayed: 1,
+      firstPlaces: 0,
+      secondPlaces: 1
     },
     {
       id: 12,
@@ -243,8 +243,8 @@ const Rules = () => {
         brown: 2
       },
       difficulty: 4,
-      gamesPlayed: 2,
-      firstPlaces: 2,
+      gamesPlayed: 0,
+      firstPlaces: 0,
       secondPlaces: 0
     },
     {
@@ -259,9 +259,9 @@ const Rules = () => {
         pink: 0,
         brown: 0
       },
-      difficulty: 4,
+      difficulty: 5,
       gamesPlayed: 2,
-      firstPlaces: 2,
+      firstPlaces: 1,
       secondPlaces: 0
     }
   ];
