@@ -334,7 +334,226 @@ const Rules = () => {
         <section ref={guidesRef} className="section">
           <div className="container">
             <h1>Poradniki</h1>
-            <p>Poradniki wkrótce...</p>
+            <p className="guides-subtitle">Strategie i taktyki dla zaawansowanych graczy</p>
+          </div>
+
+          <div className="container guide-container">
+            <article className="guide-article">
+              <h2>🚀 Kompleksowy poradnik do gry Eclipse</h2>
+              
+              <div className="guide-intro">
+                <p>Wielu graczy nie wie, jak wydostać się z trudnej sytuacji lub brakuje im umiejętności długoterminowego planowania i adaptacji wymaganych do bycia biegłym w Eclipse.</p>
+                <div className="guide-note">
+                  <strong>⚠️ Uwaga:</strong> Gracze nie powinni używać standardowych Strażników Galaktyki (GCDS) - są słabo zbalansowane i dają niektórym rasom znaczną przewagę.
+                </div>
+              </div>
+
+              <div className="guide-chapters">
+                {/* Rozdział 1 */}
+                <div className="guide-chapter">
+                  <h3>🎯 Rozpoczęcie gry</h3>
+                  <div className="guide-content">
+                    <h4>Pierwsze pytanie strategiczne:</h4>
+                    <ul>
+                      <li><strong>Agresywnie (PvP)</strong> - atakowanie innych graczy</li>
+                      <li><strong>PvE</strong> - tylko walka ze Starożytnymi i GCDS</li>
+                      <li><strong>Mieszany</strong> - kombinacja obu strategii</li>
+                      <li><strong>Defensywnie</strong> - unikanie konfliktów</li>
+                    </ul>
+
+                    <h4>Dla graczy agresywnych:</h4>
+                    <ul>
+                      <li><strong>Sprawdź dostępne technologie</strong> - czy pozwolą ci ulepszyć statki do walki ze Starożytnymi w rundzie 1-2</li>
+                      <li><strong>Nie licz na pojawienie się potrzebnych technologii w rundzie 2!</strong></li>
+                      <li><strong>Do PvP</strong> wybierz rasy z 3+ aktywacjami statków (Terranie, Rho Indi)</li>
+                      <li><strong>Pancernik</strong> to często najtańszy i najskuteczniejszy sposób na zastraszenie Starożytnych</li>
+                    </ul>
+
+                    <h4>Dla graczy defensywnych:</h4>
+                    <ul>
+                      <li>Wybierz rasy z unikalnymi bonusami niezależnymi od interakcji</li>
+                      <li>Przykłady: Świątynie Lyry, podwójna eksploracja Planta/Draco, podwójne badania Hydran</li>
+                    </ul>
+                  </div>
+                </div>
+
+                {/* Rozdział 2 */}
+                <div className="guide-chapter">
+                  <h3>🔍 Pierwsza runda - eksploracja</h3>
+                  <div className="guide-content">
+                    <h4>Pierwsza akcja:</h4>
+                    <ul>
+                      <li><strong>Badania</strong> lub <strong>Eksploracja</strong></li>
+                      <li>Priorytet: technologie militarne kluczowe dla twoich planów lub wczesne korzyści ekonomiczne</li>
+                      <li>Przykłady: Ulepszony kadłub, Zaawansowana robotyka, Działa plazmowe</li>
+                    </ul>
+
+                    <h4>Strategia eksploracji:</h4>
+                    <ul>
+                      <li><strong>Nie pozwól, by ktoś zeksplorował twój Heks 1!</strong></li>
+                      <li>Postaraj się zdobyć część Heksów 3 zanim znikną</li>
+                      <li>Atak w rundzie 1 tylko jeśli możesz skolonizować system po zwycięstwie</li>
+                    </ul>
+
+                    <h4>Kluczowe umiejętności eksploracji:</h4>
+                    <div className="guide-grid">
+                      <div className="guide-tip">
+                        <h5>Heks 3</h5>
+                        <p>Prawie nigdy nie odrzucaj (wyjątki: ule, portale warp, czasem Starożytni)</p>
+                      </div>
+                      <div className="guide-tip">
+                        <h5>Heks 2</h5>
+                        <p>Bądź selektywny. Odrzucaj gdy masz za dużo systemów ze Starożytnymi</p>
+                      </div>
+                      <div className="guide-tip">
+                        <h5>Heks 1</h5>
+                        <p>Możesz odrzucać częściej, szukając systemów pasujących do strategii</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Rozdział 3 */}
+                <div className="guide-chapter">
+                  <h3>⚡ Druga runda - zmiana planów</h3>
+                  <div className="guide-content">
+                    <h4>Przemyśl strategię na nowo:</h4>
+                    <ul>
+                      <li>Oceń swoje zasoby, Starożytnych, nowe technologie</li>
+                      <li><strong>Dostosuj strategię do tego, co dała ci gra, nie na odwrót</strong></li>
+                      <li>Sprawdź czy możesz efektywnie walczyć ze Starożytnymi</li>
+                    </ul>
+
+                    <h4>Przykłady zmian strategii:</h4>
+                    <ul>
+                      <li><strong>Mało materiałów do agresji?</strong> Oszczędzaj na pancernika, ulepszaj statki, lub porzuć plany militarne</li>
+                      <li><strong>Złe planety?</strong> Rozważ orbitule i żonglerkę szarymi planetami</li>
+                    </ul>
+
+                    <div className="guide-warning">
+                      <strong>💡 Ważne:</strong> Nie wydawaj wszystkich zasobów każdej tury! Czasami najlepiej przejść wcześniej, oszczędzając na duże inwestycje.
+                    </div>
+                  </div>
+                </div>
+
+                {/* Rozdział 4 */}
+                <div className="guide-chapter">
+                  <h3>🎮 Trzecia runda - decyzja na resztę gry</h3>
+                  <div className="guide-content">
+                    <h4>Plan na środek gry:</h4>
+                    <ul>
+                      <li>Oceń technologie, miejsca bitew, zasoby, planety, projekty statków</li>
+                      <li><strong>Dostosuj się do dostępnych technologii</strong> - w małych grach może ich zabraknąć</li>
+                      <li><strong>Bądź ekstremalny w militaryzacji</strong> - albo unikaj, albo inwestuj mocno</li>
+                    </ul>
+
+                    <h4>Gospodarka:</h4>
+                    <div className="guide-grid">
+                      <div className="guide-tip">
+                        <h5>Materiały</h5>
+                        <p>Pancerniki, zaawansowane górnictwo, lub unikanie militaryzacji</p>
+                      </div>
+                      <div className="guide-tip">
+                        <h5>Nauka</h5>
+                        <p>Statki agresywne lub rozwój ekonomii</p>
+                      </div>
+                      <div className="guide-tip">
+                        <h5>Pieniądze</h5>
+                        <p>Agresja lub systemy bez planet pieniężnych</p>
+                      </div>
+                    </div>
+
+                    <div className="guide-note">
+                      <strong>🔄 Możesz odzyskać po błędach</strong> - to dopiero 3. runda! Uważaj na pinowanie i zawsze wiedz, jakie statki mogą wejść do twoich hexów.
+                    </div>
+                  </div>
+                </div>
+
+                {/* Rozdział 5 */}
+                <div className="guide-chapter">
+                  <h3>⚔️ Piąta i szósta runda - początek PvP</h3>
+                  <div className="guide-content">
+                    <h4>Dynamika gry się zmienia:</h4>
+                    <ul>
+                      <li>Głównym czynnikiem stają się inni gracze</li>
+                      <li>Dostosowuj plany by nie być wrażliwym</li>
+                      <li>Oceń potencjał innych graczy</li>
+                    </ul>
+
+                    <h4>Obserwacja przeciwników:</h4>
+                    <ul>
+                      <li><strong>Rho Indi</strong> - nękanie gospodarki, brak pancerników</li>
+                      <li><strong>Planta/Hydran</strong> - potrzebują "wybojów" w postaci ataków</li>
+                      <li><strong>Szukaj sojuszników</strong> i odpowiedniego momentu na pokój</li>
+                    </ul>
+                  </div>
+                </div>
+
+                {/* Rozdział 6 */}
+                <div className="guide-chapter">
+                  <h3>🌟 Siódma runda - późna gra</h3>
+                  <div className="guide-content">
+                    <h4>Ocena pozycji:</h4>
+                    <ul>
+                      <li>Albo przegrywasz i liczysz na błąd przeciwnika</li>
+                      <li>Albo wyglądasz dobrze i dyplomacja staje się kluczowa</li>
+                    </ul>
+
+                    <h4>Strategie późnej gry:</h4>
+                    <ul>
+                      <li>Przejdź od planów "około" do "głównie"</li>
+                      <li>Bądź gotowy na zmiany projektów statków</li>
+                      <li><strong>Dyplomacja jest kluczowa</strong> - wiedz kiedy NIE zadziała</li>
+                      <li>Skup się na: orbitulach, monolitach, kluczach artefaktów</li>
+                      <li><strong>Planuj oszczędzanie akcji na rundy 8-9</strong></li>
+                    </ul>
+                  </div>
+                </div>
+
+                {/* Rozdział 7 */}
+                <div className="guide-chapter">
+                  <h3>🏆 Finał - rundy 8 i 9</h3>
+                  <div className="guide-content">
+                    <h4>Ósma runda - przygotowanie:</h4>
+                    <ul>
+                      <li><strong>Przygotuj się na rundę 9</strong></li>
+                      <li>Zaplanuj z góry co będziesz mógł kupić</li>
+                      <li>Zostaw jak najwięcej akcji na ostatnią rundę</li>
+                    </ul>
+
+                    <h4>Dziewiąta runda - finał:</h4>
+                    <ul>
+                      <li>Gracze którzy planowali z wyprzedzeniem mają przewagę</li>
+                      <li>Używaj akcji wpływów by zwalniać dyski z systemów 1VP</li>
+                      <li><strong>Wykorzystuj pinowanie maksymalnie</strong></li>
+                      <li>Kolonizuj systemy gdzie spodziewasz się przegrać - zwolnią się po walce</li>
+                    </ul>
+                  </div>
+                </div>
+
+                {/* Refleksje końcowe */}
+                <div className="guide-conclusion">
+                  <h3>💭 Refleksje końcowe</h3>
+                  <div className="guide-tips">
+                    <div className="guide-tip-card">
+                      <h4>🎲 Graj dla przyjemności</h4>
+                      <p>Nie zawsze musisz wygrywać, by dobrze się bawić</p>
+                    </div>
+                    <div className="guide-tip-card">
+                      <h4>👥 Wspólna zabawa</h4>
+                      <p>Eclipse nie jest fajne bez ludzi do gry - pomóż innym dobrze się bawić</p>
+                    </div>
+                    <div className="guide-tip-card">
+                      <h4>🔥 Twórz chaos</h4>
+                      <p>Jeśli twoja grupa jest zbyt pasywna - prowokuj PvP lub znajdź sojuszników</p>
+                    </div>
+                  </div>
+                  <div className="guide-final-note">
+                    <strong>Powodzenia w podboju galaktyki! 🚀</strong>
+                  </div>
+                </div>
+              </div>
+            </article>
           </div>
         </section>
       </div>
