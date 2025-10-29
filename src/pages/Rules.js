@@ -4,7 +4,7 @@ import './Rules.css';
 const Rules = () => {
   const [selectedRace, setSelectedRace] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isGuideExpanded, setIsGuideExpanded] = useState(false);
+  const [expandedGuide, setExpandedGuide] = useState(null); // Zmieniamy na expandedGuide
 
   // Refs do przewijania sekcji
   const instructionsRef = useRef(null);
@@ -25,10 +25,10 @@ const Rules = () => {
     setSelectedRace(null);
   };
 
-  const toggleGuide = () => {
-    setIsGuideExpanded(!isGuideExpanded);
+  // Funkcja do przełączania poradników
+  const toggleGuide = (guideId) => {
+    setExpandedGuide(expandedGuide === guideId ? null : guideId);
   };
-
 
   // Dane ras
   const racesData = [
@@ -337,36 +337,69 @@ const Rules = () => {
         </section>
 
         {/* Sekcja Poradniki (placeholder) */}
- <section ref={guidesRef} className="section">
+<section ref={guidesRef} className="section">
           <div className="container">
             <h1>Poradniki</h1>
             <p className="guides-subtitle">Strategie i taktyki dla zaawansowanych graczy</p>
           </div>
 
-          <div className="container guide-container">
-            <div className={`guide-header ${isGuideExpanded ? 'guide-header--expanded' : ''}`} onClick={toggleGuide}>
-              <h2 className="guide-title">
-                🚀 Kompleksowy poradnik do gry Eclipse
-                <span className="guide-toggle-icon">
-                  {isGuideExpanded ? '−' : '+'}
-                </span>
-              </h2>
-              <p className="guide-description">
-                Strategie od początku gry do finału - kliknij aby {isGuideExpanded ? 'zwinąć' : 'rozwinąć'}
-              </p>
-            </div>
-
-            <div className={`guide-content-wrapper ${isGuideExpanded ? 'guide-content-wrapper--expanded' : ''}`}>
-              {isGuideExpanded && (
-                <article className="guide-article">
-                  <div className="guide-intro">
-                    <p>Wielu graczy nie wie, jak wydostać się z trudnej sytuacji lub brakuje im umiejętności długoterminowego planowania i adaptacji wymaganych do bycia biegłym w Eclipse.</p>
-                    <div className="guide-note">
-                      <strong>⚠️ Uwaga:</strong> Gracze nie powinni używać standardowych Strażników Galaktyki (GCDS) - są słabo zbalansowane i dają niektórym rasom znaczną przewagę.
-                    </div>
+          <div className="container guides-container">
+            {/* Pierwszy poradnik - Jordan Grahm */}
+            <div className="guide-wrapper">
+              <div className={`guide-header ${expandedGuide === 1 ? 'guide-header--expanded' : ''}`} onClick={() => toggleGuide(1)}>
+                <h2 className="guide-title">
+                  🚀 Kompleksowy poradnik do gry Eclipse
+                  <span className="guide-toggle-icon">
+                    {expandedGuide === 1 ? '−' : '+'}
+                  </span>
+                </h2>
+                <div className="guide-meta">
+                  <p className="guide-description">
+                    Strategie od początku gry do finału - kliknij aby {expandedGuide === 1 ? 'zwinąć' : 'rozwinąć'}
+                  </p>
+                  <div className="guide-source">
+                    <span className="guide-author">Autor: Jordan Grahm</span>
+                    <a 
+                      href="https://boardgamegeek.com/thread/2264028/general-start-to-finish-guide-to-upping-your-strat" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="guide-source-link"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      Źródło: BoardGameGeek
+                    </a>
                   </div>
+                </div>
+              </div>
 
-                  <div className="guide-chapters">
+              <div className={`guide-content-wrapper ${expandedGuide === 1 ? 'guide-content-wrapper--expanded' : ''}`}>
+                {expandedGuide === 1 && (
+                  <article className="guide-article">
+                    <div className="guide-article-header">
+                      <div className="guide-credits">
+                        <p><strong>Autor:</strong> Jordan Grahm</p>
+                        <p>
+                          <strong>Źródło:</strong>{' '}
+                          <a 
+                            href="https://boardgamegeek.com/thread/2264028/general-start-to-finish-guide-to-upping-your-strat" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="guide-source-link"
+                          >
+                            BoardGameGeek - General start to finish guide to upping your strategy
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="guide-intro">
+                      <p>Wielu graczy nie wie, jak wydostać się z trudnej sytuacji lub brakuje im umiejętności długoterminowego planowania i adaptacji wymaganych do bycia biegłym w Eclipse.</p>
+                      <div className="guide-note">
+                        <strong>⚠️ Uwaga:</strong> Gracze nie powinni używać standardowych Strażników Galaktyki (GCDS) - są słabo zbalansowane i dają niektórym rasom znaczną przewagę.
+                      </div>
+                    </div>
+
+                                      <div className="guide-chapters">
                     {/* Rozdział 1 */}
                     <div className="guide-chapter">
                       <h3>🎯 Rozpoczęcie gry</h3>
@@ -572,7 +605,257 @@ const Rules = () => {
                     </div>
                   </div>
                 </article>
-              )}
+                )}
+              </div>
+            </div>
+
+            {/* Drugi poradnik - Kester 42 */}
+            <div className="guide-wrapper">
+              <div className={`guide-header ${expandedGuide === 2 ? 'guide-header--expanded' : ''}`} onClick={() => toggleGuide(2)}>
+                <h2 className="guide-title">
+                  🧠 Zaawansowana strategia Eclipse
+                  <span className="guide-toggle-icon">
+                    {expandedGuide === 2 ? '−' : '+'}
+                  </span>
+                </h2>
+                <div className="guide-meta">
+                  <p className="guide-description">
+                    Taktyki i techniki dla doświadczonych graczy - kliknij aby {expandedGuide === 2 ? 'zwinąć' : 'rozwinąć'}
+                  </p>
+                  <div className="guide-source">
+                    <span className="guide-author">Autor: Kester 42</span>
+                    <a 
+                      href="https://boardgamegeek.com/thread/1163520/advanced-eclipse-strategy" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="guide-source-link"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      Źródło: BoardGameGeek
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className={`guide-content-wrapper ${expandedGuide === 2 ? 'guide-content-wrapper--expanded' : ''}`}>
+                {expandedGuide === 2 && (
+                  <article className="guide-article">
+                    <div className="guide-article-header">
+                      <div className="guide-credits">
+                        <p><strong>Autor:</strong> Kester 42</p>
+                        <p>
+                          <strong>Źródło:</strong>{' '}
+                          <a 
+                            href="https://boardgamegeek.com/thread/1163520/advanced-eclipse-strategy" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="guide-source-link"
+                          >
+                            BoardGameGeek - Advanced Eclipse Strategy
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="guide-intro">
+                      <p>Uwielbiam Eclipse. Ta gra ma interesujące mechaniki i dynamikę, które pasują do specjalnej niszy w mojej grupie graczy. Moim zamiarem przy pisaniu tego jest otwarcie dialogu w celu zbadania zaawansowanych taktyk i strategii dla tej wspaniałej gry.</p>
+                      <div className="guide-note">
+                        <strong>🎯 Cel:</strong> To nie ma być formuła "zrób dokładnie to aby wygrać", ale raczej eksploracja kluczowych rzeczy, o których należy myśleć, aby podnieść poziom swojej gry.
+                      </div>
+                    </div>
+
+<div className="guide-chapters">
+              {/* Polityka */}
+              <div className="guide-chapter">
+                <h3>🗳️ Polityka</h3>
+                <div className="guide-content">
+                  <p>Eclipse to gra w dużym stopniu zależna od polityki. Charakter gry zachęca do rozmów przy stole, nieformalnych sojuszy i strategicznej manipulacji werbalnej przeciwników.</p>
+                  <ul>
+                    <li>Często możesz wpływać na działania przeciwnika, wskazując mu korzystny manewr lub zagrożenie ze strony innego przeciwnika</li>
+                    <li>Uwaga: nie daj się oznaczyć jako "ringier" w swojej grupie, bo przeciwnicy będą się często na ciebie rzucać</li>
+                  </ul>
+                  <div className="guide-tip">
+                    <h5>Wskazówki dla ras:</h5>
+                    <p><strong>Hydranie</strong> chcą być pozostawieni w spokoju we wczesnej grze. <strong>Mechanema</strong> to najlepsza rasa do gry w odpowiedzi na częste ataki grupy.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Wczesna eksploracja */}
+              <div className="guide-chapter">
+                <h3>🔍 Wczesna eksploracja</h3>
+                <div className="guide-content">
+                  <p>Wczesne rundy Eclipse są w dużej mierze poświęcone eksploracji hexów. Oto kluczowe zasady:</p>
+                  
+                  <div className="guide-grid">
+                    <div className="guide-tip">
+                      <h5>1. Sojusze</h5>
+                      <p>W grach 4+ graczy, łączenie się z sąsiadami jest bardzo korzystne dla dodatkowej produkcji</p>
+                    </div>
+                    <div className="guide-tip">
+                      <h5>2. Ring 1</h5>
+                      <p>Nigdy nie pozwól komuś umieścić twojego Hexa Pierścienia 1 podłączonego do centrum</p>
+                    </div>
+                    <div className="guide-tip">
+                      <h5>3. Ring 3</h5>
+                      <p>Hexy Pierścienia 3 są ograniczone - nie pozwól wszystkim je zabrać</p>
+                    </div>
+                  </div>
+
+                  <div className="guide-warning">
+                    <strong>⚠️ Ważne:</strong> Nie rozszerzaj się niepotrzebnie - akcje stają się bardzo drogie. Ostatnie hexy Pierścienia 2 mogą poczekać w mniejszych grach.
+                  </div>
+                </div>
+              </div>
+
+              {/* Wirtualne floty */}
+              <div className="guide-chapter">
+                <h3>⚡ Wirtualne floty</h3>
+                <div className="guide-content">
+                  <p>W pozycji obronnej może być niezwykle cenne maksymalizowanie efektywności akcji poprzez czekanie jak najdłużej z budową statków.</p>
+                  <ul>
+                    <li>Dopóki masz wystarczające materiały, możesz wywierać presję "wirtualnej floty"</li>
+                    <li>Szczególnie pomocne dla baz gwiezdnych, ponieważ nie mogą się poruszać</li>
+                    <li>Uwaga: wirtualne floty nie pomagają w pinowaniu</li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Akcje atakującego */}
+              <div className="guide-chapter">
+                <h3>⚔️ Akcje atakującego</h3>
+                <div className="guide-content">
+                  <p>Atakujący ma wyraźną wadę w akcjach. Zajmuje stosunkowo dużo akcji, aby zbudować i przesunąć statki na terytorium wroga.</p>
+                  <ul>
+                    <li>Atakuj jak najpóźniej w rundzie, idealnie po tym jak obrońca spasował</li>
+                    <li>Trzymaj plany w tajemnicy</li>
+                    <li>Czasami czekanie pozwala obrońcy stworzyć lepszą pozycję do pinowania</li>
+                  </ul>
+                  <div className="guide-note">
+                    <strong>Eridani:</strong> Skutecznie okaleczeni z dwoma dyskami akcji usuniętymi - zalecani tylko dla zaawansowanych graczy.
+                  </div>
+                </div>
+              </div>
+
+              {/* Pinowanie statków */}
+              <div className="guide-chapter">
+                <h3>📌 Pinowanie statków</h3>
+                <div className="guide-content">
+                  <p>Ta technika może oddzielić świetnych graczy od dobrych. Podstawowe strategie pinowania:</p>
+                  <ul>
+                    <li>Zasypuj swoje terytorium tańszymi statkami lub bazami gwiezdnymi</li>
+                    <li>Zaawansowani gracze agresywnie pinują statki wroga na ICH terytorium</li>
+                    <li>Używaj poświęcających się myśliwców do pinowania pancerników</li>
+                    <li>Ataki samobójcze mogą być korzystne dla zdobycia żetonów reputacji</li>
+                  </ul>
+                  <div className="guide-tip">
+                    <h5>Protip:</h5>
+                    <p>Statki używane wyłącznie do pinowania mogą być ulepszane pancerzami zamiast broni, aby lepiej przetrwać odwrót.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Kontra plazmowe rakiety */}
+              <div className="guide-chapter">
+                <h3>🛡️ Kontra plazmowe rakiety</h3>
+                <div className="guide-content">
+                  <p>Build oparty wyłącznie na rakietach plazmowych wydaje się złamany początkującym graczom. Oto jak go kontrować:</p>
+                  <ul>
+                    <li><strong>Podstawowy kontr:</strong> Ulepszone kadłuby i fazowe tarcze z jednym działem</li>
+                    <li><strong>Alternatywa:</strong> Pinuj statki rakietowe i najedź na terytorium atakującego</li>
+                    <li>Unikaj pozwalania graczowi rakietowemu gromadzić masywne liczby statków</li>
+                  </ul>
+                  <div className="guide-note">
+                    <strong>Pamiętaj:</strong> Rakiety nie niszczą punktów zwycięstwa zdobytych przez żetony odkryć, reputacji lub technologie.
+                  </div>
+                </div>
+              </div>
+
+              {/* Technologia */}
+              <div className="guide-chapter">
+                <h3>🔬 Technologia - ranking</h3>
+                <div className="guide-content">
+                  <p>Nie wszystkie technologie są równe. Oto proponowany podział na tiery:</p>
+                  
+                  <div className="guide-tech-tier">
+                    <h5>🏆 Ekstremalnie cenne (auto-kup w większości sytuacji):</h5>
+                    <ul>
+                      <li>Ulepszony kadłub</li>
+                      <li>Zaawansowana robotyka</li>
+                      <li>Bomby neutronowe</li>
+                    </ul>
+                  </div>
+
+                  <div className="guide-tech-tier">
+                    <h5>⭐ Bardzo dobre (pomocne w większości gier):</h5>
+                    <ul>
+                      <li>Rakieta plazmowa</li>
+                      <li>Zaawansowana ekonomia</li>
+                      <li>Źródło fuzji</li>
+                      <li>Komputer pozytronowy</li>
+                      <li>Siatka kwantowa</li>
+                      <li>Napęd fuzji</li>
+                    </ul>
+                  </div>
+
+                  <div className="guide-tech-tier">
+                    <h5>⚠️ Słabe lub wysoce sytuacyjne (powinny być rzadko badane):</h5>
+                    <ul>
+                      <li>Działo antymaterii</li>
+                      <li>Orbitale</li>
+                      <li>Napęd tachionowy</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              {/* Manewr Draco */}
+              <div className="guide-chapter">
+                <h3>🎯 Manewr Draco</h3>
+                <div className="guide-content">
+                  <p>Zasady pozwalają na wpływanie na hex przylegający do hexa zawierającego spięty statek. Prowadzi to do interesującego manewru najlepiej wykorzystywanego przez rasę Draco:</p>
+                  <ol>
+                    <li>Przeciwnik eksploruje swój hex Pierścienia 1, znajduje starożytnych i nie atakuje w tej rundzie</li>
+                    <li>Gracz Draco przesuwa myśliwiec do centrum galaktyki, gdzie jest spięty</li>
+                    <li>Gracz Draco używa akcji wpływu, aby umieścić dysk wpływu na hexie Pierścienia 1 przeciwnika</li>
+                  </ol>
+                  <div className="guide-warning">
+                    <strong>Uwaga:</strong> Ten manewr będzie postrzegany jako bardzo agresywna gra i może wywołać reakcję innych graczy.
+                  </div>
+                </div>
+              </div>
+
+              {/* Finałowe manewry */}
+              <div className="guide-chapter">
+                <h3>🏁 Finałowe manewry</h3>
+                <div className="guide-content">
+                  <p>W ostatnich 1-2 rundach skupienie przesuwa się całkowicie na zdobywanie natychmiastowych punktów zwycięstwa.</p>
+                  <ul>
+                    <li>Każda akcja statku powinna być podjęta w celu zdobycia lub uniknięcia utraty punktów</li>
+                    <li>Ostateczne akcje stają się bardzo cenne</li>
+                    <li>Wszystkie pozostałe materiały, pieniądze i nauka powinny być wydane na punkty zwycięstwa</li>
+                  </ul>
+                  <div className="guide-grid">
+                    <div className="guide-tip">
+                      <h5>Mechanema</h5>
+                      <p>Mogą zamienić wirtualną flotę w druzgocącą budowę czterech monolitów jedną akcją</p>
+                    </div>
+                    <div className="guide-tip">
+                      <h5>Hydranie</h5>
+                      <p>Często badają, aby wypełnić swoją ścieżkę technologiczną i mogą zrobić niespodziewaną budowlę monolitów</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="guide-conclusion">
+              <h3>🎲 Powodzenia!</h3>
+              <p>Proszę, podziel się swoimi kluczowymi strategiami/taktykami i przemyśleniami.</p>
+            </div>
+          </article>
+                )}
+              </div>
             </div>
           </div>
         </section>
