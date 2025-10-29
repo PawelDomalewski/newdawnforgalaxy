@@ -1,8 +1,30 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import './Rules.css';
 
 const Rules = () => {
-  // Dane ras - możesz je później przenieść do osobnego pliku data/races.js
+  const [selectedRace, setSelectedRace] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  // Refs do przewijania sekcji (możesz usunąć jeśli nie są potrzebne)
+  const instructionsRef = useRef(null);
+  const racesRef = useRef(null);
+  const guidesRef = useRef(null);
+
+  const scrollToSection = (ref) => {
+    ref.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const openRaceModal = (race) => {
+    setSelectedRace(race);
+    setIsModalOpen(true);
+  };
+
+  const closeRaceModal = () => {
+    setIsModalOpen(false);
+    setSelectedRace(null);
+  };
+
+  // Dane ras
   const racesData = [
     {
       id: 1,
@@ -250,100 +272,146 @@ const Rules = () => {
   };
 
   return (
-    <div className="games-page">
-      {/* Sekcja Instrukcji */}
-      <div className="container">
-        <h1>Instrukcje</h1>
-      </div>
-      <div className="container grid">
-        <div>
-          <h2>Eclipse</h2>
-          <a href="/images/Eclipse.pdf" className='rule'><img src="/images/eclipse.jpg" alt="Instrukcja Eclipse"></img></a>
-        </div>
-        <div>
-          <h2>Eclipse - Rise of the Ancients</h2>
-          <a href='/images/eclipse_rota.pdf' className='rule'><img src='/images/eclipse_rota.jpg' alt="Instrukcja Eclipse ROTA"></img></a>
-        </div>
-        <div>
-          <h2>Eclipse - Shadow of the Rift</h2>
-          <a href='/images/eclipse_sotr.pdf' className='rule'><img src='/images/eclipse_sotr.jpg' alt="Instrukcja Eclipse SOTR"></img></a>
-        </div>
-      </div>
-
-      {/* Nowa Sekcja Ras */}
-      <div className="container">
-        <h1 className="races-title">Rasy</h1>
-        <p className="races-subtitle">Poznaj dostępne rasy w grze Eclipse</p>
-      </div>
-      
-      <div className="container races-container">
-        {racesData.map(race => (
-          <div key={race.id} className="race-card">
-            {/* Portret rasy */}
-            <div className="race-portrait">
-              <img src={race.image} alt={`Portret rasy ${race.name}`} />
+    <div className="rules-page">
+      {/* Główna zawartość */}
+      <div className="rules-content">
+        {/* Sekcja Instrukcji */}
+        <section ref={instructionsRef} className="section">
+          <div className="container">
+            <h1>Instrukcje</h1>
+          </div>
+          <div className="container grid">
+            <div>
+              <h2>Eclipse</h2>
+              <a href="/images/Eclipse.pdf" className='rule' target="_blank" rel="noopener noreferrer">
+                <img src="/images/eclipse.jpg" alt="Instrukcja Eclipse" />
+              </a>
             </div>
-            
-            {/* Informacje o rasie */}
-            <div className="race-info">
-              <div className="race-header">
-                <h2 className="race-name">{race.name}</h2>
-                <div className="race-stats">
-                  <span className="difficulty">
-                    Poziom trudności: {renderDifficultyStars(race.difficulty)}
-                  </span>
+            <div>
+              <h2>Eclipse - Rise of the Ancients</h2>
+              <a href='/images/eclipse_rota.pdf' className='rule' target="_blank" rel="noopener noreferrer">
+                <img src='/images/eclipse_rota.jpg' alt="Instrukcja Eclipse ROTA" />
+              </a>
+            </div>
+            <div>
+              <h2>Eclipse - Shadow of the Rift</h2>
+              <a href='/images/eclipse_sotr.pdf' className='rule' target="_blank" rel="noopener noreferrer">
+                <img src='/images/eclipse_sotr.jpg' alt="Instrukcja Eclipse SOTR" />
+              </a>
+            </div>
+          </div>
+        </section>
+
+        {/* Sekcja Ras */}
+        <section ref={racesRef} className="section">
+          <div className="container">
+            <h1 className="races-title">Rasy</h1>
+            <p className="races-subtitle">Kliknij na rasę aby zobaczyć szczegóły</p>
+          </div>
+          
+          <div className="container races-grid">
+            {racesData.map(race => (
+              <div 
+                key={race.id} 
+                className="race-tile"
+                onClick={() => openRaceModal(race)}
+              >
+                <div className="race-tile-image">
+                  <img src={race.image} alt={`Portret rasy ${race.name}`} />
+                  <div className="race-tile-overlay">
+                    <h3 className="race-tile-name">{race.name}</h3>
+                    <span className="race-tile-difficulty">
+                      {renderDifficultyStars(race.difficulty)}
+                    </span>
+                  </div>
                 </div>
               </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Sekcja Poradniki (placeholder) */}
+        <section ref={guidesRef} className="section">
+          <div className="container">
+            <h1>Poradniki</h1>
+            <p>Poradniki wkrótce...</p>
+          </div>
+        </section>
+      </div>
+
+      {/* Modal z szczegółami rasy */}
+      {isModalOpen && selectedRace && (
+        <div className="modal-overlay" onClick={closeRaceModal}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="modal-close" onClick={closeRaceModal}>×</button>
+            
+            <div className="modal-race-card">
+              {/* Portret rasy w modal */}
+              <div className="modal-race-portrait">
+                <img src={selectedRace.image} alt={`Portret rasy ${selectedRace.name}`} />
+              </div>
               
-              <p className="race-description">{race.description}</p>
-              <div className="detail-section">
+              {/* Informacje o rasie w modal */}
+              <div className="modal-race-info">
+                <div className="modal-race-header">
+                  <h2 className="modal-race-name">{selectedRace.name}</h2>
+                  <div className="modal-race-stats">
+                    <span className="modal-difficulty">
+                      Poziom trudności: {renderDifficultyStars(selectedRace.difficulty)}
+                    </span>
+                  </div>
+                </div>
+                
+                <p className="modal-race-description">{selectedRace.description}</p>
+                
+                <div className="modal-detail-section">
                   <h4>Najważniejsze cechy:</h4>
-                  <ol className="features-list">
-                    {race.features.map((feature, index) => (
+                  <ol className="modal-features-list">
+                    {selectedRace.features.map((feature, index) => (
                       <li key={index}>{feature}</li>
                     ))}
                   </ol>
                 </div>
-              <div className="race-details">
                 
-                
-                <div className="detail-section">
-                  <h4>Startowe technologie:</h4>
-                  <div className="technologies">
-                    {race.technologies.map((tech, index) => (
-                      <span key={index} className="tech-tag">{tech}</span>
-                    ))}
+                <div className="modal-race-details">
+                  <div className="modal-detail-section">
+                    <h4>Startowe technologie:</h4>
+                    <div className="modal-technologies">
+                      {selectedRace.technologies.map((tech, index) => (
+                        <span key={index} className="modal-tech-tag">{tech}</span>
+                      ))}
+                    </div>
+                  </div>
+                  
+                  <div className="modal-detail-section">
+                    <h4>Startowe surowce:</h4>
+                    <div className="modal-resources">
+                      <span className="modal-resource orange">🟠 {selectedRace.resources.orange}</span>
+                      <span className="modal-resource pink">🟣 {selectedRace.resources.pink}</span>
+                      <span className="modal-resource brown">🟤 {selectedRace.resources.brown}</span>
+                    </div>
                   </div>
                 </div>
                 
-                <div className="detail-section">
-                  <h4>Startowe surowce:</h4>
-                  <div className="resources">
-                    <span className="resource orange">🟠 {race.resources.orange}</span>
-                    <span className="resource pink">🟣 {race.resources.pink}</span>
-                    <span className="resource brown">🟤 {race.resources.brown}</span>
+                <div className="modal-race-stats-detailed">
+                  <div className="modal-stat">
+                    <span className="modal-stat-value">{selectedRace.gamesPlayed}</span>
+                    <span className="modal-stat-label">Rozegrane gry</span>
                   </div>
-                </div>
-              </div>
-              
-              <div className="race-stats-detailed">
-                <div className="stat">
-                  <span className="stat-value">{race.gamesPlayed}</span>
-                  <span className="stat-label">Rozegrane gry</span>
-                </div>
-                <div className="stat">
-                  <span className="stat-value">🥇 {race.firstPlaces}</span>
-                  <span className="stat-label">Zwycięstwa</span>
-                </div>
-                <div className="stat">
-                  <span className="stat-value">🥈 {race.secondPlaces}</span>
-                  <span className="stat-label">Drugie miejsca</span>
+                  <div className="modal-stat">
+                    <span className="modal-stat-value">🥇 {selectedRace.firstPlaces}</span>
+                    <span className="modal-stat-label">Zwycięstwa</span>
+                  </div>
+                  <div className="modal-stat">
+                    <span className="modal-stat-value">🥈 {selectedRace.secondPlaces}</span>
+                    <span className="modal-stat-label">Drugie miejsca</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        ))}
-      </div>
+        </div>
+      )}
     </div>
   );
 };
