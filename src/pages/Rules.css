@@ -85,12 +85,12 @@
   padding: 0;
 }
 
-.races-title,
-h1,
-p {
+.races-title {
   color: #2c3e50;
   text-align: center;
 }
+
+.rules-page h1, .rules-page p {color: #2c3e50; text-align: center;}
 
 .races-subtitle {
   color: #666;
