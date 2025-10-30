@@ -894,3 +894,99 @@
     padding: 0.8rem;
   }
 }
+
+/* Style dla zasad w poradniku militaranym */
+.guide-principle {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  border-left: 4px solid #e74c3c;
+}
+
+.guide-principle h4 {
+  color: #2c3e50;
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.guide-principle ul {
+  margin: 0.5rem 0 0 1rem;
+  padding-left: 1rem;
+}
+
+.guide-principle li {
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+/* Style dla końcowych wskazówek */
+.guide-final-tip {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.guide-final-tip h4 {
+  color: white;
+  margin: 0 0 0.5rem 0;
+}
+
+.guide-final-tip p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.guide-tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.guide-tip-card {
+  background: #ecf0f1;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.guide-tip-card:hover {
+  border-color: #3498db;
+  transform: translateY(-2px);
+}
+
+.guide-tip-card h5 {
+  color: #2c3e50;
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+}
+
+.guide-tip-card p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+  .guide-principle {
+    padding: 1rem;
+  }
+  
+  .guide-tips-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .guide-final-tip {
+    padding: 1rem;
+  }
+}
