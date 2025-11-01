@@ -685,6 +685,12 @@
   font-size: 1.1rem;
 }
 
+.guide-tile-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
 .guide-content ul {
   margin: 0.5rem 0 1rem 1rem;
   padding-left: 1rem;

@@ -38,7 +38,7 @@ const GuidePage = () => {
     },
     '3': {
       id: 3,
-      title: "Podstawy militarne w Eclipse",
+      title: "Podstawy militarne w grze Eclipse",
       description: "Podstawy walki i strategii militarnej",
       author: "Peter O.",
       source: "https://boardgamegeek.com/thread/750430/an-eclipse-military-primer",
@@ -48,7 +48,7 @@ const GuidePage = () => {
     },
     '4': {
       id: 4,
-      title: "Podstawy ekonomii w Eclipse",
+      title: "Podstawy skutecznej ekonomii w Eclipse",
       description: "Strategiczne podejście do kolonizacji i gospodarki",
       author: "Peter O.",
       source: "https://boardgamegeek.com/thread/760874/an-eclipse-economic-primer",
@@ -58,7 +58,7 @@ const GuidePage = () => {
     },
     '5': {
       id: 5,
-      title: "Sekrety eksploracji galaktyki",
+      title: "Sekrety eksploracji galaktyki Eclipse",
       description: "Strategiczne podejście do odkrywania hexów",
       author: "Peter O.",
       source: "https://boardgamegeek.com/thread/804274/an-eclipse-exploration-primer",

@@ -59,5 +59,21 @@ export const sessions = [
     image: "/images/181025.jpg", // ← DODAJ ŚCIEŻKĘ DO ZDJĘCIA
     tags: ["Kosmos", "Epicka", "Długa gra"],
     fullContent: "Pełny opis sesji..."
+  },
+  {
+    id: 6,
+    game: "Peace in Space",
+    date: "2025-10-31",
+    players: ["Natan", "Paweł W", "Paweł D"],
+    rating: "3.5 godzin",
+    summary: "Spokojna partia, gracze skupieni na poznawaniu nowych, trudniejszych ras.",
+    image: "/images/311025.jpg", // ← DODAJ ŚCIEŻKĘ DO ZDJĘCIA
+    tags: ["Kosmos", "Epicka", "Długa gra"],
+    fullContent: `<h3>Uczestnicy:</h3>
+    <ol>
+    <li>Natan - Oświeceni Lyra</li>
+    <li>Paweł W - Shaperzy z Dorado</li>
+    <li>Paweł D - Jedność Pyxis</li>
+    `
   }
 ];

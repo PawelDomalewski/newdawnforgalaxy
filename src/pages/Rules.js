@@ -295,7 +295,7 @@ const Rules = () => {
     },
     {
       id: 3,
-      title: "Podstawy militarne w Eclipse",
+      title: "Podstawy militarne w grze Eclipse",
       description: "Podstawy walki i strategii militarnej",
       author: "Peter O.",
       source: "https://boardgamegeek.com/thread/750430/an-eclipse-military-primer",
@@ -307,7 +307,7 @@ const Rules = () => {
     },
     {
       id: 4,
-      title: "Podstawy ekonomii w Eclipse",
+      title: "Podstawy skutecznej ekonomii w Eclipse",
       description: "Strategiczne podejście do gospodarki",
       author: "Peter O.",
       source: "https://boardgamegeek.com/thread/760874/an-eclipse-economic-primer",
@@ -319,7 +319,7 @@ const Rules = () => {
     },
     {
       id: 5,
-      title: "Sekrety eksploracji galaktyki",
+      title: "Sekrety eksploracji galaktyki Eclipse",
       description: "Strategiczne podejście do odkrywania hexów",
       author: "Peter O.",
       source: "https://boardgamegeek.com/thread/804274/an-eclipse-exploration-primer",
@@ -431,7 +431,7 @@ const Rules = () => {
                     <h3 className="guide-tile-title">{guide.title}</h3>
                     <p className="guide-tile-description">{guide.description}</p>
                     <div className="guide-tile-excerpt">
-                      <p>{guide.excerpt}</p>
+                      {/*<p>{guide.excerpt}</p>*/}
                     </div>
                     <div className="guide-tile-meta">
                       <div className="guide-tile-author">
