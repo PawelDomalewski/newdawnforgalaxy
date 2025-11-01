@@ -59,7 +59,6 @@
 }
 
 .guide-source-link {
-  color: white !important;
   text-decoration: underline;
 }
 
@@ -68,7 +67,7 @@
 }
 
 .guide-content {
-  padding: 3rem;
+  padding: 0rem;
 }
 
 .guide-footer {

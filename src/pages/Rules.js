@@ -210,7 +210,7 @@ const Rules = () => {
         brown: 3
       },
       difficulty: 4,
-      gamesPlayed: 1,
+      gamesPlayed: 2,
       firstPlaces: 0,
       secondPlaces: 1
     },
@@ -244,9 +244,9 @@ const Rules = () => {
         brown: 2
       },
       difficulty: 4,
-      gamesPlayed: 0,
+      gamesPlayed: 1,
       firstPlaces: 0,
-      secondPlaces: 0
+      secondPlaces: 2
     },
     {
       id: 14,
@@ -261,8 +261,8 @@ const Rules = () => {
         brown: 0
       },
       difficulty: 5,
-      gamesPlayed: 2,
-      firstPlaces: 1,
+      gamesPlayed: 3,
+      firstPlaces: 2,
       secondPlaces: 0
     }
   ];
@@ -271,7 +271,7 @@ const Rules = () => {
   const guidesData = [
     {
       id: 1,
-      title: "🚀 Kompleksowy poradnik do gry Eclipse",
+      title: "Kompleksowy poradnik do gry Eclipse",
       description: "Strategie od początku gry do finału",
       author: "Jordan Grahm",
       source: "https://boardgamegeek.com/thread/2264028/general-start-to-finish-guide-to-upping-your-strat",
@@ -283,63 +283,63 @@ const Rules = () => {
     },
     {
       id: 2,
-      title: "🧠 Zaawansowana strategia Eclipse",
+      title: "Zaawansowana strategia Eclipse",
       description: "Taktyki i techniki dla doświadczonych graczy",
       author: "Kester 42",
       source: "https://boardgamegeek.com/thread/1163520/advanced-eclipse-strategy",
       sourceName: "BoardGameGeek",
       difficulty: 4,
       content: "full",
-      image: "/images/guides/advanced-strategy.jpg",
+      image: "/images/strategy.jpg",
       excerpt: "Uwielbiam Eclipse. Ta gra ma interesujące mechaniki i dynamikę, które pasują do specjalnej niszy w mojej grupie graczy. Ten przewodnik eksploruje zaawansowane taktyki i strategie dla tej wspaniałej gry."
     },
     {
       id: 3,
-      title: "⚔️ Podstawy militarne w Eclipse",
+      title: "Podstawy militarne w Eclipse",
       description: "Podstawy walki i strategii militarnej",
       author: "Peter O.",
       source: "https://boardgamegeek.com/thread/750430/an-eclipse-military-primer",
       sourceName: "BoardGameGeek",
       difficulty: 3,
       content: "full",
-      image: "/images/guides/military-guide.jpg",
+      image: "/images/military.jpg",
       excerpt: "To jest mój podstawowy sposób walki. Nie jestem ekspertem od Eclipse, ale radzę sobie wystarczająco dobrze w mojej grupie graczy. Ten przewodnik opiera się na podstawowej doktrynie wojny manewrowej."
     },
     {
       id: 4,
-      title: "🌌 Sekrety eksploracji galaktyki",
-      description: "Jak efektywnie odkrywać i kolonizować systemy",
-      author: "Eclipse Masters",
-      source: "https://boardgamegeek.com",
+      title: "Podstawy ekonomii w Eclipse",
+      description: "Strategiczne podejście do gospodarki",
+      author: "Peter O.",
+      source: "https://boardgamegeek.com/thread/760874/an-eclipse-economic-primer",
       sourceName: "BoardGameGeek",
       difficulty: 2,
       content: "full",
-      image: "/images/guides/exploration-guide.jpg",
-      excerpt: "Eksploracja to fundament sukcesu w Eclipse. Poznaj tajniki efektywnego odkrywania systemów, zarządzania heksami i maksymalizacji zysków z każdej akcji eksploracji."
+      image: "/images/economy.jpg",
+      excerpt: "Ekonomia jest kluczowa do sukcesu w Eclipse. Poznaj tajniki efektywnego zarządzania ekonomią i maksymalizacji zysków."
     },
     {
       id: 5,
-      title: "💡 Technologie które zmieniają grę",
-      description: "Przewodnik po drzewku technologicznym",
-      author: "Tech Guru",
-      source: "https://boardgamegeek.com",
+      title: "Sekrety eksploracji galaktyki",
+      description: "Strategiczne podejście do odkrywania hexów",
+      author: "Peter O.",
+      source: "https://boardgamegeek.com/thread/804274/an-eclipse-exploration-primer",
       sourceName: "BoardGameGeek",
       difficulty: 3,
       content: "full",
-      image: "/images/guides/technology-guide.jpg",
-      excerpt: "Odkryj które technologie są warte inwestycji, a które lepiej omijać. Przeanalizujemy każdą technologię pod kątem jej użyteczności w różnych strategiach i sytuacjach gry."
+      image: "/images/explore.jpg",
+      excerpt: "Eksploracja jest fundamentalnym aspektem Eclipse - nie można wygrać gry tylko przez nią, ale na pewno można przez nią przegrać. Poznaj tajniki efektywnego odkrywania hexów, orientowania ich i podejmowania decyzji które z nich zachować, a które odrzucić."
     },
     {
       id: 6,
-      title: "🏆 Mistrzowska dyplomacja",
-      description: "Sztuka negocjacji i sojuszy w Eclipse",
-      author: "Diplomat Expert",
-      source: "https://boardgamegeek.com",
+      title: "Strategie technologiczne dla ras",
+      description: "Optymalne ścieżki rozwoju technologicznego",
+      author: "Dymond Kyng",
+      source: "https://boardgamegeek.com/thread/1361979/general-tech-strategy-by-race",
       sourceName: "BoardGameGeek",
       difficulty: 4,
       content: "full",
-      image: "/images/guides/diplomacy-guide.jpg",
-      excerpt: "Dyplomacja może być potężniejsza niż flota pancerników. Naucz się wykorzystywać mechanikę traktatów pokojowych, budować sojusze i manipulować przeciwnikami bez wystrzału."
+      image: "/images/tech.jpg",
+      excerpt: "Po ponad 50 rozgrywkach i doświadczeniu turniejowym, poznaj optymalne ścieżki technologiczne dla każdej rasy w Eclipse. Dowiedz się które rzędy technologii są najlepsze dla twojej rasy i jak maksymalizować korzyści z rabatów naukowych."
     }
   ];
 
@@ -434,9 +434,6 @@ const Rules = () => {
                       <p>{guide.excerpt}</p>
                     </div>
                     <div className="guide-tile-meta">
-                      <div className="guide-tile-difficulty">
-                        Poziom trudności: {renderDifficultyStars(guide.difficulty)}
-                      </div>
                       <div className="guide-tile-author">
                         Autor: {guide.author}
                       </div>
