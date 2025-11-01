@@ -1,0 +1,82 @@
+.guide-page {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  padding: 2rem 0;
+}
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  transition: color 0.3s ease;
+}
+
+.back-button:hover {
+  color: #2980b9;
+  text-decoration: none;
+}
+
+.guide-full-article {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.guide-header {
+  padding: 3rem;
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-align: center;
+}
+
+.guide-title {
+  margin: 0 0 1rem 0;
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+.guide-description {
+  font-size: 1.3rem;
+  opacity: 0.9;
+  margin: 0 0 2rem 0;
+}
+
+.guide-meta-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.guide-meta-info span,
+.guide-meta-info a {
+  color: white;
+  opacity: 0.9;
+}
+
+.guide-source-link {
+  color: white !important;
+  text-decoration: underline;
+}
+
+.guide-source-link:hover {
+  opacity: 1;
+}
+
+.guide-content {
+  padding: 3rem;
+}
+
+.guide-footer {
+  padding: 2rem 3rem;
+  border-top: 1px solid #ecf0f1;
+  text-align: center;
+}
+
+
+/* Reszta stylów dla treści poradnika (guide-article, guide-chapter, itd.) */
+/* Możesz przenieść tutaj wszystkie style z poprzedniej wersji poradników */
