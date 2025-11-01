@@ -39,6 +39,10 @@
   line-height: 1.2;
 }
 
+@media (max-width: 480px) {
+  .guide-title {font-size: 1.85rem;}
+}
+
 .guide-description {
   font-size: 1.3rem;
   opacity: 0.9;
