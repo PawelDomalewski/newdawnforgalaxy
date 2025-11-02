@@ -144,7 +144,8 @@
   margin: 1.5rem 0 0.5rem 0;
 }
 
-.full-content ul, .full-content ol {
+.full-content ul,
+.full-content ol {
   margin: 1rem 0;
   padding-left: 2rem;
 }
@@ -195,16 +196,16 @@
   .session-header h1 {
     font-size: 2rem;
   }
-  
+
   .session-meta-large {
     gap: 1.5rem;
     flex-direction: column;
   }
-  
+
   .session-image-large {
     height: 200px;
   }
-  
+
   .image-placeholder-large {
     font-size: 1.5rem;
   }
@@ -248,13 +249,35 @@
 .full-content div img {
   margin: 5px;
   border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 805px) {
   .full-content>div>img {
     width: 45%;
   }
+}
+
+.img-head {
+  max-height: 200px;
+  object-fit: cover;
+}
+
+ol {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+ol>li {
+  list-style: none;
+  border-left: solid 3px #3498db;
+  border-right: solid 3px #3498db;
+  padding: 5px 5px;
+  border-radius: 8px;
+  background-color: #2c3e50;
+  color: white;
 }
 
 /* Modal */
@@ -432,7 +455,7 @@
   .image-modal-content {
     max-width: 98%;
   }
-  
+
   .image-modal-close {
     top: 10px;
     right: 10px;
@@ -440,41 +463,41 @@
     height: 40px;
     font-size: 2rem;
   }
-  
+
   .nav-button {
     padding: 10px 15px;
     font-size: 2rem;
   }
-  
+
   .nav-button-prev {
     left: 10px;
   }
-  
+
   .nav-button-next {
     right: 10px;
   }
-  
+
   .zoom-controls {
     top: 10px;
     left: 10px;
     padding: 8px;
     gap: 8px;
   }
-  
+
   .zoom-controls button {
     width: 30px;
     height: 30px;
     font-size: 1rem;
   }
-  
+
   .image-counter {
     top: 60px;
   }
-  
+
   .image-modal-caption {
     font-size: 1rem;
   }
-  
+
   .zoom-hint {
     font-size: 0.7rem;
   }
@@ -485,12 +508,12 @@
     padding: 8px 12px;
     font-size: 1.5rem;
   }
-  
+
   .zoom-controls {
     flex-direction: column;
     gap: 5px;
   }
-  
+
   .image-counter {
     top: 80px;
   }
@@ -505,11 +528,11 @@
 
 .full-content img:hover {
   transform: scale(1.02);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .full-content div img {
   margin: 5px;
   border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }

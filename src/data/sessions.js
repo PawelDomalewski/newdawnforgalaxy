@@ -79,7 +79,7 @@ export const sessions = [
     <ul>
     <li><h3>Oświeceni Lyra</h3></li>
     </ul>
-    <img src="/images/sesje/3110251.jpg"></img>
+    <img src="/images/sesje/3110251.jpg" class="img-head"></img>
     <div>
     <img src="/images/sesje/3110251.jpg"></img>
     <img src="/images/sesje/3110252.jpg"></img>
