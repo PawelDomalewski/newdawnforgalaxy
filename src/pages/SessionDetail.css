@@ -224,6 +224,16 @@
 
 /* SessionDetail.css */
 
+.full-content>div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.full-content>div>img {
+  width: 32%;
+}
+
 .full-content img {
   cursor: pointer;
   transition: transform 0.2s ease;
@@ -239,6 +249,12 @@
   margin: 5px;
   border-radius: 4px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 805px) {
+  .full-content>div>img {
+    width: 45%;
+  }
 }
 
 /* Modal */

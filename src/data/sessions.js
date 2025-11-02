@@ -74,11 +74,14 @@ export const sessions = [
     <li>Natan - Oświeceni Lyra</li>
     <li>Paweł W - Shaperzy z Dorado</li>
     <li>Paweł D - Jedność Pyxis</li>
-    </ol><div>
+    </ol>
+    <img src="/images/sesje/3110251.jpg"></img>
+    <div>
     <img src="/images/sesje/3110251.jpg"></img>
     <img src="/images/sesje/3110252.jpg"></img>
     <img src="/images/sesje/3110253.jpg"></img>
-    <img src="/images/sesje/3110254.jpg"></img></div>
+    <img src="/images/sesje/3110254.jpg"></img>
+    </div>
     `
   }
 ];
