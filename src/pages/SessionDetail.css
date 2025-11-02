@@ -153,6 +153,11 @@
   margin-bottom: 0.5rem;
 }
 
+.full-content img {
+  width: 100%;
+  border-radius: 8px;
+}
+
 .session-tags-large {
   display: flex;
   flex-wrap: wrap;
@@ -215,4 +220,280 @@
 /* Upewnij się że placeholder jest wyświetlany tylko gdy nie ma zdjęcia */
 .session-image-large:has(.session-image-real-large) .image-placeholder-large {
   display: none;
+}
+
+/* SessionDetail.css */
+
+.full-content img {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  max-width: 100%;
+  height: auto;
+}
+
+.full-content img:hover {
+  transform: scale(1.02);
+}
+
+.full-content div img {
+  margin: 5px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Modal */
+.image-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  cursor: pointer;
+}
+
+.image-modal-content {
+  position: relative;
+  max-width: 95%;
+  max-height: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: default;
+}
+
+/* Kontener dla zdjęcia z obsługą drag */
+.image-container {
+  max-width: 100%;
+  max-height: 80vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-modal-image {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 8px;
+  transform-origin: center center;
+}
+
+/* Przycisk zamykania */
+.image-modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  border: none;
+  color: white;
+  font-size: 2.5rem;
+  cursor: pointer;
+  padding: 5px 15px;
+  z-index: 10001;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+}
+
+.image-modal-close:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+/* Nawigacja strzałkami */
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.7);
+  border: none;
+  color: white;
+  font-size: 2.5rem;
+  cursor: pointer;
+  padding: 15px 20px;
+  z-index: 10001;
+  transition: background 0.2s ease;
+  border-radius: 5px;
+}
+
+.nav-button:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.nav-button-prev {
+  left: 20px;
+}
+
+.nav-button-next {
+  right: 20px;
+}
+
+/* Kontrolki zoomu */
+.zoom-controls {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 25px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 10001;
+}
+
+.zoom-controls button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 50%;
+  transition: background 0.2s ease;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.zoom-controls button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.zoom-level {
+  color: white;
+  font-size: 0.9rem;
+  min-width: 45px;
+  text-align: center;
+}
+
+.reset-zoom {
+  font-size: 1rem !important;
+}
+
+/* Licznik zdjęć */
+.image-counter {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  z-index: 10001;
+}
+
+/* Podpis i podpowiedzi */
+.image-modal-caption {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  padding: 0 20px;
+}
+
+.zoom-hint {
+  font-size: 0.8rem;
+  opacity: 0.7;
+  margin-top: 8px;
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+  .image-modal-content {
+    max-width: 98%;
+  }
+  
+  .image-modal-close {
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+  }
+  
+  .nav-button {
+    padding: 10px 15px;
+    font-size: 2rem;
+  }
+  
+  .nav-button-prev {
+    left: 10px;
+  }
+  
+  .nav-button-next {
+    right: 10px;
+  }
+  
+  .zoom-controls {
+    top: 10px;
+    left: 10px;
+    padding: 8px;
+    gap: 8px;
+  }
+  
+  .zoom-controls button {
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+  }
+  
+  .image-counter {
+    top: 60px;
+  }
+  
+  .image-modal-caption {
+    font-size: 1rem;
+  }
+  
+  .zoom-hint {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-button {
+    padding: 8px 12px;
+    font-size: 1.5rem;
+  }
+  
+  .zoom-controls {
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .image-counter {
+    top: 80px;
+  }
+}
+
+.full-content img {
+  cursor: pointer !important;
+  transition: transform 0.2s ease;
+  max-width: 100%;
+  height: auto;
+}
+
+.full-content img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.full-content div img {
+  margin: 5px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
