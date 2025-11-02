@@ -75,6 +75,10 @@ export const sessions = [
     <li>Paweł W - Shaperzy z Dorado</li>
     <li>Paweł D - Jedność Pyxis</li>
     </ol>
+    <h3>Przebieg gry</h3>
+    <ul>
+    <li><h3>Oświeceni Lyra</h3></li>
+    </ul>
     <img src="/images/sesje/3110251.jpg"></img>
     <div>
     <img src="/images/sesje/3110251.jpg"></img>
