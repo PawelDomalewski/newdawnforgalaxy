@@ -69,8 +69,7 @@ export const sessions = [
     summary: "Spokojna partia, gracze skupieni na poznawaniu nowych, trudniejszych ras.",
     image: "/images/311025.jpg", // ← DODAJ ŚCIEŻKĘ DO ZDJĘCIA
     tags: ["Kosmos", "Epicka", "Długa gra"],
-    fullContent: `<img src="/images/sesje/3110251.jpg"></img>
-    <h3>Uczestnicy:</h3>
+    fullContent: `<h3>Uczestnicy:</h3>
     <ol>
     <li>Natan - Oświeceni Lyra</li>
     <li>Paweł W - Shaperzy z Dorado</li>
