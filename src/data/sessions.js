@@ -87,5 +87,60 @@ export const sessions = [
     <img src="/images/sesje/3110254.jpg"></img>
     </div>
     `
+  },
+  {
+    id:7,
+    game: "Starcie dwóch sojuszy",
+    date: "2016-02-27",
+    players: ["Paweł D", "Paweł P", "Piotr G", "Sylwia", "Ania", "Asia"],
+    rating: "5 godzin",
+    summary: "Agresywna partia, zacięta walka o dominacje w galaktyce pomiędzy dwoma sojuszami, dramatycznym poświęceniem w ostatniej chwili",
+    image: "https://i.imgur.com/eH4JxdJ.jpeg",
+    tags: ["Akcja!"],
+    fullContent: `<h3>Uczestnicy:</h3>
+    <ol>
+    <li>Ania - Postępowi Hydranie</li>
+    <li>Asia - Potomkowie Draco</li>
+    <li>Sylwia - Shaperzy z Dorado</li>
+    <li>Paweł D - Hegemonia Oriona</li>
+    <li>Paweł P - Imperium Eridani</li>
+    <li>Piotr G - Mechanema</li>
+    </ol>
+    <h3>Przebieg gry:</h3>
+    <p>Tak wyglądała na początku plansza zaopatrzenia. Dużo technologii z środkowego toru.</p>
+    <img src="https://i.imgur.com/iEojX38.jpeg"></img>
+    <ul>
+    <li><h3>Runda 1 i 2</h3><li>
+    <img src="https://i.imgur.com/In9mnbZ.jpeg" class=""></img>
+    <p>Pierwsza runda jak to pierwsza runda, dużo eksploracji, mi udało się kupić Improved Hull, drugi Paweł natomiast miał szczęście i trafił na odkrycie pozwalające zmienić myśliwiec w pancernik, więc w pierwszej rundzie ruszył w składzie myśliwiec+pancernik na dwóch starożytnych, niestety poległ niszcząc jeden statek obcych.</p>
+    <li><h3>Runda 3</h3></li>
+    <img src="https://i.imgur.com/S54OSje.jpeg" class=""></img>
+    <p>Mając dużo surowców zbudowałem limit krążowników, uzbrojonych w IonCannon z komputerem +1, osłony i łącznie 5 pkt życia. Z takim składem ruszyłem na centrum, gdzie kiedyś przegrałem mając 96% na wygraną (3 krążowniki j/w vs. GDS). Paweł międzyczasie dokonał zemsty na starożytnych. Piotrek przyszykował się do ataku ale odłożył go na później.</p>
+    <li><h3>Runda 4</h3></li>
+    <img src="https://i.imgur.com/XwTKL1S.jpeg" class=""></img>
+    <p>Ataki się powiodły. Exploracja trwa dalej. Ania zaczęła szykować się do ataku na starożytnych. Uformował się sojusz Flary (Pawełx2, Piotrek). Moimi krążownikami wsparłem sojuszników w walce z starożytnymi. Paweł nalegał bym przeszkodził Ani w walce ze starożytnymi, ale na ten moment Ania miała lepszy statek, więc nie chciałem tracić statku. Międzyczasie odkryłem Deep Portal, ale podbicie go nie zainteresowało nikogo aż do końca gry.</p>
+    <p class="session-summary">Napięcie rośnie, uformował się pierwszy sojusz, Flara. Zaczyna robić się coraz ciasniej w galaktyce</p>
+    <li><h3>Runda 5</h3></li>
+    <img src="https://i.imgur.com/FRRskpE.jpeg" class=""></img>
+    <p>Walki ze starożytnymi się powiodły, moja pomoc nie była potrzebna. Dziewczyny uformowały sojusz Nova i pojawił się problem z kartą zdrajcy. Paweł miał ambasadora Sylwii, ja z kolei ambasadora Asi, to ograniczało nieco pole manewru i wymagało przemyślanych ruchów. Wleciałem dwoma krążownikami do świeżo zdobytego przez Anię heksu, ta odpowiedziała budową dwóch dodatkowych krążowników, Piotrek doleciał trzema krążownikami i jednym pancernikiem by mi pomóc, na to Sylwia doleciała swoim pancernikiem. Asia wykorzystała moment i wleciała jednym pancernikiem do centrum a drugim to mojego heksa I. Cofnąłem dwa krążowniki które wcześniej pomagały w walce ze starożytnymi do centrum, wleciał też tam Paweł dwoma pancernikami by mi pomóc. Hex I spisaliśmy na straty (później Asia i tak zbankrutowała i influence'em odzyskałem)</p>
+    <li><h3>Runda 6</h3></li>
+    <img src="https://i.imgur.com/EGQYDH9.jpeg" class=""></img>
+    <p>Atak się powiódł, nagle wszyscy zdali sobie sprawę z potęgi rakiet które miałem zamontowane na krążownikach, wraz z komputerami +3 załatwiły całą flotę Ani i Sylwii i obroniły centrum. Doszło do eskalacji konfliktu. Kontynuowaliśmy atak na Anię i zaatakowaliśmy jej ostatnie 4 hexy, ona explorowała i odkryła hex z starożytnym którego zaatakowała uciekając przed Imperium Flary. Dwa moje krążowniki zaatakowały Hex I Asi, gdzie miała dwa pancerniki.</p>
+    <li><h3>Runda 7</h3></li>
+    <img src="https://i.imgur.com/sqvnRgX.jpeg" class=""></img>
+    <p>Atak na Anię się powiódł, został jej tylko jeden świeżo zdobyty hex. Niestety popełniłem faila i nie zorientowałem się, że Asi pancerniki miały po 7 pkt życia, działo na antymaterię z rozczepieniem i kompy. Nie miałem matematycznych szans, każda rakieta bez wyjątku musiała by trafić bym wygrał. Jedno trafienie Asi i oba moja statki padły. Między czasie Paweł zdobył jeden z heksów Asi.</p>
+    <li><h3>Runda 8 i 9</h3></li>
+    <img src="https://i.imgur.com/eH4JxdJ.jpeg" class=""></img>
+    <p>Sytuacja się uspokoiła. Zaczęło się zdobywanie pkt z technologii i rozwinięć. Był drobne potyczki na obrzeżach galaktyki. Wydałem całą kasę na Świat Chroniony odsłaniając się na atak Asi, jednak ta nie wykorzystała tego, choć jej statki bez problemów poradziły by sobie z Piotrkiem w centrum. Ania będąc w całkowitej rozsypce, nie mając zbyt wiele pkt, postanowiła ratować swoje sojuszniczki i dobrowolnie odeszła z sojuszu.</p>
+    <p class="session-summary">Dramatyczne poświęcenie się Ani, wycofała się z sojuszu Nova, dla dobra ogółu!</p>
+    <li><h3>Podsumowanie i punktacja</h3></li>
+    <p class="session-summary-pkt">Punktacja:<br>
+    Paweł D(ja, 37pkt), Paweł P(32), Piotrek (27) = 32 pkt Sojuszu Flara. <br>
+    Sylwia (26), Asia (35) = 30,5 pkt Sojuszu Nova<br>
+    Ania = 17 pkt<br>
+
+    Zabrakło naprawdę niewiele a dziewczyny by wygrały. Sama rozgrywka trwała 5 godzin.</p>
+    </ul>
+    `
   }
 ];
