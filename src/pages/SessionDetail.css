@@ -273,11 +273,9 @@ ol {
 ol>li {
   list-style: none;
   border-left: solid 3px #3498db;
-  border-right: solid 3px #3498db;
   padding: 5px 5px;
   border-radius: 8px;
-  background-color: #2c3e50;
-  color: white;
+  background-color: #f8f9fa;
 }
 
 /* Modal */
