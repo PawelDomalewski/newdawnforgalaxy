@@ -82,7 +82,7 @@ const Rules = () => {
       id: 4,
       name: "Hegemonia Oriona",
       image: "/images/races/orion.jpg",
-      description: "Starożytna rasa o mistrzostwie w dyplomacji",
+      description: "Starożytna rasa o mistrzostwie w sztuce wojennej",
       features: ["Krążownik od początku gry", "Lepsza inicjatywa i energia na statkach", "Wymiana handlowa 4 do 1"],
       technologies: ["Tarcza Gaussa -1", "Bomby Neutronowe"],
       resources: {
