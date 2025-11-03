@@ -9,6 +9,7 @@ const Rules = () => {
   // Refs do przewijania sekcji
   const instructionsRef = useRef(null);
   const racesRef = useRef(null);
+  const topRacesRef = useRef(null);
   const guidesRef = useRef(null);
 
   const scrollToSection = (ref) => {
@@ -267,6 +268,16 @@ const Rules = () => {
     }
   ];
 
+  // Obliczanie top 3 ras na podstawie win ratio
+  const topRaces = racesData
+    .filter(race => race.gamesPlayed > 0) // Filtruj rasy z co najmniej jedną rozegraną grą
+    .map(race => ({
+      ...race,
+      winRatio: race.firstPlaces / race.gamesPlayed // Oblicz win ratio
+    }))
+    .sort((a, b) => b.winRatio - a.winRatio) // Sortuj malejąco według win ratio
+    .slice(0, 3); // Weź pierwsze 3 pozycje
+
   // Zaktualizowane dane poradników
   const guidesData = [
     {
@@ -348,6 +359,11 @@ const Rules = () => {
     return '★'.repeat(difficulty) + '☆'.repeat(5 - difficulty);
   };
 
+  // Funkcja do formatowania win ratio w procentach
+  const formatWinRatio = (ratio) => {
+    return `${(ratio * 100).toFixed(0)}%`;
+  };
+
   return (
     <div className="rules-page">
       {/* Główna zawartość */}
@@ -401,6 +417,53 @@ const Rules = () => {
                       {renderDifficultyStars(race.difficulty)}
                     </span>
                   </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* NOWA SEKCJA: Top 3 Rasy */}
+        <section ref={topRacesRef} className="section top-races-section">
+          <div className="container">
+            <h1>Top 3 Rasy</h1>
+            <p className="top-races-subtitle">Najlepsze rasy według współczynnika zwycięstw</p>
+          </div>
+
+          <div className="container top-races-table">
+            <div className="top-races-header">
+              <div className="top-race-rank">#</div>
+              <div className="top-race-name">Rasa</div>
+              <div className="top-race-stats">Wygrane</div>
+              <div className="top-race-stats">Rozegrane</div>
+              <div className="top-race-ratio">Win Ratio</div>
+            </div>
+            
+            {topRaces.map((race, index) => (
+              <div 
+                key={race.id} 
+                className="top-race-row"
+                onClick={() => openRaceModal(race)}
+              >
+                <div className="top-race-rank">
+                  <span className={`rank-badge rank-${index + 1}`}>
+                    {index + 1}
+                  </span>
+                </div>
+                <div className="top-race-name">
+                  <div className="top-race-name-content">
+                    <img src={race.image} alt={race.name} className="top-race-image" />
+                    <span>{race.name}</span>
+                  </div>
+                </div>
+                <div className="top-race-stats">
+                  <span className="stat-value">🥇 {race.firstPlaces}</span>
+                </div>
+                <div className="top-race-stats">
+                  <span className="stat-value">{race.gamesPlayed}</span>
+                </div>
+                <div className="top-race-ratio">
+                  <span className="ratio-value">{formatWinRatio(race.winRatio)}</span>
                 </div>
               </div>
             ))}
