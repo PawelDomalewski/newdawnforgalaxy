@@ -147,11 +147,16 @@
 
 .session-summary-pkt {
   font-size: 1.1rem;
-  color: #333;
+  color: #ecf0f1;
   background: #fff3cd;
   padding: 1.5rem;
   border-radius: 8px;
   border-left: 4px solid #fdcb6e;
+  border-right: 4px solid #fdcb6e;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/public/images/bg4.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .full-content {
