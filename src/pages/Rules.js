@@ -91,8 +91,8 @@ const Rules = () => {
         brown: 5
       },
       difficulty: 3,
-      gamesPlayed: 2,
-      firstPlaces: 2,
+      gamesPlayed: 3,
+      firstPlaces: 3,
       secondPlaces: 0
     },
     {
@@ -142,9 +142,9 @@ const Rules = () => {
         brown: 3
       },
       difficulty: 3,
-      gamesPlayed: 1,
+      gamesPlayed: 2,
       firstPlaces: 0,
-      secondPlaces: 0
+      secondPlaces: 1
     },
     {
       id: 8,
