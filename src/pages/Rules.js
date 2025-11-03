@@ -5,13 +5,10 @@ import './Rules.css';
 const Rules = () => {
   const [selectedRace, setSelectedRace] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [sortBy, setSortBy] = useState('winRatio'); // Domyślne sortowanie po win ratio
-  const [sortOrder, setSortOrder] = useState('desc'); // Domyślnie malejąco
 
   // Refs do przewijania sekcji
   const instructionsRef = useRef(null);
   const racesRef = useRef(null);
-  const statsRef = useRef(null);
   const guidesRef = useRef(null);
 
   const scrollToSection = (ref) => {
@@ -270,48 +267,6 @@ const Rules = () => {
     }
   ];
 
-// Obliczanie statystyk dla wszystkich ras
-  const allRacesStats = racesData.map(race => ({
-    ...race,
-    winRatio: race.gamesPlayed > 0 ? race.firstPlaces / race.gamesPlayed : 0,
-    secondRatio: race.gamesPlayed > 0 ? race.secondPlaces / race.gamesPlayed : 0,
-    topTwoRatio: race.gamesPlayed > 0 ? (race.firstPlaces + race.secondPlaces) / race.gamesPlayed : 0
-  }));
-
-  // Funkcja sortowania
-  const handleSort = (column) => {
-    if (sortBy === column) {
-      setSortOrder(sortOrder === 'asc' ? 'desc' : 'asc');
-    } else {
-      setSortBy(column);
-      setSortOrder('desc');
-    }
-  };
-
-  // Sortowanie danych
-  const sortedRaces = [...allRacesStats].sort((a, b) => {
-    const modifier = sortOrder === 'asc' ? 1 : -1;
-    
-    switch (sortBy) {
-      case 'name':
-        return modifier * a.name.localeCompare(b.name);
-      case 'difficulty':
-        return modifier * (a.difficulty - b.difficulty);
-      case 'gamesPlayed':
-        return modifier * (a.gamesPlayed - b.gamesPlayed);
-      case 'firstPlaces':
-        return modifier * (a.firstPlaces - b.firstPlaces);
-      case 'secondPlaces':
-        return modifier * (a.secondPlaces - b.secondPlaces);
-      case 'winRatio':
-        return modifier * (a.winRatio - b.winRatio);
-      case 'topTwoRatio':
-        return modifier * (a.topTwoRatio - b.topTwoRatio);
-      default:
-        return modifier * (a.winRatio - b.winRatio);
-    }
-  });
-
   // Zaktualizowane dane poradników
   const guidesData = [
     {
@@ -393,17 +348,6 @@ const Rules = () => {
     return '★'.repeat(difficulty) + '☆'.repeat(5 - difficulty);
   };
 
-  // Funkcja do formatowania win ratio w procentach
-  const formatWinRatio = (ratio) => {
-    return `${(ratio * 100).toFixed(0)}%`;
-  };
-
-  // Funkcja do renderowania strzałki sortowania
-  const renderSortArrow = (column) => {
-    if (sortBy !== column) return null;
-    return sortOrder === 'asc' ? ' ↑' : ' ↓';
-  };
-
   return (
     <div className="rules-page">
       {/* Główna zawartość */}
@@ -460,151 +404,6 @@ const Rules = () => {
                 </div>
               </div>
             ))}
-          </div>
-        </section>
-
-         {/* ROZBUDOWANA SEKCJA: Statystyki Ras */}
-        <section ref={statsRef} className="section stats-section">
-          <div className="container">
-            <h1>Statystyki Ras</h1>
-            <p className="stats-subtitle">Pełne zestawienie wyników wszystkich ras</p>
-          </div>
-
-          <div className="container stats-table-container">
-            <div className="stats-table">
-              <div className="stats-header">
-                <div 
-                  className="stats-cell stats-rank sortable"
-                  onClick={() => handleSort('winRatio')}
-                >
-                  Miejsce{renderSortArrow('winRatio')}
-                </div>
-                <div 
-                  className="stats-cell stats-race sortable"
-                  onClick={() => handleSort('name')}
-                >
-                  Rasa{renderSortArrow('name')}
-                </div>
-                <div 
-                  className="stats-cell stats-difficulty sortable"
-                  onClick={() => handleSort('difficulty')}
-                >
-                  Poziom{renderSortArrow('difficulty')}
-                </div>
-                <div 
-                  className="stats-cell stats-games sortable"
-                  onClick={() => handleSort('gamesPlayed')}
-                >
-                  Rozegrane{renderSortArrow('gamesPlayed')}
-                </div>
-                <div 
-                  className="stats-cell stats-wins sortable"
-                  onClick={() => handleSort('firstPlaces')}
-                >
-                  🥇 Zwycięstwa{renderSortArrow('firstPlaces')}
-                </div>
-                <div 
-                  className="stats-cell stats-seconds sortable"
-                  onClick={() => handleSort('secondPlaces')}
-                >
-                  🥈 Drugie{renderSortArrow('secondPlaces')}
-                </div>
-                <div 
-                  className="stats-cell stats-ratio sortable"
-                  onClick={() => handleSort('winRatio')}
-                >
-                  Win Ratio{renderSortArrow('winRatio')}
-                </div>
-                <div 
-                  className="stats-cell stats-top-two sortable"
-                  onClick={() => handleSort('topTwoRatio')}
-                >
-                  Top 2 Ratio{renderSortArrow('topTwoRatio')}
-                </div>
-              </div>
-              
-              {sortedRaces.map((race, index) => (
-                <div 
-                  key={race.id} 
-                  className={`stats-row ${race.gamesPlayed === 0 ? 'no-games' : ''}`}
-                  onClick={() => openRaceModal(race)}
-                >
-                  <div className="stats-cell stats-rank">
-                    <span className={`rank-badge rank-${index + 1} ${index < 3 ? 'top-three' : ''}`}>
-                      {race.gamesPlayed === 0 ? '-' : index + 1}
-                    </span>
-                  </div>
-                  <div className="stats-cell stats-race">
-                    <div className="race-info">
-                      <img src={race.image} alt={race.name} className="race-image" />
-                      <div className="race-details">
-                        <span className="race-name">{race.name}</span>
-                        <span className="race-description">{race.description}</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="stats-cell stats-difficulty">
-                    <span className="difficulty-stars">
-                      {renderDifficultyStars(race.difficulty)}
-                    </span>
-                  </div>
-                  <div className="stats-cell stats-games">
-                    <span className="stat-value">{race.gamesPlayed}</span>
-                  </div>
-                  <div className="stats-cell stats-wins">
-                    <span className="stat-value wins">{race.firstPlaces}</span>
-                  </div>
-                  <div className="stats-cell stats-seconds">
-                    <span className="stat-value seconds">{race.secondPlaces}</span>
-                  </div>
-                  <div className="stats-cell stats-ratio">
-                    <div className="ratio-container">
-                      <span className="ratio-value">
-                        {race.gamesPlayed > 0 ? formatWinRatio(race.winRatio) : '-'}
-                      </span>
-                      {race.gamesPlayed > 0 && (
-                        <div className="ratio-bar">
-                          <div 
-                            className="ratio-fill" 
-                            style={{ width: `${race.winRatio * 100}%` }}
-                          ></div>
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                  <div className="stats-cell stats-top-two">
-                    <div className="ratio-container">
-                      <span className="ratio-value">
-                        {race.gamesPlayed > 0 ? formatWinRatio(race.topTwoRatio) : '-'}
-                      </span>
-                      {race.gamesPlayed > 0 && (
-                        <div className="ratio-bar">
-                          <div 
-                            className="ratio-fill top-two" 
-                            style={{ width: `${race.topTwoRatio * 100}%` }}
-                          ></div>
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            {/* Legenda statystyk */}
-            <div className="stats-legend">
-              <div className="legend-item">
-                <span className="legend-color win-ratio"></span>
-                <span>Win Ratio - procent wygranych gier</span>
-              </div>
-              <div className="legend-item">
-                <span className="legend-color top-two-ratio"></span>
-                <span>Top 2 Ratio - procent gier zakończonych na 1. lub 2. miejscu</span>
-              </div>
-              <div className="legend-note">
-                * Rasy bez rozegranych gier nie są uwzględniane w rankingu
-              </div>
-            </div>
           </div>
         </section>
 
