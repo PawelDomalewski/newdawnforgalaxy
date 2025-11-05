@@ -17,6 +17,10 @@ const SessionDetail = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const contentRef = useRef(null);
 
+    React.useLayoutEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+
   // Zbierz wszystkie zdjęcia z sesji
   useEffect(() => {
     if (!session) return;
