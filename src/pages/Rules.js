@@ -43,7 +43,11 @@ const Rules = () => {
       difficulty: 1,
       gamesPlayed: 1,
       firstPlaces: 0,
-      secondPlaces: 0
+      secondPlaces: 0,
+      thirdPlaces: 0,
+      fourthPlaces: 1,
+      fifthPlaces: 0,
+      sixthPlaces: 0
     },
     {
       id: 2,
@@ -60,7 +64,11 @@ const Rules = () => {
       difficulty: 2,
       gamesPlayed: 2,
       firstPlaces: 1,
-      secondPlaces: 0
+      secondPlaces: 0,
+      thirdPlaces: 0,
+      fourthPlaces: 0,
+      fifthPlaces: 1,
+      sixthPlaces: 0
     },
     {
       id: 3,
@@ -75,9 +83,13 @@ const Rules = () => {
         brown: 3
       },
       difficulty: 2,
-      gamesPlayed: 1,
+      gamesPlayed: 2,
       firstPlaces: 0,
-      secondPlaces: 1
+      secondPlaces: 1,
+      thirdPlaces: 0,
+      fourthPlaces: 1,
+      fifthPlaces: 0,
+      sixthPlaces: 0
     },
     {
       id: 4,
@@ -94,7 +106,11 @@ const Rules = () => {
       difficulty: 3,
       gamesPlayed: 3,
       firstPlaces: 3,
-      secondPlaces: 0
+      secondPlaces: 0,
+      thirdPlaces: 0,
+      fourthPlaces: 0,
+      fifthPlaces: 0,
+      sixthPlaces: 0
     },
     {
       id: 5,
@@ -109,9 +125,13 @@ const Rules = () => {
         brown: 4
       },
       difficulty: 5,
-      gamesPlayed: 1,
+      gamesPlayed: 2,
       firstPlaces: 0,
-      secondPlaces: 0
+      secondPlaces: 0,
+      thirdPlaces: 1,
+      fourthPlaces: 1,
+      fifthPlaces: 0,
+      sixthPlaces: 0
     },
     {
       id: 6,
@@ -126,9 +146,13 @@ const Rules = () => {
         brown: 2
       },
       difficulty: 2,
-      gamesPlayed: 2,
+      gamesPlayed: 4,
       firstPlaces: 0,
-      secondPlaces: 2
+      secondPlaces: 2,
+      thirdPlaces: 1,
+      fourthPlaces: 0,
+      fifthPlaces: 0,
+      sixthPlaces: 1
     },
     {
       id: 7,
@@ -145,7 +169,11 @@ const Rules = () => {
       difficulty: 3,
       gamesPlayed: 2,
       firstPlaces: 0,
-      secondPlaces: 1
+      secondPlaces: 1,
+      thirdPlaces: 1,
+      fourthPlaces: 0,
+      fifthPlaces: 0,
+      sixthPlaces: 0
     },
     {
       id: 8,
@@ -162,7 +190,11 @@ const Rules = () => {
       difficulty: 1,
       gamesPlayed: 2,
       firstPlaces: 0,
-      secondPlaces: 0
+      secondPlaces: 0,
+      thirdPlaces: 2,
+      fourthPlaces: 0,
+      fifthPlaces: 0,
+      sixthPlaces: 0
     },
     {
       id: 9,
@@ -179,7 +211,11 @@ const Rules = () => {
       difficulty: 3,
       gamesPlayed: 0,
       firstPlaces: 0,
-      secondPlaces: 0
+      secondPlaces: 0,
+      thirdPlaces: 0,
+      fourthPlaces: 0,
+      fifthPlaces: 0,
+      sixthPlaces: 0
     },
     {
       id: 10,
@@ -196,7 +232,11 @@ const Rules = () => {
       difficulty: 3,
       gamesPlayed: 1,
       firstPlaces: 0,
-      secondPlaces: 0
+      secondPlaces: 0,
+      thirdPlaces: 1,
+      fourthPlaces: 0,
+      fifthPlaces: 0,
+      sixthPlaces: 0
     },
     {
       id: 11,
@@ -213,7 +253,11 @@ const Rules = () => {
       difficulty: 4,
       gamesPlayed: 2,
       firstPlaces: 0,
-      secondPlaces: 1
+      secondPlaces: 1,
+      thirdPlaces: 1,
+      fourthPlaces: 0,
+      fifthPlaces: 0,
+      sixthPlaces: 0
     },
     {
       id: 12,
@@ -230,7 +274,11 @@ const Rules = () => {
       difficulty: 4,
       gamesPlayed: 2,
       firstPlaces: 2,
-      secondPlaces: 0
+      secondPlaces: 0,
+      thirdPlaces: 0,
+      fourthPlaces: 0,
+      fifthPlaces: 0,
+      sixthPlaces: 0
     },
     {
       id: 13,
@@ -245,9 +293,13 @@ const Rules = () => {
         brown: 2
       },
       difficulty: 4,
-      gamesPlayed: 1,
+      gamesPlayed: 2,
       firstPlaces: 0,
-      secondPlaces: 1
+      secondPlaces: 1,
+      thirdPlaces: 0,
+      fourthPlaces: 0,
+      fifthPlaces: 1,
+      sixthPlaces: 0
     },
     {
       id: 14,
@@ -264,7 +316,11 @@ const Rules = () => {
       difficulty: 5,
       gamesPlayed: 3,
       firstPlaces: 2,
-      secondPlaces: 1
+      secondPlaces: 1,
+      thirdPlaces: 0,
+      fourthPlaces: 0,
+      fifthPlaces: 0,
+      sixthPlaces: 0
     }
   ];
 
@@ -405,7 +461,7 @@ const Rules = () => {
           <div className="container races-grid">
             {racesData.map(race => {
               // Oblicz winRatio dla każdej rasy
-              const winRatio = race.gamesPlayed > 0 ? (race.firstPlaces + (race.secondPlaces * 0.75)) / race.gamesPlayed : 0;
+              const winRatio = race.gamesPlayed > 0 ? (race.firstPlaces + (race.secondPlaces * 0.75) + (race.thirdPlaces * 0.5) + (race.fourthPlaces * 0.25) + (race.fifthPlaces * 0.1) + (race.sixthPlaces * 0.05)) / race.gamesPlayed : 0;
 
               return (
                 <div
@@ -421,7 +477,7 @@ const Rules = () => {
                         Trudność: {renderDifficultyStars(race.difficulty)}
                       </span>
                       {/*<span className="race-tile-difficulty">
-                Power Ranking: {formatWinRatio(winRatio)}
+                Power Rating: {formatWinRatio(winRatio)}
               </span>*/}
                     </div>
                   </div>
