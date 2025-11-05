@@ -395,31 +395,39 @@ const Rules = () => {
           </div>
         </section>
 
-        {/* Sekcja Ras */}
+        // Sekcja Ras
         <section ref={racesRef} className="section">
           <div className="container">
             <h1 className="races-title">Rasy</h1>
             <p className="races-subtitle">Kliknij na rasę aby zobaczyć szczegóły</p>
           </div>
-          
+
           <div className="container races-grid">
-            {racesData.map(race => (
-              <div 
-                key={race.id} 
-                className="race-tile"
-                onClick={() => openRaceModal(race)}
-              >
-                <div className="race-tile-image">
-                  <img src={race.image} alt={`Portret rasy ${race.name}`} />
-                  <div className="race-tile-overlay">
-                    <h3 className="race-tile-name">{race.name}</h3>
-                    <span className="race-tile-difficulty">
-                      {renderDifficultyStars(race.difficulty)}
-                    </span>
+            {racesData.map(race => {
+              // Oblicz winRatio dla każdej rasy
+              const winRatio = race.gamesPlayed > 0 ? (race.firstPlaces + (race.secondPlaces * 0.75)) / race.gamesPlayed : 0;
+
+              return (
+                <div
+                  key={race.id}
+                  className="race-tile"
+                  onClick={() => openRaceModal(race)}
+                >
+                  <div className="race-tile-image">
+                    <img src={race.image} alt={`Portret rasy ${race.name}`} />
+                    <div className="race-tile-overlay">
+                      <h3 className="race-tile-name">{race.name}</h3>
+                      <span className="race-tile-difficulty">
+                        {renderDifficultyStars(race.difficulty)}
+                      </span>
+                      {/*<span className="race-tile-difficulty">
+                Power Ranking: {formatWinRatio(winRatio)}
+              </span>*/}
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </section>
 
@@ -438,10 +446,10 @@ const Rules = () => {
               <div className="top-race-stats">Rozegrane</div>
               <div className="top-race-ratio">Win Ratio</div>
             </div>
-            
+
             {topRaces.map((race, index) => (
-              <div 
-                key={race.id} 
+              <div
+                key={race.id}
                 className="top-race-row"
                 onClick={() => openRaceModal(race)}
               >
@@ -479,8 +487,8 @@ const Rules = () => {
 
           <div className="container guides-grid">
             {guidesData.map(guide => (
-              <Link 
-                key={guide.id} 
+              <Link
+                key={guide.id}
                 to={`/guide/${guide.id}/#`}
                 className="guide-tile"
               >
@@ -520,13 +528,13 @@ const Rules = () => {
         <div className="modal-overlay" onClick={closeRaceModal}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <button className="modal-close" onClick={closeRaceModal}>×</button>
-            
+
             <div className="modal-race-card">
               {/* Portret rasy w modal */}
               <div className="modal-race-portrait">
                 <img src={selectedRace.image} alt={`Portret rasy ${selectedRace.name}`} />
               </div>
-              
+
               {/* Informacje o rasie w modal */}
               <div className="modal-race-info">
                 <div className="modal-race-header">
@@ -537,9 +545,9 @@ const Rules = () => {
                     </span>
                   </div>
                 </div>
-                
+
                 <p className="modal-race-description">{selectedRace.description}</p>
-                
+
                 <div className="modal-detail-section">
                   <h4>Najważniejsze cechy:</h4>
                   <ol className="modal-features-list">
@@ -548,7 +556,7 @@ const Rules = () => {
                     ))}
                   </ol>
                 </div>
-                
+
                 <div className="modal-race-details">
                   <div className="modal-detail-section">
                     <h4>Startowe technologie:</h4>
@@ -558,7 +566,7 @@ const Rules = () => {
                       ))}
                     </div>
                   </div>
-                  
+
                   <div className="modal-detail-section">
                     <h4>Startowe surowce:</h4>
                     <div className="modal-resources">
@@ -568,7 +576,7 @@ const Rules = () => {
                     </div>
                   </div>
                 </div>
-                
+
                 <div className="modal-race-stats-detailed">
                   <div className="modal-stat">
                     <span className="modal-stat-value">{selectedRace.gamesPlayed}</span>
