@@ -418,7 +418,7 @@ const Rules = () => {
                     <div className="race-tile-overlay">
                       <h3 className="race-tile-name">{race.name}</h3>
                       <span className="race-tile-difficulty">
-                        {renderDifficultyStars(race.difficulty)}
+                        Trudność: {renderDifficultyStars(race.difficulty)}
                       </span>
                       {/*<span className="race-tile-difficulty">
                 Power Ranking: {formatWinRatio(winRatio)}
