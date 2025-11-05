@@ -264,7 +264,7 @@ const Rules = () => {
       difficulty: 5,
       gamesPlayed: 3,
       firstPlaces: 2,
-      secondPlaces: 0
+      secondPlaces: 1
     }
   ];
 
