@@ -185,16 +185,16 @@ const Guide1Content = () => {
       <div className="guide-intro">
         <p>Wielu graczy nie wie, jak wydostać się z trudnej sytuacji lub brakuje im umiejętności długoterminowego planowania i adaptacji wymaganych do bycia biegłym w Eclipse.</p>
         <div className="guide-note">
-          <strong>⚠️ Uwaga:</strong> Gracze nie powinni używać standardowych Strażników Galaktyki (GCDS) - są słabo zbalansowane i dają niektórym rasom znaczną przewagę.
+          <strong>⚠️ Uwaga:</strong> Gracze nie powinni używać standardowych Strażników Galaktyki (GCDS) - są słabo zbalansowani i dają niektórym rasom znaczną przewagę.
         </div>
       </div>
 
       <div className="guide-chapters">
         {/* Rozdział 1 */}
         <div className="guide-chapter">
-          <h3>🎯 Rozpoczęcie gry</h3>
+          <h3>Rozpoczęcie gry</h3>
           <div className="guide-content">
-            <h4>Pierwsze pytanie strategiczne:</h4>
+            <h4>Pierwsze pytanie strategiczne, jak chcemy grać:</h4>
             <ul>
               <li><strong>Agresywnie (PvP)</strong> - atakowanie innych graczy</li>
               <li><strong>PvE</strong> - tylko walka ze Starożytnymi i GCDS</li>
@@ -220,7 +220,7 @@ const Guide1Content = () => {
 
         {/* Rozdział 2 */}
         <div className="guide-chapter">
-          <h3>🔍 Pierwsza runda - eksploracja</h3>
+          <h3>Pierwsza runda - eksploracja</h3>
           <div className="guide-content">
             <h4>Pierwsza akcja:</h4>
             <ul>
@@ -244,7 +244,7 @@ const Guide1Content = () => {
               </div>
               <div className="guide-tip">
                 <h5>Heks 2</h5>
-                <p>Bądź selektywny. Odrzucaj gdy masw za dużo systemów ze Starożytnymi</p>
+                <p>Bądź selektywny. Odrzucaj gdy masz za dużo systemów ze Starożytnymi</p>
               </div>
               <div className="guide-tip">
                 <h5>Heks 1</h5>
@@ -256,7 +256,7 @@ const Guide1Content = () => {
 
         {/* Rozdział 3 */}
         <div className="guide-chapter">
-          <h3>⚡ Druga runda - zmiana planów</h3>
+          <h3>Druga runda - zmiana planów</h3>
           <div className="guide-content">
             <h4>Przemyśl strategię na nowo:</h4>
             <ul>
