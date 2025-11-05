@@ -362,6 +362,7 @@
   /* ZMIANA: Mniejszy portret w modal na tabletach */
   .modal-race-portrait {
     flex: 0 0 200px; /* Zmniejszone z 300px */
+    display: none;
   }
 }
 
@@ -489,6 +490,10 @@
     grid-template-columns: 1fr;
     gap: 1rem;
   }
+}
+
+@media (max-width: 480px) {
+  .modal-race-portrait {display: block;}
 }
 
 /* Dodatkowe bardzo małe ekrany */
@@ -1415,16 +1420,20 @@
   }
   
   .top-race-row {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1;
     text-align: center;
     gap: 0.5rem;
   }
   
   .top-race-rank {
-    justify-content: center;
+    justify-content: start;
   }
   
   .top-race-name-content {
     justify-content: center;
+  }
+  .top-race-stats,
+  .top-race-ratio {
+    display: none;
   }
 }
