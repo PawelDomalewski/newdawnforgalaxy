@@ -1,7 +1,7 @@
 export const sessions = [
   {
     id: 1,
-    game: "Eclipse",
+    game: "Przyśpieszona ewolucja do zwycięstwa",
     date: "2024-09-07",
     players: ["Paweł W", "Natan", "Paweł D"],
     rating: "4 godziny",
@@ -34,16 +34,37 @@ export const sessions = [
   },
   {
     id: 2,
-    game: "Eclipse",
+    game: "Gdzie dwóch się bije, tam trzeci korzysta",
     date: "2024-10-11",
     players: ["Natan", "Paweł D", "Paweł W"],
     rating: "3,5 godziny",
-    summary: "Relaksująca sesja budowania średniowiecznego krajobrazu. Filip zaskoczył wszystkich strategicznym ułożeniem ostatniego kafelka.",
+    summary: "Zacięta rozgrywka z niespodziewanym zwycieżcą",
     image: "/images/111024.jpg", // ← DODAJ ŚCIEŻKĘ DO ZDJĘCIA
     tags: ["Rodzinna", "Tile-laying", "Relaksująca"],
-    fullContent: `
-      <h3>Budowanie krajobrazu</h3>
-      <p>Sesja rozpoczęła się spokojnie, z każdy gracz skupiał się na budowaniu własnych zamków i dróg...</p>
+    fullContent: `<h3>Uczestnicy:</h3>
+    <ol>
+    <li>Paweł D - Progresywni Hydran</li>
+    <li>Natan - Planta</li>
+    <li>Paweł W - Potomkowie Draco</li>
+    </ol>
+    <img src="/images/sesje/111024/1.jpg" class="img-head"></img>
+      <h3>Przebieg rozgrywki</h3>
+      <ul>
+      <li><h3>Progresywni Hydran</h3><li>
+      <p>Starali się grać spokojnie, stoczyli trochę walk, ale nic większego. Udało im się zbudować aż 4 Monolity (12pkt). Rozwinął maksymalnie technologie dolnego rzędu, niestety nie posiadał zbyt wiele technologii pozwalających ulepszać statki, przez to mimo posiadania Rift Turret na Pancerniku, starał się unikać walki z Lyrą czy Octanis, którzy na szczęście Magellan, zajęcie byli walką ze sobą.</p>
+      <li><h3>Potomkowie Draco</h3></li>
+      <p>Lyra jest trudną rasą do grania, budują świątynie na planetach, ale mogą tylko jedną na rundę, więc wymaga to dużego planowania i zarządzania zasobami. Lyra starała się dbać o ten element równocześnie nie zapominając o inwestycjach w flotę. Stoczył kilka walk z Octanis, ostatecznie zabrał kilka sektorów Magellanom. Ostatecznie udało im się zbudować 7 świątyń z 9 możliwych, całkiem przyzwoity wynik, mimo że Anomalia trochę przeszkadzała.</p>
+      <li><h3>Planta</h3></li>
+      <p>Główną cechą rasy Octanis jest możliwość ewolucji i adaptacji do zmiennych warunków w galaktyce. W tej sesji skupili się na korzystaniu z tego, udało się uzyskać 7 mutacji, z czego udało się uzyskać łącznie 15 pkt, bez tych punktów byli by na szarym końcu. Bez wątpienia przydatna okazała się rzadka technologia Advanced Genetics, która zwiększyłą zarówno co rundowy przychód Mutagenów (potrzebnych do mutacji), jak i jednorazowo dała +3 mutagenów.</p>
+      <img src="/images/sesje/111024/2.jpg" class="img-head"></img>
+      <li><h3>Podsumowanie i punktacja</h3></li>
+      <p class="session-summary-pkt">Punktacja:<br>
+      <b>1. Paweł D - Octanis - 54 pkt</b> <br>
+      2. Paweł W - Lyra - 43 pkt <br>
+      3. Natan - Magellan - 41 pkt <br>
+      Octanis odnoszą swoje pierwsze zwycięstwo już w pierwszej rozgrywce. Lyra i Magellan bardzo blisko siebie, bardzo wyrównanie.
+      </p>
+    </ul>
     `
   },
   {
