@@ -5,12 +5,31 @@ export const sessions = [
     date: "2024-09-07",
     players: ["Paweł W", "Natan", "Paweł D"],
     rating: "4 godziny",
-    summary: "Intensywna sesja z wieloma strategiami korporacyjnymi. Bartek zdominował produkcję energii, podczas gdy Daria skupiła się na terraformowaniu.",
+    summary: "Pierwsza rozgrywka Octanis i Lyry, rozgrywka z dużą ilością Starożytnych i z mobilną anomalią.",
     image: "/images/070924.jpg", // ← DODAJ ŚCIEŻKĘ DO ZDJĘCIA
     tags: ["Strategia", "Nauka", "Konkurencyjna"],
-    fullContent: `
+    fullContent: `<h3>Uczestnicy:</h3>
+    <ol>
+    <li>Paweł D - Octanis</li>
+    <li>Natan - Magellan</li>
+    <li>Paweł W - Oświeceni Lyra</li>
+    </ol>
       <h3>Przebieg rozgrywki</h3>
-      <p>Rozpoczęliśmy grę o godzinie 19:00. Bartek od razu postawił na produkcję energii...</p>
+      <ul>
+      <li><h3>Magellanie</h3><li>
+      <p>Starali się grać spokojnie, stoczyli trochę walk, ale nic większego. Udało im się zbudować aż 4 Monolity (12pkt). Rozwinął maksymalnie technologie dolnego rzędu, niestety nie posiadał zbyt wiele technologii pozwalających ulepszać statki, przez to mimo posiadania Rift Turret na Pancerniku, starał się unikać walki z Lyrą czy Octanis, którzy na szczęście Magellan, zajęcie byli walką ze sobą.</p>
+      <li><h3>Lyra</h3></li>
+      <p>Lyra jest trudną rasą do grania, budują świątynie na planetach, ale mogą tylko jedną na rundę, więc wymaga to dużego planowania i zarządzania zasobami. Lyra starała się dbać o ten element równocześnie nie zapominając o inwestycjach w flotę. Stoczył kilka walk z Octanis, ostatecznie zabrał kilka sektorów Magellanom. Ostatecznie udało im się zbudować 7 świątyń z 9 możliwych, całkiem przyzwoity wynik, mimo że Anomalia trochę przeszkadzała.</p>
+      <li><h3>Octanis</h3></li>
+      <p>Główną cechą rasy Octanis jest możliwość ewolucji i adaptacji do zmiennych warunków w galaktyce. W tej sesji skupili się na korzystaniu z tego, udało się uzyskać 7 mutacji, z czego udało się uzyskać łącznie 15 pkt, bez tych punktów byli by na szarym końcu. Bez wątpienia przydatna okazała się rzadka technologia Advanced Genetics, która zwiększyłą zarówno co rundowy przychód Mutagenów (potrzebnych do mutacji), jak i jednorazowo dała +3 mutagenów.</p>
+      <li><h3>Podsumowanie i punktacja</h3></li>
+      <p class="session-summary-pkt">Punktacja:<br>
+      <b>1. Paweł D - Octanis - 54 pkt</b> <br>
+      2. Paweł W - Lyra - 43 pkt <br>
+      3. Natan - Magellan - 41 pkt <br>
+      Octanis odnoszą swoje pierwsze zwycięstwo już w pierwszej rozgrywce. Lyra i Magellan bardzo blisko siebie, bardzo wyrównanie.
+      </p>
+    </ul>
     `
   },
   {
@@ -89,7 +108,7 @@ export const sessions = [
     `
   },
   {
-    id:7,
+    id: 7,
     game: "Starcie dwóch sojuszy",
     date: "2016-02-27",
     players: ["Paweł D", "Paweł P", "Piotr G", "Sylwia", "Ania", "Asia"],

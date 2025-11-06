@@ -299,14 +299,14 @@ const SessionDetail = () => {
               />
             </section>
 
-            <section className="tags-section">
+            {/*<section className="tags-section">
               <h2>Tagi</h2>
               <div className="session-tags-large">
                 {session.tags.map(tag => (
                   <span key={tag} className="tag-large">{tag}</span>
                 ))}
               </div>
-            </section>
+            </section>*/}
           </div>
 
           <footer className="session-footer">
