@@ -314,8 +314,8 @@ const Rules = () => {
         brown: 0
       },
       difficulty: 5,
-      gamesPlayed: 3,
-      firstPlaces: 2,
+      gamesPlayed: 2,
+      firstPlaces: 1,
       secondPlaces: 1,
       thirdPlaces: 0,
       fourthPlaces: 0,
@@ -476,9 +476,9 @@ const Rules = () => {
                       <span className="race-tile-difficulty">
                         Trudność: {renderDifficultyStars(race.difficulty)}
                       </span>
-                      {/*<span className="race-tile-difficulty">
+                      <span className="race-tile-difficulty">
                 Power Rating: {formatWinRatio(winRatio)}
-              </span>*/}
+              </span>
                     </div>
                   </div>
                 </div>
@@ -599,6 +599,7 @@ const Rules = () => {
                     <span className="modal-difficulty">
                       Poziom trudności: {renderDifficultyStars(selectedRace.difficulty)}
                     </span>
+                    
                   </div>
                 </div>
 
