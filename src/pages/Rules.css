@@ -1437,3 +1437,10 @@
     display: none;
   }
 }
+
+.race-tile-power-rating {
+  font-size: 0.8rem;
+  color: #3498db;
+  display: block;
+  margin-top: 0.2rem;
+}
