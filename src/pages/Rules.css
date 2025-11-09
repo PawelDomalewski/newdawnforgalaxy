@@ -1438,9 +1438,18 @@
   }
 }
 
+/* Dodaj te style do pliku Rules.css */
+
 .race-tile-power-rating {
   font-size: 0.8rem;
-  color: #3498db;
+  color: #3498db; /* Niebieski kolor dla Power Rating */
   display: block;
   margin-top: 0.2rem;
 }
+
+/* Opcjonalnie: różne kolory dla różnych poziomów Power Rating */
+.race-tile-power-rating[data-rating="1"] { color: #e74c3c; } /* Czerwony dla niskiego */
+.race-tile-power-rating[data-rating="2"] { color: #e67e22; } /* Pomarańczowy */
+.race-tile-power-rating[data-rating="3"] { color: #f1c40f; } /* Żółty */
+.race-tile-power-rating[data-rating="4"] { color: #2ecc71; } /* Zielony */
+.race-tile-power-rating[data-rating="5"] { color: #3498db; } /* Niebieski dla wysokiego */
