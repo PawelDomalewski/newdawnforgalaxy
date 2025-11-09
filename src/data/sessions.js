@@ -182,5 +182,41 @@ export const sessions = [
     Zabrakło naprawdę niewiele a dziewczyny by wygrały. Sama rozgrywka trwała 5 godzin.</p>
     </ul>
     `
+  },
+  {
+    id: 8,
+    game: "Zemsta Oriona",
+    date: "2025-11-08",
+    players: ["Paweł D", "Sebastian", "Piotr G", "Sylwia", "Ania", "Ola"],
+    rating: "6 godzin",
+    summary: "Pochłonnięty żądzą zemsty Orion poświęcił wszystko i stoczył się na dno.",
+    image: "/images/sesje/081125/head.jpg",
+    tags: ["Akcja!"],
+    fullContent: `<h3>Uczestnicy:</h3>
+    <ol>
+    <li>Ania - Postępowi Hydranie</li>
+    <li>Ola - Ludzie</li>
+    <li>Sylwia - Mechanema</li>
+    <li>Sebastian - Hegemonia Oriona</li>
+    <li>Paweł D - Oświeceni Lyra</li>
+    <li>Piotr G - Magellan</li>
+    </ol>
+    <h3>Przebieg gry:</h3>
+    <p>Tak wyglądała na początku plansza zaopatrzenia. Dużo technologii z środkowego toru.</p>
+    <img src="https://i.imgur.com/iEojX38.jpeg"></img>
+    <ul>
+    <li><h3>Runda 1 i 2</h3><li>
+    <img src="https://i.imgur.com/In9mnbZ.jpeg" class=""></img>
+    <p>Pierwsza runda jak to pierwsza runda, dużo eksploracji, mi udało się kupić Improved Hull, drugi Paweł natomiast miał szczęście i trafił na odkrycie pozwalające zmienić myśliwiec w pancernik, więc w pierwszej rundzie ruszył w składzie myśliwiec+pancernik na dwóch starożytnych, niestety poległ niszcząc jeden statek obcych.</p>
+
+    <li><h3>Podsumowanie i punktacja</h3></li>
+    <p class="session-summary-pkt">Punktacja:<br>
+    Paweł D(ja, 37pkt), Paweł P(32), Piotrek (27) = 32 pkt Sojuszu Flara. <br>
+    Sylwia (26), Asia (35) = 30,5 pkt Sojuszu Nova<br>
+    Ania = 17 pkt<br>
+
+    Zabrakło naprawdę niewiele a dziewczyny by wygrały. Sama rozgrywka trwała 5 godzin.</p>
+    </ul>
+    `
   }
 ];
