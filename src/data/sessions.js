@@ -207,15 +207,40 @@ export const sessions = [
     <p>Gracze skupili się na eksploracji. Hydranie odkryli sektor z Anomalią w III kręgu galaktyki i z Deep Portalem prowadzącym do Nexusa, gdzie gromadzą się Anomalie. Ania zdecydowała się na wybranie mobilnej strony Anomalii, licząc, że wyleci poza planszę. Oprócz tego odkryła całkiem bardzo dobry sektor z dwiema planetami (pomarańczowa i brązowa) w III kręgu oraz pusty heks z odkryciem w II kręgu. Mechanema odkryła dwóch Starożytnych blisko centrum, oraz sektory z planetami w II i III kręgu. Sylwia miała okazję odkryć heks I przed światem domowym Ani, ale nie zdecydowała się na ten ruch. Orion miał umiarkowane szczęście w eksploracji, nie znalazł żadnych Starożytnych, ale za to zyskał żeton odkrycia i trochę planet. Lyranie z kolei odkryli Starożytnych w I i III kręgu, oraz przyzwoity sektor w II. Na ten moment miałem już dwie zaawansowane pomarańczowe planety, więc liczyłem na, że uda mi się kupić Advanced Economy w kolejnej rundzie. Ludzie odkryli dwóch Starożytnych w III oraz Anomalię w II, na Nexusie zostały już tylko dwie Anomalie. Ola zdecydowała się na niemobilną stronę żetonu Anomalii. Magellanie z kolei odkryli dwa heksy z żetonami odkryć.</p>
     <li><h3>Runda 2</h3><li>
     <img src="/images/sesje/081125/2.jpg" class=""></img>
-    <p>Gracze skupili się na eksploracji. Hydranie odkryli sektor z Anomalią w III kręgu galaktyki i z Deep Portalem prowadzącym do Nexusa, gdzie gromadzą się Anomalie. Ania zdecydowała się na wybranie mobilnej strony Anomalii, licząc, że wyleci poza planszę. Oprócz tego odkryła całkiem bardzo dobry sektor z dwiema planetami (pomarańczowa i brązowa) w III kręgu oraz pusty heks z odkryciem w II kręgu. Mechanema odkryła dwóch Starożytnych blisko centrum, oraz sektory z planetami w II i III kręgu. Sylwia miała okazję odkryć heks I przed światem domowym Ani, ale nie zdecydowała się na ten ruch. Orion miał umiarkowane szczęście w eksploracji, nie znalazł żadnych Starożytnych, ale za to zyskał żeton odkrycia i trochę planet. Lyranie z kolei odkryli Starożytnych w I i III kręgu, oraz przyzwoity sektor w II. Na ten moment miałem już dwie zaawansowane pomarańczowe planety, więc liczyłem na, że uda mi się kupić Advanced Economy w kolejnej rundzie. Ludzie odkryli dwóch Starożytnych w III oraz Anomalię w II, na Nexusie zostały już tylko dwie Anomalie. Ola zdecydowała się na niemobilną stronę żetonu Anomalii. Magellanie z kolei odkryli dwa heksy z żetonami odkryć.</p>
+    <p>Dalsze eksploracje. Ania odkryła Starożytnych na drodze do centrum galaktyki, oraz Rój Starożytnych na skraju galaktyki. Anomalia z poprzedniej rundy poleciała w nieznane, zostawiając pusty sektor, wyłożony na tacy dla Hydran. Mechanema odkryła kolejnych Starożytnych w III kręgu. Orion odkrył w końcu Starożytnych oraz dwa heksy z żetonami odkrycia. Lyra dwa wolne sektory z planetami. Ludzie odkryli wolny heks z planetą naukową, oraz heks z odkryciem. Magellanie ponownie znaleźli heks z odkryciem i wolny sektor przy centrum. Sebastian wciąż nie odkrył sektora przy centrum jako jedyny na ten moment.</p>
+    <li><h3>Runda 3</h3><li>
+    <img src="/images/sesje/081125/3.jpg" class=""></img>
+    <p>Pora zająć się tym co odkryli gracze. Na koniec drugiej rundy, Hydranie zostali zaatakowani przez jeden statek Starożytnych, Ania wysłała tam swój krążownik razem z małym myśliwcem. Sylwia kontynuowała eksploracje i odkryła heks z warp portalem oraz z żetonem odkrycia. Sebastian wysłał dwa krążowniki do rozprawienia się z Starożytnym. Ja zacząłem przygotowywać się do kolejnej rundy, gdzie krok po kroku czyściłbym Starożytnych jak i Anomalie, jako Lyra musiałem też pamiętać o Świątyniach i zacząć je budować. Ola grająca ludźmi straciła zainteresowanie grą, więc próbując pomóc jej się wciągnąć pomogłem jej w ruchach. Kupiła technologie Improved Hull, ulepszyła pancerniki, zbudowała je i wysłała razem z myśliwcem do walki przeciwko dwóch Starożytnych w III kręgu. Piotrek natomiast skupił się na rozwoju technologicznym.</p>
+    <li><h3>Runda 4</h3><li>
+    <img src="/images/sesje/081125/4.jpg" class=""></img>
+    <p>Ataki z poprzedniej rundy powiodły się, Ania obroniła swój heks przed atakiem Starożytnych i ruszyła z odwetem i zaatakowała Rój. Sylwia zbudowała dwa pancerniki by zacząć odbijać sektory z rąk Starożytnych. Sebastian stabilizuje swoją ekonomię. Ja zaatakowałem heks przy centrum dwoma krążownikami, które miały zamontowane Sentient Hull. Ola po udanym ataku na skraju galaktyki, ruszyła na Centrum. Sytuacja w galaktyce powoli się kształtuje i robi się ciaśniejsza.</p>
+    <li><h3>Runda 5</h3><li>
+    <img src="/images/sesje/081125/5.jpg" class=""></img>
+    <p>Ola zdobyła Centrum, ale straciła zainteresowanie grą. Piotrek zbudował dwa pancerniki broniące heks przy centrum. Ania zaatakowała sektor w I kręgu, podobnie zrobiła Sylwia swoimi dwoma pancernikami wybudowanymi wcześniej. Orion został zaatakowany przez Ludzi. Sebastian nie bronił się, ale od tego momentu kierował się tylko zemstą. Czekał tylko na odpowiedni moment.</p>
+    <li><h3>Runda 6</h3><li>
+    <img src="/images/sesje/081125/6.jpg" class="img-head"></img>
+    <img src="/images/sesje/081125/7.jpg" class="img-head"></img>
+    <p>Hydranie skupili się na rozwoju technologicznym, ich statki do tej pory wygrywały walki, ale nie były one zabójcze. Sylwia wysłała swój pancernik na skraj galaktyki by zniszczyć jeden z ostatnich bastionów Starożytnych. Orion z kolei ruszył z odwetem na Ludzi, zaatakował dwa utracone wcześniej heksy. Lyranie wysłali jeden krążownik by zaatakował ostatni przyczółek Starożytnych. Ludzie uprzedzając ruch Sebastiana, cofnęli pancerniki do Centrum, zbudowali dwie bazy gwiezdne na sektorze w I kręgu, by stworzyć barierę, która opóźni potencjalny atak na Centrum.</p>
+    <li><h3>Runda 7 i 8</h3><li>
+    <img src="/images/sesje/081125/9.jpg" class=""></img>
+    <p>Hydranie kontynuują rozwój, zabezpieczają swoją sytuację poprzez zbudowanie bazy gwiezdnej oraz pancernika w heksie przy centrum. Sylwia zaczęła budować monolity na swoich heksach, ryzykowny ruch na ten moment. Sebastian zaczął gromadzić statki i technologie. Lyranie wysłali dwa krążowniki daleko poza galaktykę, do sektora Nexus, gdzie stoczą walkę z dwiema Anomaliami. Ludzie wykupili technologię słabszych, żółtych rakiet, które jednak są szybsze i zaczęli je montować na statkach. Była to reakcja na pojawienie się rakiet na statkach Oriona. Óśma runda była istną zimną wojną. Orion i Ludzie zbroili się, czekając na rundę 9.</p>
+    <li><h3>Runda 9</h3><li>
+    <img src="/images/sesje/081125/10.jpg" class=""></img>
+    <p>Zaczęła się rzeźnia. Orion zaatakował wykorzystując technologię Wormhole Generator na tyły Imperium Lyran, ich celem była ojczyzna Lyry. Ludzie skorzystali z odsłonięcia się Sebastiana i zaatakowali ich na trzech heksach w tym również ojczyznę Oriona. Lyranie próbowali się bronić na dwóch heksach, ale niestety utracili swój domowy sektor. Sebastian nie miał dysków by zająć podbite heksy, ale to mu nie przeszkadzało, zemsta się dokonała. Całe zamieszanie wykorzystała Ania, zrywając stosunki dyplomatyczne z Sylwią i atakując ją na dwóch heksach na których miała monolity. Monolity były niczym kieliszek dobrej, szkockiej whiskey dla wieloletniego alkoholika, kuszące z dużą siłą.
+    A tymczasem Magellanie:</p>
+    <img src="/images/sesje/081125/meme.png" class=""></img>
 
 
     <li><h3>Podsumowanie i punktacja</h3></li>
+    <img src="/images/sesje/081125/final.jpg" class="img-head"></img>
     <p class="session-summary-pkt">Punktacja:<br>
-    Paweł D(ja, 37pkt), Paweł P(32), Piotrek (27) = 32 pkt Sojuszu Flara. <br>
-    Sylwia (26), Asia (35) = 30,5 pkt Sojuszu Nova<br>
-    Ania = 17 pkt<br>
-    Zabrakło naprawdę niewiele a dziewczyny by wygrały. Sama rozgrywka trwała 5 godzin.</p>
+    <b style="color: gold">Ania - Hydran - 43 pkt</b><br>
+    <b style="color: silver">Sylwia - Mechanema - 29 pkt(17 zasobów)</b><br>
+    Ola - Ludzie - 29 pkt(0 zasobów)<br>
+    Paweł D - Lyra - 25 pkt<br>
+    Piotrek G - Magellanie - 18 pkt<br>
+    Sebastian - Orion - 15 pkt<br>
+    W pierwszej fazie gry wszyscy gracze skupili się na eksploracji galaktyki, odkrywając planety, Starożytnych i Anomalie. W środkowej części rozgrywki nastąpił stopniowy zwrot w stronę militaryzacji i walki z neutralnymi zagrożeniami oraz początkowe potyczki między graczami. Kulminacja nastąpiła w rundzie 9, kiedy to Orion dokonał inwazji na ojczyznę Lyran, a Ludzie kontratakowali, co Hydranie wykorzystali do ataku na Mechanemę. Tymczasem Magellanie przez cały czas pozostawali w cieniu, skupiając się na rozwoju technologicznym i unikając otwartych konfliktów.</p>
     </ul>
     `
   }
