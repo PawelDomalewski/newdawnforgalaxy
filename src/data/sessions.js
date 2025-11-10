@@ -189,7 +189,7 @@ export const sessions = [
     date: "2025-11-08",
     players: ["Paweł D", "Sebastian", "Piotr G", "Sylwia", "Ania", "Ola"],
     rating: "6 godzin",
-    summary: "Pochłonnięty żądzą zemsty Orion poświęcił wszystko i stoczył się na dno.",
+    summary: "Pochłonnięty żądzą zemsty Orion poświęcił wszystko i poniósł bolesną porażkę, co zostało wykorzystane przez Hydran, którzy skorzystali na ruchach Mechanemy.",
     image: "/images/sesje/081125/head.jpg",
     tags: ["Akcja!"],
     fullContent: `<h3>Uczestnicy:</h3>
@@ -207,7 +207,7 @@ export const sessions = [
     <ul>
     <li><h3>Runda 1 i 2</h3><li>
     <img src="https://i.imgur.com/In9mnbZ.jpeg" class=""></img>
-    <p>Pierwsza runda jak to pierwsza runda, dużo eksploracji, mi udało się kupić Improved Hull, drugi Paweł natomiast miał szczęście i trafił na odkrycie pozwalające zmienić myśliwiec w pancernik, więc w pierwszej rundzie ruszył w składzie myśliwiec+pancernik na dwóch starożytnych, niestety poległ niszcząc jeden statek obcych.</p>
+    <pGracze skupili się na eksploracji. Hydranie odkryli sektor z Anomalią w III kręgu galaktyki i z Deep Portalem prowadzącym do Nexusa, gdzie gromadzą się Anomalie. Ania zdecydowała się na wybranie mobilnej strony Anomalii, licząc, że wyleci poza planszę. Oprócz tego odkryła całkiem bardzo dobry sektor z dwiema planetami (pomarańczowa i brązowa) w III kręgu oraz pusty heks z odkryciem w II kręgu. Mechanema odkryła dwóch Starożytnych blisko centrum, oraz sektory z planetami w II i III kręgu. Sylwia miała okazję odkryć heks I przed światem domowym Ani, ale nie zdecydowała się na ten ruch. Orion miał umiarkowane szczęście w eksploracji, nie znalazł żadnych Starożytnych, ale za to zyskał żeton odkrycia i trochę planet. Lyranie z kolei odkryli Starożytnych w I i III kręgu, oraz przyzwoity sektor w II. Na ten moment miałem już dwie zaawansowane pomarańczowe planety, więc liczyłem na, że uda mi się kupić Advanced Economy w kolejnej rundzie. Ludzie odkryli dwóch Starożytnych w III oraz Anomalię w II, na Nexusie zostały już tylko dwie Anomalie. Ola zdecydowała się na niemobilną stronę żetonu Anomalii. Magellanie z kolei odkryli dwa heksy z żetonami odkryć.</p>
 
     <li><h3>Podsumowanie i punktacja</h3></li>
     <p class="session-summary-pkt">Punktacja:<br>
