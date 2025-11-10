@@ -201,20 +201,20 @@ export const sessions = [
     <li>Paweł D - Oświeceni Lyra</li>
     <li>Piotr G - Magellan</li>
     </ol>
-    <h3>Przebieg gry:</h3>
-    <p>Tak wyglądała na początku plansza zaopatrzenia. Dużo technologii z środkowego toru.</p>
-    <img src="https://i.imgur.com/iEojX38.jpeg"></img>
     <ul>
-    <li><h3>Runda 1 i 2</h3><li>
-    <img src="https://i.imgur.com/In9mnbZ.jpeg" class=""></img>
-    <pGracze skupili się na eksploracji. Hydranie odkryli sektor z Anomalią w III kręgu galaktyki i z Deep Portalem prowadzącym do Nexusa, gdzie gromadzą się Anomalie. Ania zdecydowała się na wybranie mobilnej strony Anomalii, licząc, że wyleci poza planszę. Oprócz tego odkryła całkiem bardzo dobry sektor z dwiema planetami (pomarańczowa i brązowa) w III kręgu oraz pusty heks z odkryciem w II kręgu. Mechanema odkryła dwóch Starożytnych blisko centrum, oraz sektory z planetami w II i III kręgu. Sylwia miała okazję odkryć heks I przed światem domowym Ani, ale nie zdecydowała się na ten ruch. Orion miał umiarkowane szczęście w eksploracji, nie znalazł żadnych Starożytnych, ale za to zyskał żeton odkrycia i trochę planet. Lyranie z kolei odkryli Starożytnych w I i III kręgu, oraz przyzwoity sektor w II. Na ten moment miałem już dwie zaawansowane pomarańczowe planety, więc liczyłem na, że uda mi się kupić Advanced Economy w kolejnej rundzie. Ludzie odkryli dwóch Starożytnych w III oraz Anomalię w II, na Nexusie zostały już tylko dwie Anomalie. Ola zdecydowała się na niemobilną stronę żetonu Anomalii. Magellanie z kolei odkryli dwa heksy z żetonami odkryć.</p>
+    <li><h3>Runda 1</h3><li>
+    <img src="/images/sesje/081125/1.jpg" class="img-head"></img>
+    <p>Gracze skupili się na eksploracji. Hydranie odkryli sektor z Anomalią w III kręgu galaktyki i z Deep Portalem prowadzącym do Nexusa, gdzie gromadzą się Anomalie. Ania zdecydowała się na wybranie mobilnej strony Anomalii, licząc, że wyleci poza planszę. Oprócz tego odkryła całkiem bardzo dobry sektor z dwiema planetami (pomarańczowa i brązowa) w III kręgu oraz pusty heks z odkryciem w II kręgu. Mechanema odkryła dwóch Starożytnych blisko centrum, oraz sektory z planetami w II i III kręgu. Sylwia miała okazję odkryć heks I przed światem domowym Ani, ale nie zdecydowała się na ten ruch. Orion miał umiarkowane szczęście w eksploracji, nie znalazł żadnych Starożytnych, ale za to zyskał żeton odkrycia i trochę planet. Lyranie z kolei odkryli Starożytnych w I i III kręgu, oraz przyzwoity sektor w II. Na ten moment miałem już dwie zaawansowane pomarańczowe planety, więc liczyłem na, że uda mi się kupić Advanced Economy w kolejnej rundzie. Ludzie odkryli dwóch Starożytnych w III oraz Anomalię w II, na Nexusie zostały już tylko dwie Anomalie. Ola zdecydowała się na niemobilną stronę żetonu Anomalii. Magellanie z kolei odkryli dwa heksy z żetonami odkryć.</p>
+    <li><h3>Runda 2</h3><li>
+    <img src="/images/sesje/081125/2.jpg" class="img-head"></img>
+    <p>Gracze skupili się na eksploracji. Hydranie odkryli sektor z Anomalią w III kręgu galaktyki i z Deep Portalem prowadzącym do Nexusa, gdzie gromadzą się Anomalie. Ania zdecydowała się na wybranie mobilnej strony Anomalii, licząc, że wyleci poza planszę. Oprócz tego odkryła całkiem bardzo dobry sektor z dwiema planetami (pomarańczowa i brązowa) w III kręgu oraz pusty heks z odkryciem w II kręgu. Mechanema odkryła dwóch Starożytnych blisko centrum, oraz sektory z planetami w II i III kręgu. Sylwia miała okazję odkryć heks I przed światem domowym Ani, ale nie zdecydowała się na ten ruch. Orion miał umiarkowane szczęście w eksploracji, nie znalazł żadnych Starożytnych, ale za to zyskał żeton odkrycia i trochę planet. Lyranie z kolei odkryli Starożytnych w I i III kręgu, oraz przyzwoity sektor w II. Na ten moment miałem już dwie zaawansowane pomarańczowe planety, więc liczyłem na, że uda mi się kupić Advanced Economy w kolejnej rundzie. Ludzie odkryli dwóch Starożytnych w III oraz Anomalię w II, na Nexusie zostały już tylko dwie Anomalie. Ola zdecydowała się na niemobilną stronę żetonu Anomalii. Magellanie z kolei odkryli dwa heksy z żetonami odkryć.</p>
+
 
     <li><h3>Podsumowanie i punktacja</h3></li>
     <p class="session-summary-pkt">Punktacja:<br>
     Paweł D(ja, 37pkt), Paweł P(32), Piotrek (27) = 32 pkt Sojuszu Flara. <br>
     Sylwia (26), Asia (35) = 30,5 pkt Sojuszu Nova<br>
     Ania = 17 pkt<br>
-
     Zabrakło naprawdę niewiele a dziewczyny by wygrały. Sama rozgrywka trwała 5 godzin.</p>
     </ul>
     `
