@@ -90,6 +90,8 @@
     border-radius: 20px;
     border-left: 3px solid #3498db33;
     border-right: 3px solid #3498db33;
+    border-bottom: 3px solid #3498db00;
+    border-top: 3px solid #3498db00;
     color: #ffff !important;
     backdrop-filter: blur(8px);
     font-size: 1.1rem;
@@ -99,4 +101,9 @@
 
 .intro h2 {
   color: white !important;
+}
+
+.intro:hover {
+  border-bottom: 3px solid #3498db33;
+  border-top: 3px solid #3498db33;
 }
