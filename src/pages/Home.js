@@ -45,7 +45,7 @@ const Home = () => {
           )}
         </section>
 
-        {/* Dodatkowa sekcja informacyjna */}
+{/*       
         <section className="info-section">
           <div className="info-cards">
             <div className="info-card">
@@ -61,7 +61,7 @@ const Home = () => {
               <p>Dzielimy się naszymi doświadczeniami i strategiami z każdej rozgrywki</p>
             </div>
           </div>
-        </section>
+        </section>*/}
       </div>
     </div>
   );
