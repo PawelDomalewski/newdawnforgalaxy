@@ -38,7 +38,7 @@
 }
 
 .latest-sessions {
-  padding: 4rem 0;
+  /*padding: 4rem 0;*/
 }
 
 .latest-sessions h2 {
@@ -82,4 +82,21 @@
 
 .read-more:hover {
   text-decoration: underline;
+}
+
+.intro {
+    background: #f8f9fa18;
+    padding: 1rem !important;
+    border-radius: 20px;
+    border-left: 3px solid #3498db33;
+    border-right: 3px solid #3498db33;
+    color: #ffff !important;
+    backdrop-filter: blur(8px);
+    font-size: 1.1rem;
+    transition: 500ms;
+    margin: 1rem auto !important;
+}
+
+.intro h2 {
+  color: white !important;
 }

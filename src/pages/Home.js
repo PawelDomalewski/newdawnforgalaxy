@@ -15,13 +15,11 @@ const Home = () => {
       <div className="hero">
         <h1>Eclipse: New Dawn for the Galaxy</h1>
       </div>
-      <div className="container py-5">
-        <h2>Dawno, dawno temu...</h2>
-        <p>Strona powstawała w celu spisywania tego co się dzieje na sesjach w grze Eclipse</p>
-        <h2>...w odległej galaktyce</h2>
-        <p>W zakładkach można również znaleźć pomocne opisy ras</p>
+      <div className="container intro">
+        <h2>Eclipse</h2>
+        <p>Wciel się w przywódcę jednej z potężnych ras galaktyki i wyrusz na podbój kosmosu w tej niezwykle głębokiej grze strategicznej. Twoja przygoda zaczyna się od odkrywania tajemniczych gwiazd, rozwoju zaawansowanych technologii i projektowania własnych, potężnych flot kosmicznych. Pamiętaj jednak, że twoja ekspansja nie pozostanie niezauważona – będziesz musiał prowadzić finezyjne rozgrywki dyplomatyczne lub szykować się na nieuniknione starcia z innymi imperiami. W mroku przestrzeni czyha jednak starsze i śmiertelne zagrożenie, gotowe wystawić na próbę wszystkie twoje strategiczne umiejętności. "Eclipse" doskonale łączy w sobie elementy eksploracji, rozwoju i taktycznych bitew na ogromną skalę, a każda rozgrywka jest unikalna dzięki losowo generowanej mapie. Podejmuj kluczowe decyzje, zarządzaj zasobami i doświadczaj epickich, widowiskowych starć, w których wynik zależy od twojego planu. Weź udział w tej niezapomnianej kosmicznej symfonii władzy i napisz swoją własną historię dominacji w galaktyce!</p>
       </div>
-      <div className="container">
+      <div className="container intro">
         {/* Sekcja z ostatnimi sesjami */}
         <section className="latest-sessions">
           <div className="section-header">

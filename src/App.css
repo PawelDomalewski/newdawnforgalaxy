@@ -8,7 +8,7 @@ body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
   color: #ffffff;
-  background: linear-gradient(rgba(0, 0, 0, 0.411),rgba(0, 0, 0, 0.418)),url(/public/images/bg3.jpg);
+  background: /*linear-gradient(rgba(0, 0, 0, 0.411),rgba(0, 0, 0, 0.418)),*/url(/public/images/bg3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -118,7 +118,7 @@ body {
 
   .hamburger {
     display: flex;
-    grid-column: 1;
+    grid-column: 3;
     justify-self: start;
   }
 
