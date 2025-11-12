@@ -451,7 +451,7 @@ const Rules = () => {
           </div>
         </section>
 
-        // Sekcja Ras
+        {/*Sekcja Ras*/}
         <section ref={racesRef} className="section">
           <div className="container">
             <h1 className="races-title">Rasy</h1>
