@@ -5,7 +5,10 @@ import SessionCard from '../components/SessionCard.js';
 import './Home.css';
 
 const Home = () => {
-  const latestSessions = sessions.slice(0, 6); // Pokazujemy 6 najnowszych sesji
+  // Sortowanie sesji od najnowszej do najstarszej i pobranie 3 najnowszych
+  const latestSessions = sessions
+    .sort((a, b) => new Date(b.date) - new Date(a.date))
+    .slice(0, 6);
 
   return (
     <div className="home-page">
