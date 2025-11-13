@@ -13,9 +13,11 @@ const Rules = () => {
   const topRacesRef = useRef(null);
   const guidesRef = useRef(null);
 
+
   const scrollToSection = (ref) => {
     ref.current?.scrollIntoView({ behavior: 'smooth' });
   };
+
 
   const openRaceModal = (race) => {
     setSelectedRace(race);
@@ -112,7 +114,8 @@ const Rules = () => {
       excerpt: "Po ponad 50 rozgrywkach i doświadczeniu turniejowym, poznaj optymalne ścieżki technologiczne dla każdej rasy w Eclipse. Dowiedz się które rzędy technologii są najlepsze dla twojej rasy i jak maksymalizować korzyści z rabatów naukowych."
     }
   ];
-// Funkcja do renderowania gwiazdek trudności
+
+  // Funkcja do renderowania gwiazdek trudności
   const renderDifficultyStars = (difficulty) => {
     return '★'.repeat(difficulty) + '☆'.repeat(5 - difficulty);
   };
@@ -126,6 +129,37 @@ const Rules = () => {
     <div className="rules-page">
       {/* Główna zawartość */}
       <div className="rules-content">
+        
+        {/* NOWA SEKCJA: Przyciski nawigacyjne */}
+        <section className="navigation-section">
+          <div className="container">
+            <h1>Zasady i Poradniki Eclipse</h1>
+            <p className="navigation-subtitle">Szybki dostęp do wszystkich sekcji</p>
+            <div className="navigation-buttons">
+              <button 
+                className="nav-button-rules"
+                onClick={() => scrollToSection(instructionsRef)}
+              >
+                <span className="nav-button-text">Instrukcje</span>
+              </button>
+              
+              <button 
+                className="nav-button-rules"
+                onClick={() => scrollToSection(racesRef)}
+              >
+                <span className="nav-button-text">Opis Ras</span>
+              </button>
+              
+              <button 
+                className="nav-button-rules"
+                onClick={() => scrollToSection(guidesRef)}
+              >
+                <span className="nav-button-text">Poradniki</span>
+              </button>
+            </div>
+          </div>
+        </section>
+
         {/* Sekcja Instrukcji */}
         <section ref={instructionsRef} className="section">
           <div className="container">
@@ -280,6 +314,7 @@ const Rules = () => {
           </div>
         </section>
       </div>
+
 
       {/* Modal z szczegółami rasy */}
       {isModalOpen && selectedRace && (
