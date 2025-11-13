@@ -33,6 +33,7 @@ const Header = () => {
           <Link to="/" onClick={closeMenu}>Strona główna</Link>
           <Link to="/sesje" onClick={closeMenu}>Relacje</Link>
           <Link to="/zasady-poradnik" onClick={closeMenu}>Zasady i Poradnik</Link>
+          <Link to="/statystyki" onClick={closeMenu}>Statystyki</Link>
         </nav>
 
         {/* Overlay do zamknięcia menu po kliknięciu w tło */}

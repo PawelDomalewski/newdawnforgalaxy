@@ -9,6 +9,7 @@ import Sessions from './pages/Sessions.js';
 import SessionDetail from './pages/SessionDetail.js';
 import Rules from './pages/Rules.js';
 import GuidePage from './components/GuidePage.js';
+import Statistics from './pages/Statistics.js';
 import About from './pages/About.js';
 import './App.css';
 
@@ -23,6 +24,7 @@ function App() {
             <Route path="/sesje" element={<Sessions />} />
             <Route path="/sesje/:sessionId" element={<SessionDetail />} />
             <Route path="/zasady-poradnik" element={<Rules />} />
+            <Route path="/statystyki" element={<Statistics />} />            
             <Route path="/o-mnie" element={<About />} />
             <Route path="/guide/:guideId" element={<GuidePage />} />
           </Routes>
