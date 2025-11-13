@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useLayoutEffect } from 'react';
 import SessionCard from '../components/SessionCard.js';
 import { sessions } from '../data/sessions.js';
 import './Sessions.css';
@@ -9,6 +9,9 @@ const Sessions = () => {
     // Konwersja dat na obiekty Date i porównanie
     return new Date(b.date) - new Date(a.date);
   });
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="sessions-page">
