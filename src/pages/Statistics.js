@@ -17,8 +17,6 @@ const Statistics = () => {
       setLoading(true);
       setError(null);
       
-      // Automatyczne pobieranie pliku CSV z public folder
-      // Zmień ścieżkę na właściwą lokalizację Twojego pliku
       const response = await fetch('images/sesje/stat.csv');
       
       if (!response.ok) {
@@ -58,7 +56,6 @@ const Statistics = () => {
       const line = lines[i];
       if (!line.trim()) continue;
 
-      // Zaawansowane parsowanie z obsługą cudzysłowów
       const values = [];
       let current = '';
       let inQuotes = false;
@@ -77,13 +74,11 @@ const Statistics = () => {
       }
       values.push(current.trim());
 
-      // Mapowanie wartości na obiekt
       const game = {};
       
       headers.forEach((header, index) => {
         let value = values[index] || '';
         
-        // Usuwanie cudzysłowów jeśli istnieją
         if (value.startsWith('"') && value.endsWith('"')) {
           value = value.slice(1, -1);
         }
@@ -127,7 +122,6 @@ const Statistics = () => {
         }
       });
 
-      // Dodajemy tylko kompletne rekordy
       if (game.player && game.race) {
         data.push(game);
       }
@@ -188,7 +182,7 @@ const Statistics = () => {
     });
 
     const stats = Object.values(raceMap).map(race => {
-      // Obliczanie Power Rating
+      // Obliczanie Power Rating w procentach
       const powerRating = (
         race.wins * 1.0 + 
         race.secondPlaces * 0.75 + 
@@ -197,6 +191,9 @@ const Statistics = () => {
         race.fifthPlaces * 0.10 + 
         race.sixthPlaces * 0.05
       ) / race.gamesPlayed;
+
+      // Konwersja na procenty (mnożymy przez 100)
+      const powerRatingPercent = (powerRating * 100);
 
       return {
         ...race,
@@ -208,12 +205,16 @@ const Statistics = () => {
           (race.totalPlayerCount / race.gamesPlayed).toFixed(1) : '0',
         winRate: race.gamesPlayed > 0 ? 
           ((race.wins / race.gamesPlayed) * 100).toFixed(1) + '%' : '0%',
-        powerRating: powerRating.toFixed(3)
+        powerRating: powerRatingPercent.toFixed(1) + '%'
       };
     });
 
     // Sortowanie według Power Rating (malejąco)
-    setRaceStats(stats.sort((a, b) => parseFloat(b.powerRating) - parseFloat(a.powerRating)));
+    setRaceStats(stats.sort((a, b) => {
+      const aValue = parseFloat(a.powerRating);
+      const bValue = parseFloat(b.powerRating);
+      return bValue - aValue;
+    }));
   };
 
   const calculatePlayerStats = (data) => {
@@ -316,31 +317,6 @@ const Statistics = () => {
           ⟳ Odśwież dane
         </button>
       </div>
-      
-{/*      {error && (
-        <div className="error-message">
-          <strong>Błąd:</strong> {error}
-          <div className="error-actions">
-            <button onClick={refreshData} className="retry-btn">
-              Spróbuj ponownie
-            </button>
-          </div>
-        </div>
-      )}
-
-      <div className="file-upload">
-        <h3>Załaduj inny plik CSV</h3>
-        <input 
-          type="file" 
-          accept=".csv" 
-          onChange={handleFileUpload}
-        />
-        <p className="file-info">
-          Aktualnie używany plik: <strong>New Dawn for the Galaxy - Arkusz1.csv</strong>
-          <br />
-          Załadowano {playerData.length} rozgrywek, {playerStats.length} graczy i {raceStats.length} ras
-        </p>
-      </div>*/}
 
       <div className="stats-grid">
         <div className="stat-card">
