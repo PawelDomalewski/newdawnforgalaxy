@@ -196,7 +196,7 @@ const Statistics = () => {
         race.fourthPlaces * 0.25 + 
         race.fifthPlaces * 0.10 + 
         race.sixthPlaces * 0.05
-      ) / race.gamesPlayed : 0;
+      ) / race.gamesPlayed;
 
       return {
         ...race,
