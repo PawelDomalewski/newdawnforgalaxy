@@ -255,13 +255,14 @@ const Statistics = () => {
 
       const totalPoints = player.points.reduce((a, b) => a + b, 0);
       const totalGames = player.points.length;
+      const bestScore = Math.max(...player.points); // Najwyższy wynik punktowy
 
       return {
         player: player.player,
         mostCommonRace: mostCommonRace,
         totalPoints: totalPoints,
         averagePoints: totalGames > 0 ? (totalPoints / totalGames).toFixed(2) : '0.00',
-        bestPlace: Math.min(...player.places),
+        bestScore: bestScore, // Najlepszy wynik zamiast najlepszego miejsca
         averagePlace: totalGames > 0 ? (player.places.reduce((a, b) => a + b, 0) / totalGames).toFixed(2) : '0.00',
         totalGames: totalGames,
         wins: player.wins,
@@ -394,7 +395,7 @@ const Statistics = () => {
                   <th>Najczęstsza Rasa</th>
                   <th>Łączne Punkty</th>
                   <th>Średnie Punkty</th>
-                  <th>Najlepsze Miejsce</th>
+                  <th>Najlepszy Wynik</th>
                   <th>Średnie Miejsce</th>
                   <th>Ilość Gier</th>
                   <th>Wygrane</th>
@@ -408,7 +409,7 @@ const Statistics = () => {
                     <td>{player.mostCommonRace}</td>
                     <td>{player.totalPoints}</td>
                     <td>{player.averagePoints}</td>
-                    <td>{player.bestPlace}</td>
+                    <td className="best-score">{player.bestScore}</td>
                     <td>{player.averagePlace}</td>
                     <td>{player.totalGames}</td>
                     <td>{player.wins}</td>
