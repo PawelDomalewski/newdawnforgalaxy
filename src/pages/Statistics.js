@@ -298,6 +298,9 @@ const Statistics = () => {
     loadCSVData();
   };
 
+  // Obliczanie łącznej liczby pierwszych miejsc
+  const totalWins = playerData.filter(game => game.place === 1).length;
+
   if (loading) {
     return (
       <div className="statistics-container">
@@ -321,7 +324,7 @@ const Statistics = () => {
       <div className="stats-grid">
         <div className="stat-card">
           <h3>Łącznie gier</h3>
-          <div className="stat-number">{playerData.length}</div>
+          <div className="stat-number">{totalWins}</div>
         </div>
         <div className="stat-card">
           <h3>Unikalnych graczy</h3>
