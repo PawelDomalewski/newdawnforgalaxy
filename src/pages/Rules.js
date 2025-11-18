@@ -192,6 +192,9 @@ const Rules = () => {
           <div className="container">
             <h1 className="races-title">Rasy</h1>
             <p className="races-subtitle">Kliknij na rasę aby zobaczyć szczegóły</p>
+            <p className="race-info"><strong>Objaśnienia:</strong><br></br>
+            <b>Trudność</b> - oznacza poziom skomplikowania rasy, im wyższa ilość gwiazdek, tym dla bardziej doświadczonego gracza jest przeznaczona rasa.<br></br>
+            <b>Power Rating</b> - wskaźnik siły danej rasy, wyliczany na podstawie zajętych miejsc, nie oznacza to jednak, że jakaś rasa jest słabsza niż inne! Warto wypróbować wszystkie i znaleźć swój styl grania.</p>
           </div>
 
           <div className="container races-grid">

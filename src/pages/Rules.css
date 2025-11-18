@@ -1530,3 +1530,18 @@
     padding: 1.2rem;
   }
 }
+
+.race-info {
+  font-size: 1.1rem;
+  color: #333;
+  background: #ffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 8px solid #3498db;
+  text-align: left !important;
+  margin-bottom: 1rem;
+}
+
+.race-info b {
+  color: #3498db;
+}
