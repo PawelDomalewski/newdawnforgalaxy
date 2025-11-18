@@ -315,8 +315,9 @@ const Statistics = () => {
 
   return (
     <div className="statistics-container intro">
+      <div className='eclipse'><h1>Eclipse</h1></div>
       <div className="header-section">
-        <h1>Statystyki Eclipse: New Dawn for the Galaxy</h1>
+        <h1>Statystyki</h1>
         <button onClick={refreshData} className="refresh-btn">
           ⟳ Odśwież dane
         </button>
