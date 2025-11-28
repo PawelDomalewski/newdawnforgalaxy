@@ -82,17 +82,29 @@ const GuidePage = () => {
     },
     '7': {
       id: 7,
-      title: "Dlaczego wiele Starożytnych to dobry początek",
+      title: "Otoczeni przez Starożytnych – przewodnik strategiczny",
       description: "Jak zamienić pozornie złą sytuację w zwycięstwo",
-      author: "Anonimowy ekspert Eclipse",
-      source: "#",
+      author: "Chris T.",
+      source: "https://boardgamegeek.com/thread/1527958/surrounded-by-ancients-a-strategy-guide",
       sourceName: "BoardGameGeek",
       difficulty: 3,
       content: "full",
-      image: "/images/ancients.jpg", // Możesz dodać odpowiedni obrazek
+      image: "/images/alien.png", // Możesz dodać odpowiedni obrazek
       excerpt: "Jednym z najczęstszych pytań i skarg jakie słyszę o Eclipse jest 'Totalnie zniszczył mnie losowy dobór, bo dostałem same Starożytnych.' Ten poradnik pokazuje, jak zamienić tę pozornie złą sytuację w jedną z najsilniejszych pozycji startowych w grze."
-
+    },
+    '8': {
+      id: 8,
+      title: "Krzywa uczenia się w Eclipse",
+      description: "Etapy rozwoju umiejętności od nowicjusza do eksperta",
+      author: "Chris T.",
+      source: "https://boardgamegeek.com/thread/2614358/the-learning-curve-in-eclipse",
+      sourceName: "BoardGameGeek",
+      difficulty: 2,
+      content: "full",
+      image: "/images/learn.png",
+      excerpt: "Z czasem towarzyszyłem wielu graczom w ich krzywych uczenia się w Eclipse. Ten poradnik pokazuje typowe etapy rozwoju umiejętności - od pierwszej gry przez wczesne nieporozumienia, aż do zaawansowanych strategii i mistrzostwa w grze."
     }
+  
   };
 
   const guide = guidesData[guideId];
@@ -170,6 +182,8 @@ const renderGuideContent = (guideId) => {
       return <Guide6Content />;
     case '7':
       return <Guide7Content />;
+    case '8':
+      return <Guide8Content />;
     default:
       return <div>Brak treści dla poradnika o ID: {guideId}</div>;
   }
@@ -1901,6 +1915,268 @@ const Guide7Content = () => {
             <div className="guide-conclusion">
               <h3>🏆 Powodzenia w podboju galaktyki!</h3>
               <p>Pamiętaj - Starożytni to nie przekleństwo, ale błogosławieństwo w przebraniu. Naucz się wykorzystywać tę sytuację na swoją korzyść!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// PORADNIK 8: Krzywa uczenia się w Eclipse
+const Guide8Content = () => {
+  return (
+    <div className="guide-article">
+      <div className="guide-article-header">
+        <div className="guide-credits">
+          <p><strong>Autor:</strong> Doświadczony gracz Eclipse</p>
+          <p>
+            <strong>Źródło:</strong>{' '}
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="guide-source-link"
+            >
+              BoardGameGeek - The Eclipse Learning Curve
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div className="guide-intro">
+        <p>Z czasem towarzyszyłem wielu graczom w ich krzywych uczenia się w Eclipse i miałem okazję grać z niektórymi osobami z innych grup, które były na tyle miłe, że podzieliły się ze mną swoimi doświadczeniami w nauce.</p>
+        <div className="guide-note">
+          <strong>🎯 Cel poradnika:</strong> Podzielić się przemyśleniami na temat typowych krzywych uczenia się i etapów w Eclipse na podstawie obserwacji wielu graczy.
+        </div>
+      </div>
+
+      <div className="guide-chapters">
+        {/* Wprowadzenie */}
+        <div className="guide-chapter">
+          <h3>📈 Krzywa uczenia się - przegląd</h3>
+          <div className="guide-content">
+            <p>Zgrubnie sortuję etapy nauki na "Pierwszą Grę", "Wczesną Krzywą", "Środkową Krzywą" i "Wypłaszczenie".</p>
+            
+            <div className="guide-grid">
+              <div className="guide-tip">
+                <h5>Pierwsza Gra</h5>
+                <p>Zapoznanie z mechanikami i podstawowymi zasadami</p>
+              </div>
+              <div className="guide-tip">
+                <h5>Wczesna Krzywa</h5>
+                <p>Oduczanie błędnych przekonań z innych gier</p>
+              </div>
+              <div className="guide-tip">
+                <h5>Środkowa Krzywa</h5>
+                <p>Zrozumienie zaawansowanych strategii</p>
+              </div>
+              <div className="guide-tip">
+                <h5>Wypłaszczenie</h5>
+                <p>Mistrzostwo i finezyjna gra</p>
+              </div>
+            </div>
+
+            <div className="guide-warning">
+              <strong>⚠️ Uwaga:</strong> Twoje doświadczenie może się różnić, ponieważ gracze mają różne preferencje i osobowości, a grupy gry są tak zróżnicowane i unikalne, jak są liczne.
+            </div>
+          </div>
+        </div>
+
+        {/* Pierwsza Gra */}
+        <div className="guide-chapter">
+          <h3>🎮 Pierwsza Gra</h3>
+          <div className="guide-content">
+            <p>Największa zmienność tutaj będzie, jeśli jesteś częścią grupy, która jest w większości lub całkowicie nowa w grze, lub jeśli jesteś jedynym nowym graczem w grupie, która jest bardziej zaawansowana.</p>
+
+            <div className="guide-grid">
+              <div className="guide-tip">
+                <h5>Nowa Grupa</h5>
+                <p>Spodziewaj się dużego przeszukiwania zasad i dyskusji. Na pewno popełnicie kilka błędów zasad między sobą.</p>
+              </div>
+              <div className="guide-tip">
+                <h5>Samotny Nowicjusz</h5>
+                <p>Gra może być nieco przytłaczająca. Zwłaszcza z co najmniej 30 minutami wyjaśnień zasad rzeczy będą wydawać się dużo.</p>
+              </div>
+            </div>
+
+            <h4>Wskaźniki dobrej pierwszej gry:</h4>
+            <ul>
+              <li><strong>20 punktów</strong> - dobre pierwsze zrozumienie gry</li>
+              <li><strong>30+ punktów</strong> - wyjątkowo dobra pierwsza gra</li>
+            </ul>
+
+            <div className="guide-note">
+              <strong>💡 Zalecenie:</strong> Zawsze wprowadzam nowych graczy do gry "Wszyscy Terranie", ponieważ daje im to najwięcej okazji do uczenia się nie tylko z własnych działań i konsekwencji, ale także obserwowania, jak inni radzą sobie z porównywalnymi umiejętnościami.
+            </div>
+          </div>
+        </div>
+
+        {/* Wczesna Krzywa */}
+        <div className="guide-chapter">
+          <h3>📚 Wczesna Krzywa</h3>
+          <div className="guide-content">
+            <p>Wczesna krzywa uczenia się charakteryzuje się wieloma bardzo zrozumiałymi nieporozumieniami na temat tego, czym jest Eclipse jako gra, i powolnym oduczaniem kawałek po kawałku, jak doświadczenia z innych gier mogą nie przenosić się tak łatwo, jak mogłoby się początkowo wydawać.</p>
+
+            <div className="guide-principles">
+              <div className="guide-principle">
+                <h4>Eclipse jako Gra Ekonomiczna 💰</h4>
+                <p><strong>Typowe przekonania:</strong></p>
+                <ul>
+                  <li>Wygrywasz i przegrywasz na podstawie swojego silnika ekonomicznego</li>
+                  <li>Dostawanie Starożytnych to pech</li>
+                  <li>Atakowanie Graczy to marnowanie zasobów</li>
+                  <li>Atakuj tylko z idealnymi projektami statków</li>
+                </ul>
+                <p><strong>Rezultat:</strong> Gry, w których turtling jest powszechny i gdzie połączenia z innymi graczami są unikane, gdziekolwiek to możliwe. Większość walk PVP zdarza się tylko w ostatniej rundzie.</p>
+              </div>
+
+              <div className="guide-principle">
+                <h4>Uczenie się o Rasach 👽</h4>
+                <p><strong>Typowe przekonania:</strong></p>
+                <ul>
+                  <li>Każda rasa ma określony styl gry i jeśli chcesz wygrać, musisz go przestrzegać</li>
+                  <li>Szczęście w losowaniu decyduje o grze</li>
+                </ul>
+                <p><strong>Rezultat:</strong> Gracze zaczynają myśleć o grze jako o zagadce do rozwiązania. Gdyby tylko odkryli idealny styl gry dla rasy i mieli szczęście zdobyć do niego narzędzia, wygrają grę.</p>
+              </div>
+
+              <div className="guide-principle">
+                <h4>Wojna, po co to komu? ⚔️</h4>
+                <p><strong>Typowe przekonania:</strong></p>
+                <ul>
+                  <li>Nie zaczynaj wojny, jeśli nie jesteś w stanie jej zakończyć</li>
+                  <li>Przytłaczające liczby są konieczne</li>
+                  <li>Wojna prowadzi tylko do wygranej śmiejącego się trzeciego gracza</li>
+                  <li>Mobilność to marnowanie czasu</li>
+                  <li>Rakiety są przeładowane</li>
+                </ul>
+                <p><strong>Rezultat:</strong> Faza ta często widzi więcej wczesnych prób walk PVP niż wcześniej. Jednak obie strony zgadzają się, że każda wojna jest wojną na wyniszczenie.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Środkowa Krzywa */}
+        <div className="guide-chapter">
+          <h3>🎯 Środkowa Krzywa</h3>
+          <div className="guide-content">
+            <p>Do tego punktu wiele rozwoju umiejętności i zrozumienia jest napędzanych głównie przez popełnianie błędów i uczenie się na nich. Duża różnica w stosunku do wczesnej krzywej polega na tym, że ogólnie "podstawowe przekonania", które pojawiają się w tych fazach, uważam za "dokładne".</p>
+
+            <div className="guide-principles">
+              <div className="guide-principle">
+                <h4>Zrozumienie Wczesnej Gry 🚀</h4>
+                <p><strong>Typowe przekonania:</strong></p>
+                <ul>
+                  <li>Ważne jest tworzenie połączeń dla relacji dyplomatycznych</li>
+                  <li>Zdobywanie systemów Starożytnych to dobra rzecz</li>
+                  <li>Ważniejsze jest wykonanie akcji dla pełnego efektu niż wczesne jej wykonanie</li>
+                  <li>Odkrycia są sytuacyjne</li>
+                </ul>
+                <p><strong>Rezultat:</strong> Gracze podejmują dobre decyzje dotyczące przygotowania do atakowania Starożytnych i zwykle widzi się tylko próby podejmowania ich, które mają dobrze ponad 90% wskaźników sukcesu.</p>
+              </div>
+
+              <div className="guide-principle">
+                <h4>Zrozumienie Ograniczonych Starć 🤝</h4>
+                <p>Eclipse robi wszystko, aby "utrata systemu" nie była wielką sprawą. Nadal otrzymujesz produkcję z systemu w tej rundzie i oszczędzasz koszt utrzymania dysku.</p>
+                <p><strong>Typowe przekonania:</strong></p>
+                <ul>
+                  <li>Utarta systemu to nic wielkiego</li>
+                  <li>Mściwość jest przeciwieństwem gry do wygrania</li>
+                  <li>Dążenie do eliminacji gracza to marnowanie</li>
+                  <li>Cięcie strat jest akceptowalną strategią</li>
+                </ul>
+              </div>
+
+              <div className="guide-principle">
+                <h4>Zrozumienie Tymczasowych Przewag ⚡</h4>
+                <p>W pewnym momencie niektórzy gracze zaczynają zdawać sobie sprawę, że czasami mają przewagę. Może mają lepszą broń, a sąsiad nie ma jeszcze dobrego kadłuba, może akurat mają kilka dodatkowych statków, których drugi nie może jeszcze dorównać liczebnie.</p>
+                <p><strong>Typowe przekonania:</strong></p>
+                <ul>
+                  <li>Posiadanie niektórych statków już na planszy jest ważne</li>
+                  <li>Posiadanie niektórych ulepszeń już na planach jest ważne</li>
+                  <li>Napędy są ważne, ponieważ ułatwiają dotarcie tam, gdzie można uzyskać przewagę</li>
+                  <li>Jeśli mam przewagę, muszę jej użyć TEJ rundy</li>
+                </ul>
+              </div>
+
+              <div className="guide-principle">
+                <h4>Zrozumienie "Kopania w Górę" 🎯</h4>
+                <p>Wcześnie w krzywej uczenia się ludzie będą mieli tendencję do "kopania w dół" w wyborze celów. Wierzą, że atakują innego gracza głównie po to, aby samemu uzyskać dostęp do zasobów.</p>
+                <p><strong>Typowe przekonania:</strong></p>
+                <ul>
+                  <li>Punkty netto są ważne (tj. kopanie w górę zamiast kopania w dół)</li>
+                  <li>Dobre umiejętności czytania planszy są ważne</li>
+                </ul>
+                <div className="guide-note">
+                  <strong>Matematyka punktów netto:</strong> Każdy punkt, który zabierasz graczowi, który radzi sobie gorzej niż ty, to 1 PV w kierunku twojej wygranej. Każdy punkt, który zabierasz osobie, która radzi sobie lepiej niż ty, to 2 PV w kierunku twojej wygranej.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Wypłaszczenie */}
+        <div className="guide-chapter">
+          <h3>🏆 Wypłaszczenie</h3>
+          <div className="guide-content">
+            <p>Gdy gracz lub grupa ma dobre zrozumienie wszystkich faz i przekonań środkowej krzywej, czuję, że krzywa uczenia się znacząco się spłaszcza i wygrywanie gier staje się dużo bardziej ćwiczeniem z gry niż wykorzystywaniem różnic w zrozumieniu gry.</p>
+
+            <div className="guide-final-tip">
+              <h4>Ostateczne podstawowe przekonania:</h4>
+              <ul>
+                <li><strong>Nie ma szczęścia w losowaniu</strong>, są tylko złe wybory dotyczące adaptacji do twojej sytuacji</li>
+                <li><strong>Nie ma szczęścia w kościach</strong>, jest tylko złe przygotowanie do walki i nad/podzaangażowanie</li>
+                <li><strong>Jedna na dwadzieścia gier</strong> całkowicie wyrzuci te dwa przekonania przez okno i sprawi, że zdobędziesz mniej niż 20 punktów, gdy absolutnie wszystko pójdzie tak źle, jak tylko może</li>
+              </ul>
+            </div>
+
+            <div className="guide-grid">
+              <div className="guide-tip">
+                <h5>Doświadczenie vs Szczęście</h5>
+                <p>Doświadczeni gracze rozumieją, że adaptacja jest kluczowa, a nie ślepe podążanie za strategią</p>
+              </div>
+              <div className="guide-tip">
+                <h5>Przygotowanie vs Losowość</h5>
+                <p>Dobre przygotowanie do walk minimalizuje wpływ losowości kości</p>
+              </div>
+              <div className="guide-tip">
+                <h5>Rzadkie Katastrofy</h5>
+                <p>Nawet najlepsi gracze czasami mają gry, gdzie wszystko idzie nie tak</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Podsumowanie */}
+        <div className="guide-chapter">
+          <h3>💭 Podsumowanie</h3>
+          <div className="guide-content">
+            <div className="guide-conclusion">
+              <h3>🎲 Refleksje końcowe</h3>
+              <p>Mam nadzieję, że znajdziesz coś interesującego w tych rozmyślaniach i zastanawiam się:</p>
+              
+              <div className="guide-questions">
+                <div className="guide-question">
+                  <h5>Co sądzisz na ten temat?</h5>
+                  <p>Czy to odpowiada Twojemu doświadczeniu w grze?</p>
+                </div>
+                
+                <div className="guide-question">
+                  <h5>Gdzie umieściłbyś siebie lub swoją grupę na krzywej uczenia się?</h5>
+                  <p>Czy rozpoznajesz któryś z tych etapów u siebie?</p>
+                </div>
+                
+                <div className="guide-question">
+                  <h5>Na jakie inne tematy chciałbyś, żebym podzielił się przemyśleniami?</h5>
+                  <p>Jakie aspekty Eclipse chciałbyś zgłębić?</p>
+                </div>
+              </div>
+
+              <div className="guide-final-note">
+                <h4>🚀 Kontynuuj naukę!</h4>
+                <p>Pamiętaj, że każdy gracz rozwija się w swoim własnym tempie. Najważniejsze to cieszyć się grą i ciągle się uczyć!</p>
+              </div>
             </div>
           </div>
         </div>

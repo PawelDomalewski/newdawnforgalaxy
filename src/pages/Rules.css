@@ -1057,6 +1057,8 @@
   text-align: center;
 }
 
+.guide-final-tip li, .guide-final-tip strong {color: white;}
+
 .guide-final-tip h4 {
   color: white;
   margin: 0 0 0.5rem 0;

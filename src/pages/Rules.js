@@ -115,16 +115,28 @@ const Rules = () => {
     },
     {
       id: 7,
-      title: "Dlaczego wiele Starożytnych to dobry początek",
+      title: "Otoczeni przez Starożytnych – przewodnik strategiczny",
       description: "Jak zamienić pozornie złą sytuację w zwycięstwo",
-      author: "Anonimowy ekspert Eclipse",
-      source: "#",
+      author: "Chris T.",
+      source: "https://boardgamegeek.com/thread/1527958/surrounded-by-ancients-a-strategy-guide",
       sourceName: "BoardGameGeek",
       difficulty: 3,
       content: "full",
-      image: "/images/ancients.jpg", // Możesz dodać odpowiedni obrazek
+      image: "/images/alien.png", // Możesz dodać odpowiedni obrazek
       excerpt: "Jednym z najczęstszych pytań i skarg jakie słyszę o Eclipse jest 'Totalnie zniszczył mnie losowy dobór, bo dostałem same Starożytnych.' Ten poradnik pokazuje, jak zamienić tę pozornie złą sytuację w jedną z najsilniejszych pozycji startowych w grze."
-}
+    },
+    {
+      id: 8,
+      title: "Krzywa uczenia się w Eclipse",
+      description: "Etapy rozwoju umiejętności od nowicjusza do eksperta",
+      author: "Chris T.",
+      source: "https://boardgamegeek.com/thread/2614358/the-learning-curve-in-eclipse",
+      sourceName: "BoardGameGeek",
+      difficulty: 2,
+      content: "full",
+      image: "/images/learn.png",
+      excerpt: "Z czasem towarzyszyłem wielu graczom w ich krzywych uczenia się w Eclipse. Ten poradnik pokazuje typowe etapy rozwoju umiejętności - od pierwszej gry przez wczesne nieporozumienia, aż do zaawansowanych strategii i mistrzostwa w grze."
+    }
   ];
 
   // Funkcja do renderowania gwiazdek trudności
