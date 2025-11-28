@@ -221,7 +221,7 @@ const Guide1Content = () => {
       <div className="guide-chapters">
         {/* Rozpoczęcie gry */}
         <div className="guide-chapter">
-          <h3>========================= Rozpoczęcie gry ==========================</h3>
+          <h3> Rozpoczęcie gry </h3>
           <div className="guide-content">
             <p>-Pierwsze pytanie, które powinieneś sobie zadać to: czy chcę być agresywny PvP (atakowanie graczy), PvE (tylko walka ze Starożytnymi i GCDS), lub mieszanką obu; czy chcesz usiąść z tyłu i pilnować własnego interesu i mieć nadzieję, że nikt cię nie zaatakuje?</p>
             <p>-Teraz, jeśli odpowiedziałeś na to pytanie po stronie agresywnej, spójrz na dostępne technologie i zobacz, czy technologia jest tam, aby pozwolić ci ulepszyć twoje statki do punktu, w którym czujesz się komfortowo podejmując się starożytnych krążowników w rundzie 1 lub 2. NIE POLEGAJ na tym, że te technologie pojawią się na początku rundy 2! Jeśli nie widzisz właściwych technologii, albo zmień swoją agresywną strategię na mniej agresywną, albo wybierz rasę, która twoim zdaniem pozwoli ci zacząć tępić starożytnych do końca rundy 2.</p>
@@ -232,7 +232,7 @@ const Guide1Content = () => {
 
         {/* Pierwsza runda */}
         <div className="guide-chapter">
-          <h3>============= Pierwsza runda (Cóż, głównie eksploracja) ===============</h3>
+          <h3> Pierwsza runda (Cóż, głównie eksploracja) </h3>
           <div className="guide-content">
             <p>-Po pierwsze, szanse są, że twoja pierwsza akcja będzie albo Badaniami albo Eksploracją. Technologia militarna, która jest kluczowa dla twoich planów, albo wczesna przewaga ekonomiczna/akcyjna jest twoim PRIORYTETEM, inaczej Eksploruj. Niektóre przykłady to Ulepszony Kadłub, Zaawansowana Robotyka, Działa Plazmowe. Nie badaj niczego, co albo nie pomoże ci natychmiast, albo jest krytyczne, aby zdobyć i może być zbadane przez innych graczy przed twoją kolejną turą.</p>
             <p>-Kiedy już wejdziesz w eksplorację, powinna to być reszta twojej tury, chyba że jesteś zdolny do ataku, wtedy możesz mieć scenariusze, gdzie atakujesz i/lub budujesz statki po tylko 1 lub 2 akcjach eksploracji. Pamiętaj, nigdy nie chcesz pozwolić komuś na zeksplorowanie twojego Heksa 1 za ciebie i zawsze chcesz zdobyć trochę Heksów 3 zanim znikną. Atakowanie w rundzie 1 powinno się zdarzyć tylko jeśli naprawdę lubisz zasoby, które otrzymasz i możesz skolonizować to po zwycięstwie. Zwykle lepiej jest eksplorować więcej systemów w rundzie 1 i wykonać wszystkie akcje dla twojego ataku w rundzie 2, jeśli nie będziesz w stanie zebrać zasobów z tego systemu pod koniec rundy.</p>
@@ -248,7 +248,7 @@ const Guide1Content = () => {
 
         {/* Druga runda */}
         <div className="guide-chapter">
-          <h3>================= Druga runda, Zmień swoje plany ====================</h3>
+          <h3> Druga runda, Zmień swoje plany </h3>
           <div className="guide-content">
             <p>-Czy zauważyłeś, że nie mówiłem dużo o odrzucaniu hexów na podstawie ich zasobów? To dlatego, że to zły pomysł w większości scenariuszy, na które trafisz (prawdopodobnie więcej niż 9 w 10 gier się zgodzi). Teraz, gdy masz pojęcie, jakie hexy masz, jakie zasoby będziesz mieć dostępne, jakich starożytnych musisz walczyć, jakie nowe technologie są dostępne na rundę 2, etc.... będziesz chciał całkowicie przemyśleć swoją strategię (cóż, może nie całkowicie). Musisz wziąć silny rzut oka i powiedzieć "Mogę odnieść sukces w walce ze starożytnymi w bardzo efektywnym terminowym sposób" lub złomować plany, które obejmują dużo wydatków (akcji) na military! Następnie, spójrz, czy masz zasoby, aby wspierać twój obecny plan gry, jeśli nie, poważnie rozważ zmianę twojego planu gry na coś, co pasuje do hexów, które masz. Na marginesie, gracz, który jest bardziej defensywny i zorientowany na eksplorację, będzie kontynuował eksplorację podczas rundy 2 przed wprowadzeniem jakichkolwiek większych zmian do swoich planów. Niektóre przykłady, kiedy potrzebujesz zmienić swoją strategię:</p>
             <p>- -Jesteś niski w planetach materiałowych i chciałeś być agresywny, ale nie masz świetnych statków startowych: Spójrz na oszczędzanie na pancernika (wyższa szansa przetrwania, stąd nie potrzebując odbudowywać statków), ulepszaj swój statek aż zwycięstwo jest w 90% pewne, lub złomuj plany militarne i skup się na nauce lub eksploracji ASAP</p>
@@ -260,7 +260,7 @@ const Guide1Content = () => {
 
         {/* Trzecia runda */}
         <div className="guide-chapter">
-          <h3>============== Trzecia runda, Zdecyduj o reszcie gry ==============</h3>
+          <h3> Trzecia runda, Zdecyduj o reszcie gry =</h3>
           <div className="guide-content">
             <p>-Technicznie nie wybierasz planu, który będzie ci służył przez resztę gry, ale teraz jesteś w stanie zacząć poważnie planować. Jesteśmy w punkcie, gdzie skończysz większość swojej eksploracji, wiesz, jak twoje bitwy (starożytni) pójdą, wyczerpiesz podstawowe opcje startowych technologii, i dostaniesz wyczucie, jak inni gracze grają. W tym momencie są dwie krytyczne rzeczy do zaplanowania przed wzięciem twojej tury.</p>
             <p>-Plan środkowej gry! Weź dobry rzut oka na tablicę technologii, gdzie spodziewasz się mieć bitwy (albo defensywne albo agresywne), jakie zasoby masz, jakie zaawansowane planety masz, i jakie statki chcesz ulepszać. Czasami technologia, której potrzebujesz, aby plan zadziałał, nie ma... im mniejsza gra, tym mniejsza szansa, że pojawi się na czas. Więc weź dobry, trudny rzut oka na przerywanie twojego planu i zmianę go, aby pasował do dostępnych technologii i pracował z tym, co masz. Teraz, czy będziesz potrzebować mieć bazy gwiezdne do obrony, jak silni są wrogowie, których zaatakujesz, jak silne będą potrzebować być twoje statki? To będzie mocno wpływać na to, jakie akcje podejmujesz w kierunku military, jak może całkowicie pominiesz military środkowej gry tak długo, jak to możliwe i skupisz się na ekonomii i poprawianiu tego, co już masz. Zawsze próbuj być tak ekstremalnym, jak możesz w kierunku twojego military, albo unikając go tak bardzo, jak to możliwe, albo idąc za nim tak bardzo, jak to możliwe w środkowej grze. Branie środka drogi nie daje ci przewagi nad innymi graczami. Teraz, czy twoje zasoby wspierają twoje cele?</p>
@@ -276,7 +276,7 @@ const Guide1Content = () => {
 
         {/* Czwarta runda */}
         <div className="guide-chapter">
-          <h3>=============== Czwarta runda, Czy możemy utrzymać kurs? ================</h3>
+          <h3> Czwarta runda, Czy możemy utrzymać kurs? =</h3>
           <div className="guide-content">
             <p>-Czas zobaczyć, jak rzeczy ułożyły się po trzeciej rundzie! Spójrz, jak twoje plany poszły, etc. Pamiętaj, nadal możesz odzyskać, jeśli rzeczy nie poszły dobrze! Jeśli byłeś po agresywnej stronie, albo popraw swoje military i zapewnij zwycięstwo, albo wstrzymaj się od wszystkich planów military za rundę i odzyskaj. Jeśli jesteś po defensywnej stronie, czy potrzebujesz wejść w jakieś military, czy potrzebujesz zbadać nową technologię dla twojej ekonomii? Ogólnie, powinieneś być w stanie trzymać się Twoich planów, które zrobiłeś w rundzie 3 lub dostosować je nieznacznie. Po prostu pamiętaj, że tracenie statków i nie wygrywanie systemu jest jednym z najszybszych sposobów, aby postawić siebie za, więc po twojej pierwszej druzgocącej porażce, graj ostrożnie.</p>
             <p>-Kiedy twoja ekonomia po prostu nie działa, potrzebujesz rozważyć kilka rzeczy, które możesz zmienić, aby pracować z tym, co masz. (a) Zredukuj liczbę systemów, na które wpłynąłeś, aby być najbardziej efektywnym. (b) Jeśli jakakolwiek wspierająca ekonomię technologia może pomóc ci wyjść z tej koleiny. Jeśli nie ma jej tej rundy, prawdopodobnie nie będzie jej następnej rundy i bądź bardzo niechętny do robienia planów opartych wokół technologii przychodzącej następnej rundy. (c) Jeśli potrzebujesz zbudować statek i coś zaatakować.</p>
@@ -287,7 +287,7 @@ const Guide1Content = () => {
 
         {/* Piąta i szósta runda */}
         <div className="guide-chapter">
-          <h3>================ Piąta i Szósta runda, PvP zaczyna się? ==================</h3>
+          <h3> Piąta i Szósta runda, PvP zaczyna się? </h3>
           <div className="guide-content">
             <p>-Cóż, w tym momencie, głównym kluczem francuskim do twoich planów będą inni gracze. Dostosuj i dostrajaj swoje plany zgodnie z wymaganiami, aby nie zostawić siebie wrażliwego na innych graczy. Gra staje się tak dynamiczna w tym momencie, że nie mogę zaoferować tak specyficznej rady, ponieważ jest to tak sytuacyjne. Czasami jesteś z tyłu i potrzebujesz po prostu oszczędzać na szybkie "duże uderzenie" badanie, które pozwoli ci wrócić do walki, inne razy po prostu chcesz utwardzić swoje obrony i ukucnąć. W tym momencie, naprawdę powinieneś wziąć swoje rdzeniowe systemy i zdecydować, jak chcesz wchodzić w interakcję z/atakować innych graczy. Jest kilka rzeczy, które chcesz ocenić i mieć na górze umysłu, gdy gracze zaczynają przechodzić w kierunku późnej gry. Runda szósta może czasami być przejściem w Późną grę, inne razy runda siódma.</p>
             <p>-Miej oko na to, co inni gracze MOGĄ zrobić i ich potencjał. Na przykład, Rho Indi nie dostają pancerników, więc chcą nękać i uszkadzać ekonomię gracza i (miejmy nadzieję) zabijać niektóre statki, aby powstrzymać ich od bycia zdolnymi do pozwolenia sobie na pancernika późnej gry. Rasy jak Planta i Hydran Progress mogą potrzebować agresywnego "wyboju drogowego" w formie kilku statków zabierających sektory od nich. Zrobienie właściwego sojusznika lub bycie "pokojowym" w właśnie właściwy sposób może pozwolić ci rozkwitnąć i być walczącym konkurentem (nawet jeśli to oznacza defensywnie), gdy późna gra nadejdzie. Naprawdę potrzebujesz być świadomy, jacy gracze mogliby zrujnować twój dzień i przygotować się najlepiej, jak możesz, aby kontrować lub bronić.</p>
@@ -297,7 +297,7 @@ const Guide1Content = () => {
 
         {/* Siódma runda */}
         <div className="guide-chapter">
-          <h3>================ Siódma Runda, więc wchodzi Późna gra ==================</h3>
+          <h3> Siódma Runda, więc wchodzi Późna gra </h3>
           <div className="guide-content">
             <p>-W tym momencie gry, albo już przegrałeś i masz nadzieję (a) ktoś zrobi błąd lub (b) aspekt PvP zadziała na twoją korzyść, albo wyglądasz całkiem nieźle. Dyplomacja staje się kluczowa w wielu grach, jeśli nie jesteś jednym z militarnych liderów (notka, nie musisz mieć najlepszych statków teraz, jeśli zbudowałeś ekonomię, aby wspierać szybkie przejście w statki późnej gry).</p>
             <p>-Podczas tej rundy, chcesz być ponownie oceniającym twoje plany późnej gry i zamieniać je z "w przybliżeniu" na "głównie." Powód, dla którego mówię "głównie" jest taki, że wciąż jest dużo czasu dla graczy, aby zmienić swoje projekty statków i ktokolwiek, kto kończy walcząc w ostatnich 3 rundach, potrzebuje być zdolnym do dostosowania swojego kierunku działania w odniesieniu do budowania statków, aby kontrować tych, z którymi będziesz walczyć. Oczywiście, zawsze jest opcja po prostu próbowania wejścia z jak największą liczbą statków z bombami neutronowymi i nie obchodzi cię wygrywanie walk.</p>
@@ -308,7 +308,7 @@ const Guide1Content = () => {
 
         {/* Ósma runda */}
         <div className="guide-chapter">
-          <h3>=============== Ósma Runda, Przygotuj się na dziewiątą ====================</h3>
+          <h3> Ósma Runda, Przygotuj się na dziewiątą </h3>
           <div className="guide-content">
             <p>-Po prostu, ósma runda jest cała o przygotowaniu na ostatnią rundę (dziewiątą). Są niektóre wyjątki i niektóre strategie, ale ogólnie, próbuj zostawić sobie tak wiele akcji na rundę 9, planuj Z WYPRZEDZENIEM, na co możesz sobie pozwolić, aby kupić (technologie i statki), więc nie robisz planów tylko po to, aby odkryć, że nie możesz sobie na nie pozwolić.</p>
             <p>-Nawet jeśli jesteś po agresywnej stronie, nie przeciążaj siebie w rundzie 8 tak, że stracisz to, co zyskałeś. Na odwrót, jeśli możesz okaleczyć swojego przeciwnika w rundzie 8 (lub 7), to może często być dużo tańsze i bardziej udane niż czekanie do rundy 9. Jako bardziej defensywny gracz, tylko musząc bronić siebie powinno wykoleić jakiekolwiek plany, aby wziąć to łatwo i przygotować się na dziewiątą. Bardzo ważną strategią jest pinowanie statków i nie bój się pinować statków wroga w ich WŁASNYM terytorium! Zamiast czekać na walkę, która przyjdzie do ciebie, wyślij statki w ich przestrzenie, aby je spiąć i zapobiec ruchowi w twoją przestrzeń. Twoje statki mogą być słabe i cierpieć szybką porażkę, ale jeśli walczą w swoim własnym systemie, nie mogą wziąć twojego!</p>
@@ -317,19 +317,19 @@ const Guide1Content = () => {
 
         {/* Dziewiąta runda */}
         <div className="guide-chapter">
-          <h3>================= Ósma Dziewiąta, Zwycięzca się pojawia ====================</h3>
+          <h3> Ósma Dziewiąta, Zwycięzca się pojawia </h3>
           <div className="guide-content">
-            <p>-Gracze, którzy planowali na rundę 9 z wyprzedzeniem, są często tymi, którzy korzystają najbardziej (lub po prostu głupi szczęśliwy kutas, który rzuca 6ki cały czas i dostał niesamowite hexy, ale większość czasu nie grałeś wystarczająco dobrze). Prosta rada na rundę dziewiątą i wtedy reszta zależy od ciebie, aby grać, jak uznasz za stosowne.</p>
-            <p>-Używaj akcji wpływów zgodnie z wymaganiami, aby zrzucić systemy 1PV, aby uwolnić akcje, i brać bardziej wartościowe systemy.</p>
-            <p>-Systemy, gdzie spodziewasz się przegrać walki, uwolnią dyski wpływów pod koniec walki, więc idź i przeciąż się tylko trochę...</p>
-            <p>-Używaj pinowania statków na twoją korzyść tak bardzo, jak to możliwe!</p>
+            <p className='guide-tip'><b>Gracze</b>, którzy planowali na rundę 9 z wyprzedzeniem, są często tymi, którzy korzystają najbardziej (lub po prostu głupi szczęśliwy farciarz, który rzuca 6ki cały czas i dostał niesamowite hexy, ale większość czasu nie grałeś wystarczająco dobrze). Prosta rada na rundę dziewiątą i wtedy reszta zależy od ciebie, aby grać, jak uznasz za stosowne.</p>
+            <p className='guide-tip'><b>Używaj</b> akcji wpływów zgodnie z wymaganiami, aby zrzucić systemy 1PV, aby uwolnić akcje, i brać bardziej wartościowe systemy.</p>
+            <p className='guide-tip'><b>Systemy</b>, gdzie spodziewasz się przegrać walki, uwolnią dyski wpływów pod koniec walki, więc idź i przeciąż się tylko trochę...</p>
+            <p className='guide-tip'><b>Używaj</b> pinowania statków na twoją korzyść tak bardzo, jak to możliwe!</p>
           </div>
         </div>
 
         {/* Refleksje końcowe */}
         <div className="guide-chapter">
-          <h3>==========================</h3>
-          <div className="guide-content">
+          <h3></h3>
+          <div className="guide-conclusion">
             <p>Po pewnym namyśle, poczułem, jak dodanie małej osobistej notki na końcu.</p>
             <p>-Zawsze rozważ granie w Eclipse, aby cieszyć się graniem w to. Jeśli nie potrzebujesz wygrywać, aby cieszyć się, wtedy nie czuj, że musisz grać, aby wygrać.</p>
             <p>-Zawsze rozważ, że Eclipse nie jest zabawne, jeśli nie masz z kim grać, więc upewnij się, że pomagasz innym ludziom też bawić się grając (nawet jeśli to oznacza przegrywanie)</p>
