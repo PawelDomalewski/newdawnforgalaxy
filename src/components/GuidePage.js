@@ -276,7 +276,7 @@ const Guide1Content = () => {
 
         {/* Czwarta runda */}
         <div className="guide-chapter">
-          <h3> Czwarta runda, Czy możemy utrzymać kurs? =</h3>
+          <h3> Czwarta runda, Czy możemy utrzymać kurs?</h3>
           <div className="guide-content">
             <p className='guide-tip'><b>Czas</b> zobaczyć, jak rzeczy ułożyły się po trzeciej rundzie! Spójrz, jak twoje plany poszły, etc. Pamiętaj, nadal możesz odzyskać, jeśli rzeczy nie poszły dobrze! Jeśli byłeś po agresywnej stronie, albo popraw swoje military i zapewnij zwycięstwo, albo wstrzymaj się od wszystkich planów military za rundę i odzyskaj. Jeśli jesteś po defensywnej stronie, czy potrzebujesz wejść w jakieś military, czy potrzebujesz zbadać nową technologię dla twojej ekonomii? Ogólnie, powinieneś być w stanie trzymać się Twoich planów, które zrobiłeś w rundzie 3 lub dostosować je nieznacznie. Po prostu pamiętaj, że tracenie statków i nie wygrywanie systemu jest jednym z najszybszych sposobów, aby postawić siebie za, więc po twojej pierwszej druzgocącej porażce, graj ostrożnie.</p>
             <p className='guide-tip'><b>Kiedy</b> twoja ekonomia po prostu nie działa, potrzebujesz rozważyć kilka rzeczy, które możesz zmienić, aby pracować z tym, co masz. (a) Zredukuj liczbę systemów, na które wpłynąłeś, aby być najbardziej efektywnym. (b) Jeśli jakakolwiek wspierająca ekonomię technologia może pomóc ci wyjść z tej koleiny. Jeśli nie ma jej tej rundy, prawdopodobnie nie będzie jej następnej rundy i bądź bardzo niechętny do robienia planów opartych wokół technologii przychodzącej następnej rundy. (c) Jeśli potrzebujesz zbudować statek i coś zaatakować.</p>
