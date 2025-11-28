@@ -112,7 +112,19 @@ const Rules = () => {
       content: "full",
       image: "/images/tech.jpg",
       excerpt: "Po ponad 50 rozgrywkach i doświadczeniu turniejowym, poznaj optymalne ścieżki technologiczne dla każdej rasy w Eclipse. Dowiedz się które rzędy technologii są najlepsze dla twojej rasy i jak maksymalizować korzyści z rabatów naukowych."
-    }
+    },
+    {
+      id: 7,
+      title: "Dlaczego wiele Starożytnych to dobry początek",
+      description: "Jak zamienić pozornie złą sytuację w zwycięstwo",
+      author: "Anonimowy ekspert Eclipse",
+      source: "#",
+      sourceName: "BoardGameGeek",
+      difficulty: 3,
+      content: "full",
+      image: "/images/ancients.jpg", // Możesz dodać odpowiedni obrazek
+      excerpt: "Jednym z najczęstszych pytań i skarg jakie słyszę o Eclipse jest 'Totalnie zniszczył mnie losowy dobór, bo dostałem same Starożytnych.' Ten poradnik pokazuje, jak zamienić tę pozornie złą sytuację w jedną z najsilniejszych pozycji startowych w grze."
+}
   ];
 
   // Funkcja do renderowania gwiazdek trudności

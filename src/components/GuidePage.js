@@ -79,6 +79,19 @@ const GuidePage = () => {
       content: "full",
       image: "/images/tech.jpg",
       excerpt: "Po ponad 50 rozgrywkach i doświadczeniu turniejowym, poznaj optymalne ścieżki technologiczne dla każdej rasy w Eclipse. Dowiedz się które rzędy technologii są najlepsze dla twojej rasy i jak maksymalizować korzyści z rabatów naukowych."
+    },
+    '7': {
+      id: 7,
+      title: "Dlaczego wiele Starożytnych to dobry początek",
+      description: "Jak zamienić pozornie złą sytuację w zwycięstwo",
+      author: "Anonimowy ekspert Eclipse",
+      source: "#",
+      sourceName: "BoardGameGeek",
+      difficulty: 3,
+      content: "full",
+      image: "/images/ancients.jpg", // Możesz dodać odpowiedni obrazek
+      excerpt: "Jednym z najczęstszych pytań i skarg jakie słyszę o Eclipse jest 'Totalnie zniszczył mnie losowy dobór, bo dostałem same Starożytnych.' Ten poradnik pokazuje, jak zamienić tę pozornie złą sytuację w jedną z najsilniejszych pozycji startowych w grze."
+
     }
   };
 
@@ -155,6 +168,8 @@ const renderGuideContent = (guideId) => {
       return <Guide5Content />;
     case '6':
       return <Guide6Content />;
+    case '7':
+      return <Guide7Content />;
     default:
       return <div>Brak treści dla poradnika o ID: {guideId}</div>;
   }
@@ -1571,6 +1586,321 @@ const Guide6Content = () => {
                 <h4>🏆 Ostateczna rada</h4>
                 <p>Większość ras powinna skupić się na górnym lub środkowym rzędzie technologii, ale ogólnie staraj się koncentrować na jednym rzędzie aby w pełni wykorzystać rabaty naukowe. W połączeniu z innymi strategiami, te taktyki technologiczne powinny uczynić cię godnym przeciwnikiem w większości meczów.</p>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// PORADNIK 7: Dlaczego wiele Starożytnych to dobry początek
+const Guide7Content = () => {
+  return (
+    <div className="guide-article">
+      <div className="guide-article-header">
+        <div className="guide-credits">
+          <p><strong>Autor:</strong> Anonimowy ekspert Eclipse</p>
+          <p>
+            <strong>Źródło:</strong>{' '}
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="guide-source-link"
+            >
+              BoardGameGeek - Why many Ancients is a good start
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div className="guide-intro">
+        <p>Jednym z najczęstszych pytań i skarg jakie słyszę o Eclipse jest "Totalnie zniszczył mnie losowy dobór, bo dostałem same Starożytnych.". Początkujący zwykle wpadają w desperację w tym momencie i bardziej lub mniej rezygnują lub zaczynają popełniać błędy które sprawiają, że ta myśl staje się samospełniającą się przepowiednią.</p>
+        <div className="guide-note">
+          <strong>🎯 Cel poradnika:</strong> Ponieważ w tej sytuacji prawdopodobnie będziesz musiał zrobić kilka kontrintuicyjnych rzeczy, aby faktycznie zamienić grę w zwycięstwo, chciałem spisać moje przemyślenia dla Ciebie.
+        </div>
+      </div>
+
+      <div className="guide-chapters">
+        {/* Założenia */}
+        <div className="guide-chapter">
+          <h3>🎯 Założenia poradnika</h3>
+          <div className="guide-content">
+            <p>Podczas gdy wiele z tych rad działa przy większości liczby graczy i kombinacji materiałów z dodatków, Twoje doświadczenie może się różnić w przypadku niektórych z nich. Dla celów poradnika zakładam, że używasz:</p>
+            
+            <div className="guide-grid">
+              <div className="guide-tip">
+                <h5>Gra</h5>
+                <p>6 graczy, wszystkie rasy</p>
+              </div>
+              <div className="guide-tip">
+                <h5>Hexy</h5>
+                <p>Wszystkie oprócz Krążowników Starożytnych i Ulów Starożytnych</p>
+              </div>
+              <div className="guide-tip">
+                <h5>Technologie</h5>
+                <p>Wszystkie rzadkie technologie i odkrycia</p>
+              </div>
+              <div className="guide-tip">
+                <h5>Warianty</h5>
+                <p>Wariant kolejności tur i sektorów warp przy mniejszej liczbie graczy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Częste błędne przekonania */}
+        <div className="guide-chapter">
+          <h3>🚫 Częste błędne przekonania</h3>
+          <div className="guide-content">
+            <p>Eclipse to wyjątkowa gra pod wieloma względami i niektóre rzeczy nie wydają się oczywiste, gdy jesteś przyzwyczajony do innych gier strategicznych.</p>
+
+            <div className="guide-principles">
+              <div className="guide-principle">
+                <h4>1. To gra wzrostu 🚫</h4>
+                <p><strong>Błędne przekonanie:</strong> "W grach wzrostu przegrasz, jeśli rozpoczniesz swój wzrost rundę później niż inni"</p>
+                <p><strong>Prawda:</strong> Eclipse ma silniki ekonomiczne z malejącymi zwrotami. Kupujesz więcej produkcji kosztem większej liczby dysków na planszy i większych kosztów utrzymania. Prawie wszystkie sposoby punktowania mają maksymalny możliwy wynik.</p>
+                <div className="guide-note">
+                  Twoje punkty w pewnym momencie osiągną maksimum i niewiele znaczy, czy udało Ci się zdobyć górne 30 punktów w rundzie 7, czy dołączyłeś później i zdobyłeś swoje końcowe punkty dopiero w rundzie 9.
+                </div>
+              </div>
+
+              <div className="guide-principle">
+                <h4>2. Więcej akcji = zawsze lepiej 🚫</h4>
+                <p><strong>Błędne przekonanie:</strong> "Musisz maksymalizować liczbę akcji w każdej rundzie"</p>
+                <p><strong>Prawda:</strong> W Eclipse znacznie ważniejsze jest wykonywanie akcji we właściwym momencie gry i w pełnym efektem. Ważne jest, aby nie marnować akcji. Jeśli na przykład użyjesz akcji budowy, aby zbudować tylko jeden statek, prawdopodobnie jesteś rozrzutny i powinieneś dobrze rozumieć, dlaczego warto zmarnować tę akcję.</p>
+              </div>
+
+              <div className="guide-principle">
+                <h4>3. Istnieje zwycięska strategia 🚫</h4>
+                <p><strong>Błędne przekonanie:</strong> "Mogę przyjść do gry z gotowym planem i go zrealizować"</p>
+                <p><strong>Prawda:</strong> W Eclipse jest to bardzo mało prawdopodobne. Nigdy nie powinieneś zamykać się w planie gry, zanim nie poznasz swojej sytuacji w zakresie systemów, zasobów i połączeń. Informacje te zwykle nie są kompletne przed rundą 2 lub nawet 3.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Główna strategia */}
+        <div className="guide-chapter">
+          <h3>🎯 Główna strategia - konkretne porady</h3>
+          <div className="guide-content">
+            <p><strong>Sytuacja:</strong> Właśnie wykonałeś swoje cztery bezpośrednio dostępne eksploracje i w czwartej wylosowałeś Starożytnego, tak jak w trzech pierwszych. Co powinieneś zrobić?</p>
+
+            <div className="guide-steps">
+              {/* Krok 0 */}
+              <div className="guide-step">
+                <h4>Krok 0 (opcjonalny)</h4>
+                <p>Zatańcz mały szczęśliwy taniec w swojej głowie. Chyba że Twoi sąsiedzi są ekstremalnie dobrzy lub chciwi na polowanie na "Twoich" Starożytnych, właśnie wygrałeś grę i nikt jeszcze o tym nie wie.</p>
+              </div>
+
+              {/* Krok 1 */}
+              <div className="guide-step">
+                <h4>Krok 1 - Decyzja o odrzuceniu</h4>
+                <p>Zdecyduj, czy chcesz odrzucić tego czwartego Starożytnego, czy nie. Wszystkie rasy mogą łatwo poradzić sobie z 3 Starożytnymi, niektóre nie mogą sobie pozwolić na radzenie sobie z czterema.</p>
+                
+                <div className="guide-grid">
+                  <div className="guide-tip">
+                    <h5>Gram Planta?</h5>
+                    <p>Jeśli tak i to blokuje twoje ostatnie wyjście eksploracji Pierścienia III, powinieneś odrzucić. Planta wymaga dużego "podwórka" systemów Pierścienia III.</p>
+                  </div>
+                  <div className="guide-tip">
+                    <h5>Mam wystarczającą produkcję?</h5>
+                    <p>Potrzebujesz 6-12 nauki od rundy 2 i możliwość zbudowania 2 krążowników do rundy 3. Jeśli możesz to zrobić, zachowaj czwartego Starożytnego.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Krok 2 */}
+              <div className="guide-step">
+                <h4>Krok 2 - Wczesne pasowanie</h4>
+                <p><strong>Przejdź wcześniej i bądź cierpliwy.</strong> Absolutnie potrzebujesz technologii, aby poradzić sobie ze Starożytnymi. Oznacza to, że musisz być pierwszym, który spasuje, aby dostać pierwszy wybór technologii w następnej rundzie.</p>
+                <div className="guide-warning">
+                  Miałem gry, w których nigdy nie wykonałem więcej niż jednej akcji w rundach 2, 3 i 4 i nadal je wygrywałem. Później docenisz mały dodatkowy zapas pieniędzy, który to dla Ciebie zbuduje.
+                </div>
+              </div>
+
+              {/* Krok 3 */}
+              <div className="guide-step">
+                <h4>Krok 3 - Święta Trójca Technologii</h4>
+                <p>Kupuj technologię w tej kolejności priorytetów:</p>
+
+                <div className="guide-grid">
+                  <div className="guide-tip">
+                    <h5>3a - Technologie</h5>
+                    <p><strong>Święta Trójca:</strong> "Ulepszony Kadłub", "Tarcza Gaussa" i "Działa Plazmowe" - w tej kolejności. Absolutnie potrzebujesz jednej z trzech.</p>
+                  </div>
+                  <div className="guide-tip">
+                    <h5>3b - Budowa</h5>
+                    <p><strong>2 krążowniki</strong> - najlepiej w jednej akcji. Większość ras powinna być w stanie zbudować jeden krążownik w rundzie 2, 2 z nich do rundy 3.</p>
+                  </div>
+                  <div className="guide-tip">
+                    <h5>3c - Ulepszenia</h5>
+                    <p><strong>Ulepsz projekty statków</strong> z nowymi technologiami - najlepiej w jednej akcji.</p>
+                  </div>
+                </div>
+
+                <div className="guide-note">
+                  <strong>Szanse walki:</strong><br/>
+                  • 2 krążowniki bez ulepszeń: 70% szans przeciw Starożytnemu<br/>
+                  • 2 krążowniki z tarczą Gaussa i ulepszonym kadłubem: 98% szans<br/>
+                  • 1 krążownik ze wszystkimi trzema technologiami: 96% szans
+                </div>
+              </div>
+
+              {/* Krok 4 */}
+              <div className="guide-step">
+                <h4>Krok 4 - Priorytetyzacja systemów</h4>
+                <p>Zacznij eliminować Starożytnych w tej kolejności:</p>
+                <ol>
+                  <li><strong>Najpierw</strong> te, które dają Ci największą bezpośrednią korzyść produkcyjną</li>
+                  <li><strong>Następnie</strong> te najbardziej zagrożone przez sąsiadów</li>
+                  <li><strong>Potem</strong> te, które pozostawiają najkrótszą drogę do następnego systemu</li>
+                  <li><strong>Na końcu</strong> pojedynczych Starożytnych przed podwójnymi</li>
+                </ol>
+                <p>W porządku jest, jeśli nie zaczniesz tego przed rundą 3 i jeśli uda Ci się zająć tylko jednego na rundę na początku.</p>
+              </div>
+
+              {/* Krok 5 */}
+              <div className="guide-step">
+                <h4>Krok 5 - Odkrycia</h4>
+                <p>Prawdopodobnie będzie tura 4 lub 5, czasami nawet 6 lub 7, zanim wyeliminujesz ostatniego ze Starożytnych. Prawie żadne skarby odkryć nie są warte więcej niż 2 PV w tym momencie.</p>
+                <div className="guide-note">
+                  Istnieją wyjątkowe sytuacje, ale generalnie chcesz 2 PV.
+                </div>
+              </div>
+
+              {/* Krok 6 */}
+              <div className="guide-step">
+                <h4>Krok 6 - Ciesz się korzyściami</h4>
+                <p>Oprócz systemu macierzystego zyskujesz:</p>
+                
+                <div className="guide-grid">
+                  <div className="guide-tip">
+                    <h5>8 PV</h5>
+                    <p>w odkryciach (20% przyzwoitego zwycięskiego wyniku)</p>
+                  </div>
+                  <div className="guide-tip">
+                    <h5>8+ PV</h5>
+                    <p>w terytorium (kolejne 20%)</p>
+                  </div>
+                  <div className="guide-tip">
+                    <h5>8-12 PV</h5>
+                    <p>z walk (kolejne 20%)</p>
+                  </div>
+                  <div className="guide-tip">
+                    <h5>Imperium 5-hexów</h5>
+                    <p>składające się głównie z systemów 2+ planet</p>
+                  </div>
+                </div>
+
+                <div className="guide-final-note">
+                  <strong>Łącznie:</strong> Około 30 PV tylko z tego. Tylko 5-10 PV z nauki da Ci wynik, który ma szansę na wygraną w większości gier.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Opcjonalne ulepszenia */}
+        <div className="guide-chapter">
+          <h3>⚡ Opcjonalne ulepszenia</h3>
+          <div className="guide-content">
+            <p>Możesz chcieć zainwestować w tani napęd lub nawet tanie źródło energii, aby być bardziej wydajnym w przemieszczaniu krążowników do wykańczania Starożytnych, a także móc strzelać pierwszy.</p>
+            <div className="guide-warning">
+              Ale to tylko wtedy, gdy masz jakieś zasoby i akcje do wydania na to.
+            </div>
+
+            <p>Oczywiście cały poradnik opiera się na tym, że Twoi przeciwnicy nie doceniają Twoich szans i pozostawiają Cię tu samemu sobie. W przypadku kompetentnych przeciwników spodziewaj się, że ukradną Ci przynajmniej jeden z hexów.</p>
+
+            <div className="guide-tip">
+              <h5>Strategia obronna</h5>
+              <p>Możesz utrudnić im tę kradzież, umieszczając swoje połączenia w sposób, który blokuje sąsiadów, którzy mogą być w stanie i chętni do sięgnięcia po "Twoich" Starożytnych.</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Specyfika ras */}
+        <div className="guide-chapter">
+          <h3>👽 Specyfika rasowa</h3>
+          <div className="guide-content">
+            <p>Przyjrzyjmy się niektórym bardziej zależnym od rasy punktom.</p>
+
+            <div className="guide-grid">
+              <div className="guide-tip">
+                <h5>Potomkowie Draco</h5>
+                <p>Oczywiście uwielbiasz ten start. Nic więcej do powiedzenia.</p>
+              </div>
+
+              <div className="guide-tip">
+                <h5>Oświeceni Lyry</h5>
+                <p>Jesteś wśród bardziej poszkodowanych tym startem. Musisz wyeliminować przynajmniej jednego ze Starożytnych do końca rundy 4 lub zabraknie Ci planet pod twoje świątynie.</p>
+              </div>
+
+              <div className="guide-tip">
+                <h5>Imperium Eridani</h5>
+                <p>Zaczynasz z 2 technologiami Świętej Trójcy. Prawdopodobnie jest to jeden z najsilniejszych startów, jakie możesz dostać. Rozważ nawet handel pieniędzmi za materiały, aby zbudować pancernika i zacząć sprzątać w rundzie 1.</p>
+              </div>
+
+              <div className="guide-tip">
+                <h5>Wygnańcy</h5>
+                <p>Dzięki urządzeniom maskującym masz opcję umieszczenia myśliwca w systemie z "Pojedynczym Starożytnym" i eksploracji poza nim, a nawet uratowania myśliwca. To kosztowne.</p>
+              </div>
+            </div>
+
+            <div className="guide-grid">
+              <div className="guide-tip">
+                <h5>Magellanie</h5>
+                <p>Z zasobami statku kolonizacyjnego możesz łatwo mieć 2 krążowniki na planszy w rundzie 2 i czerpać wielkie korzyści z odkryć.</p>
+              </div>
+
+              <div className="guide-tip">
+                <h5>Postępowi Hydranie</h5>
+                <p>Z tylko 2 materiałami startowymi i 2 na rundę będziesz miał trudności z postawieniem drugiego krążownika wystarczająco wcześnie. Ale z łatwością zdobędziesz 2 lub nawet 3 technologie Świętej Trójcy, aby to zrównoważyć.</p>
+              </div>
+
+              <div className="guide-tip">
+                <h5>Mechanema</h5>
+                <p>Nawet bez zdobywania jakiejkolwiek technologii, możesz mieć dwa krążowniki w turze 3 i zacząć sprzątać. Twój +2 do komputera daje dwóm krążownikom 93% szans na pokonanie Starożytnego.</p>
+              </div>
+
+              <div className="guide-tip">
+                <h5>Hegemonia Oriona</h5>
+                <p>Zaczynasz z prawie wszystkim, czego potrzebujesz, aby zacząć sprzątać Starożytnych w rundzie 1. Możesz rozważyć zatańczenie szczęśliwego tańca w rzeczywistości, a nie w głowie, gdy wylosujesz tego czwartego Starożytnego.</p>
+              </div>
+            </div>
+
+            <div className="guide-grid">
+              <div className="guide-tip">
+                <h5>Planta</h5>
+                <p>Jak wspomniano, jesteś jedyną rasą, która prawdopodobnie zostanie bardziej poszkodowana niż zyska na tym starcie. Więc prawdopodobnie chcesz odrzucić swojego czwartego Starożytnego.</p>
+              </div>
+
+              <div className="guide-tip">
+                <h5>Syndykat Rho Indi</h5>
+                <p>Zaczynasz z dodatkową inicjatywą i jedną trzecią Świętej Trójcy już zawartą w twoich planach. Prawdopodobnie będziesz potrzebować kolejnej, ponieważ będziesz miał trudności z postawieniem drugiego krążownika do rundy 3.</p>
+              </div>
+
+              <div className="guide-tip">
+                <h5>Terranie</h5>
+                <p>Cóż, z łatwością masz dwa krążowniki na planszy do rundy 3 i masz naukę, aby mieć dowolne 2 technologie Świętej Trójcy do tego czasu, więc po prostu trzymaj się planu.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Podsumowanie */}
+        <div className="guide-chapter">
+          <h3>💭 Zakończenie</h3>
+          <div className="guide-content">
+            <div className="guide-final-tip">
+              <h4>Uwielbiam dostawać wielu Starożytnych na start</h4>
+              <p>Wierzę, że jest to jeden z najsilniejszych startów w grze. Jeśli jestem w grze i ktoś narzeka na ten start, zawsze oferuję zamianę miejsc z nimi, jeśli są niezadowoleni. Niewiele osób jest skłonnych dokonać tej wymiany po raz drugi.</p>
+            </div>
+
+            <div className="guide-conclusion">
+              <h3>🏆 Powodzenia w podboju galaktyki!</h3>
+              <p>Pamiętaj - Starożytni to nie przekleństwo, ale błogosławieństwo w przebraniu. Naucz się wykorzystywać tę sytuację na swoją korzyść!</p>
             </div>
           </div>
         </div>
