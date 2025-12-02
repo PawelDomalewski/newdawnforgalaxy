@@ -108,6 +108,7 @@ body {
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
 }
+
 @media (max-width: 768px) {
   .header .container {
     display: grid;
@@ -136,3 +137,351 @@ body {
 
   /* Reszta stylów pozostaje bez zmian */
 }
+
+/* Sekcja 4X - dostosowana do reszty strony */
+.x4-section {
+  padding-top: 2rem !important;
+  padding: 2rem 0 3rem 0 !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.x4-section h1 {
+  text-align: center;
+  margin: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.x4-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Grid z 4 X */
+.x4-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.x4-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.x4-item:hover {
+  transform: translateY(-5px);
+}
+
+.x4-circle {
+  width: 100px;
+  height: 100px;
+  background: #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+  transition: all 0.3s ease;
+}
+
+.x4-circle::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(transparent, #ffff, transparent 30%);
+  animation: rotate 4s linear infinite;
+  opacity: 0.7;
+}
+
+.x4-circle::after {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background: #000;
+  border-radius: 50%;
+}
+
+.x4-item:hover .x4-circle {
+  border-color: #ffff;
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.349);
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.x4-x {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.x4-label {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  text-align: center;
+  position: absolute;
+  bottom: -50px;
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.x4-item:hover .x4-label {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Widok szczegółowy */
+.x4-detail-view {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: rgba(44, 62, 80, 0.1);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.x4-back-button {
+  background: rgba(52, 152, 219, 0.2);
+  border: 1px solid #3498db;
+  color: #3498db;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+
+.x4-back-button:hover {
+  background: #3498db;
+  color: #fff;
+}
+
+.x4-detail-container {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 2rem;
+  min-height: 300px;
+}
+
+/* Lista po lewej */
+.x4-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 1rem;
+  background: rgba(44, 62, 80, 0.3);
+  border-radius: 8px;
+  border: 1px solid rgba(52, 152, 219, 0.3);
+}
+
+.x4-list-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.x4-list-item:hover {
+  background: rgba(52, 152, 219, 0.2);
+}
+
+.x4-list-item.active {
+  background: rgba(255, 51, 102, 0.2);
+  border-left: 3px solid #ff3366;
+}
+
+.x4-list-circle {
+  width: 35px;
+  height: 35px;
+  background: #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1px solid #ffff;
+}
+
+.x4-list-x {
+  font-size: 1rem;
+  font-weight: 900;
+  color: #ffff;
+}
+
+.x4-list-item span {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Opis po prawej */
+.x4-description {
+  padding: 1.5rem;
+  background: rgba(44, 62, 80, 0.3);
+  border-radius: 8px;
+  border: 1px solid rgba(52, 152, 219, 0.3);
+}
+
+.x4-description-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(52, 152, 219, 0.3);
+}
+
+.x4-description-circle {
+  width: 50px;
+  height: 50px;
+  background: #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ffff;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.x4-description-x {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #ffff;
+}
+
+.x4-description h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.x4-description p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsywność */
+@media (max-width: 992px) {
+  .x4-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+  
+  .x4-detail-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .x4-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .x4-list-item {
+    flex-direction: column;
+    text-align: center;
+    min-width: 100px;
+    padding: 0.5rem;
+  }
+  
+  .x4-list-item.active {
+    border-left: none;
+    border-bottom: 3px solid #ff3366;
+  }
+}
+
+@media (max-width: 768px) {
+  .x4-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  .x4-circle {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .x4-x {
+    font-size: 2rem;
+  }
+  
+  .x4-label {
+    font-size: 1rem;
+    bottom: -35px;
+  }
+}
+
+@media (max-width: 576px) {
+  .x4-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .x4-description-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.8rem;
+  }
+  
+  .x4-description h3 {
+    font-size: 1.3rem;
+  }
+  
+  .x4-description-circle {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .x4-description-x {
+    font-size: 1.5rem;
+  }
+}
+
+/* Animacja */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.x4-detail-view {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Dostosowanie do istniejących klas */

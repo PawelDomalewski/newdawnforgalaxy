@@ -14,7 +14,10 @@
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
+  font-family: 'Courier New', Courier, monospace;
 }
+
+h2 {font-family: 'Courier New', Courier, monospace;}
 
 .hero p {
   font-size: 1.2rem;
