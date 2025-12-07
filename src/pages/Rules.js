@@ -197,13 +197,13 @@ const Rules = () => {
               </a>
             </div>
             <div>
-              <h2>Eclipse - Rise of the Ancients</h2>
+              <h2>Rise of the Ancients</h2>
               <a href='/images/eclipse_rota.pdf' className='rule' target="_blank" rel="noopener noreferrer">
                 <img src='/images/eclipse_rota.jpg' alt="Instrukcja Eclipse ROTA" />
               </a>
             </div>
             <div>
-              <h2>Eclipse - Shadow of the Rift</h2>
+              <h2>Shadow of the Rift</h2>
               <a href='/images/eclipse_sotr.pdf' className='rule' target="_blank" rel="noopener noreferrer">
                 <img src='/images/eclipse_sotr.jpg' alt="Instrukcja Eclipse SOTR" />
               </a>
