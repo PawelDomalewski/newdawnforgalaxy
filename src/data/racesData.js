@@ -12,10 +12,10 @@ export const racesData = [
       brown: 3
     },
     difficulty: 1,
-    gamesPlayed: 2,
+    gamesPlayed: 3,
     firstPlaces: 0,
     secondPlaces: 0,
-    thirdPlaces: 1,
+    thirdPlaces: 2,
     fourthPlaces: 1,
     fifthPlaces: 0,
     sixthPlaces: 0
@@ -54,11 +54,11 @@ export const racesData = [
       brown: 3
     },
     difficulty: 2,
-    gamesPlayed: 3,
+    gamesPlayed: 4,
     firstPlaces: 0,
     secondPlaces: 2,
     thirdPlaces: 0,
-    fourthPlaces: 1,
+    fourthPlaces: 2,
     fifthPlaces: 0,
     sixthPlaces: 0
   },
@@ -75,12 +75,12 @@ export const racesData = [
       brown: 5
     },
     difficulty: 3,
-    gamesPlayed: 4,
+    gamesPlayed: 5,
     firstPlaces: 3,
     secondPlaces: 0,
     thirdPlaces: 0,
     fourthPlaces: 0,
-    fifthPlaces: 0,
+    fifthPlaces: 2,
     sixthPlaces: 1
   },
   {
@@ -117,13 +117,13 @@ export const racesData = [
       brown: 2
     },
     difficulty: 2,
-    gamesPlayed: 5,
+    gamesPlayed: 6,
     firstPlaces: 1,
     secondPlaces: 2,
     thirdPlaces: 1,
     fourthPlaces: 0,
     fifthPlaces: 0,
-    sixthPlaces: 1
+    sixthPlaces: 2
   },
   {
     id: 7,
@@ -180,8 +180,8 @@ export const racesData = [
       brown: 4
     },
     difficulty: 3,
-    gamesPlayed: 0,
-    firstPlaces: 0,
+    gamesPlayed: 1,
+    firstPlaces: 1,
     secondPlaces: 0,
     thirdPlaces: 0,
     fourthPlaces: 0,
@@ -264,9 +264,9 @@ export const racesData = [
       brown: 2
     },
     difficulty: 4,
-    gamesPlayed: 2,
+    gamesPlayed: 3,
     firstPlaces: 0,
-    secondPlaces: 1,
+    secondPlaces: 2,
     thirdPlaces: 0,
     fourthPlaces: 0,
     fifthPlaces: 1,
