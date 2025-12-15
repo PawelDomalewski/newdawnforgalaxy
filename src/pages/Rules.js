@@ -238,9 +238,9 @@ const Rules = () => {
                       <span className="race-tile-difficulty">
                         Trudność: {renderDifficultyStars(race.difficulty)}
                       </span>
-                      {/*<span className="race-tile-difficulty">
+                      <span className="race-tile-difficulty1">
                 Power Rating: {formatWinRatio(winRatio)}
-              </span>*/}
+              </span>
                     </div>
                   </div>
                 </div>
