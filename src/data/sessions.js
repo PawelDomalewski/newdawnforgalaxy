@@ -251,7 +251,7 @@ export const sessions = [
     players: ["Paweł D", "Paweł W", "Piotr", "Natan", "Kacper", "Tymek"],
     rating: "5,5 godzin",
     summary: "Pochłonnięty żądzą zemsty Orion poświęcił wszystko i poniósł bolesną porażkę, co zostało wykorzystane przez Hydran, którzy skorzystali na ruchach Mechanemy.",
-    image: "/images/sesje/",
+    image: "/images/sesje/13122025/head.jpg",
     tags: ["Akcja!"],
     fullContent: `<h3>Uczestnicy:</h3>
     <ol>
@@ -291,7 +291,7 @@ export const sessions = [
 
 
     <li><h3>Podsumowanie i punktacja</h3></li>
-    <img src="/images/sesje/" class="img-head"></img>
+    <img src="/images/sesje/13122025/end.jpg" class="img-head"></img>
     <p class="session-summary-pkt">Punktacja:<br>
     <b style="color: gold">Paweł W - Wygnańcy - 41 pkt</b><br>
     <b style="color: silver">Paweł Do - Shapers of Dorado - 38 pkt</b><br>
