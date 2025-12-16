@@ -251,7 +251,7 @@ export const sessions = [
     players: ["Paweł D", "Paweł W", "Piotr", "Natan", "Kacper", "Tymek"],
     rating: "5,5 godzin",
     summary: "Pochłonnięty żądzą zemsty Orion poświęcił wszystko i poniósł bolesną porażkę, co zostało wykorzystane przez Hydran, którzy skorzystali na ruchach Mechanemy.",
-    image: "/images/sesje/081125/head.jpg",
+    image: "/images/sesje/",
     tags: ["Akcja!"],
     fullContent: `<h3>Uczestnicy:</h3>
     <ol>
@@ -267,7 +267,7 @@ export const sessions = [
     <img src="/images/sesje/" class="img-head"></img>
     <p></p>
     <li><h3>Runda 2</h3><li>
-    <img src="/images/sesje/081125/2.jpg" class=""></img>
+    <img src="/images/sesje/" class=""></img>
     <p></p>
     <li><h3>Runda 3</h3><li>
     <img src="/images/sesje/" class=""></img>
