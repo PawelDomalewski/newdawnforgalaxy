@@ -217,7 +217,8 @@ const Rules = () => {
             <h1 className="races-title">Rasy</h1>
             <p className="races-subtitle">Kliknij na rasę aby zobaczyć szczegóły</p>
             <p className="race-info"><strong>Objaśnienia:</strong><br></br>
-            <b>Trudność</b> - oznacza poziom skomplikowania rasy, im wyższa ilość gwiazdek, tym dla bardziej doświadczonego gracza jest przeznaczona rasa.</p>
+            <b>Trudność</b> - oznacza poziom skomplikowania rasy, im wyższa ilość gwiazdek, tym dla bardziej doświadczonego gracza jest przeznaczona rasa.<br></br>
+            <b>Power Rating</b> - oznacza szacunkową siłę rasy, wyliczoną na podstawię średniej ważonej zajętych miejsc. Nie jest to wskaźnik arbitralny, bardziej jako ciekawoska. Szczególnie, że jest spora dysproporcja w ilości rozegranych partii przez każdą z ras, np. Hydranie pojawiali się już 6 razy, Syndykat czy Wygnańcy tylko 1 raz.</p>
           </div>
 
           <div className="container races-grid">
