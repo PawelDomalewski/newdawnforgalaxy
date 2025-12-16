@@ -250,7 +250,7 @@ export const sessions = [
     date: "2025-12-13",
     players: ["Paweł D", "Paweł W", "Piotr", "Natan", "Kacper", "Tymek"],
     rating: "5,5 godzin",
-    summary: "Pochłonnięty żądzą zemsty Orion poświęcił wszystko i poniósł bolesną porażkę, co zostało wykorzystane przez Hydran, którzy skorzystali na ruchach Mechanemy.",
+    summary: "GCDS - Galactic Center Defense System, czyli System Obrony Centrum Galaktyki utrzymał środek przez 6 rund, mocno ograniczając pole do manewru graczom. Natomiast Wieża Ciśnień wybudowana w 3 rundzie przetrwała całą grę.",
     image: "/images/sesje/13122025/head.jpg",
     tags: ["Akcja!"],
     fullContent: `<h3>Uczestnicy:</h3>
@@ -263,30 +263,45 @@ export const sessions = [
     <li>Paweł W - Wygnańcy</li>
     </ol>
     <ul>
-    <li><h3>Runda 1</h3><li>
-    <img src="/images/sesje/" class="img-head"></img>
+    <li><h3>Runda 1</h3></li>
+    <img src="/images/sesje/13122025/2.jpg" class="img-head"></img>
     <p></p>
-    <li><h3>Runda 2</h3><li>
-    <img src="/images/sesje/" class=""></img>
+    <li><h3>Runda 2</h3></li>
+    <img src="/images/sesje/13122025/3.jpg" class=""></img>
     <p></p>
-    <li><h3>Runda 3</h3><li>
-    <img src="/images/sesje/" class=""></img>
+    <li><h3>Runda 3</h3></li>
+    <img src="/images/sesje/13122025/5.jpg" class=""></img>
     <p></p>
-    <li><h3>Runda 4</h3><li>
-    <img src="/images/sesje/" class=""></img>
+    <li><h3>Runda 4</h3></li>
+    <img src="/images/sesje/13122025/7.jpg" class=""></img>
     <p></p>
-    <li><h3>Runda 5</h3><li>
-    <img src="/images/sesje/" class=""></img>
+    <li><h3>Runda 5</h3></li>
+    <img src="/images/sesje/13122025/9.jpg" class=""></img>
     <p></p>
-    <li><h3>Runda 6</h3><li>
-    <img src="/images/sesje/" class="img-head"></img>
-    <img src="/images/sesje/" class="img-head"></img>
+    <li><h3>Runda 6</h3></li>
+    <img src="/images/sesje/13122025/11.jpg" class=""></img>
     <p></p>
-    <li><h3>Runda 7 i 8</h3><li>
-    <img src="/images/sesje/" class=""></img>
+    <li><h3>Runda 7</h3></li>
+    <div>
+    <img src="/images/sesje/13122025/13.jpg"></img>
+    <img src="/images/sesje/13122025/14.jpg"></img>
+    <img src="/images/sesje/13122025/15.jpg"></img>
+    </div>
     <p></p>
-    <li><h3>Runda 9</h3><li>
-    <img src="/images/sesje/" class=""></img>
+    <li><h3>Runda 8</h3></li>
+    <div>
+    <img src="/images/sesje/13122025/17.jpg"></img>
+    <img src="/images/sesje/13122025/18.jpg"></img>
+    <img src="/images/sesje/13122025/19.jpg"></img>
+    </div>
+    <p></p>
+    <li><h3>Runda 9</h3></li>
+    <div>
+    <img src="/images/sesje/13122025/24.jpg"></img>
+    <img src="/images/sesje/13122025/25.jpg"></img>
+    <img src="/images/sesje/13122025/29.jpg"></img>
+    </div>
+    <img src="/images/sesje/13122025/30.jpg" class="img-head"></img>
     <p></p>
 
 
@@ -294,7 +309,7 @@ export const sessions = [
     <img src="/images/sesje/13122025/end.jpg" class="img-head"></img>
     <p class="session-summary-pkt">Punktacja:<br>
     <b style="color: gold">Paweł W - Wygnańcy - 41 pkt</b><br>
-    <b style="color: silver">Paweł Do - Shapers of Dorado - 38 pkt</b><br>
+    <b style="color: silver">Paweł D - Shapers of Dorado - 38 pkt</b><br>
     Tymek - Ludzie - 30 pkt<br>
     Natan - Mechanema - 25 pkt<br>
     Kacper - Hegemonia Oriona - 15 pkt<br>
