@@ -243,5 +243,64 @@ export const sessions = [
     W pierwszej fazie gry wszyscy gracze skupili się na eksploracji galaktyki, odkrywając planety, Starożytnych i Anomalie. W środkowej części rozgrywki nastąpił stopniowy zwrot w stronę militaryzacji i walki z neutralnymi zagrożeniami oraz początkowe potyczki między graczami. Kulminacja nastąpiła w rundzie 9, kiedy to Orion dokonał inwazji na ojczyznę Lyran, a Ludzie kontratakowali, co Hydranie wykorzystali do ataku na Mechanemę. Tymczasem Magellanie przez cały czas pozostawali w cieniu, skupiając się na rozwoju technologicznym i unikając otwartych konfliktów.</p>
     </ul>
     `
+  },
+  {
+    id: 9,
+    game: "Wieża ciśnień i niezniszczalne Centrum Galaktyki",
+    date: "2025-12-13",
+    players: ["Paweł D", "Paweł W", "Piotr", "Natan", "Kacper", "Tymek"],
+    rating: "5,5 godzin",
+    summary: "Pochłonnięty żądzą zemsty Orion poświęcił wszystko i poniósł bolesną porażkę, co zostało wykorzystane przez Hydran, którzy skorzystali na ruchach Mechanemy.",
+    image: "/images/sesje/081125/head.jpg",
+    tags: ["Akcja!"],
+    fullContent: `<h3>Uczestnicy:</h3>
+    <ol>
+    <li>Piotr - Postępowi Hydranie</li>
+    <li>Tymek - Ludzie</li>
+    <li>Natan - Mechanema</li>
+    <li>Kacper - Hegemonia Oriona</li>
+    <li>Paweł D - Shapers of Dorado</li>
+    <li>Paweł W - Wygnańcy</li>
+    </ol>
+    <ul>
+    <li><h3>Runda 1</h3><li>
+    <img src="/images/sesje/" class="img-head"></img>
+    <p></p>
+    <li><h3>Runda 2</h3><li>
+    <img src="/images/sesje/081125/2.jpg" class=""></img>
+    <p></p>
+    <li><h3>Runda 3</h3><li>
+    <img src="/images/sesje/" class=""></img>
+    <p></p>
+    <li><h3>Runda 4</h3><li>
+    <img src="/images/sesje/" class=""></img>
+    <p></p>
+    <li><h3>Runda 5</h3><li>
+    <img src="/images/sesje/" class=""></img>
+    <p></p>
+    <li><h3>Runda 6</h3><li>
+    <img src="/images/sesje/" class="img-head"></img>
+    <img src="/images/sesje/" class="img-head"></img>
+    <p></p>
+    <li><h3>Runda 7 i 8</h3><li>
+    <img src="/images/sesje/" class=""></img>
+    <p></p>
+    <li><h3>Runda 9</h3><li>
+    <img src="/images/sesje/" class=""></img>
+    <p></p>
+
+
+    <li><h3>Podsumowanie i punktacja</h3></li>
+    <img src="/images/sesje/" class="img-head"></img>
+    <p class="session-summary-pkt">Punktacja:<br>
+    <b style="color: gold">Paweł W - Wygnańcy - 41 pkt</b><br>
+    <b style="color: silver">Paweł Do - Shapers of Dorado - 38 pkt</b><br>
+    Tymek - Ludzie - 30 pkt<br>
+    Natan - Mechanema - 25 pkt<br>
+    Kacper - Hegemonia Oriona - 15 pkt<br>
+    Piotr - Postępowi Hydranie - 13 pkt<br>
+    W pierwszej fazie gry wszyscy gracze skupili się na eksploracji galaktyki, odkrywając planety, Starożytnych i Anomalie. W środkowej części rozgrywki nastąpił stopniowy zwrot w stronę militaryzacji i walki z neutralnymi zagrożeniami oraz początkowe potyczki między graczami. Kulminacja nastąpiła w rundzie 9, kiedy to Orion dokonał inwazji na ojczyznę Lyran, a Ludzie kontratakowali, co Hydranie wykorzystali do ataku na Mechanemę. Tymczasem Magellanie przez cały czas pozostawali w cieniu, skupiając się na rozwoju technologicznym i unikając otwartych konfliktów.</p>
+    </ul>
+    `
   }
 ];
