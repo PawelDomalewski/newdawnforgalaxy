@@ -422,6 +422,169 @@ const Statistics = () => {
           </div>
         )}
       </div>
+            <div className="stats-section">
+        <h2>Profil Gracza - Podsumowanie</h2>
+        {playerStats.length === 0 ? (
+          <p className="no-data">Brak danych do wyświetlenia</p>
+        ) : (
+          <div className="player-profiles-container">
+            {(() => {
+              // Pobierz wszystkie unikalne rasy z danych
+              const allRaces = [...new Set(playerData.map(game => game.race))].filter(race => race);
+              
+              // Przygotuj pełne dane dla każdego gracza
+              const playerProfiles = playerStats.map(player => {
+                // Wszystkie gry danego gracza
+                const playerGames = playerData.filter(game => game.player === player.player);
+                
+                // Znajdź grę z największą liczbą punktów
+                const bestGame = playerGames.reduce((prev, current) => 
+                  (prev.points > current.points) ? prev : current
+                );
+                
+                // Znajdź grę z najmniejszą liczbą punktów
+                const worstGame = playerGames.reduce((prev, current) => 
+                  (prev.points < current.points) ? prev : current
+                );
+                
+                // Rasy, którymi gracz grał
+                const playedRaces = [...new Set(
+                  playerGames.map(game => game.race).filter(race => race)
+                )];
+                
+                // Rasy, którymi gracz nie grał
+                const ungracedRaces = allRaces.filter(race => !playedRaces.includes(race));
+                
+                // Liczba wygranych
+                const wins = playerGames.filter(game => game.place === 1).length;
+                
+                // Średnia punktów
+                const averagePoints = playerGames.length > 0 
+                  ? (playerGames.reduce((sum, game) => sum + game.points, 0) / playerGames.length).toFixed(1)
+                  : '0';
+                
+                // Średnie miejsce
+                const averagePlace = playerGames.length > 0 
+                  ? (playerGames.reduce((sum, game) => sum + game.place, 0) / playerGames.length).toFixed(2)
+                  : '0.00';
+                
+                return {
+                  player: player.player,
+                  totalGames: playerGames.length,
+                  playedRaces: playedRaces,
+                  ungracedRaces: ungracedRaces,
+                  totalPlayedRaces: playedRaces.length,
+                  totalUngracedRaces: ungracedRaces.length,
+                  bestGame: {
+                    points: bestGame.points,
+                    race: bestGame.race,
+                    date: bestGame.date
+                  },
+                  worstGame: {
+                    points: worstGame.points,
+                    race: worstGame.race,
+                    date: worstGame.date
+                  },
+                  averagePoints: averagePoints,
+                  averagePlace: averagePlace,
+                  wins: wins,
+                  winRate: playerGames.length > 0 ? ((wins / playerGames.length) * 100).toFixed(1) + '%' : '0%'
+                };
+              });
+
+              return (
+                <div className="player-profiles-grid">
+                  {playerProfiles.map((profile, index) => (
+                    <div key={index} className="player-profile-card">
+                      <div className="profile-header">
+                        <h3 className="player-name">{profile.player}</h3>
+                        <div className="player-summary">
+                          <span className="games-count">🎮 {profile.totalGames} gier</span>
+                          <span className="wins-count">🏆 {profile.wins} wygranych</span>
+                          <span className="win-rate">📊 {profile.winRate}</span>
+                        </div>
+                      </div>
+                      
+                      <div className="profile-stats-grid">
+                        <div className="stat-box best-game">
+                          <h4>Najlepszy wynik</h4>
+                          <div className="stat-value highlight">{profile.bestGame.points} pkt</div>
+                          <div className="stat-detail">
+                            <span className="race-badge">{profile.bestGame.race}</span>
+                            {profile.bestGame.date && (
+                              <span className="date-badge">{profile.bestGame.date}</span>
+                            )}
+                          </div>
+                        </div>
+                        
+                        <div className="stat-box worst-game">
+                          <h4>Najniższy wynik</h4>
+                          <div className="stat-value lowlight">{profile.worstGame.points} pkt</div>
+                          <div className="stat-detail">
+                            <span className="race-badge">{profile.worstGame.race}</span>
+                            {profile.worstGame.date && (
+                              <span className="date-badge">{profile.worstGame.date}</span>
+                            )}
+                          </div>
+                        </div>
+                        
+                        <div className="stat-box average-stats">
+                          <h4>Średnie statystyki</h4>
+                          <div className="average-grid">
+                            <div className="average-item">
+                              <span className="avg-label">Punkty/game:</span>
+                              <span className="avg-value">{profile.averagePoints}</span>
+                            </div>
+                            <div className="average-item">
+                              <span className="avg-label">Miejsce:</span>
+                              <span className="avg-value">{profile.averagePlace}</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div className="races-section">
+                        <div className="races-column">
+                          <h4>Zagrane rasy ({profile.totalPlayedRaces})</h4>
+                          {profile.playedRaces.length > 0 ? (
+                            <div className="race-tags">
+                              {profile.playedRaces.map((race, idx) => (
+                                <span key={idx} className="race-tag played">
+                                  {race}
+                                </span>
+                              ))}
+                            </div>
+                          ) : (
+                            <p className="no-races">Brak danych</p>
+                          )}
+                        </div>
+                        
+                        <div className="races-column">
+                          <h4>Rasy niegrane ({profile.totalUngracedRaces})</h4>
+                          {profile.ungracedRaces.length > 0 ? (
+                            <div className="race-tags">
+                              {profile.ungracedRaces.map((race, idx) => (
+                                <span key={idx} className="race-tag ungraced">
+                                  {race}
+                                </span>
+                              ))}
+                            </div>
+                          ) : (
+                            <div className="all-races-achievement">
+                              <span className="achievement-icon">🎯</span>
+                              <span className="achievement-text">Zagrał wszystkimi rasami!</span>
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              );
+            })()}
+          </div>
+        )}
+      </div>
     </div>
   );
 };
