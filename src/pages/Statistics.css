@@ -583,6 +583,8 @@ td {color: black;}
 
 .full-completion-achievement {
   background-image: url(/public/images/9984947.jpg);
+  background-position: center;
+  background-size: cover;
   border-radius: 15px;
   padding: 25px;
   text-align: center;
@@ -628,7 +630,6 @@ td {color: black;}
 
 .achievement-text p {
   margin: 0;
-  color: #636e72;
   font-size: 14px;
   font-weight: 500;
 }
