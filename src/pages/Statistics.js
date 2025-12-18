@@ -422,7 +422,7 @@ const Statistics = () => {
           </div>
         )}
       </div>
-            <div className="stats-section">
+                 <div className="stats-section">
         <h2>Profil Gracza - Podsumowanie</h2>
         {playerStats.length === 0 ? (
           <p className="no-data">Brak danych do wyświetlenia</p>
@@ -455,6 +455,9 @@ const Statistics = () => {
                 // Rasy, którymi gracz nie grał
                 const ungracedRaces = allRaces.filter(race => !playedRaces.includes(race));
                 
+                // Sprawdź czy gracz zagrał wszystkimi rasami
+                const hasPlayedAllRaces = ungracedRaces.length === 0 && allRaces.length > 0;
+                
                 // Liczba wygranych
                 const wins = playerGames.filter(game => game.place === 1).length;
                 
@@ -475,6 +478,7 @@ const Statistics = () => {
                   ungracedRaces: ungracedRaces,
                   totalPlayedRaces: playedRaces.length,
                   totalUngracedRaces: ungracedRaces.length,
+                  hasPlayedAllRaces: hasPlayedAllRaces,
                   bestGame: {
                     points: bestGame.points,
                     race: bestGame.race,
@@ -543,40 +547,60 @@ const Statistics = () => {
                         </div>
                       </div>
                       
-                      <div className="races-section">
-                        <div className="races-column">
-                          <h4>Zagrane rasy ({profile.totalPlayedRaces})</h4>
-                          {profile.playedRaces.length > 0 ? (
-                            <div className="race-tags">
-                              {profile.playedRaces.map((race, idx) => (
-                                <span key={idx} className="race-tag played">
-                                  {race}
-                                </span>
-                              ))}
+                      {profile.hasPlayedAllRaces ? (
+                        <div className="full-completion-achievement">
+                          <div className="achievement-content">
+                            <div className="achievement-icon">🏆</div>
+                            <div className="achievement-text">
+                              <h4>Komplet Ras!</h4>
+                              <p>Gracz zagrał wszystkimi {profile.totalPlayedRaces} rasami!</p>
                             </div>
-                          ) : (
-                            <p className="no-races">Brak danych</p>
-                          )}
+                            <div className="achievement-badge">
+                              <span className="badge-text">100%</span>
+                            </div>
+                          </div>
+                          <div className="achievement-stats">
+                            <span className="stat-item">🎮 {profile.totalGames} gier</span>
+                            <span className="stat-item">🏆 {profile.wins} wygranych</span>
+                            <span className="stat-item">📊 {profile.winRate} skuteczność</span>
+                          </div>
                         </div>
-                        
-                        <div className="races-column">
-                          <h4>Rasy niegrane ({profile.totalUngracedRaces})</h4>
-                          {profile.ungracedRaces.length > 0 ? (
-                            <div className="race-tags">
-                              {profile.ungracedRaces.map((race, idx) => (
-                                <span key={idx} className="race-tag ungraced">
-                                  {race}
-                                </span>
-                              ))}
-                            </div>
-                          ) : (
-                            <div className="all-races-achievement">
-                              <span className="achievement-icon">🎯</span>
-                              <span className="achievement-text">Zagrał wszystkimi rasami!</span>
-                            </div>
-                          )}
+                      ) : (
+                        <div className="races-section">
+                          <div className="races-column">
+                            <h4>Zagrane rasy ({profile.totalPlayedRaces})</h4>
+                            {profile.playedRaces.length > 0 ? (
+                              <div className="race-tags">
+                                {profile.playedRaces.map((race, idx) => (
+                                  <span key={idx} className="race-tag played">
+                                    {race}
+                                  </span>
+                                ))}
+                              </div>
+                            ) : (
+                              <p className="no-races">Brak danych</p>
+                            )}
+                          </div>
+                          
+                          <div className="races-column">
+                            <h4>Rasy niegrane ({profile.totalUngracedRaces})</h4>
+                            {profile.ungracedRaces.length > 0 ? (
+                              <div className="race-tags">
+                                {profile.ungracedRaces.map((race, idx) => (
+                                  <span key={idx} className="race-tag ungraced">
+                                    {race}
+                                  </span>
+                                ))}
+                              </div>
+                            ) : (
+                              <div className="all-races-achievement">
+                                <span className="achievement-icon">🎯</span>
+                                <span className="achievement-text">Zagrał wszystkimi rasami!</span>
+                              </div>
+                            )}
+                          </div>
                         </div>
-                      </div>
+                      )}
                     </div>
                   ))}
                 </div>
