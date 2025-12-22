@@ -265,7 +265,13 @@ export const sessions = [
     <ul>
     <li><h3>Runda 1</h3></li>
     <img src="/images/sesje/13122025/2.jpg" class="img-head"></img>
-    <p></p>
+    <p>W pierwszej rundzie gracze byli dość uprzejmi w swojej eksploracji, Paweł W mógł odkryć sektor z I kręgu pomiędzy centrum a homeworldem Piotra, ale tego nie zrobił, o czym go poinformował znaczącym tonem i wyrażnie dając do zrozumienia by pamiętał o tym.. Podobnie było w przypadku moim i Natana, również nie zablokowałem potencjalnego sojusznika w przyszłości. Udało mi się natomiast odkryć heks z Anomalią (wybrałem stronę mobilną, for fun), heks z podwójnymi starożytnymi i dwa nie bronione heksy. Wysłałem również mój myśliwiec w przyszłość, by powrócił w kolejnej rundzie.<br>
+    Natan, grający Mechanemą (biały) odkrył jeden heks z II kręgu i z żetonem odkrycia po czym... Spasował ku zaskoczeniu wszystkich.<br>
+    Piotr grający niebieskimi Hydran miał dość trudny początek, wylosował Rój Starożytnych w II kręgu i dwa statki Starożytnych w I kręgu.<br>
+    Paweł W grający zielonymi Exiles (Wygnańcami) odkrył Starożytnych na I kręgu oraz dwa nie bronione heksy w II i III kręgu.<br>
+    Tymek natomiast grający żółtymi Ludźmi odkrył bezpieczne heksy i zyskał dwa żetony odkryć przy tym, które zboostowały jego ekonomię. <br>
+    Kacper z kolei, grający czarną Hegemonią Oriona, zajął najwięcej heksów, zyskując przy tym jeden darmowy żeton odkrycia.<br>
+    Warto odnotować, że nie było technologii Improved Hull i długo jej nie będzie w tej partii. Na koniec rundy jeden ze Starożytnych w Roju wyleciał w odległą galaktykę, być może po wsparcie? Kto wie. Anomalia w tym czasie zniszczyła jedną planetę.</p>
     <li><h3>Runda 2</h3></li>
     <img src="/images/sesje/13122025/3.jpg" class=""></img>
     <p></p>
