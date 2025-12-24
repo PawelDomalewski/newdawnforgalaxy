@@ -274,10 +274,19 @@ export const sessions = [
     Warto odnotować, że nie było technologii Improved Hull i długo jej nie będzie w tej partii. Na koniec rundy jeden ze Starożytnych w Roju wyleciał w odległą galaktykę, być może po wsparcie? Kto wie. Anomalia w tym czasie zniszczyła jedną planetę.</p>
     <li><h3>Runda 2</h3></li>
     <img src="/images/sesje/13122025/3.jpg" class=""></img>
-    <p></p>
+    <p>Dalsze eksploracje. Ja odkryłem heks broniony przez pojedynczego Starożytnego.<br>
+    Natan - heks nie broniony, ale trzema planetami zaawansowanymi, heks z podwójnymi obcymi. Piotr - heks z różową planetą oraz heks z brązową planetą z żetonem odkrycia. Całkiem dobra sytuacja dla Hydran, jedynie brak planet ekonomicznych może doskwierać.<br>
+    Paweł W - zbudował orbital oraz zaatakował heks przy centrum. Tymek - odkrył heks broniony przez Starożytnych na III kręgu, zbudował dwa krążowniki, jeden przy granicy z Exiles, a drugi wysłał do walki ze Starożytnymi. Kaper odkrył natomiast heks z Rojem Starożytnych, może to ten co wyleciał w I rundzie, wrócił z kolegami? Kto wie.
+    Na koniec Anomalia szalała i jeszcze mocniej zadała sobie obrażenia. Starożytny z Roju odkrytego w I rundzie, wleciał Natanowi na świat domowy, natomiast z roju odkrytego przez Kacpra wyleciał do innej galaktyki. Paweł W przegrał swoją walkę ze starożytnymi, Tymek natomiast wygrał. W Galaktyce wciąż roiło się od niebezpieczeństw.
+    </p>
     <li><h3>Runda 3</h3></li>
     <img src="/images/sesje/13122025/5.jpg" class=""></img>
-    <p></p>
+    <p>Sytuacja zaczyna się rozkręcać. Kacper zbudował dwa krążowniki i mając łącznie trzy posłał je na GCDS - Galactic Center Defense System, szalony, brawurowy ruch. Ja z kolei zbudowałem krążownik i pancernik, drugi pancernik podróżując w czasie przybył mi na pomoc, także mając dwa pancerniki wysłałem je do walki z pojedynczym Starożytnym, krążownik został z tyłu by pilnować pozostałe heksy.<br>
+    Natan stracił swój świat domowy na rzecz Starożytnych, zbudował więc dwa krążowniki, które czekały na odpowiedni moment. Piotr kontynuował eksploracje i odkrył heks z żetonem odkrycia, poza tym skupiał się na rozwoju technologicznym, podobnie jak Paweł W.<br> 
+    Tymek dobudował jeden krążownik i myśliwiec i zaatakował heks przy centrum, z którym wcześniej nie poradził sobie Paweł W.<br>
+    Tymkowi udało się wygrać, Kacper boleśnie przegrał walkę o centrum, dodatkowo został zaatakowany przez Rój na tyłach swego Imperium. Moje pancerniki natomiast wygrały bez problemu. Ostatni Starożytny z Roju między Mechanemą a Hydran wyleciał w kosmos zostawiając heks z żetonem odkrycia bez opieki. Anomalia wciąż słabła, zostając już tylko na 2 pkt życia.<br>
+    Czarne Imperium Oriona przeżywa stan wyjątkowy, ilość posiadanych heksów nie ułatwia sprawy. Dorado, Hydranie oraz Exiles stabilnie utrzymują swoje pozycje. Mechanema urzęduje na dwóch sektorach, ale nie nazwałbym tego kryzysem jeszcze. Tymek na ten moment wydaje się, że ma najlepszą pozycję, posiadając aż 7 heksów i flotę trzech krążowników i dwóch myśliwców.
+    </p>
     <li><h3>Runda 4</h3></li>
     <img src="/images/sesje/13122025/7.jpg" class=""></img>
     <p></p>

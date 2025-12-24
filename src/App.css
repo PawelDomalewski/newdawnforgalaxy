@@ -1,3 +1,11 @@
+:root {
+  --header-footer-bg: #2c3e50;
+  --hover-link-clr:#3498db;
+  --text-clr: #ffff;
+  --text-clr-content: #000000;
+  --text-meta-clr: #666;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +15,7 @@
 body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
-  color: #ffffff;
+  color: var(--text-clr);
   background: /*linear-gradient(rgba(0, 0, 0, 0.411),rgba(0, 0, 0, 0.418)),*/url(/public/images/bg3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -30,8 +38,8 @@ body {
 
 /* Header */
 .header {
-  background: #2c3e50;
-  color: white;
+  background: var(--header-footer-bg);
+  color: var(--text-clr);
   padding: 1rem 0;
   position: sticky;
   top: 0;
@@ -48,16 +56,16 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
-  color: white;
+  color: var(--text-clr);
 }
 
 .header nav a {
-  color: white;
+  color: var(--text-clr);
   text-decoration: none;
 }
 
 .header nav a:hover {
-  color: #3498db;
+  color: var(--hover-link-clr);
 }
 
 /* Sessions Grid */
@@ -87,7 +95,7 @@ body {
 
 .session-content {
   padding: 1.5rem;
-  color: black;
+  color: var(--text-clr-content);
 }
 
 .session-meta {
