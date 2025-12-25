@@ -276,7 +276,7 @@ export const sessions = [
     <img src="/images/sesje/13122025/3.jpg" class=""></img>
     <p>Dalsze eksploracje. Ja odkryłem heks broniony przez pojedynczego Starożytnego.<br>
     Natan - heks nie broniony, ale trzema planetami zaawansowanymi, heks z podwójnymi obcymi. Piotr - heks z różową planetą oraz heks z brązową planetą z żetonem odkrycia. Całkiem dobra sytuacja dla Hydran, jedynie brak planet ekonomicznych może doskwierać.<br>
-    Paweł W - zbudował orbital oraz zaatakował heks przy centrum. Tymek - odkrył heks broniony przez Starożytnych na III kręgu, zbudował dwa krążowniki, jeden przy granicy z Exiles, a drugi wysłał do walki ze Starożytnymi. Kaper odkrył natomiast heks z Rojem Starożytnych, może to ten co wyleciał w I rundzie, wrócił z kolegami? Kto wie.
+    Paweł W - zbudował orbital oraz zaatakował heks przy centrum. Tymek - odkrył heks broniony przez Starożytnych na III kręgu, zbudował dwa krążowniki, jeden przy granicy z Exiles, a drugi wysłał do walki ze Starożytnymi. Kacper odkrył natomiast heks z Rojem Starożytnych, może to ten co wyleciał w I rundzie, wrócił z kolegami? Kto wie.
     Na koniec Anomalia szalała i jeszcze mocniej zadała sobie obrażenia. Starożytny z Roju odkrytego w I rundzie, wleciał Natanowi na świat domowy, natomiast z roju odkrytego przez Kacpra wyleciał do innej galaktyki. Paweł W przegrał swoją walkę ze starożytnymi, Tymek natomiast wygrał. W Galaktyce wciąż roiło się od niebezpieczeństw.
     </p>
     <li><h3>Runda 3</h3></li>
