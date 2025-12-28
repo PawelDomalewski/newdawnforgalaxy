@@ -55,10 +55,10 @@ export const racesData = [
     },
     difficulty: 2,
     gamesPlayed: 4,
-    firstPlaces: 0,
+    firstPlaces: 1,
     secondPlaces: 2,
     thirdPlaces: 0,
-    fourthPlaces: 2,
+    fourthPlaces: 1,
     fifthPlaces: 0,
     sixthPlaces: 0
   },
@@ -97,9 +97,9 @@ export const racesData = [
     },
     difficulty: 5,
     gamesPlayed: 2,
-    firstPlaces: 0,
+    firstPlaces: 1,
     secondPlaces: 0,
-    thirdPlaces: 1,
+    thirdPlaces: 0,
     fourthPlaces: 1,
     fifthPlaces: 0,
     sixthPlaces: 0
@@ -120,10 +120,10 @@ export const racesData = [
     gamesPlayed: 6,
     firstPlaces: 1,
     secondPlaces: 2,
-    thirdPlaces: 1,
+    thirdPlaces: 3,
     fourthPlaces: 0,
     fifthPlaces: 0,
-    sixthPlaces: 2
+    sixthPlaces: 1
   },
   {
     id: 7,
@@ -266,10 +266,10 @@ export const racesData = [
     difficulty: 4,
     gamesPlayed: 3,
     firstPlaces: 0,
-    secondPlaces: 2,
+    secondPlaces: 3,
     thirdPlaces: 0,
     fourthPlaces: 0,
-    fifthPlaces: 1,
+    fifthPlaces: 0,
     sixthPlaces: 0
   },
   {
