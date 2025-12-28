@@ -250,7 +250,7 @@ export const sessions = [
     date: "2025-12-13",
     players: ["Paweł D", "Paweł W", "Piotr", "Natan", "Kacper", "Tymek"],
     rating: "5,5 godzin",
-    summary: "GCDS - Galactic Center Defense System, czyli System Obrony Centrum Galaktyki utrzymał środek przez 6 rund, mocno ograniczając pole do manewru graczom. Natomiast Wieża Ciśnień wybudowana w 3 rundzie przetrwała całą grę.",
+    summary: "GCDS - Galactic Center Defense System, czyli System Obrony Centrum Galaktyki utrzymał środek przez 6 rund, mocno ograniczając pole do manewru graczom. Natomiast Wieża Ciśnień wybudowana w 4 rundzie przetrwała całą grę.",
     image: "/images/sesje/13122025/head.jpg",
     tags: ["Akcja!"],
     fullContent: `<h3>Uczestnicy:</h3>
@@ -289,7 +289,10 @@ export const sessions = [
     </p>
     <li><h3>Runda 4</h3></li>
     <img src="/images/sesje/13122025/7.jpg" class=""></img>
-    <p></p>
+    <p>Ta runda przebiegła dość spokojnie, nic nie zapowiadało przyszłych plot twistów.<br>
+    Ja dokonałem eksploracji na III kręgu galaktyki i odkryłem dwa sektory nie bronione, z czego jeden z żetonem odkrycia. Wysłałem również jeden pancernik do walki z niestabilną Anomalią, by zdobyć kolejny żeton odkrycia dzięki temu. Natan również eksplorował III krąg i odkrył bezpieczny sektor z dwoma planetami. Wysłał również krążownik do odbicia swojej ojczyzny. Wybudowany przez niego myśliwiec został posłany do heksu Roju Starożytnych, który aktualnie był nie broniony i zawierał żeton odkrycia. Piotr wybudował dwa krążowniki, które wysłał właśnie na ten sam heks, gdzie Natan wysłał myśliwiec. Paweł W też zbudował dwa krążowniki i wysłał je do walki z dwoma starożytnymi tuż przy centrum.<br>
+    Tymek dalej umacniał swoją pozycję, dobudował pancernik w sektorze przy centrum oraz bazę gwiezdną, kryptomin "Wieża Ciśnień", kawałek dalej. Kacper odbudował jeden ze straconych krążowników, nie bronił jednak swojego sektora granicznego przed starożytnymi.<br>
+    Na koniec rundy udało mi się pokonać Anomalię, dzięki czemu było teraz bezpieczniej w Galaktyce. Natan odzyskał swój świat domowy, ale niestey przegrał walkę o sektor po Roju, tutaj zwyciężył Piotr kierujący Hydranami. Paweł W podbił heks ze starożytnymi i zyskał przy tym idealny dla niego żeton odkrycia: Starożytny Orbital, sam heks był wart 4 punkty, więc razem z orbitalem był warty 5 punktów dla Exiles. Ciężko wyobrazić sobie lepszy scenariusz dla niego. Ostatni starożytny z Roju przy granicy Oriona dołączył do kolegi na sektorze odbitym od Kacpra.</p>
     <li><h3>Runda 5</h3></li>
     <img src="/images/sesje/13122025/9.jpg" class=""></img>
     <p></p>
