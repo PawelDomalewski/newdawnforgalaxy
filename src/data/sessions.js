@@ -295,7 +295,17 @@ export const sessions = [
     Na koniec rundy udało mi się pokonać Anomalię, dzięki czemu było teraz bezpieczniej w Galaktyce. Natan odzyskał swój świat domowy, ale niestey przegrał walkę o sektor po Roju, tutaj zwyciężył Piotr kierujący Hydranami. Paweł W podbił heks ze starożytnymi i zyskał przy tym idealny dla niego żeton odkrycia: Starożytny Orbital, sam heks był wart 4 punkty, więc razem z orbitalem był warty 5 punktów dla Exiles. Ciężko wyobrazić sobie lepszy scenariusz dla niego. Ostatni starożytny z Roju przy granicy Oriona dołączył do kolegi na sektorze odbitym od Kacpra.</p>
     <li><h3>Runda 5</h3></li>
     <img src="/images/sesje/13122025/9.jpg" class=""></img>
-    <p></p>
+    <p>Połowa gry już za nami<br>
+    Musiałem opłacić budowę pancernika, który pojawił się w trzeciej rundzie, przy okazji zbudowałem drugi krążownik. Flotą złożoną z dwóch pancerników, dwóch krążowników i jednego myśliwca ruszyłem na GCDS. Natan, Piotrek i Tymek skupili się na ulepszaniu swoich statków i technologii. Paweł W dobudował kolejny orbital i myśliwiec. Poza tym wysłał dwa krążowniki na centrum, by przeszkodziły mi w podboju. Śmiały, dobry i niespodziewany ruch z jego strony. Kacper w tym czasie dobudował jeden krążownik i mając dwa takie wysłał je do odbicia ziemi utraconej z rąk Starożytnych.<br>
+    Walka Exiles z Dorado w centrum galaktyki zakończyła się zwycięstwem tych drugich, ale poniesione straty były na tyle duże, że nie udało mi się pokonać GCDS. Kacper pokonał dwóch Starożytnych i odzyskał swój heks.<br>
+    Po pięciu rundach sytuacja na planszy wygląda następująco:<br>
+    Dorado - 5 heksów kontrolowanych, zero floty, cała przepadła w walce o centrum, czeka mnie powolna odbudowa.<br>
+    Mechanema - 4 heksy, dwa krążowniki, stabilna sytuacja.<br>
+    Hydran - 5 heksów, dwa krążowniki i jeden myśliwiec, podobnie jak Natan, Piotrek ma stabilną sytuację. <br>
+    Exiles - 4 heksy, stracił dwa krążowniki w partyzantce przeciw Dorado, ale jego pozycja jest conajmniej solidna, na każdym z heksów ma orbital, który funkcjonuje również jako baza gwiezdna, więc nie jest bezbronny.<br>
+    Ludzie - 7 heksów, pancernik, trzy krążowniki, jeden myśliwiec i baza gwiezdna. Liczby mówią same za siebie. Bardzo mocna pozycja wyjściowa Tymka do drugiej połowy gry.<br>
+    Orion - 5 heksy, dwa krążowniki. Strata trzech krążowników w ataku na centrum boli, ale powoli staje na nogach i odbudowuje się.
+    </p>
     <li><h3>Runda 6</h3></li>
     <img src="/images/sesje/13122025/11.jpg" class=""></img>
     <p></p>
