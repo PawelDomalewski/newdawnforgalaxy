@@ -306,6 +306,8 @@ export const sessions = [
     Ludzie - 7 heksów, pancernik, trzy krążowniki, jeden myśliwiec i baza gwiezdna. Liczby mówią same za siebie. Bardzo mocna pozycja wyjściowa Tymka do drugiej połowy gry.<br>
     Orion - 5 heksy, dwa krążowniki. Strata trzech krążowników w ataku na centrum boli, ale powoli staje na nogach i odbudowuje się.
     </p>
+    <p class="session-summary"><b style="color: darkgreen;">Komentarz Pawła W - Exiles:</b><br>
+    Jeśli chodzi o całą rozgrywkę trzeba postawić sprawę jasno - jako rasa Exiles cenimy sobie honor, którym czasem uniesieni postawimy sobie za cel coś czego dopniemy nie ważne jakim kosztem - mimo ograniczenia przestrzeni pokazaliśmy że dobrze gospodarujemy miejscem ale co najważniejsze raz obiecując coś - słowa dotrzymujemy - nacji żółtej obiecaliśmy brak ataku i mimo że wieża ciśnień była wystawiona praktycznie bez obrony my słowa dotrzymaliśmy - jest to myślę nauka na przyszłość dla wszystkich pozostałych nacji i dowódców - raz sprowokowani jesteśmy groźniejsi niż jakakolwiek nacja</p>
     <li><h3>Runda 6</h3></li>
     <img src="/images/sesje/13122025/11.jpg" class=""></img>
     <p></p>
