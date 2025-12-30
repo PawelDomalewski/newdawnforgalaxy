@@ -4,6 +4,7 @@ import './Statistics.css';
 const Statistics = () => {
   const [playerData, setPlayerData] = useState([]);
   const [raceStats, setRaceStats] = useState([]);
+  const [ewcStats, setEwcStats] = useState([]); // Nowy stan dla danych EWC
   const [playerStats, setPlayerStats] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -17,6 +18,7 @@ const Statistics = () => {
       setLoading(true);
       setError(null);
       
+      // Ładowanie głównego pliku CSV
       const response = await fetch('images/sesje/stat.csv');
       
       if (!response.ok) {
@@ -32,12 +34,43 @@ const Statistics = () => {
       
       setPlayerData(parsedData);
       calculateStats(parsedData);
+      
+      // Ładowanie danych EWC
+      await loadEWCData();
+      
       setLoading(false);
       
     } catch (err) {
       console.error('Błąd wczytywania CSV:', err);
       setError(`Błąd wczytywania danych: ${err.message}`);
       setLoading(false);
+    }
+  };
+
+  const loadEWCData = async () => {
+    try {
+      const response = await fetch('images/sesje/ewc.csv');
+      
+      if (!response.ok) {
+        console.warn('Nie znaleziono pliku EWC.csv. Pomijam dane EWC.');
+        setEwcStats([]);
+        return;
+      }
+      
+      const csvText = await response.text();
+      const parsedData = parseCSV(csvText);
+      
+      if (parsedData.length === 0) {
+        console.warn('Plik EWC.csv jest pusty lub zawiera nieprawidłowe dane');
+        setEwcStats([]);
+        return;
+      }
+      
+      calculateEWCStats(parsedData);
+      
+    } catch (err) {
+      console.error('Błąd wczytywania EWC.csv:', err);
+      setEwcStats([]);
     }
   };
 
@@ -217,6 +250,89 @@ const Statistics = () => {
     }));
   };
 
+  // Nowa funkcja do obliczania statystyk EWC
+  const calculateEWCStats = (data) => {
+    const raceMap = {};
+    
+    data.forEach(game => {
+      if (!game.race || game.race === '') return;
+      
+      if (!raceMap[game.race]) {
+        raceMap[game.race] = {
+          race: game.race,
+          totalPoints: 0,
+          gamesPlayed: 0,
+          places: [],
+          totalPlayerCount: 0,
+          wins: 0,
+          secondPlaces: 0,
+          thirdPlaces: 0,
+          fourthPlaces: 0,
+          fifthPlaces: 0,
+          sixthPlaces: 0
+        };
+      }
+      
+      raceMap[game.race].totalPoints += game.points;
+      raceMap[game.race].gamesPlayed += 1;
+      raceMap[game.race].places.push(game.place);
+      
+      // Liczenie miejsc
+      if (game.place === 1) {
+        raceMap[game.race].wins += 1;
+      } else if (game.place === 2) {
+        raceMap[game.race].secondPlaces += 1;
+      } else if (game.place === 3) {
+        raceMap[game.race].thirdPlaces += 1;
+      } else if (game.place === 4) {
+        raceMap[game.race].fourthPlaces += 1;
+      } else if (game.place === 5) {
+        raceMap[game.race].fifthPlaces += 1;
+      } else if (game.place === 6) {
+        raceMap[game.race].sixthPlaces += 1;
+      }
+      
+      if (game.playerCount) {
+        raceMap[game.race].totalPlayerCount += game.playerCount;
+      }
+    });
+
+    const stats = Object.values(raceMap).map(race => {
+      // Obliczanie Power Rating w procentach
+      const powerRating = (
+        race.wins * 1.0 + 
+        race.secondPlaces * 0.75 + 
+        race.thirdPlaces * 0.50 + 
+        race.fourthPlaces * 0.25 + 
+        race.fifthPlaces * 0.10 + 
+        race.sixthPlaces * 0.05
+      ) / race.gamesPlayed;
+
+      // Konwersja na procenty (mnożymy przez 100)
+      const powerRatingPercent = (powerRating * 100);
+
+      return {
+        ...race,
+        averagePointsPerGame: race.gamesPlayed > 0 ? 
+          (race.totalPoints / race.gamesPlayed).toFixed(2) : '0.00',
+        averagePlace: race.places.length > 0 ? 
+          (race.places.reduce((a, b) => a + b, 0) / race.places.length).toFixed(2) : '0.00',
+        averagePlayerCount: race.gamesPlayed > 0 ? 
+          (race.totalPlayerCount / race.gamesPlayed).toFixed(1) : '0',
+        winRate: race.gamesPlayed > 0 ? 
+          ((race.wins / race.gamesPlayed) * 100).toFixed(1) + '%' : '0%',
+        powerRating: powerRatingPercent.toFixed(1) + '%'
+      };
+    });
+
+    // Sortowanie według Power Rating (malejąco)
+    setEwcStats(stats.sort((a, b) => {
+      const aValue = parseFloat(a.powerRating);
+      const bValue = parseFloat(b.powerRating);
+      return bValue - aValue;
+    }));
+  };
+
   const calculatePlayerStats = (data) => {
     const playerMap = {};
     
@@ -255,14 +371,14 @@ const Statistics = () => {
 
       const totalPoints = player.points.reduce((a, b) => a + b, 0);
       const totalGames = player.points.length;
-      const bestScore = Math.max(...player.points); // Najwyższy wynik punktowy
+      const bestScore = Math.max(...player.points);
 
       return {
         player: player.player,
         mostCommonRace: mostCommonRace,
         totalPoints: totalPoints,
         averagePoints: totalGames > 0 ? (totalPoints / totalGames).toFixed(2) : '0.00',
-        bestScore: bestScore, // Najlepszy wynik zamiast najlepszego miejsca
+        bestScore: bestScore,
         averagePlace: totalGames > 0 ? (player.places.reduce((a, b) => a + b, 0) / totalGames).toFixed(2) : '0.00',
         totalGames: totalGames,
         wins: player.wins,
@@ -299,7 +415,6 @@ const Statistics = () => {
     loadCSVData();
   };
 
-  // Obliczanie łącznej liczby pierwszych miejsc
   const totalWins = playerData.filter(game => game.place === 1).length;
 
   if (loading) {
@@ -383,6 +498,43 @@ const Statistics = () => {
         )}
       </div>
 
+      {/* NOWA SEKCJA - Eclipse World Championship */}
+      <div className="stats-section">
+        <h2>Eclipse World Championship - 2013-2019</h2>
+        {ewcStats.length === 0 ? (
+          <p className="no-data">Brak danych do wyświetlenia</p>
+        ) : (
+          <div className="table-container">
+            <table className="stats-table">
+              <thead>
+                <tr>
+                  <th>Rasa</th>
+                  <th>Power Rating</th>
+                  <th>Średnie Punkty</th>
+                  <th>Ilość Gier</th>
+                  <th>Wygrane</th>
+                  <th>% Wygranych</th>
+                  <th>Średnie Miejsce</th>
+                </tr>
+              </thead>
+              <tbody>
+                {ewcStats.map((race, index) => (
+                  <tr key={index}>
+                    <td><strong>{race.race}</strong></td>
+                    <td className="power-rating">{race.powerRating}</td>
+                    <td>{race.averagePointsPerGame}</td>
+                    <td>{race.gamesPlayed}</td>
+                    <td>{race.wins}</td>
+                    <td>{race.winRate}</td>
+                    <td>{race.averagePlace}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
+      </div>
+
       <div className="stats-section">
         <h2>Statystyki Graczy</h2>
         {playerStats.length === 0 ? (
@@ -422,51 +574,41 @@ const Statistics = () => {
           </div>
         )}
       </div>
-                 <div className="stats-section">
+
+      <div className="stats-section">
         <h2>Profil Gracza - Podsumowanie</h2>
         {playerStats.length === 0 ? (
           <p className="no-data">Brak danych do wyświetlenia</p>
         ) : (
           <div className="player-profiles-container">
             {(() => {
-              // Pobierz wszystkie unikalne rasy z danych
               const allRaces = [...new Set(playerData.map(game => game.race))].filter(race => race);
               
-              // Przygotuj pełne dane dla każdego gracza
               const playerProfiles = playerStats.map(player => {
-                // Wszystkie gry danego gracza
                 const playerGames = playerData.filter(game => game.player === player.player);
                 
-                // Znajdź grę z największą liczbą punktów
                 const bestGame = playerGames.reduce((prev, current) => 
                   (prev.points > current.points) ? prev : current
                 );
                 
-                // Znajdź grę z najmniejszą liczbą punktów
                 const worstGame = playerGames.reduce((prev, current) => 
                   (prev.points < current.points) ? prev : current
                 );
                 
-                // Rasy, którymi gracz grał
                 const playedRaces = [...new Set(
                   playerGames.map(game => game.race).filter(race => race)
                 )];
                 
-                // Rasy, którymi gracz nie grał
                 const ungracedRaces = allRaces.filter(race => !playedRaces.includes(race));
                 
-                // Sprawdź czy gracz zagrał wszystkimi rasami
                 const hasPlayedAllRaces = ungracedRaces.length === 0 && allRaces.length > 0;
                 
-                // Liczba wygranych
                 const wins = playerGames.filter(game => game.place === 1).length;
                 
-                // Średnia punktów
                 const averagePoints = playerGames.length > 0 
                   ? (playerGames.reduce((sum, game) => sum + game.points, 0) / playerGames.length).toFixed(1)
                   : '0';
                 
-                // Średnie miejsce
                 const averagePlace = playerGames.length > 0 
                   ? (playerGames.reduce((sum, game) => sum + game.place, 0) / playerGames.length).toFixed(2)
                   : '0.00';
