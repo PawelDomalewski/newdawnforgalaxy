@@ -303,7 +303,7 @@ export const sessions = [
     Mechanema - 4 heksy, dwa krążowniki, stabilna sytuacja.<br>
     Hydran - 5 heksów, dwa krążowniki i jeden myśliwiec, podobnie jak Natan, Piotrek ma stabilną sytuację. <br>
     Exiles - 4 heksy, stracił dwa krążowniki w partyzantce przeciw Dorado, ale jego pozycja jest conajmniej solidna, na każdym z heksów ma orbital, który funkcjonuje również jako baza gwiezdna, więc nie jest bezbronny.<br>
-    Ludzie - 7 heksów, pancernik, trzy krążowniki, jeden myśliwiec i baza gwiezdna. Liczby mówią same za siebie. Bardzo mocna pozycja wyjściowa Tymka do drugiej połowy gry.<br>
+    Ludzie - 7 heksów, pancernik, trzy krążowniki, dwa myśliwce i baza gwiezdna. Liczby mówią same za siebie. Bardzo mocna pozycja wyjściowa Tymka do drugiej połowy gry.<br>
     Orion - 5 heksy, dwa krążowniki. Strata trzech krążowników w ataku na centrum boli, ale powoli staje na nogach i odbudowuje się.
     </p>
     <p class="session-summary"><b style="color: darkgreen;">Komentarz Pawła W - Exiles:</b><br>
