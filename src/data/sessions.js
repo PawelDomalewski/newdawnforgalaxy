@@ -310,14 +310,20 @@ export const sessions = [
     Jeśli chodzi o całą rozgrywkę trzeba postawić sprawę jasno - jako rasa Exiles cenimy sobie honor, którym czasem uniesieni postawimy sobie za cel coś czego dopniemy nie ważne jakim kosztem - mimo ograniczenia przestrzeni pokazaliśmy że dobrze gospodarujemy miejscem ale co najważniejsze raz obiecując coś - słowa dotrzymujemy - nacji żółtej obiecaliśmy brak ataku i mimo że wieża ciśnień była wystawiona praktycznie bez obrony my słowa dotrzymaliśmy - jest to myślę nauka na przyszłość dla wszystkich pozostałych nacji i dowódców - raz sprowokowani jesteśmy groźniejsi niż jakakolwiek nacja</p>
     <li><h3>Runda 6</h3></li>
     <img src="/images/sesje/13122025/11.jpg" class=""></img>
-    <p></p>
+    <p>Sytuacja była krytyczna w moim imperium. Nie mając żadnych statków i za mało surowców by zbudować dwa pancerniki, zacząłem analizować moją sytuację. Orion, kierowany przez Kacpra, posiadał swoją flotę przy granicy ze mną, ale daleko od centrum, a tylko poprzez mój sektor z I kręgu można było do mnie wlecieć, w pozostałych miejscach wszędzie były conajwyżej połówki wormhole. Więc czułem się nie tyle bezpieczny od strony Kacpra, co wiedziałem, że zdążę zauważyć zbliżanie się jego floty na czas i zareagować, oh jakże naiwny wtedy byłem. GCDS wciąż okupowało środek, więc nic mi nie groziło z tej strony. Jedynie Mechanema stanowiła potencjalne zagrożenie, ale mieliśmy kontakty dyplomatyczne plus Natan odsłoniłby się na atak ze strony Hydran, gdyby mnie zaatakował. Mój plan był taki, by zbierać siły i nie śpieszyć się z niczym. Natan zwrócił uwagę, że chyba powinienem zbudować jakieś statki do obrony, nie, jest dobrze, odpowiedziałem.<br>
+    Natan wykupił technologię Zaawansowanych Planet Ekonomicznych oraz wybudował pancernik. Jego sytuacja wyglądała na stabilną i rozwijał się. Piotr wybudował dwa pancerniki i krążownik. Posiadał już pokażną flotę. Paweł W odbudował dwa krążowniki w sektorze I kręgu. Tymek wciąż rósł w siłę nie niepokojony przez nikogo. Zbudował jeden pancernik i krążownik, miał więc pełny limit czterech krążowników i dwóch pancerników, z tej floty wysłał trzy statki na centrum. Kacper zajął heks po Roju Starożytnych zyskując żeton odkrycia oraz kupił technologię Wormhole Generator.<br>
+    Tymkowi udało się zdobyć środek galaktyki, zyskał w ten sposób 8 heks pod swoją kontrolę. Posiadał najwięcej heksów i największą flotę na ten moment gry.<br>
+    Ta runda była dość spokojna, prawdziwa cisza przed burzą.
+    </p>
     <li><h3>Runda 7</h3></li>
     <div>
     <img src="/images/sesje/13122025/13.jpg"></img>
     <img src="/images/sesje/13122025/14.jpg"></img>
     <img src="/images/sesje/13122025/15.jpg"></img>
     </div>
-    <p></p>
+    <p>Burza nadeszła...<br>
+    Kompletnie uszło mojej uwadze to, że Kacper kupił technologię Wormhole Generator i ustawił swoje krążownik tak, by teraz wlecieć na moje dwa heksy jednym ruchem. Manewr kompletnie mnie zaskoczył i złapał na opuszczonej gardzie. Choć to był dobry pomysł, ale moim zdaniem wykorzystany przeciwko nie temu graczowi, co trzeba, nie byłem faworytem do wygranej, więc to było kopanie leżącego. Sam Kacper powiedział, że raczej nie ma szans na jego wygraną, to trochę potrolluje. Dyskucyjne podejście. W dalszej części rundy Orion dobudował dwa krążowniki, jeden wysłał do pomocy na atak na tyły mojego imperium, a drugi miał samodzielnie zdobyć mój sektor w I kręgu, ale tu czekał na niego już Tymek ze swoim krążownikiem. Tymek wysłał też drugi krążownik przez moje imperium aż do heksa gdzie było dwóch Starożytnych. Natan skomentował to, że wciąż nie zbudowałem żadnego statku, czy zamierzam w ogóle się bronić bo chyba najwyższa pora. Spoko spoko, dobrze jest, kupiłem rzadką technologię Neutron Absorber, broniącą przed bombami neutronowymi. Mechanema międzyczasie wysłała krążownik na wolny heks za światem ojczystym. Po drugiej stronie galaktyki był spokój.<br>
+    Straciłem dwa heksy z III kręgu, z powodu ataku Oriona. W sektorzy z I kręgu natomiast stoczyłą się walka 1vs1, którą wygrał Tymek, niestety dla niego, nie był w stanie zająć mojego heksu, bo nie udał mu się atak na populację. Stracił też krążownik w walce ze Starożytnymi, którzy wyszli z tego bez strat. Słabe efekty jak na tak śmiałe ruchy.</p>
     <li><h3>Runda 8</h3></li>
     <div>
     <img src="/images/sesje/13122025/17.jpg"></img>
