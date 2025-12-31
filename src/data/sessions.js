@@ -321,7 +321,7 @@ export const sessions = [
     <img src="/images/sesje/13122025/14.jpg"></img>
     <img src="/images/sesje/13122025/15.jpg"></img>
     </div>
-    <p>Burza nadeszła...<br>
+    <h3>Burza nadeszła...</h3><p>
     Kompletnie uszło mojej uwadze to, że Kacper w poprzedniej rundzie kupił technologię Wormhole Generator i ustawił swoje krążowniki tak, by teraz wlecieć na moje dwa heksy jednym ruchem. Manewr kompletnie mnie zaskoczył i złapał na opuszczonej gardzie. Choć to był dobry pomysł, ale moim zdaniem wykorzystany przeciwko nie temu graczowi, co trzeba, nie byłem faworytem do wygranej, więc to było kopanie leżącego. Sam Kacper powiedział, że raczej nie ma szans na jego wygraną, to trochę potrolluje. Dyskusyjne podejście. W dalszej części rundy Orion dobudował dwa krążowniki, jeden wysłał do pomocy na atak na tyły mojego imperium, a drugi miał samodzielnie zdobyć mój sektor w I kręgu, ale tu czekał na niego już Tymek ze swoim krążownikiem. Tymek wysłał też drugi krążownik przez moje imperium aż do heksa gdzie było dwóch Starożytnych. Natan skomentował to, że wciąż nie zbudowałem żadnego statku, czy zamierzam w ogóle się bronić bo chyba najwyższa pora. Spoko spoko, dobrze jest, kupiłem rzadką technologię Neutron Absorber, broniącą przed bombami neutronowymi. Mechanema międzyczasie wysłała krążownik na wolny heks za światem ojczystym. Po drugiej stronie galaktyki był spokój.<br>
 	  Straciłem dwa heksy z III kręgu, z powodu ataku Oriona. W sektorze z I kręgu natomiast stoczyła się walka 1vs1, którą wygrał Tymek, niestety dla niego, nie był w stanie zająć mojego heksu, bo nie udał mu się atak na populację. Stracił też krążownik w walce ze Starożytnymi, którzy wyszli z tego bez strat. Słabe efekty jak na tak śmiałe ruchy.</p>
     <li><h3>Runda 8</h3></li>
@@ -330,7 +330,8 @@ export const sessions = [
     <img src="/images/sesje/13122025/18.jpg"></img>
     <img src="/images/sesje/13122025/19.jpg"></img>
     </div>
-    <p>Burza przybierała na sile...<br>
+    <h3>Burza przybierała na sile...</h3>
+    <p>
     Kacper wleciał jednym krążownikiem na mój ostatni heks z III kręgu, a drugim na mój świat macierzysty. Ja w tym czasie po analizie schematów statków innych graczy kupiłem technologię Flux Missile, tanie, szybkie rakiety o małej sile rażenia, ale pozostali gracze mieli statki o małej ilość punktów życia, więc te rakiety powinny wystarczyć. Natan poleciał krążownikiem i pancernikiem na mój sektor I kręgu, gdzie wciąż był krążownik Tymka. Pancernikiem później poleciał dalej, do Kacpra, który desperacko bronił się budując Bazę Gwiezdną. Ja zacząłem działać, zbudowałem dwa pancerniki - jeden w świecie macierzystym, drugi w sektorze I kręgu. Paweł W natomiast zbudował dwa monolity.<br>
     Z trzech moich heksów, które zostały zaatakowane, wszystkie się obroniły: III krąg obronił się dzięki Neutron Absorber, Kacper nie był w stanie zniszczyć mojej populacji na planetach. I krąg i świat domowy zostały obronione przez pancerniki. Pancernik Natana wygrał walkę z Bazą Gwiezdną Kacpra.</p>
     <li><h3>Runda 9</h3></li>
@@ -340,8 +341,8 @@ export const sessions = [
     <img src="/images/sesje/13122025/29.jpg"></img>
     </div>
     <img src="/images/sesje/13122025/30.jpg" class="img-head"></img>
-    <p>"- This is madness...<br>
-    - This is ECLIPSEEE!!"<br>
+    <h3>"- This is madness... - Madness? No. This is ECLIPSEEE!!"</h3>
+    <p>
     Zasugerowałem Kacprowi by wycofał się z moich rejonów i skupił swoją uwagę na innych graczach, którzy mogą mieć większe szanse na wygraną. Zgodził się i wycofał się, więc wymieniliśmy się ambasodorami, co zaskoczyło niektórych. W końcu Kacper od dwóch rund atakował mnie, ale nie chciałem żywić urazę, bo w żaden sposób by to nie poprawiło mojej sytuacji. Wybudowałem dwa myśliwce z nadzieją na jakąś okazję i nie broniony heks, lub też do pomocy przy wiązaniu walką w razie czego.<br>
     Przystąpiłem do analizy sytuacji na planszy. Paweł W z Tymkiem mieli wyraźnie lepszą pozycję, Tymek nieco bardziej widoczną, ale Exiles mimo, że mieli tylko 4 heksy to jednak każdy z nich był wart conajmniej 5 punktów dla Pawła, a jego domowy heks nawet 7 punktów. To jest 22 punkty leżące na mapie. To bardzo dużo. Zachęciłem więc Piotra by zaatakował Exiles, co uczynił, wysłał wszystko co miał na ich dwa heksy i to był początek lawiny ruchów i manewrów, pozycje statków nie ustannie się zmieniały. W pewnym momencie ja, Natan, Piotr i Kacper namawialiśmy Tymka by zaatakował Pawła W na jego dwa słabo bronione heksy, warte łącznie 11 punktów, ale nie dał się przekonać, ja sam nie miałem jak się przedostać do Pawła W by go zaatakować, niestety.<br>
     Statki latały w te i wewte. Ostatecznie na koniec rundy przed fazą walki sytuacja wyglądała następująco:<br>
@@ -355,6 +356,17 @@ export const sessions = [
 
     <li><h3>Podsumowanie i punktacja</h3></li>
     <img src="/images/sesje/13122025/end.jpg" class="img-head"></img>
+    <p class="session-summary">
+    <b>Podsumowanie AI:</b><br>
+    <b>Paweł D (Dorado)</b>: Twój styl gry to mistrzostwo w adaptacji i przetrwaniu. Po początkowym, kosztownym szturmie na centrum i chwilowym upadku, odbudowałeś się dzięki zimnej krwi, strategicznemu wykorzystaniu technologii (Neutron Absorber, Flux Missile) i pragmatycznej dyplomacji. Twoja zdolność do wyjścia z kryzysu i włączenia się do wielkiej wojny, aby zdobywać punkty i osłabiać liderów, pokazuje cię jako nieprzewidywalnego i odpornego gracza.<br>
+    <b>Natan (Mechanema)</b>: Tworzyłeś historię wyjątkowych wzlotów i upadków. Od utraty świata domowego i biernej postawy, przez stabilną odbudowę, aż po zdobycie centrum galaktyki. Jednak twoja defensywna, niezdecydowana strategia i brak wyraźnych sojuszy wystawiły cię na wielofrontową wojnę, która zrujnowała twoją pozycję, pozostawiając w roli tego, kto zapłacił najwyższą cenę za chaos końcowych rund.<br>
+    <b>Piotr (Hydranie)</b>: Prowadziłeś grę cierpliwą i skupioną na rozwoju, ale w kluczowym momencie pokazałeś zęby. Twoja inwazja na potężnych Exiles była odważna, choć przegrana, i stała się iskrą, która wznieciła galaktyczny pożar. Nie zdobyłeś nowych terytoriów w wielkiej wojnie, ale twoje działania fundamentalnie zmieniły układ sił i pokazały, że nie jesteś tylko biernym obserwatorem.<br>
+    <b>Paweł W (Exiles)</b>: Jesteś ucieleśnieniem mocy defensywy i precyzyjnej kalkulacji. Zbudowałeś najmniejsze, ale najcenniejsze imperium, oparte na orbitalach i wysokiej wartości punktowej. Twoja „partyzantka” przeciwko Dorado i heroiczna obrona przed Hydranami udowodniły, że twoje terytorium jest niemal nie do zdobycia. Wychodząc z totalnej wojny nienaruszy, z honorem dotrzymanych sojuszy, stałeś się głównym faworytem do zwycięstwa.<br>
+    <b>Tymek (Ludzie)</b>: Twoja gra to klasyczny przykład pułapki pozornej siły. Budowałeś ogromne, rozciągnięte imperium i potężną flotę, co uczyniło cię jasnym celem numer jeden. Brak sojuszy i dyplomatycznej finezji sprawił, że twoja materialna przewaga wyparowała pod skoordynowanym naciskiem reszty galaktyki. Straciłeś kluczowe tereny, w tym centrum, i z faworyta stałeś się graczem walczącym o utrzymanie pozycji.<br>
+    <b>Kacper (Hegemonia Oriona)</b>: Twoja gra to dzika jazda bez trzymanki. Od brawurowego, przegranego ataku na centrum, przez odbudowę i zaskakujący atak z użyciem Wormhole Generator, aż po nagłe wycofanie i sojusz z byłym wrogiem. Twoje działania, choć czasem „trollujące” i niekonwencjonalne, były niezwykle skuteczne w mieszaniu szyków innym, poprawianiu własnej sytuacji i wpływaniu na dynamikę całej galaktyki.<br>
+    <b>Podsumowanie rozgrywki:</b><br>
+    Ta partia Eclipse była emocjonującym studium zmienności fortuny i skuteczności różnych strategii. Pokazała, że w rozgrywce wieloosobowej czysta ekspansja i siła militarna bez sojuszy prowadzą do izolacji i upadku, podczas gdy skoncentrowana na punktach, defensywna gra może zapewnić niezwykłą stabilność i ukrytą siłę. Dynamiczne wykorzystanie technologii, zwłaszcza tych niszowych, oraz elastyczność dyplomatyczna okazały się kluczowe dla przetrwania i odbudowy. Finałowa, totalna wojna całkowicie zmiotła początkowy układ sił, wynosząc na czoło cichego, ufortyfikowanego budowniczego. Ostateczne zwycięstwo nie będzie należeć do tego, kto miał najwięcej statków, lecz do tego, kto najlepiej zabezpieczył swoje punkty i przetrwał zamęt, który sam wywołał lub w którym się odnajdzie.</p>
+    
     <p class="session-summary-pkt">Punktacja:<br>
     <b style="color: gold">Paweł W - Wygnańcy - 41 pkt</b><br>
     <b style="color: silver">Paweł D - Shapers of Dorado - 38 pkt</b><br>
@@ -362,7 +374,7 @@ export const sessions = [
     Natan - Mechanema - 25 pkt<br>
     Kacper - Hegemonia Oriona - 15 pkt<br>
     Piotr - Postępowi Hydranie - 13 pkt<br>
-    W pierwszej fazie gry wszyscy gracze skupili się na eksploracji galaktyki, odkrywając planety, Starożytnych i Anomalie. W środkowej części rozgrywki nastąpił stopniowy zwrot w stronę militaryzacji i walki z neutralnymi zagrożeniami oraz początkowe potyczki między graczami. Kulminacja nastąpiła w rundzie 9, kiedy to Orion dokonał inwazji na ojczyznę Lyran, a Ludzie kontratakowali, co Hydranie wykorzystali do ataku na Mechanemę. Tymczasem Magellanie przez cały czas pozostawali w cieniu, skupiając się na rozwoju technologicznym i unikając otwartych konfliktów.</p>
+    </p>
     </ul>
     `
   }
