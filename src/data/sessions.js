@@ -23,6 +23,7 @@ export const sessions = [
       <li><h3>Octanis</h3></li>
       <p>Główną cechą rasy Octanis jest możliwość ewolucji i adaptacji do zmiennych warunków w galaktyce. W tej sesji skupili się na korzystaniu z tego, udało się uzyskać 7 mutacji, z czego udało się uzyskać łącznie 15 pkt, bez tych punktów byli by na szarym końcu. Bez wątpienia przydatna okazała się rzadka technologia Advanced Genetics, która zwiększyłą zarówno co rundowy przychód Mutagenów (potrzebnych do mutacji), jak i jednorazowo dała +3 mutagenów.</p>
       <li><h3>Podsumowanie i punktacja</h3></li>
+      <div><img src="/images/sesje/07092024/1.jpg" ></img><img src="/images/sesje/07092024/2.jpg" ></img></div>
       <p class="session-summary-pkt">Punktacja:<br>
       <b>1. Paweł D - Octanis - 54 pkt</b> <br>
       2. Paweł W - Lyra - 43 pkt <br>
@@ -38,7 +39,7 @@ export const sessions = [
     date: "2024-10-11",
     players: ["Natan", "Paweł D", "Paweł W"],
     rating: "3,5 godziny",
-    summary: "Zacięta rozgrywka z niespodziewanym zwycieżcą",
+    summary: "Konflitk pomiędzy Hydran a Draco pozwolił Plancie na spokojną ekspansję",
     image: "/images/111024.jpg", // ← DODAJ ŚCIEŻKĘ DO ZDJĘCIA
     tags: ["Rodzinna", "Tile-laying", "Relaksująca"],
     fullContent: `<h3>Uczestnicy:</h3>
@@ -46,37 +47,45 @@ export const sessions = [
     <li>Paweł D - Progresywni Hydran</li>
     <li>Natan - Planta</li>
     <li>Paweł W - Potomkowie Draco</li>
-    </ol>
-    <img src="/images/sesje/111024/1.jpg" class="img-head"></img>
-      <h3>Przebieg rozgrywki</h3>
+    </ol>      
       <ul>
-      <li><h3>Progresywni Hydran</h3><li>
-      <p>Starali się grać spokojnie, stoczyli trochę walk, ale nic większego. Udało im się zbudować aż 4 Monolity (12pkt). Rozwinął maksymalnie technologie dolnego rzędu, niestety nie posiadał zbyt wiele technologii pozwalających ulepszać statki, przez to mimo posiadania Rift Turret na Pancerniku, starał się unikać walki z Lyrą czy Octanis, którzy na szczęście Magellan, zajęcie byli walką ze sobą.</p>
-      <li><h3>Potomkowie Draco</h3></li>
-      <p>Lyra jest trudną rasą do grania, budują świątynie na planetach, ale mogą tylko jedną na rundę, więc wymaga to dużego planowania i zarządzania zasobami. Lyra starała się dbać o ten element równocześnie nie zapominając o inwestycjach w flotę. Stoczył kilka walk z Octanis, ostatecznie zabrał kilka sektorów Magellanom. Ostatecznie udało im się zbudować 7 świątyń z 9 możliwych, całkiem przyzwoity wynik, mimo że Anomalia trochę przeszkadzała.</p>
-      <li><h3>Planta</h3></li>
-      <p>Główną cechą rasy Octanis jest możliwość ewolucji i adaptacji do zmiennych warunków w galaktyce. W tej sesji skupili się na korzystaniu z tego, udało się uzyskać 7 mutacji, z czego udało się uzyskać łącznie 15 pkt, bez tych punktów byli by na szarym końcu. Bez wątpienia przydatna okazała się rzadka technologia Advanced Genetics, która zwiększyłą zarówno co rundowy przychód Mutagenów (potrzebnych do mutacji), jak i jednorazowo dała +3 mutagenów.</p>
-      <img src="/images/sesje/111024/2.jpg" class="img-head"></img>
+      <li><h3>Przebieg rozgrywki</h3></li>
+      <p>Dosyć zacięta walka między Progresywnymi Hydranami, a Potomkami Draco, co skrzętnie wykorzystał trzeci gracz, Planta, rozszerzając swoje Imperium i zabezpieczając wejście do niego.</p>
       <li><h3>Podsumowanie i punktacja</h3></li>
+      <div><img src="/images/sesje/11102024/1.jpg" ><img src="/images/sesje/11102024/3.jpg" ></img></img><img src="/images/sesje/11102024/2.jpg" ></img></div>
       <p class="session-summary-pkt">Punktacja:<br>
-      <b>1. Paweł D - Octanis - 54 pkt</b> <br>
-      2. Paweł W - Lyra - 43 pkt <br>
-      3. Natan - Magellan - 41 pkt <br>
-      Octanis odnoszą swoje pierwsze zwycięstwo już w pierwszej rozgrywce. Lyra i Magellan bardzo blisko siebie, bardzo wyrównanie.
+      <b>1. Natan - Planta - 61 pkt</b> <br>
+      2. Paweł D - Hydranie - 44 pkt <br>
+      3. Paweł W - Draco - 41 pkt <br>
       </p>
     </ul>
     `
   },
   {
     id: 3,
-    game: "Eclipse",
+    game: "Jedność Pyxis vs Agresywne Imperia",
     date: "2025-09-13",
     players: ["Natan", "Paweł D", "Paweł W"],
     rating: "3,5 godziny",
-    summary: "Epicka rozgrywka w alternatywnej Europie lat 20. Walka o zasoby i terytorium była bardzo zacięta.",
+    summary: "Agresywni Rho Indi przyczynili się do problemów Pyxis, dając przestrzeń Orionom",
     image: "/images/130925.jpg", // ← DODAJ ŚCIEŻKĘ DO ZDJĘCIA
     tags: ["Strategia", "Alternatywna historia", "Mechanicy"],
-    fullContent: "Pełny opis sesji..."
+    fullContent: `<h3>Uczestnicy:</h3>
+    <ol>
+    <li>Paweł D - Rho Indi</li>
+    <li>Natan - Hegemonia Oriona</li>
+    <li>Paweł W - Jedność Pyxis</li>
+    </ol>
+    <ul>
+    <li><h3>Galeria</h3></li>
+    <div><img src="/images/sesje/13092025/1.jpg"><img src="/images/sesje/13092025/2.jpg"></img></img><img src="/images/sesje/13092025/3.jpg"></img></img></img><img src="/images/sesje/13092025/4.jpg"></img>
+    <img src="/images/sesje/13092025/5.jpg"></img><img src="/images/sesje/13092025/6.jpg"></img><img src="/images/sesje/13092025/7.jpg"></img><img src="/images/sesje/13092025/8.jpg"></img><img src="/images/sesje/13092025/10.jpg"></img></div>
+    <p class="session-summary-pkt">Punktacja:<br>
+      <b>1. Natan - Orion - 41 pkt</b> <br>
+      2. Paweł W - Jedność Pyxis - 33 pkt <br>
+      3. Paweł D - Rho Indi - 30 pkt <br>
+      </p>
+    `
   },
   {
     id: 4,
