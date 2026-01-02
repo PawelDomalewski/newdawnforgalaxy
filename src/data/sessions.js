@@ -89,25 +89,59 @@ export const sessions = [
   },
   {
     id: 4,
-    game: "Eclipse",
+    game: "Supremacja Oriona",
     date: "2025-10-16",
     players: ["Paweł D", "Natan", "Adrian", "Kacper", "Paweł W"],
     rating: "6 godzin",
-    summary: "Szybka sesja budowania cywilizacji. Wszyscy gracze skupili się na różnych strategiach rozwoju.",
+    summary: "Mechanema już na wczesnej fazie gry zniszczyła Eridani, którzy się nie podnieśli do końca gry. Pewność siebie Mechanemy sprawiła, że Orion miał wolną rękę w dominacji reszty Galaktyki.",
     image: "/images/161025.jpg", // ← DODAJ ŚCIEŻKĘ DO ZDJĘCIA
     tags: ["Karty", "Cywilizacja", "Szybka gra"],
-    fullContent: "Pełny opis sesji..."
+    fullContent: `<h3>Uczestnicy:</h3>
+    <ol>
+    <li>Paweł D - Imperium Eridani</li>
+    <li>Adrian - Hegemonia Oriona</li>
+    <li>Paweł W - Mechanema</li>
+    <li>Kacper - Planta</li>
+    <li>Natan - Progresywni Hydranie</li>
+    </ol>
+    <ul>
+    <li><h3>Galeria</h3></li>
+    <div><img src="/images/sesje/16102025/1.jpg"><img src="/images/sesje/16102025/2.jpg"></img></img><img src="/images/sesje/16102025/3.jpg"></img></div>
+    <p class="session-summary-pkt">Punktacja:<br>
+      <b>1. Adrian - Orion - 39 pkt</b> <br>
+      2. Paweł W - Mechanema - 38 pkt <br>
+      3. Natan - Progresywni Hydranie - 34 pkt <br>
+      4. Paweł D - Imperium Eridani - 18 pkt <br>
+      5. Kacper - Planta - 14 pkt
+      </p>
+    `
   },
   {
     id: 5,
-    game: "Eclipse",
+    game: "Ufortyfikowane Centrum",
     date: "2025-10-18",
     players: ["Piotr", "Tymek", "Paweł W", "Paweł D"],
     rating: "4.5 godzin",
-    summary: "Maraton kosmicznej strategii trwający 8 godzin! Niezwykle intensywna walka o galaktyczną dominację.",
+    summary: "Octanis ponownie pokazują swoją dominację w Galaktyce. Nieustanny konflikt między Hydran a Ludźmi został wykorzystany przez Magellan do niespodziewanego ataku.",
     image: "/images/181025.jpg", // ← DODAJ ŚCIEŻKĘ DO ZDJĘCIA
     tags: ["Kosmos", "Epicka", "Długa gra"],
-    fullContent: "Pełny opis sesji..."
+    fullContent: `<h3>Uczestnicy:</h3>
+    <ol>
+    <li>Paweł D - Magellanie</li>
+    <li>Tymek - Progresywni Hydranie</li>
+    <li>Paweł W - Octanis</li>
+    <li>Piotr - Ludzie</li>
+    </ol>
+    <ul>
+    <li><h3>Galeria</h3></li>
+    <div><img src="/images/sesje/18102025/1.jpeg"><img src="/images/sesje/18102025/2.jpg"><img src="/images/sesje/18102025/3.jpg"><img src="/images/sesje/18102025/4.jpg"><img src="/images/sesje/18102025/5.jpg"><img src="/images/sesje/18102025/6.jpg"></div>
+    <p class="session-summary-pkt">Punktacja:<br>
+      <b>1. Paweł W - Octanis - 45 pkt</b> <br>
+      2. Tymek - Progresywni Hydranie - 35 pkt <br>
+      3. Paweł D - Magellanie - 35 pkt <br>
+      4. Piotr - Ludzie - 15 pkt <br>
+      </p>
+    `
   },
   {
     id: 6,
@@ -126,15 +160,19 @@ export const sessions = [
     </ol>
     <h3>Przebieg gry</h3>
     <ul>
-    <li><h3>Oświeceni Lyra</h3></li>
+    <li><h3>Galeria</h3></li>
     </ul>
     <img src="/images/sesje/3110251.jpg" class="img-head"></img>
     <div>
-    <img src="/images/sesje/3110251.jpg"></img>
-    <img src="/images/sesje/3110252.jpg"></img>
-    <img src="/images/sesje/3110253.jpg"></img>
-    <img src="/images/sesje/3110254.jpg"></img>
+    <img src="/images/sesje/31102025/1.jpg"><img src="/images/sesje/31102025/2.jpg"><img src="/images/sesje/31102025/3.jpg"><img src="/images/sesje/31102025/4.jpg"><img src="/images/sesje/31102025/5.jpg"><img src="/images/sesje/31102025/6.jpg">
+    <img src="/images/sesje/31102025/7.jpg"><img src="/images/sesje/31102025/8.jpg"><img src="/images/sesje/31102025/9.jpg"><img src="/images/sesje/31102025/10.jpg"><img src="/images/sesje/31102025/11.jpg"><img src="/images/sesje/31102025/12.jpg">
+    <img src="/images/sesje/31102025/13.jpg"><img src="/images/sesje/31102025/14.jpg"><img src="/images/sesje/31102025/15.jpg"><img src="/images/sesje/31102025/16.jpg"><img src="/images/sesje/31102025/17.jpg"><img src="/images/sesje/31102025/18.jpg">
     </div>
+    <p class="session-summary-pkt">Punktacja:<br>
+    <b>1. Paweł D - Jedność Pyxis - 66 pkt</b> <br>
+    2. Paweł W - Dorado - 58 pkt <br>
+    3. Natan - Lyra - 37 pkt <br>
+    </p>
     `
   },
   {
