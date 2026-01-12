@@ -125,7 +125,8 @@
   margin: 10px 0 0 0;
 }
 
-.loading, .no-data {
+.loading,
+.no-data {
   text-align: center;
   padding: 60px 20px;
   font-size: 18px;
@@ -150,27 +151,29 @@
   .statistics-container {
     padding: 10px;
   }
-  
+
   .stats-table th,
   .stats-table td {
     padding: 10px 12px;
     font-size: 13px;
   }
-  
+
   .stats-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .stat-card {
     padding: 20px;
   }
-  
+
   .stat-number {
     font-size: 28px;
   }
 }
 
-td {color: black;}
+td {
+  color: black;
+}
 
 .header-section {
   display: flex;
@@ -208,8 +211,13 @@ td {color: black;}
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .loading {
@@ -257,7 +265,7 @@ td {color: black;}
     align-items: stretch;
     text-align: center;
   }
-  
+
   .refresh-btn {
     align-self: center;
     min-width: 150px;
@@ -273,7 +281,7 @@ td {color: black;}
   align-items: center;
   height: 170px;
   width: 170px;
-  filter: drop-shadow(10px 10px 20px rgba(255, 255, 255, 0.9)) drop-shadow(-10px -10px 20px rgba(255, 255, 255, 0.9));  
+  filter: drop-shadow(10px 10px 20px rgba(255, 255, 255, 0.9)) drop-shadow(-10px -10px 20px rgba(255, 255, 255, 0.9));
   margin: 2rem auto;
   font-family: 'Courier New', Courier, monospace;
   transition: 300ms;
@@ -393,17 +401,18 @@ td {color: black;}
   .ungraced-races-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .player-header {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
   }
-  
+
   .race-stats {
     align-items: flex-start;
   }
 }
+
 /* Styl dla sekcji profilu gracza */
 /* Styl dla sekcji profilu gracza */
 .player-profiles-container {
@@ -598,6 +607,7 @@ td {color: black;}
   from {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   }
+
   to {
     box-shadow: 0 4px 25px rgba(225, 112, 85, 0.3);
   }
@@ -797,36 +807,47 @@ td {color: black;}
   .player-profiles-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .profile-stats-grid {
     grid-template-columns: 1fr;
     gap: 12px;
   }
-  
+
   .races-section {
     grid-template-columns: 1fr;
     gap: 15px;
   }
-  
+
   .player-summary {
     flex-direction: column;
     align-items: center;
     gap: 8px;
   }
-  
+
   .achievement-content {
     flex-direction: column;
     text-align: center;
     gap: 15px;
   }
-  
+
   .achievement-text {
     text-align: center;
   }
-  
+
   .achievement-stats {
     flex-direction: column;
     align-items: center;
     gap: 10px;
   }
+}
+
+.info-stat {
+  padding: 1rem;
+  margin: 1rem;
+  background-color: var(--bg-p);
+  color: var(--text-clr-content);
+  text-align: center;
+  border-radius: 12px;
+  border-left: solid 5px var(--hover-link-clr);
+  border-right: solid 5px var(--hover-link-clr);
 }

@@ -500,7 +500,8 @@ const Statistics = () => {
 
       {/* NOWA SEKCJA - Eclipse World Championship */}
       <div className="stats-section">
-        <h2>Eclipse World Championship - 2013-2019</h2>
+        <h2>Eclipse World Championship - 2013-2019 i inne</h2>
+        <p className="info-stat">Statystyki, które udało mi się wyciągnąć z forum BGG.com, zawierają dane turniejów Eclipse jak i prywatnych partii graczy z forum.</p>
         {ewcStats.length === 0 ? (
           <p className="no-data">Brak danych do wyświetlenia</p>
         ) : (
