@@ -851,3 +851,118 @@ td {
   border-left: solid 5px var(--hover-link-clr);
   border-right: solid 5px var(--hover-link-clr);
 }
+
+/* ====== Karuzela profili (bez bibliotek) ====== */
+.profiles-carousel {
+  position: relative;
+  margin-top: 20px;
+  padding: 10px 0 25px;
+}
+
+.carousel-viewport {
+  overflow: hidden;
+  width: 100%;
+  padding: 25px 0;
+  /* wartości bazowe – na mobile nadpisane w media query */
+  --card-width: 420px;
+  --gap: 22px;
+}
+
+/* Track: center active slide + drag offset */
+.carousel-track {
+  display: flex;
+  gap: var(--gap);
+  will-change: transform;
+  transition: transform 420ms cubic-bezier(.22,.61,.36,1);
+  transform:
+    translateX(
+      calc(
+        50% - (var(--card-width) / 2)
+        - (var(--slide) * (var(--card-width) + var(--gap)))
+        + var(--drag, 0px)
+      )
+    );
+}
+
+.carousel-track.no-transition {
+  transition: none !important;
+}
+
+.carousel-slide {
+  width: var(--card-width);
+  flex: 0 0 var(--card-width);
+  display: flex;
+  justify-content: center;
+  transform-origin: center center;
+  transition: transform 420ms cubic-bezier(.22,.61,.36,1), opacity 420ms;
+  perspective: 900px;
+  user-select: none;
+}
+
+.carousel-slide .player-profile-card {
+  width: 100%;
+}
+
+/* Efekt „środek większy, boki mniejsze” */
+.carousel-slide.is-active {
+  transform: scale(1) rotateY(0deg);
+  opacity: 1;
+  z-index: 3;
+}
+
+.carousel-slide.is-prev {
+  transform: scale(0.86) rotateY(12deg);
+  opacity: 0.75;
+  z-index: 2;
+}
+
+.carousel-slide.is-next {
+  transform: scale(0.86) rotateY(-12deg);
+  opacity: 0.75;
+  z-index: 2;
+}
+
+.carousel-slide.is-far {
+  transform: scale(0.72);
+  opacity: 0.35;
+  z-index: 1;
+}
+
+/* Strzałki */
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  font-size: 34px;
+  line-height: 46px;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.92);
+  color: #2c3e50;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  z-index: 10;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.carousel-arrow:hover {
+  transform: translateY(-50%) scale(1.06);
+  background: #fff;
+}
+
+.carousel-arrow.left { left: 8px; }
+.carousel-arrow.right { right: 8px; }
+
+/* Responsywność */
+@media (max-width: 768px) {
+  .carousel-viewport {
+    --card-width: 92vw;
+    --gap: 14px;
+  }
+  .carousel-arrow.left { left: 6px; }
+  .carousel-arrow.right { right: 6px; }
+}
