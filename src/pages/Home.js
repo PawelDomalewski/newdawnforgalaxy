@@ -37,7 +37,7 @@ const Home = () => {
         <p>Wciel się w przywódcę jednej z potężnych ras galaktyki i wyrusz na podbój kosmosu w tej niezwykle głębokiej grze strategicznej. Twoja przygoda zaczyna się od odkrywania tajemniczych gwiazd, rozwoju zaawansowanych technologii i projektowania własnych, potężnych flot kosmicznych. Pamiętaj jednak, że twoja ekspansja nie pozostanie niezauważona – będziesz musiał prowadzić finezyjne rozgrywki dyplomatyczne lub szykować się na nieuniknione starcia z innymi imperiami. W mroku przestrzeni czyha jednak starsze i śmiertelne zagrożenie, gotowe wystawić na próbę wszystkie twoje strategiczne umiejętności. "Eclipse" doskonale łączy w sobie elementy eksploracji, rozwoju i taktycznych bitew na ogromną skalę, a każda rozgrywka jest unikalna dzięki losowo generowanej mapie. Podejmuj kluczowe decyzje, zarządzaj zasobami i doświadczaj epickich, widowiskowych starć, w których wynik zależy od twojego planu. Weź udział w tej niezapomnianej kosmicznej symfonii władzy i napisz swoją własną historię dominacji w galaktyce!</p>
       </div>
 
-      {/* Sekcja 4X - Interactive */}
+      {/* Sekcja 4X - Interactive 
       <section className="x4-section intro container">
         <h1>Poznaj strategię 4X:</h1>
         <div className="container">
@@ -101,7 +101,7 @@ const Home = () => {
           )}
         </div>
       </section>
-
+*/}
       <div className="container intro">
         <section className="latest-sessions">
           <div className="section-header">
