@@ -486,7 +486,7 @@ const Statistics = () => {
           </div>
         )}
       </div>
-{/*
+
       <div className="stats-section">
         <h2>Eclipse World Championship - 2013-2019 i inne</h2>
         <p className="info-stat">
@@ -526,7 +526,7 @@ const Statistics = () => {
           </div>
         )}
       </div>
-*/}
+
       <div className="stats-section">
         <h2>Statystyki Graczy</h2>
         {playerStats.length === 0 ? (
