@@ -88,25 +88,16 @@ h2 {font-family: 'Courier New', Courier, monospace;}
 }
 
 .intro {
-    background: #f8f9fa18;
+    background: var(--bg-content);
     padding: 1rem !important;
-    border-radius: 20px;
-    border-left: 3px solid #3498db33;
-    border-right: 3px solid #3498db33;
-    border-bottom: 3px solid #3498db00;
-    border-top: 3px solid #3498db00;
-    color: #ffff !important;
-    backdrop-filter: blur(8px);
+    color: var(--text-clr-content) !important;
+    border-radius: 12px;
+    border: 2px solid var(--accent-clr);
     font-size: 1.1rem;
     transition: 500ms;
     margin: 1rem auto !important;
 }
 
 .intro h2 {
-  color: white !important;
-}
-
-.intro:hover {
-  border-bottom: 3px solid #3498db33;
-  border-top: 3px solid #3498db33;
+  color: var(--text-clr-content) !important;
 }

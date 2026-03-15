@@ -5,11 +5,11 @@
 }
 
 .session-card {
-  border: 1px solid #ddd;
+  border: 1px solid var(--accent-clr);
   border-radius: 8px;
   overflow: hidden;
   transition: all 0.3s ease;
-  background: white;
+  background: var(--bg-content);
   cursor: pointer;
   height: 100%;
   display: flex;
@@ -18,8 +18,8 @@
 
 .session-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-  border-color: #3498db;
+  box-shadow: 0 8px 25px var(--hover-link-clr);
+  border-color: var(--hover-link-clr);
 }
 
 .session-image {
@@ -73,7 +73,7 @@
 }
 
 .session-content h3 {
-  color: #2c3e50;
+  color: var(--text-clr-content);
   margin-bottom: 1rem;
   font-size: 1.3rem;
 }
@@ -82,9 +82,9 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   font-size: 0.9rem;
-  color: #666;
+  color: var(--text-meta-clr);
 }
 
 .session-content p {
@@ -92,6 +92,7 @@
   margin-bottom: 1rem;
   color: #444;
   line-height: 1.5;
+  color: var(--text-clr-content);
 }
 
 .session-tags {

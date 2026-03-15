@@ -106,8 +106,8 @@ const Home = () => {
         <section className="latest-sessions">
           <div className="section-header">
             <h2>Ostatnie sesje</h2>
-            <Link to="/sesje" className="view-all-link">
-              Zobacz wszystkie →
+            <Link to="/sesje" className="button">
+              Zobacz wszystkie
             </Link>
           </div>
           
