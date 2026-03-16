@@ -2,7 +2,7 @@
   --header-footer-bg: hsl(0, 0%, 10%);
   --hover-link-clr: hsl(120, 51%, 32%);
   --text-clr: #ffff;
-  --text-clr-content: hsl(0, 0%, 85%);
+  --text-clr-content: hsl(0, 0%, 90%);
   --text-meta-clr: hsl(0, 0%, 60%);
   --bg-p: #ffffff;
   --btn-clr: hsl(120, 51%, 32%);
@@ -125,13 +125,16 @@ p {text-align: justify;}
   .header .container {
     grid-template-columns: auto 1fr auto;
     align-items: start;
-    justify-content: start;
+    justify-content: end;
     gap: 1rem;
+    width: 100% !important;
   }
 
   .sticky-menu {
     margin: 0px !important;
     top: 0 !important;
+    width: 100% !important;
+    border-radius: 0 !important;
   }
 
   .hamburger {
