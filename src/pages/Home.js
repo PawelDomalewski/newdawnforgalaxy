@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { sessions } from '../data/sessions.js';
 import SessionCard from '../components/SessionCard.js';
@@ -13,7 +13,10 @@ const Home = () => {
     { id: 'exploit', title: 'eXploit', letter: 'X', description: 'Wykorzystuj zdobyte zasoby w pełni efektywnie. Rozwijaj zaawansowane technologie, optymalizuj produkcję i wydobycie. Każda planeta i system ma unikalne bogactwa - naucz się je wykorzystywać, by zbudować najpotężniejszą gospodarkę w galaktyce.' },
     { id: 'exterminate', title: 'eXterminate', letter: 'X', description: 'Eliminuj zagrożenia i konkurencję. Czy to poprzez dyplomację, szpiegostwo, czy otwarty konflikt - zapewnij dominację swojemu imperium. Pamiętaj, że w mroku kosmosu czają się nie tylko inne rasy, ale też pradawne zagrożenia gotowe zniszczyć wszystko.' }
   ];
-
+  const sesjeRef = useRef(null);
+  const scrollToSection = (ref) => {
+    ref.current?.scrollIntoView({ behavior: 'smooth' });
+  };
   const latestSessions = sessions
     .sort((a, b) => new Date(b.date) - new Date(a.date))
     .slice(0, 6);
@@ -30,7 +33,14 @@ const Home = () => {
     <div className="home-page">
       <div className="hero">
         <h1>Eclipse: New Dawn for the Galaxy</h1>
+        <div>
+            <button className="button" onClick={() => scrollToSection(sesjeRef)}>Sesje</button>
+            <Link to="/zasady-poradnik" className="button second">
+              Zasady
+            </Link>
+        </div>
       </div>
+       
       
       <div className="container intro">
         <h2>Eclipse</h2>
@@ -103,7 +113,7 @@ const Home = () => {
       </section>
 */}
       <div className="container intro">
-        <section className="latest-sessions">
+        <section ref={sesjeRef} className="latest-sessions">
           <div className="section-header">
             <h2>Ostatnie sesje</h2>
             <Link to="/sesje" className="button">

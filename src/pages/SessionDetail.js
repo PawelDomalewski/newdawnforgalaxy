@@ -249,7 +249,7 @@ const SessionDetail = () => {
         <article className="session-article">
           <header className="session-header">
             <button onClick={() => navigate(-1)} className="button">
-              ← Wróć
+              Wróć
             </button>
             <h1>{session.game}</h1>
             <div className="session-meta-large">
@@ -311,7 +311,7 @@ const SessionDetail = () => {
 
           <footer className="session-footer">
             <Link to="/sesje" className="button">
-              ← Wróć do wszystkich sesji
+              Wróć do wszystkich sesji
             </Link>
           </footer>
         </article>
