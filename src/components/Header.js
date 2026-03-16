@@ -1,9 +1,29 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Sprawdź pozycję scrolla
+      const scrollPosition = window.scrollY;
+      setIsSticky(scrollPosition > 60);
+    };
+
+    // Dodaj nasłuchiwanie na scroll
+    window.addEventListener('scroll', handleScroll);
+
+    // Sprawdź początkową pozycję scrolla
+    handleScroll();
+
+    // Cleanup - usuń nasłuchiwanie przy odmontowaniu komponentu
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []); // Pusta tablica zależności - efekt uruchomi się tylko raz
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -14,7 +34,7 @@ const Header = () => {
   };
 
   return (
-    <header className="header">
+    <header className={`header ${isSticky ? 'sticky-menu' : ''}`}>
       <div className="container">
         
         {/* Przycisk hamburger menu */}

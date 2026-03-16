@@ -28,6 +28,8 @@
   flex-shrink: 0;
   position: relative;
   overflow: hidden;
+  display: inline-block;
+  transition: transform 0.5s ease;
 }
 
 .session-image-real {
@@ -35,9 +37,30 @@
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
+  position: relative;
+  display: inline-block;
 }
 
-.session-card:hover .session-image-real {
+.session-image:before {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.25);
+  height: 100%;
+  width: 3em;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -10.5em;
+  z-index: 55;
+  transform: skewX(-45deg) translateX(0);
+  transition: none;
+}
+
+.session-card:hover .session-image:before {
+  transform: skewX(-45deg) translateX(700px);
+  transition: all 0.6s ease-in-out;
+}
+
+.session-card:hover .session-image {
   transform: scale(1.05);
 }
 
@@ -61,7 +84,7 @@
 }
 
 /* Jeśli zdjęcie się nie załaduje, pokaż placeholder */
-.session-image-real:error + .image-placeholder {
+.session-image-real:error+.image-placeholder {
   display: flex;
 }
 

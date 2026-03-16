@@ -54,6 +54,8 @@ body {
   position: static;
   top: 0;
   z-index: 55;
+  width: 100%;
+  transition: all 0.3s ease;
 }
 
 .header .container {
@@ -72,10 +74,27 @@ body {
 .header nav a {
   color: var(--text-clr);
   text-decoration: none;
+  border-bottom: 2px solid var(--bg-content);
 }
 
 .header nav a:hover {
   color: var(--hover-link-clr);
+  border-bottom: 2px solid var(--btn-clr-hover);
+}
+
+.sticky-menu {
+  position: sticky !important;
+  width: fit-content !important;
+  margin: auto !important;
+  border-radius: 12px !important;
+  top: 5px !important;
+  transition: all 0.3s;
+  font-size: 0.85rem;
+  background-color: var(--bg-content-inner);
+}
+
+.sticky-menu nav a {
+  border-bottom: 2px solid var(--bg-content-inner);
 }
 
 /* Sessions Grid */
@@ -102,10 +121,15 @@ body {
 
 @media (max-width: 768px) {
   .header .container {
-    display: grid;
     grid-template-columns: auto 1fr auto;
-    align-items: center;
+    align-items: start;
+    justify-content: start;
     gap: 1rem;
+  }
+
+  .sticky-menu {
+    margin: 0px !important;
+    top: 0 !important;
   }
 
   .hamburger {
