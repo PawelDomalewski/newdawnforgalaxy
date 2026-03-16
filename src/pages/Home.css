@@ -1,5 +1,5 @@
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.411),rgba(0, 0, 0, 0.418)),url(/public/images/bg4.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.411), rgba(0, 0, 0, 0.418)), url(/public/images/bg4.jpg);
   background-position: center;
   background-size: cover;
   color: white;
@@ -14,10 +14,18 @@
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Anta', Courier, monospace;
 }
 
-h2 {font-family: 'Courier New', Courier, monospace;}
+h2,
+h1,
+h3 {
+  font-family: 'Anta', Courier, monospace;
+}
+
+p {
+  font-family: 'Roboto', Courier, monospace;
+}
 
 .hero p {
   font-size: 1.2rem;
@@ -88,14 +96,14 @@ h2 {font-family: 'Courier New', Courier, monospace;}
 }
 
 .intro {
-    background: var(--bg-content);
-    padding: 1rem !important;
-    color: var(--text-clr-content) !important;
-    border-radius: 12px;
-    border: 2px solid var(--accent-clr);
-    font-size: 1.1rem;
-    transition: 500ms;
-    margin: 1rem auto !important;
+  background: var(--bg-content);
+  padding: 1rem !important;
+  color: var(--text-clr-content) !important;
+  border-radius: 12px;
+  border: 2px solid var(--accent-clr);
+  font-size: 1.1rem;
+  transition: 500ms;
+  margin: 1rem auto !important;
 }
 
 .intro h2 {

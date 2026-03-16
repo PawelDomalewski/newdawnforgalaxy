@@ -6,8 +6,10 @@
   --text-meta-clr: hsl(0, 0%, 60%);
   --bg-p: #ffffff;
   --btn-clr: hsl(120, 51%, 32%);
+  --btn-clr-hover: hsl(120, 51%, 42%);
   --bg-dark-white: hsl(0, 0%, 0%);
   --bg-content: hsl(0, 0%, 10%);
+  --bg-content-inner: hsl(0, 0%, 15%);
   --accent-clr: hsla(0, 0%, 0%, 0.26);
 }
 
@@ -489,11 +491,12 @@ body {
 }
 
 .button {
+  background-color: var(--btn-clr);
   padding: 0.75em 2em;
   text-align: center;
   text-decoration: none;
   font-weight: bold;
-  color: var(--btn-clr);
+  color: var(--btn-clr-content);
   border: 2px solid var(--btn-clr);
   border-radius: 12px;
   font-size: 0.9rem;
@@ -519,11 +522,11 @@ body {
 }
 
 .button:hover {
-  background-color: var(--btn-clr);
+  background-color: var(--btn-clr-hover);
   color: var(--text-clr);
 }
 
 .button:hover:before {
-  transform: skewX(-45deg) translateX(20.5em);
+  transform: skewX(-45deg) translateX(500px);
   transition: all 0.5s ease-in-out;
 }
