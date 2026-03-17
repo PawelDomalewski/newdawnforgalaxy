@@ -413,7 +413,7 @@ const Statistics = () => {
 
       <div className="header-section">
         <h1>Statystyki</h1>
-        <button onClick={refreshData} className="refresh-btn">
+        <button onClick={refreshData} className="button">
           ⟳ Odśwież dane
         </button>
       </div>

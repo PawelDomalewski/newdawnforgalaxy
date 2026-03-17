@@ -161,24 +161,24 @@ const Rules = () => {
             <p className="navigation-subtitle">Szybki dostęp do wszystkich sekcji</p>
             <div className="navigation-buttons">
               <button 
-                className="nav-button-rules"
+                className="button"
                 onClick={() => scrollToSection(instructionsRef)}
               >
-                <span className="nav-button-text">Instrukcje</span>
+                Instrukcje
               </button>
               
               <button 
-                className="nav-button-rules"
+                className="button"
                 onClick={() => scrollToSection(racesRef)}
               >
-                <span className="nav-button-text">Opis Ras</span>
+                Opis Ras
               </button>
               
               <button 
-                className="nav-button-rules"
+                className="button"
                 onClick={() => scrollToSection(guidesRef)}
               >
-                <span className="nav-button-text">Poradniki</span>
+                Poradniki
               </button>
             </div>
           </div>
@@ -332,7 +332,7 @@ const Rules = () => {
                       </div>
                     </div>
                     <div className="guide-tile-cta">
-                      <span className="guide-tile-link">Czytaj więcej →</span>
+                      <span className="button">Czytaj więcej</span>
                     </div>
                   </div>
                 </div>

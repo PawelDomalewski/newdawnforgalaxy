@@ -1,5 +1,5 @@
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.411),rgba(0, 0, 0, 0.418)),url(/public/images/bg4.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.411), rgba(0, 0, 0, 0.418)), url(/public/images/bg4.jpg);
   background-position: center;
   background-size: cover;
   color: white;
@@ -7,6 +7,7 @@
   text-align: center;
   height: 50vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -14,15 +15,28 @@
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Anta', Courier, monospace;
 }
 
-h2 {font-family: 'Courier New', Courier, monospace;}
+h2,
+h1,
+h3 {
+  font-family: 'Anta', Courier, monospace;
+}
+
+p {
+  font-family: 'Roboto', Courier, monospace;
+}
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
   opacity: 0.9;
+}
+
+.hero div {
+  display: flex;
+  gap: 10px;
 }
 
 .cta-button {
@@ -88,25 +102,16 @@ h2 {font-family: 'Courier New', Courier, monospace;}
 }
 
 .intro {
-    background: #f8f9fa18;
-    padding: 1rem !important;
-    border-radius: 20px;
-    border-left: 3px solid #3498db33;
-    border-right: 3px solid #3498db33;
-    border-bottom: 3px solid #3498db00;
-    border-top: 3px solid #3498db00;
-    color: #ffff !important;
-    backdrop-filter: blur(8px);
-    font-size: 1.1rem;
-    transition: 500ms;
-    margin: 1rem auto !important;
+  background: var(--bg-content);
+  padding: 1rem !important;
+  color: var(--text-clr-content) !important;
+  border-radius: 12px;
+  border: 2px solid var(--accent-clr);
+  font-size: 1.1rem;
+  transition: 500ms;
+  margin: 1rem auto !important;
 }
 
 .intro h2 {
-  color: white !important;
-}
-
-.intro:hover {
-  border-bottom: 3px solid #3498db33;
-  border-top: 3px solid #3498db33;
+  color: var(--text-clr-content) !important;
 }

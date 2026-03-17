@@ -1,13 +1,15 @@
 .footer {
   background: var(--header-footer-bg);
-  color: white;
-  text-align: center;
   padding: 2rem 0;
   /*margin-top: 4rem;*/
 }
 
-a {
-  
+.footer p {
   color: white;
+  text-align: center !important;
 }
 
+a {
+
+  color: white;
+}

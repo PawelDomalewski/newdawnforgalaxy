@@ -33,7 +33,7 @@ const SessionCard = ({ session }) => {
           </div>
           <p>{session.summary}</p>
           
-          <div className="read-more">Czytaj więcej →</div>
+          <div className="button">Czytaj więcej</div>
         </div>
       </article>
     </Link>

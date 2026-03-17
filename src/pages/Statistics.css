@@ -10,12 +10,12 @@
 }
 
 .stats-section h2 {
-  border-bottom: 3px solid #3498db;
-  background-color: #f8f9fa;
+  border-bottom: 3px solid var(--btn-clr);
+  background-color: var(--bg-content-inner);
   padding: 5px;
   text-align: center;
   border-radius: 8px;
-  color: #2c3e50 !important;
+  color: var(--text-clr-content) !important;
   margin-bottom: 1rem;
 }
 
@@ -27,7 +27,7 @@
 }
 
 .stat-card {
-  background: linear-gradient(135deg, #3498db, #2980b9);
+  background: var(--bg-content-inner);
   color: white;
   padding: 25px;
   border-radius: 12px;
@@ -53,13 +53,13 @@
   overflow-x: auto;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  background: white;
+  background: var(--bg-dark-white);
 }
 
 .stats-table {
   width: 100%;
   border-collapse: collapse;
-  background: white;
+  background: var(--bg-content);
   min-width: 800px;
 }
 
@@ -67,11 +67,11 @@
 .stats-table td {
   padding: 14px 16px;
   text-align: center;
-  border-bottom: 1px solid #ecf0f1;
+  border-bottom: 1px solid var(--btn-clr);
 }
 
 .stats-table th {
-  background: linear-gradient(135deg, #3498db, #2980b9);
+  background: linear-gradient(135deg, var(--btn-clr), var(--btn-clr-hover));
   color: white;
   font-weight: 600;
   font-size: 14px;
@@ -80,17 +80,17 @@
 }
 
 .stats-table tr:nth-child(even) {
-  background-color: #f8f9fa;
+  background-color: var(--bg-content-inner);
 }
 
 .stats-table tr:hover {
-  background-color: #e3f2fd;
+  background-color: var(--btn-clr-hover);
   transform: translateY(-1px);
   transition: all 0.2s ease;
 }
 
 .stats-table td strong {
-  color: #2c3e50;
+  color: var(--text-clr-content);
   font-weight: 600;
 }
 
@@ -172,7 +172,7 @@
 }
 
 td {
-  color: black;
+  color: var(--text-clr-content);
 }
 
 .header-section {
@@ -844,7 +844,7 @@ td {
 .info-stat {
   padding: 1rem;
   margin: 1rem;
-  background-color: var(--bg-p);
+  background-color: var(--bg-content-inner);
   color: var(--text-clr-content);
   text-align: center;
   border-radius: 12px;

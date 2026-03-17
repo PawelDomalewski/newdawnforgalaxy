@@ -1,6 +1,6 @@
 .guide-page {
   min-height: 100vh;
-  background-color: #f8f9fa;
+  background-color: var(--bg-dark-white);
   padding: 2rem 0;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .guide-full-article {
-  background: white;
+  background: var(--bg-content);
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   overflow: hidden;

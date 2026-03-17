@@ -1,6 +1,6 @@
 .rules-page {
   min-height: 100vh;
-  background-color: #f8f9fa;
+  background-color: var(--bg-dark-white);
   padding-top: 20px;
 }
 
@@ -50,11 +50,11 @@
 .rule img:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-  border-color: #3498db;
+  border-color: var(--btn-clr);
 }
 
 .grid > div {
-  background: white;
+  background: var(--bg-content);
   padding: 1.5rem;
   border-radius: 12px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -66,7 +66,7 @@
 }
 
 .grid h2 {
-  color: #2c3e50;
+  color: var(--text-clr-content);
   margin-bottom: 1rem;
   font-size: 1.3rem;
   min-height: 3rem;
@@ -90,7 +90,7 @@
   text-align: center;
 }
 
-.rules-page h1, .rules-page p {color: #2c3e50; text-align: center;}
+.rules-page h1, .rules-page p {color: var(--text-clr-content); text-align: center;}
 
 .races-subtitle {
   color: #666;
@@ -102,15 +102,16 @@
   cursor: pointer;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px var(--btn-clr);
   transition: all 0.3s ease;
-  background: white;
+  background: var(--bg-dark-white);
   position: relative;
+  border: 1px solid var(--btn-clr);
 }
 
 .race-tile:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 25px var(--btn-clr);
 }
 
 .race-tile-image {
@@ -236,6 +237,7 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  background-color: var(--bg-content);
 }
 
 .modal-race-header {
@@ -246,7 +248,7 @@
 }
 
 .modal-race-name {
-  color: #2c3e50;
+  color: var(--btn-clr);
   margin: 0;
   font-size: 1.8rem;
   line-height: 1.2;
@@ -275,7 +277,7 @@
 }
 
 .modal-detail-section h4 {
-  color: #2c3e50;
+  color: var(--btn-clr);
   margin-bottom: 0.5rem;
   font-size: 1rem;
   text-transform: uppercase;
@@ -290,7 +292,7 @@
 
 .modal-features-list li {
   padding: 0.25rem 0;
-  color: #444;
+  color: var(--text-clr-content);
   line-height: 1.4;
 }
 
@@ -301,11 +303,11 @@
 }
 
 .modal-tech-tag {
-  background: #ecf0f1;
+  background: var(--bg-content-inner);
   padding: 0.4rem 0.8rem;
   border-radius: 15px;
   font-size: 0.9rem;
-  color: #2c3e50;
+  color: var(--text-clr-content);
   border: 1px solid #d0d0d0;
 }
 
@@ -322,13 +324,13 @@
   font-weight: bold;
   font-size: 1.1rem;
   padding: 0.5rem;
-  background: #f8f9fa;
+  background: var(--bg-content-inner);
   border-radius: 8px;
 }
 
-.modal-resource.orange { color: #e67e22; background: #fef9e7; }
-.modal-resource.pink { color: #9b59b6; background: #f4ecf7; }
-.modal-resource.brown { color: #8b4513; background: #f8f0e3; }
+.modal-resource.orange { color: #e67e22; background: var(--bg-content-inner); }
+.modal-resource.pink { color: #9b59b6; background: var(--bg-content-inner); }
+.modal-resource.brown { color: #8b4513; background: var(--bg-content-inner); }
 
 .modal-race-stats-detailed {
   display: flex;
@@ -347,13 +349,13 @@
   display: block;
   font-size: 1.4rem;
   font-weight: bold;
-  color: #2c3e50;
+  color: var(--btn-clr);
 }
 
 .modal-stat-label {
   display: block;
   font-size: 0.9rem;
-  color: #666;
+  color: var(--text-meta-clr);
   margin-top: 0.2rem;
 }
 
@@ -562,7 +564,7 @@
 
 /* Nagłówek poradnika - klikalny */
 .guide-header {
-  background: white;
+  background: var(--text-clr-content);
   border-radius: 12px;
   padding: 2rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -630,20 +632,20 @@
 
 /* Zawartość poradnika */
 .guide-article {
-  background: white;
+  background: var(--bg-content);
   border-radius: 0 0 12px 12px;
   padding: 3rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   line-height: 1.7;
-  color:#2c3e50;
+  color:var(--text-clr-content);
 }
 
 .guide-intro {
-  background: #f8f9fa;
+  background: var(--bg-content-inner);
   padding: 1.5rem;
   border-radius: 8px;
   margin-bottom: 2rem;
-  border-left: 4px solid #3498db;
+  border-left: 4px solid var(--btn-clr);
 }
 
 .guide-note {
@@ -653,6 +655,7 @@
   padding: 1rem;
   border-radius: 6px;
   margin: 1rem 0;
+  color: var(--bg-dark-white);
 }
 
 .guide-warning {
@@ -662,6 +665,7 @@
   padding: 1rem;
   border-radius: 6px;
   margin: 1rem 0;
+  color: var(--bg-dark-white);
 }
 
 .guide-chapters {
@@ -680,7 +684,7 @@
 }
 
 .guide-chapter h3 {
-  color: #2c3e50;
+  color: var(--btn-clr);
   font-size: 1.3rem;
   margin-bottom: 1.5rem;
   display: flex;
@@ -693,7 +697,7 @@
 }
 
 .guide-content h4 {
-  color: #34495e;
+  color: var(--btn-clr);
   margin: 1.5rem 0 0.8rem 0;
   font-size: 1.1rem;
 }
@@ -711,11 +715,11 @@
 
 .guide-content li {
   margin-bottom: 0.5rem;
-  color: #444;
+  color: var(--text-clr-content);
 }
 
 .guide-content strong {
-  color: #2c3e50;
+  color: var(--btn-clr);
 }
 
 .guide-grid {
@@ -726,21 +730,21 @@
 }
 
 .guide-tip {
-  background: #f8f9fa;
+  background: var(--bg-content-inner);
   padding: 1rem;
   border-radius: 8px;
-  border-left: 3px solid #3498db;
+  border-left: 3px solid var(--btn-clr);
 }
 
 .guide-tip h5 {
-  color: #2c3e50;
+  color: var(--btn-clr);
   margin: 0 0 0.5rem 0;
   font-size: 1rem;
 }
 
 .guide-tip p {
   margin: 0;
-  color: #666;
+  color: var(--text-clr-content);
   font-size: 0.9rem;
 }
 
@@ -976,15 +980,15 @@
 
 /* Style dla tierów technologii */
 .guide-tech-tier {
-  background: #f8f9fa;
+  background: var(--bg-content-inner);
   padding: 1rem;
   border-radius: 8px;
   margin: 1rem 0;
-  border-left: 3px solid #3498db;
+  border-left: 3px solid var(--btn-clr);
 }
 
 .guide-tech-tier h5 {
-  color: #2c3e50;
+  color: var(--btn-clr);
   margin: 0 0 0.5rem 0;
   font-size: 1rem;
 }
@@ -996,7 +1000,7 @@
 
 .guide-tech-tier li {
   margin-bottom: 0.3rem;
-  color: #444;
+  color: var(--text-clr-content);
 }
 
 /* Specyficzne style dla drugiego poradnika */
@@ -1027,15 +1031,15 @@
 
 /* Style dla zasad w poradniku militaranym */
 .guide-principle {
-  background: #f8f9fa;
+  background: var(--bg-content-inner);
   padding: 1.5rem;
   border-radius: 8px;
   margin: 1.5rem 0;
-  border-left: 4px solid #e74c3c;
+  border-left: 4px solid var(--btn-clr);
 }
 
 .guide-principle h4 {
-  color: #2c3e50;
+  color: var(--btn-clr);
   margin: 0 0 1rem 0;
   font-size: 1.1rem;
   display: flex;
@@ -1050,7 +1054,7 @@
 
 .guide-principle li {
   margin-bottom: 0.5rem;
-  color: #444;
+  color: var(--text-clr-content);
 }
 
 /* Style dla końcowych wskazówek */
@@ -1136,7 +1140,7 @@
   display: block;
   text-decoration: none;
   color: inherit;
-  background: white;
+  background: var(--bg-content);
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
@@ -1147,7 +1151,7 @@
 .guide-tile:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-  border-color: #3498db;
+  border-color: var(--btn-clr);
   text-decoration: none;
   color: inherit;
 }
@@ -1157,6 +1161,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  background-color: var(--bg-content);
 }
 
 .guide-tile-image {
@@ -1174,7 +1179,7 @@
 }
 
 .guide-tile-title {
-  color: #2c3e50;
+  color: var(--btn-clr);
   margin: 0 0 0.5rem 0;
   font-size: 1.3rem;
   line-height: 1.3;
@@ -1204,7 +1209,7 @@
 }
 
 .guide-tile-meta {
-  border-top: 1px solid #ecf0f1;
+  border-top: 1px solid var(--btn-clr);
   padding-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -1213,7 +1218,7 @@
 .guide-tile-author,
 .guide-tile-source {
   font-size: 0.85rem;
-  color: #666;
+  color: var(--text-meta-clr);
   margin-bottom: 0.3rem;
 }
 
@@ -1225,7 +1230,7 @@
 .guide-tile-cta {
   text-align: center;
   padding-top: 1rem;
-  border-top: 1px solid #ecf0f1;
+  border-top: 1px solid var(--btn-clr);
 }
 
 .guide-tile-link {
@@ -1267,12 +1272,12 @@
 }
 /* Sekcja Top 3 Rasy */
 .top-races-section {
-  background: linear-gradient(135deg, #2c3e50 0%, #2c3e50 100%);
+  background: linear-gradient(135deg, var(--bg-content) 0%, var(--bg-content) 100%);
   padding: 4rem 0;
 }
 
 .top-races-section>.container>h1,
-.top-races-section>.container>p {color: #f8f0e3;}
+.top-races-section>.container>p {color: var(--text-clr-content);}
 
 .top-races-subtitle {
   text-align: center;
@@ -1457,7 +1462,7 @@
 
 /* Nowa sekcja nawigacji */
 .navigation-section {
-  background: linear-gradient(135deg, #2c3e50 0%, #2c3e50 100%);
+  background: linear-gradient(135deg, var(--bg-content) 0%, var(--bg-content) 100%);
   color: white !important;
   padding: 4rem 0;
   text-align: center;
@@ -1541,15 +1546,15 @@
 
 .race-info {
   font-size: 1.1rem;
-  color: #333;
-  background: #ffff;
+  color: var(--text-clr-content);
+  background: var(--bg-content);
   padding: 1.5rem;
   border-radius: 8px;
-  border-left: 8px solid #3498db;
+  border-left: 8px solid var(--btn-clr);
   text-align: left !important;
   margin-bottom: 1rem;
 }
 
 .race-info b {
-  color: #3498db;
+  color: var(--btn-clr);
 }
