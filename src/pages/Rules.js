@@ -332,7 +332,7 @@ const Rules = () => {
                       </div>
                     </div>
                     <div className="guide-tile-cta">
-                      <span className="guide-tile-link">Czytaj więcej →</span>
+                      <span className="button">Czytaj więcej</span>
                     </div>
                   </div>
                 </div>

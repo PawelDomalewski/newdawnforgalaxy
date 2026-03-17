@@ -115,7 +115,7 @@ const GuidePage = () => {
         <div className="container">
           <h1>Poradnik nie znaleziony</h1>
           <p>Przepraszamy, ale żądany poradnik nie istnieje. ID: {guideId}</p>
-          <Link to="/zasady-poradnik" className="back-button">← Powrót do poradników</Link>
+          <Link to="/zasady-poradnik" className="button">← Powrót do poradników</Link>
         </div>
       </div>
     );
@@ -124,7 +124,7 @@ const GuidePage = () => {
   return (
     <div className="guide-page">
       <div className="container">
-        <Link to="/zasady-poradnik" className="back-button">← Powrót do poradników</Link>
+        <Link to="/zasady-poradnik" className="button">Powrót do poradników</Link>
 
         <article className="guide-full-article">
           <header className="guide-header" idName="#" style={{
@@ -142,7 +142,7 @@ const GuidePage = () => {
                   href={guide.source}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="guide-source-link"
+                  className="button"
                 >
                   <strong>Źródło:</strong> {guide.sourceName}
                 </a>
@@ -155,7 +155,7 @@ const GuidePage = () => {
           </div>
 
           <footer className="guide-footer">
-            <Link to="/zasady-poradnik" className="back-button">← Powrót do poradników</Link>
+            <Link to="/zasady-poradnik" className="button">Powrót do poradników</Link>
           </footer>
         </article>
       </div>
