@@ -1,15 +1,14 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import ScrollToTop from './components/ScrollToTop.js';
 import BackToTop from './components/BackToTop.js';
 import Header from './components/Header.js';
 import Footer from './components/Footer.js';
-import Home from './pages/Home.js';
-import Sessions from './pages/Sessions.js';
-import SessionDetail from './pages/SessionDetail.js';
-import Rules from './pages/Rules.js';
-import GuidePage from './components/GuidePage.js';
-import Statistics from './pages/Statistics.js';
+const Home = lazy(() => import('./pages/Home.js'));
+const Sessions = lazy(() => import('./pages/Sessions.js'));
+const SessionDetail = lazy(() => import('./pages/SessionDetail.js'));
+const Rules = lazy(() => import('./pages/Rules.js'));
+const GuidePage = lazy(() => import('./components/GuidePage.js'));
+const Statistics = lazy(() => import('./pages/Statistics.js'));
 import About from './pages/About.js';
 import './App.css';
 
@@ -19,15 +18,17 @@ function App() {
       <div className="App">
         <Header />
         <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/sesje" element={<Sessions />} />
-            <Route path="/sesje/:sessionId" element={<SessionDetail />} />
-            <Route path="/zasady-poradnik" element={<Rules />} />
-            <Route path="/statystyki" element={<Statistics />} />            
-            <Route path="/o-mnie" element={<About />} />
-            <Route path="/guide/:guideId" element={<GuidePage />} />
-          </Routes>
+          <Suspense fallback={<div>Loading...</div>}>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/sesje" element={<Sessions />} />
+              <Route path="/sesje/:sessionId" element={<SessionDetail />} />
+              <Route path="/zasady-poradnik" element={<Rules />} />
+              <Route path="/statystyki" element={<Statistics />} />
+              <Route path="/o-mnie" element={<About />} />
+              <Route path="/guide/:guideId" element={<GuidePage />} />
+            </Routes>
+          </Suspense>
         </main>
         <BackToTop />
         <Footer />
