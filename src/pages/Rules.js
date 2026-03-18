@@ -193,19 +193,19 @@ const Rules = () => {
             <div>
               <h2>Eclipse</h2>
               <a href="/images/Eclipse.pdf" className='rule' target="_blank" rel="noopener noreferrer">
-                <img src="/images/eclipse.jpg" loading="lazy" alt="Instrukcja Eclipse" />
+                <img src="/images/eclipse.jpg"  alt="Instrukcja Eclipse" />
               </a>
             </div>
             <div>
               <h2>Rise of the Ancients</h2>
               <a href='/images/eclipse_rota.pdf' className='rule' target="_blank" rel="noopener noreferrer">
-                <img src='/images/eclipse_rota.jpg' loading="lazy" alt="Instrukcja Eclipse ROTA" />
+                <img src='/images/eclipse_rota.jpg'  alt="Instrukcja Eclipse ROTA" />
               </a>
             </div>
             <div>
               <h2>Shadow of the Rift</h2>
               <a href='/images/eclipse_sotr.pdf' className='rule' target="_blank" rel="noopener noreferrer">
-                <img src='/images/eclipse_sotr.jpg' loading="lazy" alt="Instrukcja Eclipse SOTR" />
+                <img src='/images/eclipse_sotr.jpg'  alt="Instrukcja Eclipse SOTR" />
               </a>
             </div>
           </div>
@@ -233,7 +233,7 @@ const Rules = () => {
                   onClick={() => openRaceModal(race)}
                 >
                   <div className="race-tile-image">
-                    <img src={race.image} loading="lazy" alt={`Portret rasy ${race.name}`} />
+                    <img src={race.image}  alt={`Portret rasy ${race.name}`} />
                     <div className="race-tile-overlay">
                       <h3 className="race-tile-name">{race.name}</h3>
                       <span className="race-tile-difficulty">
@@ -279,7 +279,7 @@ const Rules = () => {
                 </div>
                 <div className="top-race-name">
                   <div className="top-race-name-content">
-                    <img src={race.image} loading="lazy" alt={race.name} className="top-race-image" />
+                    <img src={race.image}  alt={race.name} className="top-race-image" />
                     <span>{race.name}</span>
                   </div>
                 </div>
@@ -314,7 +314,7 @@ const Rules = () => {
                 <div className="guide-tile-content">
                   {guide.image && (
                     <div className="guide-tile-image">
-                      <img src={guide.image} loading="lazy" alt={guide.title} />
+                      <img src={guide.image}  alt={guide.title} />
                     </div>
                   )}
                   <div className="guide-tile-info">
@@ -352,7 +352,7 @@ const Rules = () => {
             <div className="modal-race-card">
               {/* Portret rasy w modal */}
               <div className="modal-race-portrait">
-                <img src={selectedRace.image} loading="lazy" alt={`Portret rasy ${selectedRace.name}`} />
+                <img src={selectedRace.image}  alt={`Portret rasy ${selectedRace.name}`} />
               </div>
 
               {/* Informacje o rasie w modal */}
