@@ -4,7 +4,7 @@ import './Statistics.css';
 const Statistics = () => {
   const [playerData, setPlayerData] = useState([]);
   const [raceStats, setRaceStats] = useState([]);
-  const [ewcStats, setEwcStats] = useState([]);
+  const [ewcStats, setEwcStats] = useState([]); // Nowy stan dla danych EWC
   const [playerStats, setPlayerStats] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -18,6 +18,7 @@ const Statistics = () => {
       setLoading(true);
       setError(null);
 
+      // Ładowanie głównego pliku CSV
       const response = await fetch('images/sesje/stat.csv');
 
       if (!response.ok) {
@@ -34,9 +35,11 @@ const Statistics = () => {
       setPlayerData(parsedData);
       calculateStats(parsedData);
 
+      // Ładowanie danych EWC
       await loadEWCData();
 
       setLoading(false);
+      
     } catch (err) {
       console.error('Błąd wczytywania CSV:', err);
       setError(`Błąd wczytywania danych: ${err.message}`);
@@ -64,6 +67,7 @@ const Statistics = () => {
       }
 
       calculateEWCStats(parsedData);
+      
     } catch (err) {
       console.error('Błąd wczytywania EWC.csv:', err);
       setEwcStats([]);
@@ -78,6 +82,7 @@ const Statistics = () => {
     }
 
     const headers = lines[0].split(',').map(header => header.trim());
+    
     const data = [];
 
     for (let i = 1; i < lines.length; i++) {
@@ -189,12 +194,20 @@ const Statistics = () => {
       raceMap[game.race].gamesPlayed += 1;
       raceMap[game.race].places.push(game.place);
 
-      if (game.place === 1) raceMap[game.race].wins += 1;
-      else if (game.place === 2) raceMap[game.race].secondPlaces += 1;
-      else if (game.place === 3) raceMap[game.race].thirdPlaces += 1;
-      else if (game.place === 4) raceMap[game.race].fourthPlaces += 1;
-      else if (game.place === 5) raceMap[game.race].fifthPlaces += 1;
-      else if (game.place === 6) raceMap[game.race].sixthPlaces += 1;
+      // Liczenie miejsc
+      if (game.place === 1) {
+        raceMap[game.race].wins += 1;
+      } else if (game.place === 2) {
+        raceMap[game.race].secondPlaces += 1;
+      } else if (game.place === 3) {
+        raceMap[game.race].thirdPlaces += 1;
+      } else if (game.place === 4) {
+        raceMap[game.race].fourthPlaces += 1;
+      } else if (game.place === 5) {
+        raceMap[game.race].fifthPlaces += 1;
+      } else if (game.place === 6) {
+        raceMap[game.race].sixthPlaces += 1;
+      }
 
       if (game.playerCount) {
         raceMap[game.race].totalPlayerCount += game.playerCount;
@@ -202,6 +215,7 @@ const Statistics = () => {
     });
 
     const stats = Object.values(raceMap).map(race => {
+      // Obliczanie Power Rating w procentach
       const powerRating = (
         race.wins * 1.0 +
         race.secondPlaces * 0.75 +
@@ -211,26 +225,24 @@ const Statistics = () => {
         race.sixthPlaces * 0.05
       ) / race.gamesPlayed;
 
+      // Konwersja na procenty (mnożymy przez 100)
       const powerRatingPercent = (powerRating * 100);
 
       return {
         ...race,
-        averagePointsPerGame: race.gamesPlayed > 0
-          ? (race.totalPoints / race.gamesPlayed).toFixed(2)
-          : '0.00',
-        averagePlace: race.places.length > 0
-          ? (race.places.reduce((a, b) => a + b, 0) / race.places.length).toFixed(2)
-          : '0.00',
-        averagePlayerCount: race.gamesPlayed > 0
-          ? (race.totalPlayerCount / race.gamesPlayed).toFixed(1)
-          : '0',
-        winRate: race.gamesPlayed > 0
-          ? ((race.wins / race.gamesPlayed) * 100).toFixed(1) + '%'
-          : '0%',
+        averagePointsPerGame: race.gamesPlayed > 0 ? 
+          (race.totalPoints / race.gamesPlayed).toFixed(2) : '0.00',
+        averagePlace: race.places.length > 0 ? 
+          (race.places.reduce((a, b) => a + b, 0) / race.places.length).toFixed(2) : '0.00',
+        averagePlayerCount: race.gamesPlayed > 0 ? 
+          (race.totalPlayerCount / race.gamesPlayed).toFixed(1) : '0',
+        winRate: race.gamesPlayed > 0 ? 
+          ((race.wins / race.gamesPlayed) * 100).toFixed(1) + '%' : '0%',
         powerRating: powerRatingPercent.toFixed(1) + '%'
       };
     });
 
+    // Sortowanie według Power Rating (malejąco)
     setRaceStats(stats.sort((a, b) => {
       const aValue = parseFloat(a.powerRating);
       const bValue = parseFloat(b.powerRating);
@@ -238,6 +250,7 @@ const Statistics = () => {
     }));
   };
 
+  // Nowa funkcja do obliczania statystyk EWC
   const calculateEWCStats = (data) => {
     const raceMap = {};
 
@@ -264,12 +277,20 @@ const Statistics = () => {
       raceMap[game.race].gamesPlayed += 1;
       raceMap[game.race].places.push(game.place);
 
-      if (game.place === 1) raceMap[game.race].wins += 1;
-      else if (game.place === 2) raceMap[game.race].secondPlaces += 1;
-      else if (game.place === 3) raceMap[game.race].thirdPlaces += 1;
-      else if (game.place === 4) raceMap[game.race].fourthPlaces += 1;
-      else if (game.place === 5) raceMap[game.race].fifthPlaces += 1;
-      else if (game.place === 6) raceMap[game.race].sixthPlaces += 1;
+      // Liczenie miejsc
+      if (game.place === 1) {
+        raceMap[game.race].wins += 1;
+      } else if (game.place === 2) {
+        raceMap[game.race].secondPlaces += 1;
+      } else if (game.place === 3) {
+        raceMap[game.race].thirdPlaces += 1;
+      } else if (game.place === 4) {
+        raceMap[game.race].fourthPlaces += 1;
+      } else if (game.place === 5) {
+        raceMap[game.race].fifthPlaces += 1;
+      } else if (game.place === 6) {
+        raceMap[game.race].sixthPlaces += 1;
+      }
 
       if (game.playerCount) {
         raceMap[game.race].totalPlayerCount += game.playerCount;
@@ -277,6 +298,7 @@ const Statistics = () => {
     });
 
     const stats = Object.values(raceMap).map(race => {
+      // Obliczanie Power Rating w procentach
       const powerRating = (
         race.wins * 1.0 +
         race.secondPlaces * 0.75 +
@@ -286,26 +308,24 @@ const Statistics = () => {
         race.sixthPlaces * 0.05
       ) / race.gamesPlayed;
 
+      // Konwersja na procenty (mnożymy przez 100)
       const powerRatingPercent = (powerRating * 100);
 
       return {
         ...race,
-        averagePointsPerGame: race.gamesPlayed > 0
-          ? (race.totalPoints / race.gamesPlayed).toFixed(2)
-          : '0.00',
-        averagePlace: race.places.length > 0
-          ? (race.places.reduce((a, b) => a + b, 0) / race.places.length).toFixed(2)
-          : '0.00',
-        averagePlayerCount: race.gamesPlayed > 0
-          ? (race.totalPlayerCount / race.gamesPlayed).toFixed(1)
-          : '0',
-        winRate: race.gamesPlayed > 0
-          ? ((race.wins / race.gamesPlayed) * 100).toFixed(1) + '%'
-          : '0%',
+        averagePointsPerGame: race.gamesPlayed > 0 ? 
+          (race.totalPoints / race.gamesPlayed).toFixed(2) : '0.00',
+        averagePlace: race.places.length > 0 ? 
+          (race.places.reduce((a, b) => a + b, 0) / race.places.length).toFixed(2) : '0.00',
+        averagePlayerCount: race.gamesPlayed > 0 ? 
+          (race.totalPlayerCount / race.gamesPlayed).toFixed(1) : '0',
+        winRate: race.gamesPlayed > 0 ? 
+          ((race.wins / race.gamesPlayed) * 100).toFixed(1) + '%' : '0%',
         powerRating: powerRatingPercent.toFixed(1) + '%'
       };
     });
 
+    // Sortowanie według Power Rating (malejąco)
     setEwcStats(stats.sort((a, b) => {
       const aValue = parseFloat(a.powerRating);
       const bValue = parseFloat(b.powerRating);
@@ -333,6 +353,7 @@ const Statistics = () => {
       playerMap[game.player].places.push(game.place);
       playerMap[game.player].races.push(game.race);
 
+      // Liczenie wygranych (miejsce 1)
       if (game.place === 1) {
         playerMap[game.player].wins += 1;
       }
@@ -410,22 +431,12 @@ const Statistics = () => {
   return (
     <div className="statistics-container intro">
       <div className='eclipse'><h1>Eclipse</h1></div>
-
       <div className="header-section">
         <h1>Statystyki</h1>
-        <button onClick={refreshData} className="button">
+        <button onClick={refreshData} className="refresh-btn">
           ⟳ Odśwież dane
         </button>
       </div>
-
-      {error && (
-        <div className="error-message">
-          {error}
-          <div className="error-actions">
-            <button className="retry-btn" onClick={refreshData}>Spróbuj ponownie</button>
-          </div>
-        </div>
-      )}
 
       <div className="stats-grid">
         <div className="stat-card">
@@ -487,12 +498,10 @@ const Statistics = () => {
         )}
       </div>
 
+      {/* NOWA SEKCJA - Eclipse World Championship */}
       <div className="stats-section">
         <h2>Eclipse World Championship - 2013-2019 i inne</h2>
-        <p className="info-stat">
-          Statystyki, które udało mi się wyciągnąć z forum BGG.com, zawierają dane turniejów Eclipse jak i prywatnych partii graczy z forum.
-        </p>
-
+        <p className="info-stat">Statystyki, które udało mi się wyciągnąć z forum BGG.com, zawierają dane turniejów Eclipse jak i prywatnych partii graczy z forum.</p>
         {ewcStats.length === 0 ? (
           <p className="no-data">Brak danych do wyświetlenia</p>
         ) : (
@@ -614,14 +623,14 @@ const Statistics = () => {
                   totalUngracedRaces: ungracedRaces.length,
                   hasPlayedAllRaces: hasPlayedAllRaces,
                   bestGame: {
-                    points: bestGame?.points ?? 0,
-                    race: bestGame?.race ?? '',
-                    date: bestGame?.date ?? ''
+                    points: bestGame.points,
+                    race: bestGame.race,
+                    date: bestGame.date
                   },
                   worstGame: {
-                    points: worstGame?.points ?? 0,
-                    race: worstGame?.race ?? '',
-                    date: worstGame?.date ?? ''
+                    points: worstGame.points,
+                    race: worstGame.race,
+                    date: worstGame.date
                   },
                   averagePoints: averagePoints,
                   averagePlace: averagePlace,
@@ -631,10 +640,9 @@ const Statistics = () => {
               });
 
               return (
-                <PlayerProfilesCarousel
-                  profiles={playerProfiles}
-                  renderCard={(profile) => (
-                    <div className="player-profile-card">
+                <div className="player-profiles-grid">
+                  {playerProfiles.map((profile, index) => (
+                    <div key={index} className="player-profile-card">
                       <div className="profile-header">
                         <h3 className="player-name">{profile.player}</h3>
                         <div className="player-summary">
@@ -707,7 +715,9 @@ const Statistics = () => {
                             {profile.playedRaces.length > 0 ? (
                               <div className="race-tags">
                                 {profile.playedRaces.map((race, idx) => (
-                                  <span key={idx} className="race-tag played">{race}</span>
+                                  <span key={idx} className="race-tag played">
+                                    {race}
+                                  </span>
                                 ))}
                               </div>
                             ) : (
@@ -720,7 +730,9 @@ const Statistics = () => {
                             {profile.ungracedRaces.length > 0 ? (
                               <div className="race-tags">
                                 {profile.ungracedRaces.map((race, idx) => (
-                                  <span key={idx} className="race-tag ungraced">{race}</span>
+                                  <span key={idx} className="race-tag ungraced">
+                                    {race}
+                                  </span>
                                 ))}
                               </div>
                             ) : (
@@ -733,8 +745,8 @@ const Statistics = () => {
                         </div>
                       )}
                     </div>
-                  )}
-                />
+                  ))}
+                </div>
               );
             })()}
           </div>
@@ -745,212 +757,3 @@ const Statistics = () => {
 };
 
 export default Statistics;
-
-/* =========================================================
-   Karuzela bez bibliotek: loop + strzałki + drag/swipe
-   ========================================================= */
-const PlayerProfilesCarousel = ({ profiles, renderCard }) => {
-  const viewportRef = React.useRef(null);
-
-  const [index, setIndex] = React.useState(1); // 1 = pierwszy prawdziwy (bo mamy klona na 0)
-  const [animating, setAnimating] = React.useState(false);
-  const [noTransition, setNoTransition] = React.useState(false);
-
-  // Drag / swipe
-  const pointerIdRef = React.useRef(null);
-  const isDraggingRef = React.useRef(false);
-  const startXRef = React.useRef(0);
-  const deltaXRef = React.useRef(0);
-
-  const [dragOffset, setDragOffset] = React.useState(0); // px
-
-  // Klony do zapętlenia: [last, ...real, first]
-  const extended = React.useMemo(() => {
-    if (!profiles || profiles.length === 0) return [];
-    if (profiles.length === 1) return [profiles[0], profiles[0], profiles[0]];
-    return [profiles[profiles.length - 1], ...profiles, profiles[0]];
-  }, [profiles]);
-
-  const realCount = profiles?.length || 0;
-  const lastRealIndexInExtended = realCount; // 1..realCount (real), 0/realCount+1 (klony)
-
-  React.useEffect(() => {
-    if (!extended.length) return;
-    setNoTransition(true);
-    setIndex(1);
-    setDragOffset(0);
-    requestAnimationFrame(() => setNoTransition(false));
-  }, [extended.length]);
-
-  const goNext = () => {
-    if (!extended.length || animating) return;
-    setAnimating(true);
-    setDragOffset(0);
-    setIndex((prev) => prev + 1);
-  };
-
-  const goPrev = () => {
-    if (!extended.length || animating) return;
-    setAnimating(true);
-    setDragOffset(0);
-    setIndex((prev) => prev - 1);
-  };
-
-  const onTransitionEnd = () => {
-    // dobijamy do klonów -> przeskok bez animacji
-    if (index === lastRealIndexInExtended + 1) {
-      setNoTransition(true);
-      setIndex(1);
-      requestAnimationFrame(() => {
-        setNoTransition(false);
-        setAnimating(false);
-      });
-      return;
-    }
-
-    if (index === 0) {
-      setNoTransition(true);
-      setIndex(lastRealIndexInExtended);
-      requestAnimationFrame(() => {
-        setNoTransition(false);
-        setAnimating(false);
-      });
-      return;
-    }
-
-    setAnimating(false);
-  };
-
-  // Obsługa klawiatury
-  React.useEffect(() => {
-    const handler = (e) => {
-      if (e.key === 'ArrowRight') goNext();
-      if (e.key === 'ArrowLeft') goPrev();
-    };
-    window.addEventListener('keydown', handler);
-    return () => window.removeEventListener('keydown', handler);
-  }, [animating, extended.length]);
-
-
-  // Helper: szerokość slajdu + gap z CSS (zmienne)
-  const getStepPx = () => {
-    const el = viewportRef.current;
-    if (!el) return 420 + 22;
-
-    const styles = getComputedStyle(el);
-    const cardWidth = parseFloat(styles.getPropertyValue('--card-width')) || 420;
-    const gap = parseFloat(styles.getPropertyValue('--gap')) || 22;
-    return cardWidth + gap;
-  };
-
-  const snapByDrag = () => {
-    const step = getStepPx();
-    const threshold = Math.min(140, step * 0.25); // próg przesunięcia
-
-    if (deltaXRef.current <= -threshold) {
-      goNext();
-    } else if (deltaXRef.current >= threshold) {
-      goPrev();
-    } else {
-      // wróć na miejsce
-      setAnimating(true);
-      setDragOffset(0);
-    }
-
-    // wyczyść
-    deltaXRef.current = 0;
-  };
-
-  const onPointerDown = (e) => {
-    if (!viewportRef.current) return;
-    if (animating) return;
-
-    // tylko primary button dla myszy
-    if (e.pointerType === 'mouse' && e.button !== 0) return;
-
-    pointerIdRef.current = e.pointerId;
-    isDraggingRef.current = true;
-    startXRef.current = e.clientX;
-    deltaXRef.current = 0;
-
-    // przechwyt
-    viewportRef.current.setPointerCapture(e.pointerId);
-
-    // podczas dragu wyłączamy animację, żeby „ciągnęło”
-    setNoTransition(true);
-  };
-
-  const onPointerMove = (e) => {
-    if (!isDraggingRef.current) return;
-    if (pointerIdRef.current !== e.pointerId) return;
-
-    const dx = e.clientX - startXRef.current;
-    deltaXRef.current = dx;
-
-    // lekkie tłumienie, żeby nie latało jak szalone
-    const damp = 0.9;
-    setDragOffset(dx * damp);
-  };
-
-  const endDrag = (e) => {
-    if (!isDraggingRef.current) return;
-    if (pointerIdRef.current !== e.pointerId) return;
-
-    isDraggingRef.current = false;
-    pointerIdRef.current = null;
-
-    // przywracamy transition (ale w kolejnej klatce, żeby nie zadziałał podczas odpuszczania)
-    requestAnimationFrame(() => {
-      setNoTransition(false);
-      snapByDrag();
-    });
-  };
-
-  if (!profiles || profiles.length === 0) return null;
-
-  return (
-    <div className="profiles-carousel">
-      <button className="carousel-arrow left" onClick={goPrev} aria-label="Poprzedni gracz">
-        ‹
-      </button>
-
-      <div
-        className="carousel-viewport"
-        ref={viewportRef}
-        onPointerDown={onPointerDown}
-        onPointerMove={onPointerMove}
-        onPointerUp={endDrag}
-        onPointerCancel={endDrag}
-        style={{ touchAction: 'pan-y' }} // pozwala przewijać stronę w pionie, a w poziomie robimy swipe
-      >
-        <div
-          className={`carousel-track ${noTransition ? 'no-transition' : ''}`}
-          style={{
-            '--slide': index,
-            '--drag': `${dragOffset}px`,
-          }}
-          onTransitionEnd={onTransitionEnd}
-        >
-          {extended.map((profile, i) => {
-            const diff = i - index;
-            const posClass =
-              diff === 0 ? 'is-active'
-                : diff === -1 ? 'is-prev'
-                  : diff === 1 ? 'is-next'
-                    : 'is-far';
-
-            return (
-              <div key={`${profile.player}-${i}`} className={`carousel-slide ${posClass}`}>
-                {renderCard(profile)}
-              </div>
-            );
-          })}
-        </div>
-      </div>
-
-      <button className="carousel-arrow right" onClick={goNext} aria-label="Następny gracz">
-        ›
-      </button>
-    </div>
-  );
-};
