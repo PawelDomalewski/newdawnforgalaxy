@@ -18,7 +18,7 @@ function App() {
       <div className="App">
         <Header />
         <main>
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<div className='eclipse'>Loading...</div>}>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/sesje" element={<Sessions />} />
