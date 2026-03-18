@@ -10,7 +10,7 @@ const SessionCard = ({ session }) => {
           {session.image ? (
             <img 
               src={session.image}
-               
+              loading="lazy" 
               alt={`Sesja gry ${session.game}`}
               className="session-image-real"
               onError={(e) => {
