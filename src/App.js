@@ -9,12 +9,14 @@ const SessionDetail = lazy(() => import('./pages/SessionDetail.js'));
 const Rules = lazy(() => import('./pages/Rules.js'));
 const GuidePage = lazy(() => import('./components/GuidePage.js'));
 const Statistics = lazy(() => import('./pages/Statistics.js'));
+import ScrollToTop from './components/ScrollToTop.js';
 import About from './pages/About.js';
 import './App.css';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="App">
         <Header />
         <main>
