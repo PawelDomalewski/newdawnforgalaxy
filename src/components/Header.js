@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
@@ -36,9 +36,9 @@ const Header = () => {
   return (
     <header className={`header ${isSticky ? 'sticky-menu' : ''}`}>
       <div className="container">
-        
+
         {/* Przycisk hamburger menu */}
-        <button 
+        <button
           className={`hamburger ${isMenuOpen ? 'hamburger--active' : ''}`}
           onClick={toggleMenu}
           aria-label="Menu"
@@ -50,10 +50,25 @@ const Header = () => {
 
         {/* Menu nawigacyjne */}
         <nav className={`nav ${isMenuOpen ? 'nav--active' : ''}`}>
-          <Link to="/" onClick={closeMenu}>Strona główna</Link>
-          <Link to="/sesje" onClick={closeMenu}>Relacje</Link>
-          <Link to="/zasady-poradnik" onClick={closeMenu}>Zasady i Poradnik</Link>
-          <Link to="/statystyki" onClick={closeMenu}>Statystyki</Link>
+          <NavLink to="/" end onClick={closeMenu}
+            className={({ isActive }) => isActive ? 'active' : ''}>
+            Strona główna
+          </NavLink>
+
+          <NavLink to="/sesje" onClick={closeMenu}
+            className={({ isActive }) => isActive ? 'active' : ''}>
+            Relacje
+          </NavLink>
+
+          <NavLink to="/zasady-poradnik" onClick={closeMenu}
+            className={({ isActive }) => isActive ? 'active' : ''}>
+            Zasady i Poradnik
+          </NavLink>
+
+          <NavLink to="/statystyki" onClick={closeMenu}
+            className={({ isActive }) => isActive ? 'active' : ''}>
+            Statystyki
+          </NavLink>
         </nav>
 
         {/* Overlay do zamknięcia menu po kliknięciu w tło */}

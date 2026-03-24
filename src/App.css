@@ -113,8 +113,8 @@ p {text-align: justify;}
   border-bottom: 2px solid var(--bg-content);
 }
 
-.header nav a:hover {
-  color: var(--hover-link-clr);
+.header nav a:hover,
+.header nav a.active {
   border-bottom: 2px solid var(--btn-clr-hover);
 }
 
