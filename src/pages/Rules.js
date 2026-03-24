@@ -153,28 +153,28 @@ const Rules = () => {
     <div className="rules-page">
       {/* Główna zawartość */}
       <div className="rules-content">
-        
+
         {/* NOWA SEKCJA: Przyciski nawigacyjne */}
         <section className="navigation-section">
           <div className="container">
             <h1>Zasady i Poradniki Eclipse</h1>
             <p className="navigation-subtitle">Szybki dostęp do wszystkich sekcji</p>
             <div className="navigation-buttons">
-              <button 
+              <button
                 className="button"
                 onClick={() => scrollToSection(instructionsRef)}
               >
                 Instrukcje
               </button>
-              
-              <button 
+
+              <button
                 className="button"
                 onClick={() => scrollToSection(racesRef)}
               >
                 Opis Ras
               </button>
-              
-              <button 
+
+              <button
                 className="button"
                 onClick={() => scrollToSection(guidesRef)}
               >
@@ -217,8 +217,8 @@ const Rules = () => {
             <h1 className="races-title">Rasy</h1>
             <p className="races-subtitle">Kliknij na rasę aby zobaczyć szczegóły</p>
             <p className="race-info"><strong>Objaśnienia:</strong><br></br>
-            <b>Trudność</b> - oznacza poziom skomplikowania rasy, im wyższa ilość gwiazdek, tym dla bardziej doświadczonego gracza jest przeznaczona rasa.<br></br>
-            <b>Power Rating</b> - oznacza szacunkową siłę rasy, wyliczoną na podstawię średniej ważonej zajętych miejsc. Nie jest to wskaźnik arbitralny, bardziej jako ciekawoska. Szczególnie, że jest spora dysproporcja w ilości rozegranych partii przez każdą z ras, np. Hydranie pojawiali się już 6 razy, Syndykat czy Wygnańcy tylko 1 raz.</p>
+              <b>Trudność</b> - oznacza poziom skomplikowania rasy, im wyższa ilość gwiazdek, tym dla bardziej doświadczonego gracza jest przeznaczona rasa.<br></br>
+              <b>Power Rating</b> - oznacza szacunkową siłę rasy, wyliczoną na podstawię średniej ważonej zajętych miejsc. Nie jest to wskaźnik arbitralny, bardziej jako ciekawoska. Szczególnie, że jest spora dysproporcja w ilości rozegranych partii przez każdą z ras, np. Hydranie pojawiali się już 6 razy, Syndykat czy Wygnańcy tylko 1 raz.</p>
           </div>
 
           <div className="container races-grid">
@@ -240,8 +240,8 @@ const Rules = () => {
                         Trudność: {renderDifficultyStars(race.difficulty)}
                       </span>
                       <span className="race-tile-difficulty1">
-                Power Rating: {formatWinRatio(winRatio)}
-              </span>
+                        Power Rating: {formatWinRatio(winRatio)}
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -363,7 +363,7 @@ const Rules = () => {
                     <span className="modal-difficulty">
                       Poziom trudności: {renderDifficultyStars(selectedRace.difficulty)}
                     </span>
-                    
+
                   </div>
                 </div>
 
@@ -391,9 +391,38 @@ const Rules = () => {
                   <div className="modal-detail-section">
                     <h4>Startowe surowce:</h4>
                     <div className="modal-resources">
-                      <span className="modal-resource orange">🟠 {selectedRace.resources.orange}</span>
-                      <span className="modal-resource pink">🟣 {selectedRace.resources.pink}</span>
-                      <span className="modal-resource brown">🟤 {selectedRace.resources.brown}</span>
+                      {selectedRace.id === 14 ? (
+                        <span className="modal-resource white">
+                          ⚪ {selectedRace.resources.trnsm}
+                        </span>
+                      ) : selectedRace.id === 12 ? (
+                        <>
+                          <span className="modal-resource orange">
+                            🟠 {selectedRace.resources.orange}
+                          </span>
+                          <span className="modal-resource pink">
+                            🟣 {selectedRace.resources.pink}
+                          </span>
+                          <span className="modal-resource brown">
+                            🟤 {selectedRace.resources.brown}
+                          </span>
+                          <span className="modal-resource green">
+                            🟢 {selectedRace.resources.mutagen}
+                          </span>
+                        </>
+                      ) : (
+                        <>
+                          <span className="modal-resource orange">
+                            🟠 {selectedRace.resources.orange}
+                          </span>
+                          <span className="modal-resource pink">
+                            🟣 {selectedRace.resources.pink}
+                          </span>
+                          <span className="modal-resource brown">
+                            🟤 {selectedRace.resources.brown}
+                          </span>
+                        </>
+                      )}
                     </div>
                   </div>
                 </div>

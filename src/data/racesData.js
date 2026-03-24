@@ -7,9 +7,9 @@ export const racesData = [
     features: ["+1 do ruchu", "Elastyczność", "Wymiana handlowa 2 do 1"],
     technologies: ["Baza Gwiezdna"],
     resources: {
-      orange: 2,
-      pink: 3,
-      brown: 3
+      orange: "2",
+      pink: "3",
+      brown: "3"
     },
     difficulty: 1,
     gamesPlayed: 3,
@@ -28,9 +28,9 @@ export const racesData = [
     features: ["Cztery statki kolonizacyjne", "Jedną akcją eksploracja mogą eksplorować dwa heksy", "+1 pkt za każdy posiadany hex na koniec gry"],
     technologies: ["Baza Gwiezdna"],
     resources: {
-      orange: 4,
-      pink: 4,
-      brown: 4
+      orange: "4",
+      pink: "4",
+      brown: "4"
     },
     difficulty: 2,
     gamesPlayed: 2,
@@ -49,9 +49,9 @@ export const racesData = [
     features: ["3 Upgrade w jednym ruchu", "3 Budowy w jednym ruchu", "Tanie Statki"],
     technologies: ["Komputer Pozytronowy +2"],
     resources: {
-      orange: 3,
-      pink: 3,
-      brown: 3
+      orange: "3",
+      pink: "3",
+      brown: "3"
     },
     difficulty: 2,
     gamesPlayed: 4,
@@ -70,9 +70,9 @@ export const racesData = [
     features: ["Krążownik od początku gry", "Lepsza inicjatywa i energia na statkach", "Wymiana handlowa 4 do 1"],
     technologies: ["Tarcza Gaussa -1", "Bomby Neutronowe"],
     resources: {
-      orange: 3,
-      pink: 3,
-      brown: 5
+      orange: "3",
+      pink: "3",
+      brown: "5"
     },
     difficulty: 3,
     gamesPlayed: 5,
@@ -91,9 +91,9 @@ export const racesData = [
     features: ["-2 Dyski Wpływów", "26 Pieniędzy od początku gry", "Losuje dwa żetony reputacji na początku gry"],
     technologies: ["Tarcza Gaussa -1", "Plasma Cannon", "Fusion Drive"],
     resources: {
-      orange: 26,
-      pink: 2,
-      brown: 4
+      orange: "26",
+      pink: "2",
+      brown: "4"
     },
     difficulty: 5,
     gamesPlayed: 2,
@@ -112,9 +112,9 @@ export const racesData = [
     features: ["Wynajduje dwie technologie w jednym ruchu", "Mało surowców od początku gry", "5 Nauki od początku gry"],
     technologies: ["Zaawansowane Laboratoria"],
     resources: {
-      orange: 2,
-      pink: 5,
-      brown: 2
+      orange: "2",
+      pink: "5",
+      brown: "2"
     },
     difficulty: 2,
     gamesPlayed: 6,
@@ -133,9 +133,9 @@ export const racesData = [
     features: ["Nie walczą ze starożytnymi", "Jedną akcją eksploracja mogą wziąć dwa heksy i wybrać jeden", "+1 pkt na koniec gry za każdy żeton Starożytnych"],
     technologies: [],
     resources: {
-      orange: 2,
-      pink: 4,
-      brown: 3
+      orange: "2",
+      pink: "4",
+      brown: "3"
     },
     difficulty: 3,
     gamesPlayed: 2,
@@ -154,9 +154,9 @@ export const racesData = [
     features: ["Żeton Odkrycia za awans technologiczny", "Mogą zużyć statek kolonizacyjny na surowiec", "1 pkt za każdy wkorzystany żeton odkrycia"],
     technologies: ["Fusion Source"],
     resources: {
-      orange: 2,
-      pink: 2,
-      brown: 3
+      orange: "2",
+      pink: "2",
+      brown: "3"
     },
     difficulty: 1,
     gamesPlayed: 3,
@@ -175,9 +175,9 @@ export const racesData = [
     features: ["Orbitale działają jak Bazy Gwiezdne", "1 pkt za każdy posiadany Orbital na koniec gry"],
     technologies: ["Urządzenia maskujące", "Orbitale"],
     resources: {
-      orange: 3,
-      pink: 2,
-      brown: 4
+      orange: "3",
+      pink: "2",
+      brown: "4"
     },
     difficulty: 3,
     gamesPlayed: 1,
@@ -196,9 +196,9 @@ export const racesData = [
     features: ["Zaczyna dwoma myśliwcami", "4 aktywacje ruchu", "Otrzymuje pieniądze za zniszczone statki"],
     technologies: ["Baza Gwiezdna", "Tarcza Gaussa -1"],
     resources: {
-      orange: 2,
-      pink: 3,
-      brown: 3
+      orange: "2",
+      pink: "3",
+      brown: "3"
     },
     difficulty: 3,
     gamesPlayed: 1,
@@ -217,9 +217,9 @@ export const racesData = [
     features: ["Może budować świątynie", "Mogą użyć statek kolonizacyjny aby przerzucić jedną własną kostkę w walce", "1 pkt za każdą świątynię"],
     technologies: ["Osłona zniekształcająca"],
     resources: {
-      orange: 2,
-      pink: 4,
-      brown: 3
+      orange: "2 (+3)",
+      pink: "4 (+3)",
+      brown: "3 (+3)"
     },
     difficulty: 4,
     gamesPlayed: 3,
@@ -238,9 +238,10 @@ export const racesData = [
     features: ["Ewolucje i mutacje", "Dodatkowy surowiec - mutagen (4 na początku gry, +2 co rundę)", "Może użyć statku kolonizacyjnego by wymienić żeton ewolucji w swojej puli"],
     technologies: ["Fusion Drive"],
     resources: {
-      orange: 2,
-      pink: 3,
-      brown: 3
+      orange: "2",
+      pink: "3",
+      brown: "3",
+      mutagen: "4"
     },
     difficulty: 4,
     gamesPlayed: 2,
@@ -259,9 +260,9 @@ export const racesData = [
     features: ["Zniekształcanie czasu", "+1 pkt za każde wypełnione zniekształcenie czasu", "Może użyć statku kolonizacyjnego by wymienić żeton zniekształcenia czasu w swojej puli"],
     technologies: ["Soliton Cannon"],
     resources: {
-      orange: 3,
-      pink: 4,
-      brown: 2
+      orange: "3",
+      pink: "4",
+      brown: "2"
     },
     difficulty: 4,
     gamesPlayed: 3,
@@ -280,7 +281,7 @@ export const racesData = [
     features: ["Połączone akcje", "Tylko jeden surowiec - transmateria (8 na początku gry)", "Mogą łączyć mniejsze statki w większy lub na odwrót"],
     technologies: ["Advanced Robotics"],
     resources: {
-      orange: 0,
+      trnsm: "8 (+5)",
       pink: 0,
       brown: 0
     },

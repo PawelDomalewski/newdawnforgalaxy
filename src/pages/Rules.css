@@ -331,6 +331,8 @@
 .modal-resource.orange { color: #e67e22; background: var(--bg-content-inner); }
 .modal-resource.pink { color: #9b59b6; background: var(--bg-content-inner); }
 .modal-resource.brown { color: #8b4513; background: var(--bg-content-inner); }
+.modal-resource.white { color: var(--text-clr-content); background: var(--bg-content-inner); }
+.modal-resource.green { color: var(--btn-clr-hover); background: var(--bg-content-inner); }
 
 .modal-race-stats-detailed {
   display: flex;
