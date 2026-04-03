@@ -40,78 +40,12 @@ const Home = () => {
             </Link>
         </div>
       </div>
-       
+      
       
       <div className="container intro">
         <h2>Eclipse</h2>
-        <p>Wciel się w przywódcę jednej z potężnych ras galaktyki i wyrusz na podbój kosmosu w tej niezwykle głębokiej grze strategicznej. Twoja przygoda zaczyna się od odkrywania tajemniczych gwiazd, rozwoju zaawansowanych technologii i projektowania własnych, potężnych flot kosmicznych. Pamiętaj jednak, że twoja ekspansja nie pozostanie niezauważona – będziesz musiał prowadzić finezyjne rozgrywki dyplomatyczne lub szykować się na nieuniknione starcia z innymi imperiami. W mroku przestrzeni czyha jednak starsze i śmiertelne zagrożenie, gotowe wystawić na próbę wszystkie twoje strategiczne umiejętności. "Eclipse" doskonale łączy w sobie elementy eksploracji, rozwoju i taktycznych bitew na ogromną skalę, a każda rozgrywka jest unikalna dzięki losowo generowanej mapie. Podejmuj kluczowe decyzje, zarządzaj zasobami i doświadczaj epickich, widowiskowych starć, w których wynik zależy od twojego planu. Weź udział w tej niezapomnianej kosmicznej symfonii władzy i napisz swoją własną historię dominacji w galaktyce!</p>
+        <p>Eclipse to rozbudowana gra strategiczna, w której prowadzisz jedną z galaktycznych ras, eksplorujesz kosmos, rozwijasz technologie i budujesz potężne floty. Twoja ekspansja wymaga zarówno dyplomacji, jak i gotowości do starć z innymi imperiami oraz tajemniczym zagrożeniem czającym się w przestrzeni. Każda rozgrywka jest unikalna dzięki losowej mapie, a zwycięstwo zależy od twoich decyzji, zarządzania zasobami i strategii.</p>
       </div>
-
-      {/* Sekcja 4X - Interactive 
-      <section className="x4-section intro container">
-        <h1>Poznaj strategię 4X:</h1>
-        <div className="container">
-          {!activeX ? (
-            // Widok główny z 4 X
-            <div className="x4-grid">
-              {xData.map((item) => (
-                <div 
-                  key={item.id}
-                  className="x4-item"
-                  onMouseEnter={() => handleXHover(item.id)}
-                  onMouseLeave={() => handleXHover(null)}
-                  onClick={() => handleXClick(item.id)}
-                >
-                  <div className="x4-circle">
-                    <div className="x4-x">{item.letter}</div>
-                  </div>
-                  <div className="x4-label">{item.title}</div>
-                </div>
-              ))}
-            </div>
-          ) : (
-            // Widok szczegółowy
-            <div className="x4-detail-view">
-              <button 
-                className="x4-back-button"
-                onClick={() => setActiveX(null)}
-              >
-                ← Powrót
-              </button>
-              
-              <div className="x4-detail-container">
-                <div className="x4-list">
-                  {xData.map((item) => (
-                    <div 
-                      key={item.id}
-                      className={`x4-list-item ${activeX === item.id ? 'active' : ''}`}
-                      onClick={() => setActiveX(item.id)}
-                    >
-                      <div className="x4-list-circle">
-                        <div className="x4-list-x">{item.letter}</div>
-                      </div>
-                      <span>{item.title}</span>
-                    </div>
-                  ))}
-                </div>
-                
-                <div className="x4-description">
-                  <div className="x4-description-header">
-                    <div className="x4-description-circle">
-                      <div className="x4-description-x">
-                        {xData.find(x => x.id === activeX)?.letter}
-                      </div>
-                    </div>
-                    <h3>{xData.find(x => x.id === activeX)?.title}</h3>
-                  </div>
-                  <p>{xData.find(x => x.id === activeX)?.description}</p>
-                </div>
-              </div>
-            </div>
-          )}
-        </div>
-      </section>
-*/}
       <div className="container intro">
         <section ref={sesjeRef} className="latest-sessions">
           <div className="section-header">

@@ -1,5 +1,5 @@
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.411), rgba(0, 0, 0, 0.418)), url(/public/images/bg4.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/public/images/bg4.jpg);
   background-position: center;
   background-size: cover;
   color: white;
@@ -37,6 +37,16 @@ p {
 .hero div {
   display: flex;
   gap: 10px;
+}
+
+@media (max-width: 576px) {
+  .hero {
+    height: auto;
+  }
+  .hero h1 {
+    font-size: 1.7rem;
+  }
+  .hero p {font-size: 0.85rem;}
 }
 
 .cta-button {
