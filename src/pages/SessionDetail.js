@@ -101,7 +101,6 @@ const SessionDetail = () => {
   }
 
   const handleImageClick = (imageSrc, index = 0) => {
-    console.log('Image clicked:', imageSrc, 'Index:', index);
     
     // Normalizuj ścieżkę do porównania
     const normalizedSrc = imageSrc.startsWith('http') ? imageSrc : `${window.location.origin}${imageSrc}`;
@@ -113,7 +112,6 @@ const SessionDetail = () => {
     
     const finalIndex = foundIndex !== -1 ? foundIndex : index;
     
-    console.log('Found index:', foundIndex, 'Final index:', finalIndex, 'All images:', allImages);
     
     setCurrentImage(imageSrc);
     setCurrentImageIndex(finalIndex);
@@ -146,7 +144,6 @@ const SessionDetail = () => {
       newIndex = (currentImageIndex - 1 + allImages.length) % allImages.length;
     }
 
-    console.log('Navigating to index:', newIndex, 'Image:', allImages[newIndex]);
     
     setCurrentImageIndex(newIndex);
     setCurrentImage(allImages[newIndex]);

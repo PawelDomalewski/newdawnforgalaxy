@@ -1,15 +1,13 @@
-import React, { useLayoutEffect } from 'react';
+import React, { useEffect } from 'react';
 import SessionCard from '../components/SessionCard.js';
 import { sessions } from '../data/sessions.js';
 import './Sessions.css';
+import { sortSessionsByDateDesc } from '../utils/sessions.js';
 
 const Sessions = () => {
   // Sortowanie sesji od najnowszej do najstarszej
-  const sortedSessions = [...sessions].sort((a, b) => {
-    // Konwersja dat na obiekty Date i porównanie
-    return new Date(b.date) - new Date(a.date);
-  });
-  useLayoutEffect(() => {
+  const sortedSessions = sortSessionsByDateDesc(sessions);
+  useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 

@@ -66,6 +66,28 @@ body {
 
 p {text-align: justify;}
 
+.app-loader {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.app-loader__inner {
+  text-align: center;
+  max-width: 420px;
+}
+
+.app-loader__inner h2 {
+  margin-bottom: 0.5rem;
+}
+
+.app-loader__inner p {
+  margin: 0;
+  opacity: 0.8;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;

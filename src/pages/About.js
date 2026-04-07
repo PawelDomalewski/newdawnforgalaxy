@@ -18,7 +18,7 @@ const About = () => {
             </p>
             <h2>Moje ulubione gry:</h2>
             <ul>
-              <li>Terraforming Mars</li>
+              <li>Eclipse</li>
               <li>Scythe</li>
               <li>Twilight Imperium</li>
               <li>Carcassonne</li>

@@ -10,8 +10,18 @@ const Rules = lazy(() => import('./pages/Rules.js'));
 const GuidePage = lazy(() => import('./components/GuidePage.js'));
 const Statistics = lazy(() => import('./pages/Statistics.js'));
 import ScrollToTop from './components/ScrollToTop.js';
-import About from './pages/About.js';
+const About = lazy(() => import('./pages/About.js'));
 import './App.css';
+
+
+const AppLoader = () => (
+  <div className="app-loader">
+    <div className="app-loader__inner">
+      <h2>Ładowanie...</h2>
+      <p>Przygotowuję dane strony Eclipse Galaxy.</p>
+    </div>
+  </div>
+);
 
 function App() {
   return (
@@ -20,7 +30,7 @@ function App() {
       <div className="App">
         <Header />
         <main>
-          <Suspense fallback={<div className='eclipse'>Loading...</div>}>
+          <Suspense fallback={<AppLoader />}>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/sesje" element={<Sessions />} />

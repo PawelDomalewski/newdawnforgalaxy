@@ -39,9 +39,12 @@ const Statistics = () => {
       await loadEWCData();
 
       setLoading(false);
-      
+
     } catch (err) {
-      console.error('Błąd wczytywania CSV:', err);
+      // opcjonalnie: log tylko w development
+      if (process.env.NODE_ENV === 'development') {
+        console.error('Błąd wczytywania CSV:', err);
+      }
       setError(`Błąd wczytywania danych: ${err.message}`);
       setLoading(false);
     }
@@ -52,7 +55,9 @@ const Statistics = () => {
       const response = await fetch('images/sesje/ewc.csv');
 
       if (!response.ok) {
-        console.warn('Nie znaleziono pliku EWC.csv. Pomijam dane EWC.');
+        if (process.env.NODE_ENV === 'development') {
+          console.warn('Nie znaleziono pliku EWC.csv. Pomijam dane EWC.');
+        }
         setEwcStats([]);
         return;
       }
@@ -61,15 +66,19 @@ const Statistics = () => {
       const parsedData = parseCSV(csvText);
 
       if (parsedData.length === 0) {
-        console.warn('Plik EWC.csv jest pusty lub zawiera nieprawidłowe dane');
+        if (process.env.NODE_ENV === 'development') {
+          console.warn('Plik EWC.csv jest pusty lub zawiera nieprawidłowe dane');
+        }
         setEwcStats([]);
         return;
       }
 
       calculateEWCStats(parsedData);
-      
+
     } catch (err) {
-      console.error('Błąd wczytywania EWC.csv:', err);
+      if (process.env.NODE_ENV === 'development') {
+        console.error('Błąd wczytywania EWC.csv:', err);
+      }
       setEwcStats([]);
     }
   };
@@ -82,7 +91,7 @@ const Statistics = () => {
     }
 
     const headers = lines[0].split(',').map(header => header.trim());
-    
+
     const data = [];
 
     for (let i = 1; i < lines.length; i++) {
@@ -230,13 +239,13 @@ const Statistics = () => {
 
       return {
         ...race,
-        averagePointsPerGame: race.gamesPlayed > 0 ? 
+        averagePointsPerGame: race.gamesPlayed > 0 ?
           (race.totalPoints / race.gamesPlayed).toFixed(2) : '0.00',
-        averagePlace: race.places.length > 0 ? 
+        averagePlace: race.places.length > 0 ?
           (race.places.reduce((a, b) => a + b, 0) / race.places.length).toFixed(2) : '0.00',
-        averagePlayerCount: race.gamesPlayed > 0 ? 
+        averagePlayerCount: race.gamesPlayed > 0 ?
           (race.totalPlayerCount / race.gamesPlayed).toFixed(1) : '0',
-        winRate: race.gamesPlayed > 0 ? 
+        winRate: race.gamesPlayed > 0 ?
           ((race.wins / race.gamesPlayed) * 100).toFixed(1) + '%' : '0%',
         powerRating: powerRatingPercent.toFixed(1) + '%'
       };
@@ -313,13 +322,13 @@ const Statistics = () => {
 
       return {
         ...race,
-        averagePointsPerGame: race.gamesPlayed > 0 ? 
+        averagePointsPerGame: race.gamesPlayed > 0 ?
           (race.totalPoints / race.gamesPlayed).toFixed(2) : '0.00',
-        averagePlace: race.places.length > 0 ? 
+        averagePlace: race.places.length > 0 ?
           (race.places.reduce((a, b) => a + b, 0) / race.places.length).toFixed(2) : '0.00',
-        averagePlayerCount: race.gamesPlayed > 0 ? 
+        averagePlayerCount: race.gamesPlayed > 0 ?
           (race.totalPlayerCount / race.gamesPlayed).toFixed(1) : '0',
-        winRate: race.gamesPlayed > 0 ? 
+        winRate: race.gamesPlayed > 0 ?
           ((race.wins / race.gamesPlayed) * 100).toFixed(1) + '%' : '0%',
         powerRating: powerRatingPercent.toFixed(1) + '%'
       };
