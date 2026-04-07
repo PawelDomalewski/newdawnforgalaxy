@@ -24,10 +24,10 @@ export const sessions = [
       <p>Główną cechą rasy Octanis jest możliwość ewolucji i adaptacji do zmiennych warunków w galaktyce. W tej sesji skupili się na korzystaniu z tego, udało się uzyskać 7 mutacji, z czego udało się uzyskać łącznie 15 pkt, bez tych punktów byli by na szarym końcu. Bez wątpienia przydatna okazała się rzadka technologia Advanced Genetics, która zwiększyłą zarówno co rundowy przychód Mutagenów (potrzebnych do mutacji), jak i jednorazowo dała +3 mutagenów.</p>
       <li><h3>Podsumowanie i punktacja</h3></li>
       <div><img src="/images/sesje/07092024/1.webp" loading="lazy"></img><img src="/images/sesje/07092024/2.webp" loading="lazy" ></img></div>
-      <p class="session-summary-pkt">Punktacja:<br><br>
-      <b>1. Paweł D - Octanis - 54 pkt</b> <br><br>
-      2. Paweł W - Lyra - 43 pkt <br><br>
-      3. Natan - Magellan - 41 pkt <br><br>
+      <p class="session-summary-pkt">Punktacja:<br>
+      <b>1. Paweł D - Octanis - 54 pkt</b> <br>
+      2. Paweł W - Lyra - 43 pkt <br>
+      3. Natan - Magellan - 41 pkt <br>
       Octanis odnoszą swoje pierwsze zwycięstwo już w pierwszej rozgrywce. Lyra i Magellan bardzo blisko siebie, bardzo wyrównanie.
       </p>
     </ul>
@@ -53,10 +53,10 @@ export const sessions = [
       <p>Dosyć zacięta walka między Progresywnymi Hydranami, a Potomkami Draco, co skrzętnie wykorzystał trzeci gracz, Planta, rozszerzając swoje Imperium i zabezpieczając wejście do niego.</p>
       <li><h3>Podsumowanie i punktacja</h3></li>
       <div><img src="/images/sesje/11102024/1.webp" loading="lazy"><img src="/images/sesje/11102024/3.webp" loading="lazy"></img></img><img src="/images/sesje/11102024/2.webp" loading="lazy"></img></div>
-      <p class="session-summary-pkt">Punktacja:<br><br>
-      <b>1. Natan - Planta - 61 pkt</b> <br><br>
-      2. Paweł D - Hydranie - 44 pkt <br><br>
-      3. Paweł W - Draco - 41 pkt <br><br>
+      <p class="session-summary-pkt">Punktacja:<br>
+      <b>1. Natan - Planta - 61 pkt</b> <br>
+      2. Paweł D - Hydranie - 44 pkt <br>
+      3. Paweł W - Draco - 41 pkt <br>
       </p>
     </ul>
     `
@@ -80,10 +80,10 @@ export const sessions = [
     <li><h3>Galeria</h3></li>
     <div><img src="/images/sesje/13092025/1.webp"><img src="/images/sesje/13092025/2.webp"></img></img><img src="/images/sesje/13092025/3.webp"></img></img></img><img src="/images/sesje/13092025/4.webp"></img>
     <img src="/images/sesje/13092025/5.webp"></img><img src="/images/sesje/13092025/6.webp"></img><img src="/images/sesje/13092025/7.webp"></img><img src="/images/sesje/13092025/8.webp"></img><img src="/images/sesje/13092025/10.webp"></img></div>
-    <p class="session-summary-pkt">Punktacja:<br><br>
-      <b>1. Natan - Orion - 41 pkt</b> <br><br>
-      2. Paweł W - Jedność Pyxis - 33 pkt <br><br>
-      3. Paweł D - Rho Indi - 30 pkt <br><br>
+    <p class="session-summary-pkt">Punktacja:<br>
+      <b>1. Natan - Orion - 41 pkt</b> <br>
+      2. Paweł W - Jedność Pyxis - 33 pkt <br>
+      3. Paweł D - Rho Indi - 30 pkt <br>
       </p>
     `
   },
@@ -107,11 +107,11 @@ export const sessions = [
     <ul>
     <li><h3>Galeria</h3></li>
     <div><img src="/images/sesje/16102025/1.webp"><img src="/images/sesje/16102025/2.webp"></img></img><img src="/images/sesje/16102025/3.webp"></img></div>
-    <p class="session-summary-pkt">Punktacja:<br><br>
-      <b>1. Adrian - Orion - 39 pkt</b> <br><br>
-      2. Paweł W - Mechanema - 38 pkt <br><br>
-      3. Natan - Progresywni Hydranie - 34 pkt <br><br>
-      4. Paweł D - Imperium Eridani - 18 pkt <br><br>
+    <p class="session-summary-pkt">Punktacja:<br>
+      <b>1. Adrian - Orion - 39 pkt</b> <br>
+      2. Paweł W - Mechanema - 38 pkt <br>
+      3. Natan - Progresywni Hydranie - 34 pkt <br>
+      4. Paweł D - Imperium Eridani - 18 pkt <br>
       5. Kacper - Planta - 14 pkt
       </p>
     `
@@ -168,10 +168,10 @@ export const sessions = [
     <img src="/images/sesje/31102025/7.webp"><img src="/images/sesje/31102025/8.webp"><img src="/images/sesje/31102025/9.webp"><img src="/images/sesje/31102025/10.webp"><img src="/images/sesje/31102025/11.webp"><img src="/images/sesje/31102025/12.webp">
     <img src="/images/sesje/31102025/13.webp"><img src="/images/sesje/31102025/14.webp"><img src="/images/sesje/31102025/15.webp"><img src="/images/sesje/31102025/16.webp"><img src="/images/sesje/31102025/17.webp"><img src="/images/sesje/31102025/18.webp">
     </div>
-    <p class="session-summary-pkt">Punktacja:<br><br>
-    <b>1. Paweł D - Jedność Pyxis - 66 pkt</b> <br><br>
-    2. Paweł W - Dorado - 58 pkt <br><br>
-    3. Natan - Lyra - 37 pkt <br><br>
+    <p class="session-summary-pkt">Punktacja:<br>
+    <b>1. Paweł D - Jedność Pyxis - 66 pkt</b> <br>
+    2. Paweł W - Dorado - 58 pkt <br>
+    3. Natan - Lyra - 37 pkt <br>
     </p>
     `
   },
@@ -221,10 +221,10 @@ export const sessions = [
     <p>Sytuacja się uspokoiła. Zaczęło się zdobywanie pkt z technologii i rozwinięć. Był drobne potyczki na obrzeżach galaktyki. Wydałem całą kasę na Świat Chroniony odsłaniając się na atak Asi, jednak ta nie wykorzystała tego, choć jej statki bez problemów poradziły by sobie z Piotrkiem w centrum. Ania będąc w całkowitej rozsypce, nie mając zbyt wiele pkt, postanowiła ratować swoje sojuszniczki i dobrowolnie odeszła z sojuszu.</p>
     <p class="session-summary">Dramatyczne poświęcenie się Ani, wycofała się z sojuszu Nova, dla dobra ogółu!</p>
     <li><h3>Podsumowanie i punktacja</h3></li>
-    <p class="session-summary-pkt">Punktacja:<br><br>
-    Paweł D(ja, 37pkt), Paweł P(32), Piotrek (27) = 32 pkt Sojuszu Flara. <br><br>
-    Sylwia (26), Asia (35) = 30,5 pkt Sojuszu Nova<br><br>
-    Ania = 17 pkt<br><br>
+    <p class="session-summary-pkt">Punktacja:<br>
+    Paweł D(ja, 37pkt), Paweł P(32), Piotrek (27) = 32 pkt Sojuszu Flara. <br>
+    Sylwia (26), Asia (35) = 30,5 pkt Sojuszu Nova<br>
+    Ania = 17 pkt<br>
 
     Zabrakło naprawdę niewiele a dziewczyny by wygrały. Sama rozgrywka trwała 5 godzin.</p>
     </ul>
@@ -280,13 +280,13 @@ export const sessions = [
 
     <li><h3>Podsumowanie i punktacja</h3></li>
     <img src="/images/sesje/081125/final.webp" loading="lazy"class="img-head"></img>
-    <p class="session-summary-pkt">Punktacja:<br><br>
-    <b style="color: gold">Ania - Hydran - 43 pkt</b><br><br>
-    <b style="color: silver">Sylwia - Mechanema - 29 pkt(17 zasobów)</b><br><br>
-    Ola - Ludzie - 29 pkt(0 zasobów)<br><br>
-    Paweł D - Lyra - 25 pkt<br><br>
-    Piotrek G - Magellanie - 18 pkt<br><br>
-    Sebastian - Orion - 15 pkt<br><br>
+    <p class="session-summary-pkt">Punktacja:<br>
+    <b style="color: gold">Ania - Hydran - 43 pkt</b><br>
+    <b style="color: silver">Sylwia - Mechanema - 29 pkt(17 zasobów)</b><br>
+    Ola - Ludzie - 29 pkt(0 zasobów)<br>
+    Paweł D - Lyra - 25 pkt<br>
+    Piotrek G - Magellanie - 18 pkt<br>
+    Sebastian - Orion - 15 pkt<br>
     W pierwszej fazie gry wszyscy gracze skupili się na eksploracji galaktyki, odkrywając planety, Starożytnych i Anomalie. W środkowej części rozgrywki nastąpił stopniowy zwrot w stronę militaryzacji i walki z neutralnymi zagrożeniami oraz początkowe potyczki między graczami. Kulminacja nastąpiła w rundzie 9, kiedy to Orion dokonał inwazji na ojczyznę Lyran, a Ludzie kontratakowali, co Hydranie wykorzystali do ataku na Mechanemę. Tymczasem Magellanie przez cały czas pozostawali w cieniu, skupiając się na rozwoju technologicznym i unikając otwartych konfliktów.</p>
     </ul>
     `
