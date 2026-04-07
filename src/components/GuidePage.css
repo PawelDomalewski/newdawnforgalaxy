@@ -90,12 +90,19 @@
   margin-top: 1rem;
 }
 
+.guide-race-intro li::marker {
+  color: var(--btn-clr-hover);
+}
+
 .guide-race {
   border-radius: 25px;
   width: auto;
   max-height:400px;
-  object-fit: top;
+  object-fit: cover;
+  transition: 500ms;
 }
+
+
 
 /* Reszta stylów dla treści poradnika (guide-article, guide-chapter, itd.) */
 /* Możesz przenieść tutaj wszystkie style z poprzedniej wersji poradników */

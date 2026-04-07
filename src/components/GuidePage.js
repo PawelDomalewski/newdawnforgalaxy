@@ -116,7 +116,7 @@ const GuidePage = () => {
       image: "/images/raceguide.webp",
       excerpt: ""
     }
-  
+
   };
 
   const guide = guidesData[guideId];
@@ -309,7 +309,7 @@ const Guide1Content = () => {
           </div>
         </div>
 
-       {/* Siódma runda */}
+        {/* Siódma runda */}
         <div className="guide-chapter">
           <h3> Siódma Runda, więc wchodzi Późna gra </h3>
           <div className="guide-content">
@@ -1195,9 +1195,9 @@ const Guide6Content = () => {
           <p><strong>Autor:</strong> Dymond Kyng</p>
           <p>
             <strong>Źródło:</strong>{' '}
-            <a 
-              href="https://boardgamegeek.com/thread/1361979/general-tech-strategy-by-race" 
-              target="_blank" 
+            <a
+              href="https://boardgamegeek.com/thread/1361979/general-tech-strategy-by-race"
+              target="_blank"
               rel="noopener noreferrer"
               className="guide-source-link"
             >
@@ -1508,7 +1508,7 @@ const Guide6Content = () => {
           <div className="guide-content">
             <div className="guide-summary">
               <h4>Kluczowe wnioski:</h4>
-              
+
               <div className="guide-grid">
                 <div className="guide-tip">
                   <h5>Większość ras</h5>
@@ -1570,7 +1570,7 @@ const Guide7Content = () => {
           <h3>🎯 Założenia poradnika</h3>
           <div className="guide-content">
             <p>Podczas gdy wiele z tych rad działa przy większości liczby graczy i kombinacji materiałów z dodatków, Twoje doświadczenie może się różnić w przypadku niektórych z nich. Dla celów poradnika zakładam, że używasz:</p>
-            
+
             <div className="guide-grid">
               <div className="guide-tip">
                 <h5>Gra</h5>
@@ -1640,7 +1640,7 @@ const Guide7Content = () => {
               <div className="guide-step">
                 <h4>Krok 1 - Decyzja o odrzuceniu</h4>
                 <p>Zdecyduj, czy chcesz odrzucić tego czwartego Starożytnego, czy nie. Wszystkie rasy mogą łatwo poradzić sobie z 3 Starożytnymi, niektóre nie mogą sobie pozwolić na radzenie sobie z czterema.</p>
-                
+
                 <div className="guide-grid">
                   <div className="guide-tip">
                     <h5>Gram Planta?</h5>
@@ -1683,9 +1683,9 @@ const Guide7Content = () => {
                 </div>
 
                 <div className="guide-note">
-                  <strong>Szanse walki:</strong><br/>
-                  • 2 krążowniki bez ulepszeń: 70% szans przeciw Starożytnemu<br/>
-                  • 2 krążowniki z tarczą Gaussa i ulepszonym kadłubem: 98% szans<br/>
+                  <strong>Szanse walki:</strong><br />
+                  • 2 krążowniki bez ulepszeń: 70% szans przeciw Starożytnemu<br />
+                  • 2 krążowniki z tarczą Gaussa i ulepszonym kadłubem: 98% szans<br />
                   • 1 krążownik ze wszystkimi trzema technologiami: 96% szans
                 </div>
               </div>
@@ -1716,7 +1716,7 @@ const Guide7Content = () => {
               <div className="guide-step">
                 <h4>Krok 6 - Ciesz się korzyściami</h4>
                 <p>Oprócz systemu macierzystego zyskujesz:</p>
-                
+
                 <div className="guide-grid">
                   <div className="guide-tip">
                     <h5>8 PV</h5>
@@ -1885,7 +1885,7 @@ const Guide8Content = () => {
           <h3>📈 Krzywa uczenia się - przegląd</h3>
           <div className="guide-content">
             <p>Zgrubnie sortuję etapy nauki na "Pierwszą Grę", "Wczesną Krzywą", "Środkową Krzywą" i "Wypłaszczenie".</p>
-            
+
             <div className="guide-grid">
               <div className="guide-tip">
                 <h5>Pierwsza Gra</h5>
@@ -2083,18 +2083,18 @@ const Guide8Content = () => {
             <div className="guide-conclusion">
               <h3>🎲 Refleksje końcowe</h3>
               <p>Mam nadzieję, że znajdziesz coś interesującego w tych rozmyślaniach i zastanawiam się:</p>
-              
+
               <div className="guide-questions">
                 <div className="guide-question">
                   <h5>Co sądzisz na ten temat?</h5>
                   <p>Czy to odpowiada Twojemu doświadczeniu w grze?</p>
                 </div>
-                
+
                 <div className="guide-question">
                   <h5>Gdzie umieściłbyś siebie lub swoją grupę na krzywej uczenia się?</h5>
                   <p>Czy rozpoznajesz któryś z tych etapów u siebie?</p>
                 </div>
-                
+
                 <div className="guide-question">
                   <h5>Na jakie inne tematy chciałbyś, żebym podzielił się przemyśleniami?</h5>
                   <p>Jakie aspekty Eclipse chciałbyś zgłębić?</p>
@@ -2148,132 +2148,58 @@ const Guide9Content = () => {
             <div className="guide-race-intro">
               <img src="/images/races/terranie.jpg" className="guide-race"></img>
               <div>
-              <h3>Ludzie</h3>
-              <p>Wszechstronna rasa, z łatwością dostosowująca się do aktualnej sytuacji. Najważniejsza umiejętność jaką potrzebują gracze w Eclipse, to bez wątpienia zdolność do adaptacji, dostosywania się do aktualnej sytuacji na planszy. Analizowanie na bieżąco czy obrany kierunek strategiczny ma jeszcze sens. Rasa Ludzi nadaje się do tego idealnie.</p>
-              <p>Nie posiadają żadnych poważnych wad i ograniczeń, natomiast mają plusy, które nie można zignorować, tj.:</p>
+                <h3>Ludzie</h3>
+                <p>Wszechstronna rasa, z łatwością dostosowująca się do aktualnej sytuacji. Najważniejsza umiejętność jaką potrzebują gracze w Eclipse, to bez wątpienia zdolność do adaptacji, dostosywania się do aktualnej sytuacji na planszy. Analizowanie na bieżąco czy obrany kierunek strategiczny ma jeszcze sens. Rasa Ludzi nadaje się do tego idealnie.</p>
+                <p>Nie posiadają żadnych poważnych wad i ograniczeń, natomiast mają plusy, które nie można zignorować, tj.:</p>
+                <ul>
+                  <li>3 Aktywacje ruchu <br></br>Duża mobilność, której nie posiadają inne rasy, daje przewagę w działaniach militarnych</li>
+
+                  <li>Handel 2:1 <br></br>W połączeniu z trzema planetami startowymi, daje dużą elastyczność w początkowej fazie gry, gdy czasem może nam zabraknąć tego jednego punktu nauki lub surowca by wykonać kluczową akcję.</li>
+                </ul>
+                <p>Bardzo dobra rasa dla początkujących (wybacza błędy) oraz dla najbardziej doświadczonych (którzy zrobią użytek z elastyczności).<br></br>Wadą na pewno jest brak dodatkowych źródeł punktów.</p>
+                <p></p>
               </div>
             </div>
-
-
-            
           </div>
         </div>
 
         {/* Z kim się uczyć walczyć? */}
         <div className="guide-chapter">
-          <h3>🎓 Z kim się uczyć walczyć?</h3>
           <div className="guide-content">
-            <p><strong>Nie z Orionami ani nawet Eridani. Mechanema to najlepsza rasa do nauki walki.</strong></p>
-
-            <ul>
-              <li>Tańsze koszty budowy prowadzą do mniejszej troski o konkretne wyniki bitew</li>
-              <li>Wysłanie 2 myśliwców to tylko 4 zasoby i kilka akcji - żaden wielki problem</li>
-              <li>Pozwalają na wojnę na wyczerpanie, która wydaje się łatwiejsza do nauki dla wielu osób</li>
-              <li>Jednak nie zostawaj tylko przy wojnie na wyczerpanie - nauka wojny manewrowej bardzo ci pomoże</li>
-            </ul>
-
-            <div className="guide-warning">
-              <strong>⚠️ Uwaga:</strong> Uważaj, aby nie stać się zbyt zależnym od kosztów budowy Mechanemy. Idealnie używasz ich, aby lepiej zrozumieć szanse i taktyki walki.
+            <div className="guide-race-intro">
+              <img src="/images/races/planta.jpg" className="guide-race"></img>
+              <div>
+                <h3>Planta</h3>
+                <p>Rasa, która szybko eksploruje kosmos. Ma świetną pozycję startową, po 4 z każdego zasobów oraz +3 co rundę na dzień dobry. Dodatkowo posiadają 4 statki kolonizacyjne, a więc są jedyną rasą, która może zająć 4 planety w pierwszej rundzie, bez odświeżania statków kolonizacyjnych za pomocą akcji Influence. Na koniec gry dostają też jeden dodatkowy punkt za każdy posiadany heks</p>
+                <p>Łatwi do zrozumienia, prości do grania i silni w dobrych rękach. Ich statki posiadają jedno miejsce na upgrade mniej, to eliminuje myśliwce z użycia (ciężko jest ułożyć coś sensownego), natomiast pancerniki są całkiem dobre, ponieważ posiadają komputer +1 i energię +2 poza schematem, co pozwala dobrze sobie radzić gdy nie mamy technologii energii, a zamontowanie komputera +2 daje łącznie +3 do trafienia. Dodać do tego fakt, że w drugiej rundzie mamy gwarancję na posiadanie 7 surowców, to daje nam możliwość już w drugiej rundzie zbnudować pancernik i ruszyć na podbój.</p>
+                <p>Dobry wybór dla początkującego.</p>
+              </div>
             </div>
           </div>
         </div>
-
-        {/* Jak walczyć? */}
         <div className="guide-chapter">
-          <h3>⚔️ Jak walczyć? - 9 Zasad</h3>
           <div className="guide-content">
-
-            {/* Zasada 1 */}
-            <div className="guide-principle">
-              <h4>1) Rozmawiaj z ludźmi 🗣️</h4>
-              <p>Ludzie widzą pojedynczy mechanik dyplomacji w grze i wydaje im się, że to cała dyplomacja. To bardzo, bardzo błędne.</p>
-              <ul>
-                <li>Ustawienie ataku na inną osobę dyplomatycznie może okazać się bardziej wartościowe niż atak z zaskoczenia</li>
-                <li>Ogłoszenie zamiaru ataku na gracza w "przewodzie" może zapewnić ci wystarczającą osłonę</li>
-                <li>Gry takie jak Eclipse idą do ludzi, którzy potrafią najlepiej przekonać innych graczy o "prawdziwym" stanie rzeczy</li>
-              </ul>
+            <div className="guide-race-intro">
+              <img src="/images/races/mechanema.jpg" className="guide-race"></img>
+              <div>
+                <h3>Mechanema</h3>
+                <p>Rasa specjalizująca się w budowie i ulepszeniach statków. Wszystkie statki są tańsze o 1 surowiec. Monolity kosztują 8 surowców zamiast 10, co daje potencjał na zbudowanie wielu monolitów, szczególnie, że w jednej akcji mogą zbudować trzy rzeczy.</p>
+                <p>Niestety startują z małą ilością (3) i przyrostem (+2) surowców, co nie pozwala w pełni od początku wykorzystać rabaty produkcyjne.</p>
+                <p>Posiadają bardzo dobrą technologię startową, Komputer Pozytronowy +2, dzięki czemu nie muszą się martwić o dostęp do technologii ułatwiających trafienie.</p>
+                <p>To w czym Mechanema błyszczy to szybkość upgrade'owania statków, trzy żetony w jednym ruchu. Dzięki temu można zaskoczyć przeciwnika szybką zmianą koncepcji statków i ten nie zdąży zareagować na to.</p>
+                <p>Rasa dla nieco bardziej zaawansowanych graczy, ale nadaje się też dla początkujących</p>
+              </div>
             </div>
-
-            {/* Zasada 2 */}
-            <div className="guide-principle">
-              <h4>2) Nie pozwól tworzyć się wąskim gardłom 🗺️</h4>
-              <p>Dobrze połączona mapa faworyzuje ludzi, którzy znają wojnę manewrową.</p>
-              <ul>
-                <li>Zwiąż się z sąsiadami - im więcej połączeń, tym lepiej</li>
-                <li>ALE nie rozprzestrzeniaj się zbyt mocno</li>
-                <li>W obronie dobre (krótkie) wewnętrzne linie komunikacji oznaczają, że możesz szybko i łatwo skierować siły na potrzebną pozycję</li>
-              </ul>
-            </div>
-
-            {/* Zasada 3 */}
-            <div className="guide-principle">
-              <h4>3) Zbuduj ekonomię pieniężną lub rezerwę 💰</h4>
-              <p>Zasoby są potrzebne do stworzenia floty, ale pieniądze są wymagane do akcji budowy, ruchu i ulepszeń.</p>
-              <ul>
-                <li>Twoje szanse poprawiają się, jeśli możesz przewyższyć przeciwnika akcjami w krytycznej turze</li>
-                <li>Nawet sama MOŻLIWOŚĆ przewyższenia ich może spowodować, że "nie będą zawracać sobie głowy marnowaniem akcji"</li>
-              </ul>
-            </div>
-
-            {/* Zasada 4 */}
-            <div className="guide-principle">
-              <h4>4) Wybieraj technologie pasujące do twojej ekonomii 🔬</h4>
-              <ul>
-                <li><strong>Silniki</strong> są świetne dla ras bez przewagi pieniężnej</li>
-                <li><strong>Dobry napęd</strong> pozwala zagrażać i bronić więcej przestrzeni na akcję</li>
-                <li><strong>Nanoboty</strong> są dobre dla ras z przewagą materiałową</li>
-                <li>Wybieraj technologie, które współgrają z tym, co już masz</li>
-              </ul>
-            </div>
-
-            {/* Zasada 5 */}
-            <div className="guide-principle">
-              <h4>5) Wybieraj klasę statku pasującą do twojej rasy i ekonomy 🚀</h4>
-              <ul>
-                <li><strong>Terranie</strong> dostają trzy ruchy na akcję ruchu - buduj liczniejszą flotę</li>
-                <li><strong>Obcy</strong> powinni skłaniać się ku pancernikom i krążownikom</li>
-                <li><strong>Mechanema</strong> produkuje hordy myśliwców</li>
-                <li>Trzymaj się dwóch, maksymalnie trzech klas</li>
-                <li>Jeśli masz w pełni ulepszone wszystkie 4 klasy statków do końca gry, zmarnowałeś akcje</li>
-              </ul>
-            </div>
-
-            {/* Zasada 6 */}
-            <div className="guide-principle">
-              <h4>6) Zacznij wystarczająco wcześnie ⏰</h4>
-              <p>Masz tylko około 6 tur relevantnego czasu walki. Czekanie do tury 9 bardzo pomaga żółwiom.</p>
-            </div>
-
-            {/* Zasada 7 */}
-            <div className="guide-principle">
-              <h4>7) Sonduj 🎯</h4>
-              <p>Nie bój się celowo stracić kilku myśliwców, aby zbadać przeciwnika.</p>
-              <ul>
-                <li>Pomaga to dowiedzieć się, jak planują się bronić</li>
-                <li>Szczególnie przydatne przeciwko "Wirtualnym Siłom" - jeśli polegają na tym i nie zostawiają wystarczającego pierścienia straży</li>
-                <li>Wyślij kilka myśliwców przez ich przestrzeń na drugą stronę - wszelkie obrony, które zbudują, będą z dala od twojej granicy</li>
-              </ul>
-            </div>
-
-            {/* Zasada 8 */}
-            <div className="guide-principle">
-              <h4>8) W turze planowanego dużego ataku, prowadź kolejnym sondowaniem 🎪</h4>
-              <ul>
-                <li>Zmuś ich do obrony wszędzie, a przez to nie będą bronić nigdzie</li>
-                <li>Rozprosz ich siły najlepiej jak potrafisz zgodnie z mapą</li>
-                <li>Jeśli masw rezerwę pieniężną, możesz zaatakować późno siłami głównymi, stawiając ich w trudnej sytuacji</li>
-              </ul>
-            </div>
-
-            {/* Zasada 9 */}
-            <div className="guide-principle">
-              <h4>9) Dziel i rządź 🏹</h4>
-              <p>Sondowanie i poruszanie ma na celu podzielenie lepszej siły na mniejsze, pokonalne kawałki.</p>
-              <ul>
-                <li>Wybierz największy kawałek, na jaki możesz sobie pozwolić, i idź na całego</li>
-                <li>Hex jest często nieistotny w porównaniu ze zniszczeniem floty</li>
-                <li>Gdy flota zniknie, systemy są twoje do wzięcia</li>
-              </ul>
+          </div>
+        </div>
+        <div className="guide-chapter">
+          <div className="guide-content">
+            <div className="guide-race-intro">
+              <img src="/images/races/orion.jpg" className="guide-race"></img>
+              <div>
+                <h3>Hegemonia Oriona</h3>
+                
+              </div>
             </div>
           </div>
         </div>
