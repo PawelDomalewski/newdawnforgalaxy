@@ -2198,7 +2198,7 @@ const Guide9Content = () => {
               <img src="/images/races/orion.jpg" className="guide-race"></img>
               <div>
                 <h3>Hegemonia Oriona</h3>
-                
+                <p>Rasa z mocnym startem militarnym.</p>
               </div>
             </div>
           </div>
