@@ -80,6 +80,22 @@
   text-align: center;
 }
 
+.guide-race-intro {
+  display: flex;
+  align-items: top;
+  gap: 10px;
+}
+
+.guide-race-intro p {
+  margin-top: 1rem;
+}
+
+.guide-race {
+  border-radius: 25px;
+  width: auto;
+  max-height:400px;
+  object-fit: top;
+}
 
 /* Reszta stylów dla treści poradnika (guide-article, guide-chapter, itd.) */
 /* Możesz przenieść tutaj wszystkie style z poprzedniej wersji poradników */

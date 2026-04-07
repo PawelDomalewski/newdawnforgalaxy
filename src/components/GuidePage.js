@@ -103,6 +103,18 @@ const GuidePage = () => {
       content: "full",
       image: "/images/learn.png",
       excerpt: "Z czasem towarzyszyłem wielu graczom w ich krzywych uczenia się w Eclipse. Ten poradnik pokazuje typowe etapy rozwoju umiejętności - od pierwszej gry przez wczesne nieporozumienia, aż do zaawansowanych strategii i mistrzostwa w grze."
+    },
+    '9': {
+      id: 9,
+      title: "Wybór rasy - praktyczny przewodnik",
+      description: "Opis mocnych i słabych stron z każdej z ras",
+      author: "Paweł",
+      source: "https://eclipsegalaxy.netlify.app",
+      sourceName: "Eclipse Galaxy",
+      difficulty: 2,
+      content: "full",
+      image: "/images/raceguide.webp",
+      excerpt: ""
     }
   
   };
@@ -168,6 +180,8 @@ const renderGuideContent = (guideId) => {
   console.log('Rendering guide content for ID:', guideId); // Debug
 
   switch (guideId) {
+    case '9':
+      return <Guide9Content />
     case '1':
       return <Guide1Content />;
     case '2':
@@ -2090,6 +2104,201 @@ const Guide8Content = () => {
               <div className="guide-final-note">
                 <h4>🚀 Kontynuuj naukę!</h4>
                 <p>Pamiętaj, że każdy gracz rozwija się w swoim własnym tempie. Najważniejsze to cieszyć się grą i ciągle się uczyć!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const Guide9Content = () => {
+  return (
+    <div className="guide-article">
+      <div className="guide-article-header">
+        <div className="guide-credits">
+          <p><strong>Autor:</strong> Paweł</p>
+          <p>
+            <strong>Źródło:</strong>{' '}
+            <a
+              href="https://eclipsegalaxy.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="guide-source-link"
+            >
+              Eclipse Galaxy - Race Guide
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div className="guide-intro">
+        <p></p>
+        <div className="guide-note">
+          <strong>⚠️ Uwaga:</strong> To nie jest definitywny przewodnik - istnieje wiele stylów walki, a ten jest tylko jednym z podejść.
+        </div>
+      </div>
+
+      <div className="guide-chapters">
+        {/* Dlaczego warto walczyć? */}
+        <div className="guide-chapter">
+          <h3>Rasy podstawowe</h3>
+          <div className="guide-content">
+            <div className="guide-race-intro">
+              <img src="/images/races/terranie.jpg" className="guide-race"></img>
+              <div>
+              <h3>Ludzie</h3>
+              <p>Wszechstronna rasa, z łatwością dostosowująca się do aktualnej sytuacji. Najważniejsza umiejętność jaką potrzebują gracze w Eclipse, to bez wątpienia zdolność do adaptacji, dostosywania się do aktualnej sytuacji na planszy. Analizowanie na bieżąco czy obrany kierunek strategiczny ma jeszcze sens. Rasa Ludzi nadaje się do tego idealnie.</p>
+              <p>Nie posiadają żadnych poważnych wad i ograniczeń, natomiast mają plusy, które nie można zignorować, tj.:</p>
+              </div>
+            </div>
+
+
+            
+          </div>
+        </div>
+
+        {/* Z kim się uczyć walczyć? */}
+        <div className="guide-chapter">
+          <h3>🎓 Z kim się uczyć walczyć?</h3>
+          <div className="guide-content">
+            <p><strong>Nie z Orionami ani nawet Eridani. Mechanema to najlepsza rasa do nauki walki.</strong></p>
+
+            <ul>
+              <li>Tańsze koszty budowy prowadzą do mniejszej troski o konkretne wyniki bitew</li>
+              <li>Wysłanie 2 myśliwców to tylko 4 zasoby i kilka akcji - żaden wielki problem</li>
+              <li>Pozwalają na wojnę na wyczerpanie, która wydaje się łatwiejsza do nauki dla wielu osób</li>
+              <li>Jednak nie zostawaj tylko przy wojnie na wyczerpanie - nauka wojny manewrowej bardzo ci pomoże</li>
+            </ul>
+
+            <div className="guide-warning">
+              <strong>⚠️ Uwaga:</strong> Uważaj, aby nie stać się zbyt zależnym od kosztów budowy Mechanemy. Idealnie używasz ich, aby lepiej zrozumieć szanse i taktyki walki.
+            </div>
+          </div>
+        </div>
+
+        {/* Jak walczyć? */}
+        <div className="guide-chapter">
+          <h3>⚔️ Jak walczyć? - 9 Zasad</h3>
+          <div className="guide-content">
+
+            {/* Zasada 1 */}
+            <div className="guide-principle">
+              <h4>1) Rozmawiaj z ludźmi 🗣️</h4>
+              <p>Ludzie widzą pojedynczy mechanik dyplomacji w grze i wydaje im się, że to cała dyplomacja. To bardzo, bardzo błędne.</p>
+              <ul>
+                <li>Ustawienie ataku na inną osobę dyplomatycznie może okazać się bardziej wartościowe niż atak z zaskoczenia</li>
+                <li>Ogłoszenie zamiaru ataku na gracza w "przewodzie" może zapewnić ci wystarczającą osłonę</li>
+                <li>Gry takie jak Eclipse idą do ludzi, którzy potrafią najlepiej przekonać innych graczy o "prawdziwym" stanie rzeczy</li>
+              </ul>
+            </div>
+
+            {/* Zasada 2 */}
+            <div className="guide-principle">
+              <h4>2) Nie pozwól tworzyć się wąskim gardłom 🗺️</h4>
+              <p>Dobrze połączona mapa faworyzuje ludzi, którzy znają wojnę manewrową.</p>
+              <ul>
+                <li>Zwiąż się z sąsiadami - im więcej połączeń, tym lepiej</li>
+                <li>ALE nie rozprzestrzeniaj się zbyt mocno</li>
+                <li>W obronie dobre (krótkie) wewnętrzne linie komunikacji oznaczają, że możesz szybko i łatwo skierować siły na potrzebną pozycję</li>
+              </ul>
+            </div>
+
+            {/* Zasada 3 */}
+            <div className="guide-principle">
+              <h4>3) Zbuduj ekonomię pieniężną lub rezerwę 💰</h4>
+              <p>Zasoby są potrzebne do stworzenia floty, ale pieniądze są wymagane do akcji budowy, ruchu i ulepszeń.</p>
+              <ul>
+                <li>Twoje szanse poprawiają się, jeśli możesz przewyższyć przeciwnika akcjami w krytycznej turze</li>
+                <li>Nawet sama MOŻLIWOŚĆ przewyższenia ich może spowodować, że "nie będą zawracać sobie głowy marnowaniem akcji"</li>
+              </ul>
+            </div>
+
+            {/* Zasada 4 */}
+            <div className="guide-principle">
+              <h4>4) Wybieraj technologie pasujące do twojej ekonomii 🔬</h4>
+              <ul>
+                <li><strong>Silniki</strong> są świetne dla ras bez przewagi pieniężnej</li>
+                <li><strong>Dobry napęd</strong> pozwala zagrażać i bronić więcej przestrzeni na akcję</li>
+                <li><strong>Nanoboty</strong> są dobre dla ras z przewagą materiałową</li>
+                <li>Wybieraj technologie, które współgrają z tym, co już masz</li>
+              </ul>
+            </div>
+
+            {/* Zasada 5 */}
+            <div className="guide-principle">
+              <h4>5) Wybieraj klasę statku pasującą do twojej rasy i ekonomy 🚀</h4>
+              <ul>
+                <li><strong>Terranie</strong> dostają trzy ruchy na akcję ruchu - buduj liczniejszą flotę</li>
+                <li><strong>Obcy</strong> powinni skłaniać się ku pancernikom i krążownikom</li>
+                <li><strong>Mechanema</strong> produkuje hordy myśliwców</li>
+                <li>Trzymaj się dwóch, maksymalnie trzech klas</li>
+                <li>Jeśli masz w pełni ulepszone wszystkie 4 klasy statków do końca gry, zmarnowałeś akcje</li>
+              </ul>
+            </div>
+
+            {/* Zasada 6 */}
+            <div className="guide-principle">
+              <h4>6) Zacznij wystarczająco wcześnie ⏰</h4>
+              <p>Masz tylko około 6 tur relevantnego czasu walki. Czekanie do tury 9 bardzo pomaga żółwiom.</p>
+            </div>
+
+            {/* Zasada 7 */}
+            <div className="guide-principle">
+              <h4>7) Sonduj 🎯</h4>
+              <p>Nie bój się celowo stracić kilku myśliwców, aby zbadać przeciwnika.</p>
+              <ul>
+                <li>Pomaga to dowiedzieć się, jak planują się bronić</li>
+                <li>Szczególnie przydatne przeciwko "Wirtualnym Siłom" - jeśli polegają na tym i nie zostawiają wystarczającego pierścienia straży</li>
+                <li>Wyślij kilka myśliwców przez ich przestrzeń na drugą stronę - wszelkie obrony, które zbudują, będą z dala od twojej granicy</li>
+              </ul>
+            </div>
+
+            {/* Zasada 8 */}
+            <div className="guide-principle">
+              <h4>8) W turze planowanego dużego ataku, prowadź kolejnym sondowaniem 🎪</h4>
+              <ul>
+                <li>Zmuś ich do obrony wszędzie, a przez to nie będą bronić nigdzie</li>
+                <li>Rozprosz ich siły najlepiej jak potrafisz zgodnie z mapą</li>
+                <li>Jeśli masw rezerwę pieniężną, możesz zaatakować późno siłami głównymi, stawiając ich w trudnej sytuacji</li>
+              </ul>
+            </div>
+
+            {/* Zasada 9 */}
+            <div className="guide-principle">
+              <h4>9) Dziel i rządź 🏹</h4>
+              <p>Sondowanie i poruszanie ma na celu podzielenie lepszej siły na mniejsze, pokonalne kawałki.</p>
+              <ul>
+                <li>Wybierz największy kawałek, na jaki możesz sobie pozwolić, i idź na całego</li>
+                <li>Hex jest często nieistotny w porównaniu ze zniszczeniem floty</li>
+                <li>Gdy flota zniknie, systemy są twoje do wzięcia</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Zakończenie */}
+        <div className="guide-chapter">
+          <h3>🎲 Podsumowanie</h3>
+          <div className="guide-content">
+            <div className="guide-final-tip">
+              <h4>Pamiętaj:</h4>
+              <p>Poprawisz się tylko próbując, a najlepszy sposób na próbowanie to nie martwienie się porażką. Graj, przegrywaj, ucz się, wygrywaj.</p>
+            </div>
+
+            <div className="guide-tips-grid">
+              <div className="guide-tip-card">
+                <h5>🎯 Praktyka</h5>
+                <p>Nie bój się eksperymentować z różnymi taktykami</p>
+              </div>
+              <div className="guide-tip-card">
+                <h5>📚 Nauka</h5>
+                <p>Każda przegrana to lekcja na przyszłość</p>
+              </div>
+              <div className="guide-tip-card">
+                <h5>⚡ Adaptacja</h5>
+                <p>Dostosowuj strategię do sytuacji na planszy</p>
               </div>
             </div>
           </div>

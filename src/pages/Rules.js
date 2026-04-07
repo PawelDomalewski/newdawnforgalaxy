@@ -66,6 +66,18 @@ const Rules = () => {
       excerpt: "Uwielbiam Eclipse. Ta gra ma interesujące mechaniki i dynamikę, które pasują do specjalnej niszy w mojej grupie graczy. Ten przewodnik eksploruje zaawansowane taktyki i strategie dla tej wspaniałej gry."
     },
     {
+      id: 9,
+      title: "Wybór rasy - praktyczny przewodnik",
+      description: "Opis mocnych i słabych stron z każdej z ras",
+      author: "Paweł",
+      source: "https://eclipsegalaxy.netlify.app",
+      sourceName: "Eclipse Galaxy",
+      difficulty: 2,
+      content: "full",
+      image: "/images/raceguide.webp",
+      excerpt: ""
+    },
+    {
       id: 3,
       title: "Podstawy militarne w grze Eclipse",
       description: "Podstawy walki i strategii militarnej",
