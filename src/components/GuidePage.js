@@ -2282,7 +2282,11 @@ const Guide9Content = () => {
               <img src="/images/races/exiles.jpg" className="guide-race"></img>
               <div>
                 <h3>Wygnańcy</h3>
-
+                <p>Rasa skupiająca się na budowie Orbitali.</p>
+                <p>Wygnańcy od początku gry mają dostęp do technologii budowania Orbitali oraz mają jeden zbudowany na heksie startowym, mogą zdecydować, czy skolonizować go jako planetę naukową czy ekonomiczną. Orbitale zastępują Bazy Gwiezdne. Mają dość skromny schemat i kosztują sporo, ale za to są niezniszczalne i póki mają kostkę populacji to są traktowane jako statek. Można mieć tylko jeden Orbital na heks. Za każdy zbudowany i kontrolowany Orbital Wygnańcy dostają +1 pkt.</p>
+                <p>Drugą technologią jaką posiadają to Urządzenie Maskujące, sprawia, że potrzeba dwóch statków by związać walką jeden statek Wygnańców. Dość dobra, rzadka technologia, daje przewagę przy manewrowaniu flotą.</p>
+                <p>Mają przyzwoitą ilość surowców na start, co pozwala im na wczesne budowanie kolejnych Orbitali</p>
+                <p>Rasa nie jest najłatwiejszą rasą do grania, zalecana raczej dla doświadczonych.</p>
               </div>
             </div>
           </div>
