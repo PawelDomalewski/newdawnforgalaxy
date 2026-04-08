@@ -2136,7 +2136,7 @@ const Guide9Content = () => {
       <div className="guide-intro">
         <p></p>
         <div className="guide-note">
-          <strong>Lorem ipsum</strong> 
+          <strong>Lorem ipsum</strong>
         </div>
       </div>
 
@@ -2247,19 +2247,30 @@ const Guide9Content = () => {
               <div>
                 <h3>Potomkowie Draco</h3>
                 <p>Kumple Starożytnych</p>
-                <p>W akcji eksploracji biorą dwa heksy i wybierają jeden. Świetna cecha, pozwala im maksymalizować ilość statków starożytnych w galaktyce</p>
+                <p>W akcji eksploracji biorą dwa heksy i wybierają jeden. Świetna cecha, pozwala im maksymalizować ilość statków starożytnych w galaktyce, a każdy statek Starożytny na koniec gry daje +1 pkt.</p>
+                <p>Możliwość zajmowania heksów Starożytnych bez walki z nimi pozwala szybko rozwinąć ekonomię, akcja Influence pozwoli też skraść takie heksy odkryte przez innych graczy.</p>
+                <p>Niestety Draco posiadają minusy mniej i bardziej oczywiste. Z oczywistych minusów, nie posiadają żadnej technologii startowej, mają co prawda 4 pkt nauki na start, ale wciąż będą musieli wykonać dużo akcji by nakupować technologii.</p>
+                <p>Z mniej oczywistych minusów, inni gracze będą chcieli zabić wszystkich Starożytnych, więc stajemy się dla nich oczywistym celem.<br></br> Tutaj może zajść też nietypowa sytuacja: Jeśli Draco będzie posiadał technologię Anty Bomby Neutronowe, a inny gracz zniszczy statki Starożytnych na naszym obszarze i nie uda mu się usunąć kostek populacji (czyli nie tracimy kontroli nad heksem) to grający Draco może wziąć żeton Odkrycia, który był pod Starożytnymi.</p>
+                <p>Rasa dobra dla każdego, szczególnie dla tych, którzy nie boją się ataków ze strony innych graczy.</p>
               </div>
             </div>
           </div>
         </div>
-        
+
         <div className="guide-chapter">
           <h3>Rasy Rise of the Ancients</h3>
+          <div className="guide-intro">
+            <p>Rasy z pierwszego dodatku do Eclipse. Posiadają własne, unikalne mechaniki, dlatego sugerowane są dla nieco bardziej doświadczonych graczy.</p>
+          </div>
           <div className="guide-content">
             <div className="guide-race-intro">
               <img src="/images/races/magellan.jpg" className="guide-race"></img>
               <div>
                 <h3>Magellanie</h3>
+                <p>Ludzie na sterydach.</p>
+                <p>Przyzwoite zasoby startowe i dobry przyrost na rundę, dobra bo uniwersalna technologia startowa, Energia 6, a to tylko początek zalet.</p>
+                <p>Najmocniejszą stroną Magellan jest możliwość "zużycia" statku kolonizacyjnego by uzyskać +1 pieniędzy, nauki lub surowca. To zapewnia dużą elastyczność, szczególnie w sytuacjach gdy dosłownie brakuje nam 1 nauki do kupna technologii. W środkowej fazie gry, gdy nie kolonizujemy zbyt wielu planet, zawsze wykorzystujemy wszystkie statki kolonizacyjne by dodać sobie to co akurat potrzebujemy. Świetna cecha.</p>
+                <p></p>
               </div>
             </div>
           </div>
