@@ -2136,7 +2136,7 @@ const Guide9Content = () => {
       <div className="guide-intro">
         <p></p>
         <div className="guide-note">
-          <strong>⚠️ Uwaga:</strong> To nie jest definitywny przewodnik - istnieje wiele stylów walki, a ten jest tylko jednym z podejść.
+          <strong>Lorem ipsum</strong> 
         </div>
       </div>
 
@@ -2219,6 +2219,8 @@ const Guide9Content = () => {
                 <h3>Imperium Eridani</h3>
                 <p>Rasa dla zaawansowanych i ambitnych graczy. Posiadają trzy mocne i przydatne technologie startowe. 26 pięniedzy na start, losują dwa żetony reputacji przed rozpoczęciem gry.</p>
                 <p>Te wszystkie mocne plusy bledną wobec poważnej wady: brak dwóch dysków wpływów.</p>
+                <p>Oznacza to, że nawet mając dużo pieniędzy, może nam zabraknąć dysków by wykonać akcję, tak samo też nie będziemy mogli zająć tyle heksów co inni gracze. Dlatego ważne dla nich jest by grać wydajnie, zajmować tylko dobre heksy, wykorzystać początkową przewagę technologiczną, czyścić heksy ze Starożytnych. Dobrze jest też skorzystać z rozwinięć dających +12 nauki (szybkie kupno technologii dwóch dysków w pierwszej rundzie) lub surowców (budowa dwóch pancerników już w pierwszej rundzie)</p>
+                <p>Jedna z najtrudniejszych ras do grania, przeznaczona dla zaawansownych graczy szukających wyzwań.</p>
               </div>
             </div>
           </div>
@@ -2229,6 +2231,8 @@ const Guide9Content = () => {
               <img src="/images/races/hydran.jpg" className="guide-race"></img>
               <div>
                 <h3>Postępowi Hydranie</h3>
+                <p>Rasa skupiająca się na rozwoju technologicznym.</p>
+                <p></p>
               </div>
             </div>
           </div>
