@@ -2270,7 +2270,77 @@ const Guide9Content = () => {
                 <p>Ludzie na sterydach.</p>
                 <p>Przyzwoite zasoby startowe i dobry przyrost na rundę, dobra bo uniwersalna technologia startowa, Energia 6, a to tylko początek zalet.</p>
                 <p>Najmocniejszą stroną Magellan jest możliwość "zużycia" statku kolonizacyjnego by uzyskać +1 pieniędzy, nauki lub surowca. To zapewnia dużą elastyczność, szczególnie w sytuacjach gdy dosłownie brakuje nam 1 nauki do kupna technologii. W środkowej fazie gry, gdy nie kolonizujemy zbyt wielu planet, zawsze wykorzystujemy wszystkie statki kolonizacyjne by dodać sobie to co akurat potrzebujemy. Świetna cecha.</p>
-                <p></p>
+                <p>Magellanie dostają 1 pkt za każdy żeton Odkrycia, który wykorzystali jako część statku bądź inny efekt, to też jest świetna cecha, która ułatwia nam wybór między 2 punktami a bonusem. Dodatkowo, gdy na jednym z torów technologii dojdą do 4 żetonów, otrzymują jednorazowo jeden żeton odkrycia.</p>
+                <p>Bardzo dobra, uniwersalna rasa, dobra i dla początkującego jak i dla doświadczonego.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="guide-chapter">
+          <div className="guide-content">
+            <div className="guide-race-intro">
+              <img src="/images/races/exiles.jpg" className="guide-race"></img>
+              <div>
+                <h3>Wygnańcy</h3>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="guide-chapter">
+          <div className="guide-content">
+            <div className="guide-race-intro">
+              <img src="/images/races/rhoindi.jpg" className="guide-race"></img>
+              <div>
+                <h3>Syndykat Rho Indi</h3>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="guide-chapter">
+          <div className="guide-content">
+            <div className="guide-race-intro">
+              <img src="/images/races/lyra.jpg" className="guide-race"></img>
+              <div>
+                <h3>Oświeceni Lyry</h3>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="guide-chapter">
+          <h3>Rasy Shadow of the Rift</h3>
+          <div className="guide-intro">
+            <p>Rasy z drugiego dodatku do Eclipse. Posiadają własne, unikalne mechaniki, dlatego sugerowane są dla nieco bardziej doświadczonych graczy.</p>
+          </div>
+          <div className="guide-content">
+            <div className="guide-race-intro">
+              <img src="/images/races/octanis.jpg" className="guide-race"></img>
+              <div>
+                <h3>Octanis</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="guide-chapter">
+          <div className="guide-content">
+            <div className="guide-race-intro">
+              <img src="/images/races/dorado.jpg" className="guide-race"></img>
+              <div>
+                <h3>Shaperzy z Dorado</h3>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="guide-chapter">
+          <div className="guide-content">
+            <div className="guide-race-intro">
+              <img src="/images/races/pyxis.jpg" className="guide-race"></img>
+              <div>
+                <h3>Jedność Pyxis</h3>
+
               </div>
             </div>
           </div>
