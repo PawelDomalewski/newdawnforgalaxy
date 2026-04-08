@@ -2198,7 +2198,15 @@ const Guide9Content = () => {
               <img src="/images/races/orion.jpg" className="guide-race"></img>
               <div>
                 <h3>Hegemonia Oriona</h3>
-                <p>Rasa z mocnym startem militarnym.</p>
+                <p>Rasa z mocnym startem militarnym. Startują z krążownikiem zamiast standardowego myśliwca. Zaczynają z 5 (+3) surowcami, co pozwala im już w pierwszej rundzie kupić drugi krążownik lub pancernik w drugiej rundzie.</p>
+                <p>Posiadają dwie, bardzo przydatne technologie startowe:</p>
+                <ul>
+                  <li>Bomby neutronowe <br></br>Niezbędna technologia w walce z innymi graczami</li>
+                  <li>Tarcze Gaussa -1 <br></br>Bardzo przydatna technologia do czyszczenia heksów ze Starożytnych</li>
+                </ul>
+                <p>Ich statki są jednymi z najmocniejszych startowo statkami. Mają zamontowanie tarcze -1, dodatkową inicjatywę oraz dodatkową energię poza schematem, więc mogą bardzo szybko zacząć czyścić mapę.</p>
+                <p>Mają mocny start (statki, surowce) i końcówkę gry (dodatkowa energia i inicjatywa trudna do nadrobienia technologiami), ale słabszy środek gry, gdy znaczenie ma rozwój technologiczny i inne rasy mogą mieć moment przewagi technologicznej, którą mogą wykorzystać.</p>
+                <p>Ich słabym punktem jest natomiast handel 4:1, więc potencjalny błąd w obliczeniach ruchów może skończyć się tragicznie. Brak planety ekonomicznej na start, przez co mają mniej ruchów na początku.</p>
               </div>
             </div>
           </div>

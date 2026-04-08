@@ -100,6 +100,7 @@
   max-height:400px;
   object-fit: cover;
   transition: 500ms;
+  border: 2px solid var(--btn-clr-hover);
 }
 
 
