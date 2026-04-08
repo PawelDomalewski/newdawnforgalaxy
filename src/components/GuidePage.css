@@ -103,6 +103,16 @@
   border: 2px solid var(--btn-clr-hover);
 }
 
+@media (max-width: 764px) {
+  .guide-race-intro {
+    flex-direction: column;
+  }
+  .guide-race {
+    max-height: auto;
+    max-width: 150px;
+  }
+}
+
 
 
 /* Reszta stylów dla treści poradnika (guide-article, guide-chapter, itd.) */

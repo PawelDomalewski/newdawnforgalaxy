@@ -2232,6 +2232,7 @@ const Guide9Content = () => {
               <div>
                 <h3>Postępowi Hydranie</h3>
                 <p>Rasa skupiająca się na rozwoju technologicznym.</p>
+                <p>Zaczynają mocną sytuacją jeśli chodzi o naukę, 5 pkt nauki na start i +4 przyrostu co rundę, do tego mogą kupować dwie technologie w jednej akcji. Technologie są niezwykle ważne w Eclipse, często decyduja o wygranej lub przegranej. Hydranie są rasą, która ma szanse wypełnić wszystkie trzy tory technologii.</p>
                 <p></p>
               </div>
             </div>
