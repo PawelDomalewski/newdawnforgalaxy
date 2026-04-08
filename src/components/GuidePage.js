@@ -2233,7 +2233,9 @@ const Guide9Content = () => {
                 <h3>Postępowi Hydranie</h3>
                 <p>Rasa skupiająca się na rozwoju technologicznym.</p>
                 <p>Zaczynają mocną sytuacją jeśli chodzi o naukę, 5 pkt nauki na start i +4 przyrostu co rundę, do tego mogą kupować dwie technologie w jednej akcji. Technologie są niezwykle ważne w Eclipse, często decyduja o wygranej lub przegranej. Hydranie są rasą, która ma szanse wypełnić wszystkie trzy tory technologii.</p>
-                <p></p>
+                <p>Mają słabą sytuację jeśli chodzi o początkowe surowce, tylko 2 i +2 przyrostu, dlatego każdy surowiec jest dla nich na wagę złota i nie mogą pozwolić sobie na stratę statku, szczególnie w początkowej fazie gry.</p>
+                <p>Z tego względu mają powolny start, ale gdy już się rozwiną stają się trudni do zatrzymania.</p>
+                <p>Rasa dobra dla każdego.</p>
               </div>
             </div>
           </div>
@@ -2244,6 +2246,7 @@ const Guide9Content = () => {
               <img src="/images/races/draco.jpg" className="guide-race"></img>
               <div>
                 <h3>Potomkowie Draco</h3>
+                <p>Kumple Starożytnych</p>
               </div>
             </div>
           </div>
