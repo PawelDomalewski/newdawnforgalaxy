@@ -2217,6 +2217,8 @@ const Guide9Content = () => {
               <img src="/images/races/eridani.jpg" className="guide-race"></img>
               <div>
                 <h3>Imperium Eridani</h3>
+                <p>Rasa dla zaawansowanych i ambitnych graczy. Posiadają trzy mocne i przydatne technologie startowe. 26 pięniedzy na start, losują dwa żetony reputacji przed rozpoczęciem gry.</p>
+                <p>Te wszystkie mocne plusy bledną wobec poważnej wady: brak dwóch dysków wpływów.</p>
               </div>
             </div>
           </div>
