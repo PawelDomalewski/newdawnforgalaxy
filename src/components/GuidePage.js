@@ -2251,8 +2251,9 @@ const Guide9Content = () => {
             </div>
           </div>
         </div>
-        <h3>Rasy Rise of the Ancients</h3>
+        
         <div className="guide-chapter">
+          <h3>Rasy Rise of the Ancients</h3>
           <div className="guide-content">
             <div className="guide-race-intro">
               <img src="/images/races/magellan.jpg" className="guide-race"></img>
