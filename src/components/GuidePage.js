@@ -2247,6 +2247,7 @@ const Guide9Content = () => {
               <div>
                 <h3>Potomkowie Draco</h3>
                 <p>Kumple Starożytnych</p>
+                <p>W akcji eksploracji biorą dwa heksy i wybierają jeden. Świetna cecha, pozwala im maksymalizować ilość statków starożytnych w galaktyce</p>
               </div>
             </div>
           </div>
