@@ -2211,6 +2211,47 @@ const Guide9Content = () => {
             </div>
           </div>
         </div>
+        <div className="guide-chapter">
+          <div className="guide-content">
+            <div className="guide-race-intro">
+              <img src="/images/races/eridani.jpg" className="guide-race"></img>
+              <div>
+                <h3>Imperium Eridani</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="guide-chapter">
+          <div className="guide-content">
+            <div className="guide-race-intro">
+              <img src="/images/races/hydran.jpg" className="guide-race"></img>
+              <div>
+                <h3>Postępowi Hydranie</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="guide-chapter">
+          <div className="guide-content">
+            <div className="guide-race-intro">
+              <img src="/images/races/draco.jpg" className="guide-race"></img>
+              <div>
+                <h3>Potomkowie Draco</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3>Rasy Rise of the Ancients</h3>
+        <div className="guide-chapter">
+          <div className="guide-content">
+            <div className="guide-race-intro">
+              <img src="/images/races/magellan.jpg" className="guide-race"></img>
+              <div>
+                <h3>Magellanie</h3>
+              </div>
+            </div>
+          </div>
+        </div>
 
         {/* Zakończenie */}
         <div className="guide-chapter">
