@@ -6,6 +6,11 @@ import {
   normalizeImageSrc,
   addImageCursorStyles,
 } from '../utils/sessionContent.js';
+import {
+  getNextGalleryIndex,
+  getPrevGalleryIndex,
+  clampZoom,
+} from '../utils/gallery.js';
 import './SessionDetail.css';
 
 const SessionDetail = () => {
@@ -99,22 +104,22 @@ const SessionDetail = () => {
   };
 
   // Nawigacja strzałkami
-  const navigateImages = useCallback((direction) => {
+const navigateImages = useCallback(
+  (direction) => {
     if (allImages.length === 0) return;
 
-    let newIndex;
-    if (direction === 'next') {
-      newIndex = (currentImageIndex + 1) % allImages.length;
-    } else {
-      newIndex = (currentImageIndex - 1 + allImages.length) % allImages.length;
-    }
-
+    const newIndex =
+      direction === 'next'
+        ? getNextGalleryIndex(currentImageIndex, allImages.length)
+        : getPrevGalleryIndex(currentImageIndex, allImages.length);
 
     setCurrentImageIndex(newIndex);
     setCurrentImage(allImages[newIndex]);
     setZoomLevel(1);
     setPosition({ x: 0, y: 0 });
-  }, [currentImageIndex, allImages]);
+  },
+  [currentImageIndex, allImages]
+);
 
   // Obsługa klawiszy
   const handleKeyDown = useCallback((e) => {
@@ -133,11 +138,11 @@ const SessionDetail = () => {
       case '+':
       case '=':
         e.preventDefault();
-        setZoomLevel(prev => Math.min(prev + 0.25, 3));
+        setZoomLevel((prev) => clampZoom(prev + 0.25));
         break;
       case '-':
         e.preventDefault();
-        setZoomLevel(prev => Math.max(prev - 0.25, 0.5));
+        setZoomLevel((prev) => clampZoom(prev - 0.25));
         break;
       case '0':
         e.preventDefault();
@@ -157,14 +162,12 @@ const SessionDetail = () => {
   }, [handleKeyDown]);
 
   // Zoom na zdjęciu
-  const handleWheel = (e) => {
-    e.preventDefault();
-    const delta = -e.deltaY * 0.01;
-    setZoomLevel(prev => {
-      const newZoom = prev + delta;
-      return Math.max(0.5, Math.min(3, newZoom));
-    });
-  };
+const handleWheel = (e) => {
+  e.preventDefault();
+  const delta = -e.deltaY * 0.01;
+
+  setZoomLevel((prev) => clampZoom(prev + delta));
+};
 
   // Drag do przesuwania przy zoomie
   const handleMouseDown = (e) => {
