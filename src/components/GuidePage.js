@@ -2297,7 +2297,11 @@ const Guide9Content = () => {
               <img src="/images/races/rhoindi.jpg" className="guide-race"></img>
               <div>
                 <h3>Syndykat Rho Indi</h3>
-
+                <p>Kosmicznie piraci.</p>
+                <p>Podobnie jak Hegemonia Oriona, posiadają mocny militarnie start. Posiadają dwa myśliwce zamiast jednego. Nie mogą budować pancerników, a ich krążowniki i myśliwce są droższe o 1 surowiec niż standardowo. Schematy ich statków natomiast mogą konkurować z Orionem. Mają dodatkową inicjatywę i osłony -1 poza schematem, to sprawia, że ich myśliwce są jednymi z najlepszych w grze.</p>
+                <p>Dużym plusem jest też posiadanie 4 aktywacji ruchu w jednej akcji, to oznacza, że posiadając całą flotę 8 myśliwców i 4 krążowników wystarczy im tylko 3 akcje by wszystkie statki przenieść. Dla porównania przy standardowych 2 aktywacjach przeniesienie takiej floty zajęłoby 6 akcji.</p>
+                <p>Kolejną ciekawą zdolnością jest "złomowanie" zniszczonych statków, po każdej walce zyskują pieniądze w ilości równej ilość losowanych żetonów reputacji -1, czyli maksymalnie 4 pieniędzy na heks. Zgrywa się to dobrze z kolejnym plusem Rho Indi czyli wymianą pieniędzy (i tylko ich) w stosunku 3 do 2. Innymi słowy walcząc i zyskując pieniądze mogą finansować swój rozwój technologiczny lub odbudowwać stracone statki.</p>
+                <p>Z wad, ich heks startowy jest warty 0 pkt, mają tylko dwa statki kolonizacyjne</p>
               </div>
             </div>
           </div>
