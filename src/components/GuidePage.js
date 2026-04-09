@@ -2297,11 +2297,12 @@ const Guide9Content = () => {
               <img src="/images/races/rhoindi.jpg" className="guide-race"></img>
               <div>
                 <h3>Syndykat Rho Indi</h3>
-                <p>Kosmicznie piraci.</p>
+                <p>Kosmiczni piraci.</p>
                 <p>Podobnie jak Hegemonia Oriona, posiadają mocny militarnie start. Posiadają dwa myśliwce zamiast jednego. Nie mogą budować pancerników, a ich krążowniki i myśliwce są droższe o 1 surowiec niż standardowo. Schematy ich statków natomiast mogą konkurować z Orionem. Mają dodatkową inicjatywę i osłony -1 poza schematem, to sprawia, że ich myśliwce są jednymi z najlepszych w grze.</p>
                 <p>Dużym plusem jest też posiadanie 4 aktywacji ruchu w jednej akcji, to oznacza, że posiadając całą flotę 8 myśliwców i 4 krążowników wystarczy im tylko 3 akcje by wszystkie statki przenieść. Dla porównania przy standardowych 2 aktywacjach przeniesienie takiej floty zajęłoby 6 akcji.</p>
                 <p>Kolejną ciekawą zdolnością jest "złomowanie" zniszczonych statków, po każdej walce zyskują pieniądze w ilości równej ilość losowanych żetonów reputacji -1, czyli maksymalnie 4 pieniędzy na heks. Zgrywa się to dobrze z kolejnym plusem Rho Indi czyli wymianą pieniędzy (i tylko ich) w stosunku 3 do 2. Innymi słowy walcząc i zyskując pieniądze mogą finansować swój rozwój technologiczny lub odbudowwać stracone statki.</p>
-                <p>Z wad, ich heks startowy jest warty 0 pkt, mają tylko dwa statki kolonizacyjne, tylko dwóch ambasadorów.</p>
+                <p>Z wad, ich heks startowy jest warty 0 pkt, mają tylko dwa statki kolonizacyjne, tylko dwóch ambasadorów. To są rzeczy, które prowokują do agresywnej gry.</p>
+                <p>Rasa dla zaawansowanych graczy, lubiących grać agresywnie,</p>
               </div>
             </div>
           </div>
@@ -2312,7 +2313,8 @@ const Guide9Content = () => {
               <img src="/images/races/lyra.jpg" className="guide-race"></img>
               <div>
                 <h3>Oświeceni Lyry</h3>
-
+                <p>Oświecona rasa budująca świątynie.</p>
+                <p></p>
               </div>
             </div>
           </div>
@@ -2320,7 +2322,7 @@ const Guide9Content = () => {
         <div className="guide-chapter">
           <h3>Rasy Shadow of the Rift</h3>
           <div className="guide-intro">
-            <p>Rasy z drugiego dodatku do Eclipse. Posiadają własne, unikalne mechaniki, dlatego sugerowane są dla nieco bardziej doświadczonych graczy.</p>
+            <p>Rasy z drugiego dodatku do Eclipse. Posiadają własne, unikalne mechaniki, wymagające dobrej znajomości mechanik gry, dlatego sugerowane są dla bardzo doświadczonych graczy.</p>
           </div>
           <div className="guide-content">
             <div className="guide-race-intro">

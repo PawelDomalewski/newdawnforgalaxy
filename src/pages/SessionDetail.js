@@ -1,6 +1,11 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { sessions } from '../data/sessions.js';
+import {
+  extractImagesFromSession,
+  normalizeImageSrc,
+  addImageCursorStyles,
+} from '../utils/sessionContent.js';
 import './SessionDetail.css';
 
 const SessionDetail = () => {
@@ -17,72 +22,36 @@ const SessionDetail = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const contentRef = useRef(null);
 
-    React.useLayoutEffect(() => {
-      window.scrollTo(0, 0);
-    }, []);
+  React.useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   // Zbierz wszystkie zdjęcia z sesji
   useEffect(() => {
     if (!session) return;
-
-    const images = [];
-    
-    // Dodaj główne zdjęcie sesji
-    if (session.image) {
-      images.push(session.image);
-    }
-    
-    // Dodaj zdjęcia z fullContent
-    if (session.fullContent) {
-      const tempDiv = document.createElement('div');
-      tempDiv.innerHTML = session.fullContent;
-      const contentImages = Array.from(tempDiv.getElementsByTagName('img'));
-      contentImages.forEach(img => {
-        if (img.src && !images.includes(img.src)) {
-          images.push(img.src);
-        }
-      });
-    }
-    
-    setAllImages(images);
+    setAllImages(extractImagesFromSession(session));
   }, [session]);
 
   // Dodaj event listeners do zdjęć w fullContent po renderze
   useEffect(() => {
-    if (!contentRef.current || !session?.fullContent) return;
+    if (!contentRef.current) return;
+    addImageCursorStyles(contentRef.current);
+  }, [session?.fullContent]);
 
-    const images = contentRef.current.getElementsByTagName('img');
-    
-    for (let i = 0; i < images.length; i++) {
-      const img = images[i];
-      const src = img.getAttribute('src');
-      
-      if (src) {
-        // Znajdź index tego zdjęcia w allImages
-        const imageIndex = allImages.findIndex(imgSrc => {
-          // Normalizuj ścieżki do porównania
-          const normalizedSrc = src.startsWith('http') ? src : `${window.location.origin}${src}`;
-          const normalizedAllSrc = imgSrc.startsWith('http') ? imgSrc : `${window.location.origin}${imgSrc}`;
-          return normalizedSrc === normalizedAllSrc;
-        });
-        
-        if (imageIndex !== -1) {
-          img.style.cursor = 'pointer';
-          img.addEventListener('click', () => handleImageClick(src, imageIndex));
-        }
-      }
-    }
+  const handleContentClick = (event) => {
+    const target = event.target;
 
-    // Cleanup function
-    return () => {
-      const images = contentRef.current?.getElementsByTagName('img');
-      if (images) {
-        for (let img of images) {
-          img.replaceWith(img.cloneNode(true)); // Usuwa event listeners
-        }
-      }
-    };
-  }, [session?.fullContent, allImages]);
+    if (target.tagName !== 'IMG') return;
+
+    const src = target.getAttribute('src');
+    if (!src) return;
+
+    const imageIndex = allImages.findIndex(
+      (imgSrc) => normalizeImageSrc(imgSrc) === normalizeImageSrc(src)
+    );
+
+    handleImageClick(src, imageIndex !== -1 ? imageIndex : 0);
+  };
 
   if (!session) {
     return (
@@ -101,18 +70,14 @@ const SessionDetail = () => {
   }
 
   const handleImageClick = (imageSrc, index = 0) => {
-    
-    // Normalizuj ścieżkę do porównania
-    const normalizedSrc = imageSrc.startsWith('http') ? imageSrc : `${window.location.origin}${imageSrc}`;
-    
-    const foundIndex = allImages.findIndex(img => {
-      const normalizedImg = img.startsWith('http') ? img : `${window.location.origin}${img}`;
-      return normalizedImg === normalizedSrc;
-    });
-    
+    const normalizedSrc = normalizeImageSrc(imageSrc);
+
+    const foundIndex = allImages.findIndex(
+      (img) => normalizeImageSrc(img) === normalizedSrc
+    );
+
     const finalIndex = foundIndex !== -1 ? foundIndex : index;
-    
-    
+
     setCurrentImage(imageSrc);
     setCurrentImageIndex(finalIndex);
     setIsImageModalOpen(true);
@@ -144,7 +109,7 @@ const SessionDetail = () => {
       newIndex = (currentImageIndex - 1 + allImages.length) % allImages.length;
     }
 
-    
+
     setCurrentImageIndex(newIndex);
     setCurrentImage(allImages[newIndex]);
     setZoomLevel(1);
@@ -155,7 +120,7 @@ const SessionDetail = () => {
   const handleKeyDown = useCallback((e) => {
     if (!isImageModalOpen) return;
 
-    switch(e.key) {
+    switch (e.key) {
       case 'Escape':
         handleCloseModal();
         break;
@@ -213,10 +178,10 @@ const SessionDetail = () => {
 
   const handleMouseMove = (e) => {
     if (!isDragging || zoomLevel <= 1) return;
-    
+
     const newX = e.clientX - dragStart.x;
     const newY = e.clientY - dragStart.y;
-    
+
     setPosition({ x: newX, y: newY });
   };
 
@@ -267,8 +232,8 @@ const SessionDetail = () => {
 
           <div className="session-image-large">
             {session.image ? (
-              <img 
-                src={session.image} 
+              <img
+                src={session.image}
                 alt={`Sesja gry ${session.game}`}
                 className="session-image-real-large"
                 onClick={() => handleImageClick(session.image, 0)}
@@ -289,10 +254,10 @@ const SessionDetail = () => {
 
             <section className="full-content-section">
               <h2>Pełny opis sesji</h2>
-              <div 
-                className="full-content"
+              <div
                 ref={contentRef}
-                dangerouslySetInnerHTML={{ __html: session.fullContent || '<p>Pełny opis tej sesji wkrótce się pojawi...</p>' }}
+                onClick={handleContentClick}
+                dangerouslySetInnerHTML={{ __html: session.fullContent }}
               />
             </section>
 
@@ -316,12 +281,12 @@ const SessionDetail = () => {
 
       {/* Modal do powiększonego zdjęcia */}
       {isImageModalOpen && currentImage && (
-        <div 
+        <div
           className="image-modal-overlay"
           onClick={handleModalClick}
         >
           <div className="image-modal-content">
-            <button 
+            <button
               className="image-modal-close"
               onClick={handleCloseModal}
               title="Zamknij (ESC)"
@@ -332,7 +297,7 @@ const SessionDetail = () => {
             {/* Nawigacja strzałkami */}
             {allImages.length > 1 && (
               <>
-                <button 
+                <button
                   className="nav-button nav-button-prev"
                   onClick={(e) => {
                     e.stopPropagation();
@@ -342,7 +307,7 @@ const SessionDetail = () => {
                 >
                   ‹
                 </button>
-                <button 
+                <button
                   className="nav-button nav-button-next"
                   onClick={(e) => {
                     e.stopPropagation();
@@ -357,7 +322,7 @@ const SessionDetail = () => {
 
             {/* Kontrolki zoomu */}
             <div className="zoom-controls">
-              <button 
+              <button
                 onClick={(e) => {
                   e.stopPropagation();
                   setZoomLevel(prev => Math.max(prev - 0.25, 0.5));
@@ -367,7 +332,7 @@ const SessionDetail = () => {
                 −
               </button>
               <span className="zoom-level">{Math.round(zoomLevel * 100)}%</span>
-              <button 
+              <button
                 onClick={(e) => {
                   e.stopPropagation();
                   setZoomLevel(prev => Math.min(prev + 0.25, 3));
@@ -376,7 +341,7 @@ const SessionDetail = () => {
               >
                 +
               </button>
-              <button 
+              <button
                 onClick={(e) => {
                   e.stopPropagation();
                   setZoomLevel(1);
@@ -397,7 +362,7 @@ const SessionDetail = () => {
             )}
 
             {/* Zdjęcie z obsługą zoom i drag */}
-            <div 
+            <div
               className="image-container"
               onWheel={handleWheel}
               onMouseDown={handleMouseDown}
@@ -406,8 +371,8 @@ const SessionDetail = () => {
               onMouseLeave={handleMouseUp}
               style={{ cursor: zoomLevel > 1 ? (isDragging ? 'grabbing' : 'grab') : 'default' }}
             >
-              <img 
-                src={currentImage} 
+              <img
+                src={currentImage}
                 alt={`Powiększone zdjęcie z sesji`}
                 className="image-modal-image"
                 style={{
