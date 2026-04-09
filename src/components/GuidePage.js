@@ -2314,6 +2314,7 @@ const Guide9Content = () => {
               <div>
                 <h3>Oświeceni Lyry</h3>
                 <p>Oświecona rasa budująca świątynie.</p>
+                <p>Mają dobry start jeśli chodzi o planety początkowe, po jednej każdego typu. W trakcie walki mogą zużyć statek kolonizacji by przerzucić jedną kość. Posiadają technologię Osłon zniekształcających, które dają osłony -2 przeciw rakietom wszystkim statkom (nie wymaga montażu na statku). Jest to sytuacyjne, ale gdy już dojdzie do takiej sytuacji, to robi dużą różnicę.</p>
                 <p></p>
               </div>
             </div>
