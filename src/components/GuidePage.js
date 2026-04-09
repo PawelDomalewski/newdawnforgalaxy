@@ -2357,6 +2357,10 @@ const Guide9Content = () => {
               <img src="/images/races/octanis.jpg" className="guide-race"></img>
               <div>
                 <h3>Octanis</h3>
+                <p>Rasa mutująca by rozwijać swoje możliwości i zdolności.</p>
+                <p>Posiadają zdolność ewolucji. Mają pulę 5 żetonów, które mogą wykupić za pomocą czwartego surowca, mutagenu, który produkują. Robią to w akcji technologii zamiast kupowania technologii. Po kupieniu mutacji uzupełniają pulę żetonów, tak by zawsze mieć ich 5 do wyboru. Mogą zużyć statek kolonizacyjny by wymienić żeton z puli na losowy z woreczka z mutacjami.</p>
+                <p>Zdolność ewolucji jest bardzo dobra, choć Octanis mają raczej spokojny start, to wraz z upływem rund stają się silniejsi, dzięki mutacjom mogą stać się każdą inną rasą obcych lub nawet mieszanką innych ras. Mutacje mogą wzmocnić nasze akcje, np. pozwalają wykonać 3 aktywacje ruchu zamiast 2, są mutacje, które dają miejsce na kostkę populacji, zwiększając dochód, możliwości jest mnóstwo. Wszechstronne możliwości oraz mutacje dające punkty to mocne strony tej rasy.</p>
+                <p>Rasa dla zdecydowanie zaawansowanych graczy, którzy posiadają dobre zrozumienie gry i jej mechanik.</p>
               </div>
             </div>
           </div>
@@ -2367,7 +2371,10 @@ const Guide9Content = () => {
               <img src="/images/races/dorado.jpg" className="guide-race"></img>
               <div>
                 <h3>Shaperzy z Dorado</h3>
-
+                <p>Rasa posiadająca zdolność zniekształcania czasu.</p>
+                <p>Startują z mocną technologią Soltion Cannon, która może wystarczyć nawet do końca gry, jeśli chodzi o uzbrojenie statków. Statki posiadają jedno miejsce mniej na żeton upgradu, ale za to mają 5 energii poza schematem.</p>
+                <p>Dorado posiadają zdolność zniekształcania czasu, która pozwalają im zyskać różne rzeczy w obecnej rundzie, a zapłacić za nie w przyszłych rundach. Jeśli nie opłacą tego, to dostają minusowe punkty, jednak za opłacony żeton jest +1 pkt. Startują pulą 2 żeton zniekształcenia czasu i co rundę mogą dolosować do puli maksymalnie jeden żeton. Sama pula może miec maksymalnie 3 żetony. Mogą zyżyć statek kolonizacyjny by wymienić jeden z żetonów w puli na losowy z woreczka.</p>
+                <p>Zniekształcenia Czasu pozwalają uzyskać im dużą przewagę w odpowiednim momencie, a dopiero potem zapłacić za nią, to bardzo dobra zdolność.</p>
               </div>
             </div>
           </div>
