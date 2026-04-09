@@ -27,7 +27,7 @@
 }
 
 .guide-header {
-  padding: 3rem;
+  padding: 3rem !important;
   background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   text-align: center;
@@ -90,7 +90,8 @@
   margin-top: 1rem;
 }
 
-.guide-race-intro li::marker {
+.guide-race-intro li::marker,
+.race-list li::marker {
   color: var(--btn-clr-hover);
 }
 
@@ -102,6 +103,21 @@
   transition: 500ms;
   border: 2px solid var(--btn-clr-hover);
 }
+
+.race-list a {
+  text-decoration: none;
+  width: 100%;
+}
+
+.race-list li {
+  width: 100%;
+}
+
+.race-list a:hover {
+  color: var(--btn-clr-hover);
+  border-bottom: 1px solid var(--btn-clr-hover);
+}
+
 
 @media (max-width: 764px) {
   .guide-race-intro {

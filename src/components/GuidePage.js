@@ -2133,18 +2133,37 @@ const Guide9Content = () => {
         </div>
       </div>
 
-      <div className="guide-intro">
-        <p></p>
-        <div className="guide-note">
-          <strong>Lorem ipsum</strong>
-        </div>
+      <div className="guide-intro race-list">
+        <h3>Rasy podstawowe</h3>
+        <ul>
+          <li><a href="#ludzie">Ludzie</a></li>
+          <li><a href="#planta">Planta</a></li>
+          <li><a href="#mechanema">Mechanema</a></li>
+          <li><a href="#orion">Hegemonia Oriona</a></li>
+          <li><a href="#eridani">Imperium Eridani</a></li>
+          <li><a href="#hydran">Postępowi Hydranie</a></li>
+          <li><a href="#draco">Potomkowie Draco</a></li>
+        </ul>
+        <h3>Rasy Rise of the Ancients</h3>
+        <ul>
+          <li><a href="#magellan" className="">Magellan</a></li>
+          <li><a href="#exiles" className="">Wygnańcy</a></li>
+          <li><a href="#rhoindi" className="">Syndykat Rho Indi</a></li>
+          <li><a href="#lyra" className="">Oświeceni Lyry</a></li>
+        </ul>
+        <h3>Rasy Shadow of the Rift</h3>
+        <ul>
+          <li><a href="#octanis" className="">Octanis</a></li>
+          <li><a href="#dorado" className="">Shaperzy z Dorado</a></li>
+          <li><a href="#pyxis" className="">Jedność Pyxis</a></li>
+        </ul>
       </div>
 
       <div className="guide-chapters">
         {/* Dlaczego warto walczyć? */}
         <div className="guide-chapter">
           <h3>Rasy podstawowe</h3>
-          <div className="guide-content">
+          <div className="guide-content" id="ludzie">
             <div className="guide-race-intro">
               <img src="/images/races/terranie.jpg" className="guide-race"></img>
               <div>
@@ -2165,7 +2184,7 @@ const Guide9Content = () => {
 
         {/* Z kim się uczyć walczyć? */}
         <div className="guide-chapter">
-          <div className="guide-content">
+          <div className="guide-content" id="planta">
             <div className="guide-race-intro">
               <img src="/images/races/planta.jpg" className="guide-race"></img>
               <div>
@@ -2178,7 +2197,7 @@ const Guide9Content = () => {
           </div>
         </div>
         <div className="guide-chapter">
-          <div className="guide-content">
+          <div className="guide-content" id="mechanema">
             <div className="guide-race-intro">
               <img src="/images/races/mechanema.jpg" className="guide-race"></img>
               <div>
@@ -2193,7 +2212,7 @@ const Guide9Content = () => {
           </div>
         </div>
         <div className="guide-chapter">
-          <div className="guide-content">
+          <div className="guide-content" id="orion">
             <div className="guide-race-intro">
               <img src="/images/races/orion.jpg" className="guide-race"></img>
               <div>
@@ -2212,7 +2231,7 @@ const Guide9Content = () => {
           </div>
         </div>
         <div className="guide-chapter">
-          <div className="guide-content">
+          <div className="guide-content" id="eridani">
             <div className="guide-race-intro">
               <img src="/images/races/eridani.jpg" className="guide-race"></img>
               <div>
@@ -2226,7 +2245,7 @@ const Guide9Content = () => {
           </div>
         </div>
         <div className="guide-chapter">
-          <div className="guide-content">
+          <div className="guide-content" id="hydran">
             <div className="guide-race-intro">
               <img src="/images/races/hydran.jpg" className="guide-race"></img>
               <div>
@@ -2241,7 +2260,7 @@ const Guide9Content = () => {
           </div>
         </div>
         <div className="guide-chapter">
-          <div className="guide-content">
+          <div className="guide-content" id="draco">
             <div className="guide-race-intro">
               <img src="/images/races/draco.jpg" className="guide-race"></img>
               <div>
@@ -2262,7 +2281,7 @@ const Guide9Content = () => {
           <div className="guide-intro">
             <p>Rasy z pierwszego dodatku do Eclipse. Posiadają własne, unikalne mechaniki, dlatego sugerowane są dla nieco bardziej doświadczonych graczy.</p>
           </div>
-          <div className="guide-content">
+          <div className="guide-content" id="magellan">
             <div className="guide-race-intro">
               <img src="/images/races/magellan.jpg" className="guide-race"></img>
               <div>
@@ -2277,7 +2296,7 @@ const Guide9Content = () => {
           </div>
         </div>
         <div className="guide-chapter">
-          <div className="guide-content">
+          <div className="guide-content" id="exiles">
             <div className="guide-race-intro">
               <img src="/images/races/exiles.jpg" className="guide-race"></img>
               <div>
@@ -2292,7 +2311,7 @@ const Guide9Content = () => {
           </div>
         </div>
         <div className="guide-chapter">
-          <div className="guide-content">
+          <div className="guide-content" id="rhoindi">
             <div className="guide-race-intro">
               <img src="/images/races/rhoindi.jpg" className="guide-race"></img>
               <div>
@@ -2308,14 +2327,22 @@ const Guide9Content = () => {
           </div>
         </div>
         <div className="guide-chapter">
-          <div className="guide-content">
+          <div className="guide-content" id="lyra">
             <div className="guide-race-intro">
               <img src="/images/races/lyra.jpg" className="guide-race"></img>
               <div>
                 <h3>Oświeceni Lyry</h3>
                 <p>Oświecona rasa budująca świątynie.</p>
                 <p>Mają dobry start jeśli chodzi o planety początkowe, po jednej każdego typu. W trakcie walki mogą zużyć statek kolonizacji by przerzucić jedną kość. Posiadają technologię Osłon zniekształcających, które dają osłony -2 przeciw rakietom wszystkim statkom (nie wymaga montażu na statku). Jest to sytuacyjne, ale gdy już dojdzie do takiej sytuacji, to robi dużą różnicę.</p>
-                <p></p>
+                <p>Na koniec każdej rundy, po fazie Walki, a przed fazą Rozliczenia, mogą zbudować jedną świątynię. Muszą wtedy opłacić koszt świątyni i położyć na planecie w odpowiednim kolorze. Jest łącznie 9 świątyń, które można podzielić wg kosztu. tj: trzy różne świątynie o koszcie 2, o koszcie 4 i o koszcie 6.</p>
+                <p>Zbudowanie jednego zestawu 3 różnych świątyń o tym samym koszcie daje nam bonusowy żeton.</p>
+                <ul>
+                  <li>Zestaw o koszcie 2 - Technologię Wormhole Generator</li>
+                  <li>Zestaw o koszcie 4 - Dodatkowy, purpurowy dysk wpływów</li>
+                  <li>Zestaw o koszcie 6 - 3 punkty</li>
+                </ul>
+                <p>Każda świątynia na kontrolowanym przez nas heksie, daje 1 punkt na koniec gry.</p>
+                <p>Rasa dla zaawansowanych graczy, którzy lubią planować mocno na przód i powoli, konsekwentnie realizować swoje cele.</p>
               </div>
             </div>
           </div>
@@ -2325,7 +2352,7 @@ const Guide9Content = () => {
           <div className="guide-intro">
             <p>Rasy z drugiego dodatku do Eclipse. Posiadają własne, unikalne mechaniki, wymagające dobrej znajomości mechanik gry, dlatego sugerowane są dla bardzo doświadczonych graczy.</p>
           </div>
-          <div className="guide-content">
+          <div className="guide-content" id="octanis">
             <div className="guide-race-intro">
               <img src="/images/races/octanis.jpg" className="guide-race"></img>
               <div>
@@ -2335,7 +2362,7 @@ const Guide9Content = () => {
           </div>
         </div>
         <div className="guide-chapter">
-          <div className="guide-content">
+          <div className="guide-content" id="dorado">
             <div className="guide-race-intro">
               <img src="/images/races/dorado.jpg" className="guide-race"></img>
               <div>
@@ -2346,7 +2373,7 @@ const Guide9Content = () => {
           </div>
         </div>
         <div className="guide-chapter">
-          <div className="guide-content">
+          <div className="guide-content" id="pyxis">
             <div className="guide-race-intro">
               <img src="/images/races/pyxis.jpg" className="guide-race"></img>
               <div>
