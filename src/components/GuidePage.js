@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import './GuidePage.css';
+import '../pages/Rules.css';
 
 const GuidePage = () => {
   const { guideId } = useParams();
@@ -103,8 +104,20 @@ const GuidePage = () => {
       content: "full",
       image: "/images/learn.png",
       excerpt: "Z czasem towarzyszyłem wielu graczom w ich krzywych uczenia się w Eclipse. Ten poradnik pokazuje typowe etapy rozwoju umiejętności - od pierwszej gry przez wczesne nieporozumienia, aż do zaawansowanych strategii i mistrzostwa w grze."
+    },
+    '9': {
+      id: 9,
+      title: "Wybór rasy - praktyczny przewodnik",
+      description: "Opis mocnych i słabych stron z każdej z ras",
+      author: "Paweł",
+      source: "https://eclipsegalaxy.netlify.app",
+      sourceName: "Eclipse Galaxy",
+      difficulty: 2,
+      content: "full",
+      image: "/images/raceguide.webp",
+      excerpt: ""
     }
-  
+
   };
 
   const guide = guidesData[guideId];
@@ -168,6 +181,8 @@ const renderGuideContent = (guideId) => {
   console.log('Rendering guide content for ID:', guideId); // Debug
 
   switch (guideId) {
+    case '9':
+      return <Guide9Content />
     case '1':
       return <Guide1Content />;
     case '2':
@@ -295,7 +310,7 @@ const Guide1Content = () => {
           </div>
         </div>
 
-       {/* Siódma runda */}
+        {/* Siódma runda */}
         <div className="guide-chapter">
           <h3> Siódma Runda, więc wchodzi Późna gra </h3>
           <div className="guide-content">
@@ -1181,9 +1196,9 @@ const Guide6Content = () => {
           <p><strong>Autor:</strong> Dymond Kyng</p>
           <p>
             <strong>Źródło:</strong>{' '}
-            <a 
-              href="https://boardgamegeek.com/thread/1361979/general-tech-strategy-by-race" 
-              target="_blank" 
+            <a
+              href="https://boardgamegeek.com/thread/1361979/general-tech-strategy-by-race"
+              target="_blank"
               rel="noopener noreferrer"
               className="guide-source-link"
             >
@@ -1494,7 +1509,7 @@ const Guide6Content = () => {
           <div className="guide-content">
             <div className="guide-summary">
               <h4>Kluczowe wnioski:</h4>
-              
+
               <div className="guide-grid">
                 <div className="guide-tip">
                   <h5>Większość ras</h5>
@@ -1556,7 +1571,7 @@ const Guide7Content = () => {
           <h3>🎯 Założenia poradnika</h3>
           <div className="guide-content">
             <p>Podczas gdy wiele z tych rad działa przy większości liczby graczy i kombinacji materiałów z dodatków, Twoje doświadczenie może się różnić w przypadku niektórych z nich. Dla celów poradnika zakładam, że używasz:</p>
-            
+
             <div className="guide-grid">
               <div className="guide-tip">
                 <h5>Gra</h5>
@@ -1626,7 +1641,7 @@ const Guide7Content = () => {
               <div className="guide-step">
                 <h4>Krok 1 - Decyzja o odrzuceniu</h4>
                 <p>Zdecyduj, czy chcesz odrzucić tego czwartego Starożytnego, czy nie. Wszystkie rasy mogą łatwo poradzić sobie z 3 Starożytnymi, niektóre nie mogą sobie pozwolić na radzenie sobie z czterema.</p>
-                
+
                 <div className="guide-grid">
                   <div className="guide-tip">
                     <h5>Gram Planta?</h5>
@@ -1669,9 +1684,9 @@ const Guide7Content = () => {
                 </div>
 
                 <div className="guide-note">
-                  <strong>Szanse walki:</strong><br/>
-                  • 2 krążowniki bez ulepszeń: 70% szans przeciw Starożytnemu<br/>
-                  • 2 krążowniki z tarczą Gaussa i ulepszonym kadłubem: 98% szans<br/>
+                  <strong>Szanse walki:</strong><br />
+                  • 2 krążowniki bez ulepszeń: 70% szans przeciw Starożytnemu<br />
+                  • 2 krążowniki z tarczą Gaussa i ulepszonym kadłubem: 98% szans<br />
                   • 1 krążownik ze wszystkimi trzema technologiami: 96% szans
                 </div>
               </div>
@@ -1702,7 +1717,7 @@ const Guide7Content = () => {
               <div className="guide-step">
                 <h4>Krok 6 - Ciesz się korzyściami</h4>
                 <p>Oprócz systemu macierzystego zyskujesz:</p>
-                
+
                 <div className="guide-grid">
                   <div className="guide-tip">
                     <h5>8 PV</h5>
@@ -1871,7 +1886,7 @@ const Guide8Content = () => {
           <h3>📈 Krzywa uczenia się - przegląd</h3>
           <div className="guide-content">
             <p>Zgrubnie sortuję etapy nauki na "Pierwszą Grę", "Wczesną Krzywą", "Środkową Krzywą" i "Wypłaszczenie".</p>
-            
+
             <div className="guide-grid">
               <div className="guide-tip">
                 <h5>Pierwsza Gra</h5>
@@ -2069,18 +2084,18 @@ const Guide8Content = () => {
             <div className="guide-conclusion">
               <h3>🎲 Refleksje końcowe</h3>
               <p>Mam nadzieję, że znajdziesz coś interesującego w tych rozmyślaniach i zastanawiam się:</p>
-              
+
               <div className="guide-questions">
                 <div className="guide-question">
                   <h5>Co sądzisz na ten temat?</h5>
                   <p>Czy to odpowiada Twojemu doświadczeniu w grze?</p>
                 </div>
-                
+
                 <div className="guide-question">
                   <h5>Gdzie umieściłbyś siebie lub swoją grupę na krzywej uczenia się?</h5>
                   <p>Czy rozpoznajesz któryś z tych etapów u siebie?</p>
                 </div>
-                
+
                 <div className="guide-question">
                   <h5>Na jakie inne tematy chciałbyś, żebym podzielił się przemyśleniami?</h5>
                   <p>Jakie aspekty Eclipse chciałbyś zgłębić?</p>
@@ -2090,6 +2105,303 @@ const Guide8Content = () => {
               <div className="guide-final-note">
                 <h4>🚀 Kontynuuj naukę!</h4>
                 <p>Pamiętaj, że każdy gracz rozwija się w swoim własnym tempie. Najważniejsze to cieszyć się grą i ciągle się uczyć!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const Guide9Content = () => {
+  return (
+    <div className="guide-article">
+      <div className="guide-article-header">
+        <div className="guide-credits">
+          <p><strong>Autor:</strong> Paweł</p>
+          <p>
+            <strong>Źródło:</strong>{' '}
+            <a
+              href="https://eclipsegalaxy.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="guide-source-link"
+            >
+              Eclipse Galaxy - Race Guide
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div className="guide-intro race-list">
+        <h3>Rasy podstawowe</h3>
+        <ul>
+          <li><a href="#ludzie">Ludzie</a></li>
+          <li><a href="#planta">Planta</a></li>
+          <li><a href="#mechanema">Mechanema</a></li>
+          <li><a href="#orion">Hegemonia Oriona</a></li>
+          <li><a href="#eridani">Imperium Eridani</a></li>
+          <li><a href="#hydran">Postępowi Hydranie</a></li>
+          <li><a href="#draco">Potomkowie Draco</a></li>
+        </ul>
+        <h3>Rasy Rise of the Ancients</h3>
+        <ul>
+          <li><a href="#magellan" className="">Magellan</a></li>
+          <li><a href="#exiles" className="">Wygnańcy</a></li>
+          <li><a href="#rhoindi" className="">Syndykat Rho Indi</a></li>
+          <li><a href="#lyra" className="">Oświeceni Lyry</a></li>
+        </ul>
+        <h3>Rasy Shadow of the Rift</h3>
+        <ul>
+          <li><a href="#octanis" className="">Octanis</a></li>
+          <li><a href="#dorado" className="">Shaperzy z Dorado</a></li>
+          <li><a href="#pyxis" className="">Jedność Pyxis</a></li>
+        </ul>
+      </div>
+
+      <div className="guide-chapters">
+        {/* Dlaczego warto walczyć? */}
+        <div className="guide-chapter">
+          <h3>Rasy podstawowe</h3>
+          <div className="guide-content" id="ludzie">
+            <div className="guide-race-intro">
+              <img src="/images/races/terranie.jpg" className="guide-race"></img>
+              <div>
+                <h3>Ludzie</h3>
+                <p>Wszechstronna rasa, z łatwością dostosowująca się do aktualnej sytuacji. Najważniejszą umiejętnością, jakiej potrzebują gracze w Eclipse, to bez wątpienia zdolność do adaptacji, dostosowywania się do aktualnej sytuacji na planszy. Analizowanie na bieżąco czy obrany kierunek strategiczny ma jeszcze sens. Rasa Ludzi nadaje się do tego idealnie.</p>
+                <p>Nie posiadają żadnych poważnych wad i ograniczeń, natomiast mają plusy, które nie można zignorować, tj.:</p>
+                <ul>
+                  <li>3 Aktywacje ruchu <br></br>Duża mobilność, której nie posiadają inne rasy, daje przewagę w działaniach militarnych</li>
+
+                  <li>Handel 2:1 <br></br>W połączeniu z trzema planetami startowymi, daje dużą elastyczność w początkowej fazie gry, gdy czasem może nam zabraknąć tego jednego punktu nauki lub surowca by wykonać kluczową akcję.</li>
+                </ul>
+                <p>Bardzo dobra rasa dla początkujących (wybacza błędy) oraz dla najbardziej doświadczonych (którzy zrobią użytek z elastyczności).<br></br>Wadą na pewno jest brak dodatkowych źródeł punktów.</p>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Z kim się uczyć walczyć? */}
+        <div className="guide-chapter">
+          <div className="guide-content" id="planta">
+            <div className="guide-race-intro">
+              <img src="/images/races/planta.jpg" className="guide-race"></img>
+              <div>
+                <h3>Planta</h3>
+                <p>Rasa, która szybko eksploruje kosmos. Ma świetną pozycję startową — po 4 z każdego zasobu oraz +3 co rundę na dzień dobry. Dodatkowo posiadają 4 statki kolonizacyjne, a więc są jedyną rasą, która może zająć 4 planety w pierwszej rundzie, bez odświeżania statków kolonizacyjnych za pomocą akcji Influence. Na koniec gry dostają też jeden dodatkowy punkt za każdy posiadany heks</p>
+                <p>Łatwi do zrozumienia, prości do grania i silni w dobrych rękach. Ich statki posiadają jedno miejsce na upgrade mniej, to eliminuje myśliwce z użycia (ciężko jest ułożyć coś sensownego), natomiast pancerniki są całkiem dobre, ponieważ posiadają komputer +1 i energię +2 poza schematem, co pozwala dobrze sobie radzić gdy nie mamy technologii energii, a zamontowanie komputera +2 daje łącznie +3 do trafienia. Dodać do tego fakt, że w drugiej rundzie mamy gwarancję na posiadanie 7 surowców, to daje nam możliwość już w drugiej rundzie zbudować pancernik i ruszyć na podbój.</p>
+                <p>Dobry wybór dla początkującego.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="guide-chapter">
+          <div className="guide-content" id="mechanema">
+            <div className="guide-race-intro">
+              <img src="/images/races/mechanema.jpg" className="guide-race"></img>
+              <div>
+                <h3>Mechanema</h3>
+                <p>Rasa specjalizująca się w budowie i ulepszeniach statków. Wszystkie statki są tańsze o 1 surowiec. Monolity kosztują 8 surowców zamiast 10, co daje potencjał na zbudowanie wielu monolitów, szczególnie, że w jednej akcji mogą zbudować aż trzy elementy.</p>
+                <p>Niestety startują z małą ilością (3) i przyrostem (+2) surowców, co nie pozwala w pełni od początku wykorzystać rabaty produkcyjne.</p>
+                <p>Posiadają bardzo dobrą technologię startową, Komputer Pozytronowy +2, dzięki czemu nie muszą się martwić o dostęp do technologii ułatwiających trafienie.</p>
+                <p>To w czym Mechanema błyszczy to szybkość upgrade'owania statków, trzy żetony w jednym ruchu. Dzięki temu można zaskoczyć przeciwnika szybką zmianą koncepcji statków i ten nie zdąży zareagować na to.</p>
+                <p>Rasa dla nieco bardziej zaawansowanych graczy, ale nadaje się też dla początkujących</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="guide-chapter">
+          <div className="guide-content" id="orion">
+            <div className="guide-race-intro">
+              <img src="/images/races/orion.jpg" className="guide-race"></img>
+              <div>
+                <h3>Hegemonia Oriona</h3>
+                <p>Rasa z mocnym startem militarnym. Startują z krążownikiem zamiast standardowego myśliwca. Zaczynają z 5 (+3) surowcami, co pozwala im już w pierwszej rundzie kupić drugi krążownik lub pancernik w drugiej rundzie.</p>
+                <p>Posiadają dwie, bardzo przydatne technologie startowe:</p>
+                <ul>
+                  <li>Bomby neutronowe <br></br>Niezbędna technologia w walce z innymi graczami</li>
+                  <li>Tarcze Gaussa -1 <br></br>Bardzo przydatna technologia do czyszczenia heksów ze Starożytnych</li>
+                </ul>
+                <p>Ich statki są jednymi z najmocniejszych na początku gry. Mają zamontowanie tarcze -1, dodatkową inicjatywę oraz dodatkową energię poza schematem, więc mogą bardzo szybko zacząć czyścić mapę.</p>
+                <p>Mają mocny start (statki, surowce) i końcówkę gry (dodatkowa energia i inicjatywa trudna do nadrobienia technologiami), ale słabszy środek gry, gdy znaczenie ma rozwój technologiczny i inne rasy mogą mieć moment przewagi technologicznej, którą mogą wykorzystać.</p>
+                <p>Ich słabym punktem jest natomiast handel 4:1, więc potencjalny błąd w obliczeniach ruchów może skończyć się tragicznie. Brak planety ekonomicznej na start, przez co mają mniej ruchów na początku.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="guide-chapter">
+          <div className="guide-content" id="eridani">
+            <div className="guide-race-intro">
+              <img src="/images/races/eridani.jpg" className="guide-race"></img>
+              <div>
+                <h3>Imperium Eridani</h3>
+                <p>Rasa dla zaawansowanych i ambitnych graczy. Posiadają trzy mocne i przydatne technologie startowe. 26 pieniędzy na start, losują dwa żetony reputacji przed rozpoczęciem gry.</p>
+                <p>Te wszystkie mocne plusy bledną wobec poważnej wady: brak dwóch dysków wpływów.</p>
+                <p>Oznacza to, że nawet mając dużo pieniędzy, może nam zabraknąć dysków by wykonać akcję, tak samo też nie będziemy mogli zająć tyle heksów co inni gracze. Dlatego ważne dla nich jest by grać wydajnie, zajmować tylko dobre heksy, wykorzystać początkową przewagę technologiczną, czyścić heksy ze Starożytnych. Dobrze jest też skorzystać z rozwinięć dających +12 nauki (szybkie kupno technologii dwóch dysków w pierwszej rundzie) lub surowców (budowa dwóch pancerników już w pierwszej rundzie)</p>
+                <p>Jedna z najtrudniejszych ras do grania, przeznaczona dla zaawansowanych graczy szukających wyzwań.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="guide-chapter">
+          <div className="guide-content" id="hydran">
+            <div className="guide-race-intro">
+              <img src="/images/races/hydran.jpg" className="guide-race"></img>
+              <div>
+                <h3>Postępowi Hydranie</h3>
+                <p>Rasa skupiająca się na rozwoju technologicznym.</p>
+                <p>Zaczynają mocną sytuacją jeśli chodzi o naukę, 5 pkt nauki na start i +4 przyrostu co rundę, do tego mogą kupować dwie technologie w jednej akcji. Technologie są niezwykle ważne w Eclipse, często decydują o wygranej lub przegranej. Hydranie są rasą, która ma szanse wypełnić wszystkie trzy tory technologii.</p>
+                <p>Mają słabą sytuację jeśli chodzi o początkowe surowce, tylko 2 i +2 przyrostu, dlatego każdy surowiec jest dla nich na wagę złota i nie mogą pozwolić sobie na stratę statku, szczególnie w początkowej fazie gry.</p>
+                <p>Z tego względu mają powolny start, ale gdy już się rozwiną stają się trudni do zatrzymania.</p>
+                <p>Rasa dobra dla każdego.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="guide-chapter">
+          <div className="guide-content" id="draco">
+            <div className="guide-race-intro">
+              <img src="/images/races/draco.jpg" className="guide-race"></img>
+              <div>
+                <h3>Potomkowie Draco</h3>
+                <p>Kumple Starożytnych</p>
+                <p>W akcji eksploracji biorą dwa heksy i wybierają jeden. Świetna cecha, pozwala im maksymalizować ilość statków starożytnych w galaktyce, a każdy statek Starożytny na koniec gry daje +1 pkt.</p>
+                <p>Możliwość zajmowania heksów Starożytnych bez walki z nimi pozwala szybko rozwinąć ekonomię, akcja Influence pozwoli też skraść takie heksy odkryte przez innych graczy.</p>
+                <p>Niestety Draco posiadają minusy mniej i bardziej oczywiste. Z oczywistych minusów, nie posiadają żadnej technologii startowej, mają co prawda 4 pkt nauki na start, ale wciąż będą musieli wykonać dużo akcji by nakupować technologii.</p>
+                <p>Z mniej oczywistych minusów, inni gracze będą chcieli zabić wszystkich Starożytnych, więc stajemy się dla nich oczywistym celem.<br></br> Tutaj może zajść też nietypowa sytuacja: Jeśli Draco będzie posiadał technologię Anty Bomby Neutronowe, a inny gracz zniszczy statki Starożytnych na naszym obszarze i nie uda mu się usunąć kostek populacji (czyli nie tracimy kontroli nad heksem) to grający Draco może wziąć żeton Odkrycia, który był pod Starożytnymi.</p>
+                <p>Rasa dobra dla każdego, szczególnie dla tych, którzy nie boją się ataków ze strony innych graczy.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="guide-chapter">
+          <h3>Rasy Rise of the Ancients</h3>
+          <div className="guide-intro">
+            <p>Rasy z pierwszego dodatku do Eclipse. Posiadają własne, unikalne mechaniki, dlatego sugerowane są dla nieco bardziej doświadczonych graczy.</p>
+          </div>
+          <div className="guide-content" id="magellan">
+            <div className="guide-race-intro">
+              <img src="/images/races/magellan.jpg" className="guide-race"></img>
+              <div>
+                <h3>Magellanie</h3>
+                <p>Ludzie na sterydach.</p>
+                <p>Przyzwoite zasoby startowe, dobry przyrost na rundę oraz dobra, uniwersalna technologia startowa, Energia 6, a to tylko początek zalet.</p>
+                <p>Najmocniejszą stroną Magellan jest możliwość "zużycia" statku kolonizacyjnego by uzyskać +1 pieniędzy, nauki lub surowca. To zapewnia dużą elastyczność, szczególnie w sytuacjach gdy dosłownie brakuje nam 1 nauki do kupna technologii. W środkowej fazie gry, gdy nie kolonizujemy zbyt wielu planet, zawsze wykorzystujemy wszystkie statki kolonizacyjne by dodać sobie to co akurat potrzebujemy. Świetna cecha.</p>
+                <p>Magellanie dostają 1 pkt za każdy żeton Odkrycia, który wykorzystali jako część statku bądź inny efekt, to też jest świetna cecha, która ułatwia nam wybór między 2 punktami a bonusem. Dodatkowo, gdy na jednym z torów technologii dojdą do 4 żetonów, otrzymują jednorazowo jeden żeton odkrycia.</p>
+                <p>Bardzo dobra, uniwersalna rasa, dobra i dla początkującego jak i dla doświadczonego.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="guide-chapter">
+          <div className="guide-content" id="exiles">
+            <div className="guide-race-intro">
+              <img src="/images/races/exiles.jpg" className="guide-race"></img>
+              <div>
+                <h3>Wygnańcy</h3>
+                <p>Rasa skupiająca się na budowie Orbitali.</p>
+                <p>Wygnańcy od początku gry mają dostęp do technologii budowania Orbitali oraz mają jeden zbudowany na heksie startowym, mogą zdecydować, czy skolonizować go jako planetę naukową czy ekonomiczną. Orbitale zastępują Bazy Gwiezdne. Mają dość skromny schemat i kosztują sporo, ale za to są niezniszczalne i póki mają kostkę populacji to są traktowane jako statek. Można mieć tylko jeden Orbital na heks. Za każdy zbudowany i kontrolowany Orbital Wygnańcy dostają +1 pkt.</p>
+                <p>Drugą technologią jaką posiadają to Urządzenie Maskujące, sprawia, że potrzeba dwóch statków by związać walką jeden statek Wygnańców. Dość dobra, rzadka technologia, daje przewagę przy manewrowaniu flotą.</p>
+                <p>Mają przyzwoitą ilość surowców na start, co pozwala im na wczesne budowanie kolejnych Orbitali</p>
+                <p>Rasa nie jest najłatwiejszą rasą do grania, zalecana raczej dla doświadczonych.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="guide-chapter">
+          <div className="guide-content" id="rhoindi">
+            <div className="guide-race-intro">
+              <img src="/images/races/rhoindi.jpg" className="guide-race"></img>
+              <div>
+                <h3>Syndykat Rho Indi</h3>
+                <p>Kosmiczni piraci.</p>
+                <p>Podobnie jak Hegemonia Oriona, posiadają mocny militarnie start. Posiadają dwa myśliwce zamiast jednego. Nie mogą budować pancerników, a ich krążowniki i myśliwce są droższe o 1 surowiec niż standardowo. Schematy ich statków natomiast mogą konkurować z Orionem. Mają dodatkową inicjatywę i osłony -1 poza schematem, to sprawia, że ich myśliwce są jednymi z najlepszych w grze.</p>
+                <p>Dużym plusem jest też posiadanie 4 aktywacji ruchu w jednej akcji, to oznacza, że posiadając całą flotę 8 myśliwców i 4 krążowników wystarczy im tylko 3 akcje by wszystkie statki przenieść. Dla porównania przy standardowych 2 aktywacjach przeniesienie takiej floty zajęłoby 6 akcji.</p>
+                <p>Kolejną ciekawą zdolnością jest "złomowanie" zniszczonych statków, po każdej walce zyskują pieniądze w ilości równej ilość losowanych żetonów reputacji minus 1, czyli maksymalnie 4 pieniędzy na heks. Zgrywa się to dobrze z kolejnym plusem Rho Indi czyli wymianą pieniędzy (i tylko ich) w stosunku 3 do 2. Innymi słowy walcząc i zyskując pieniądze mogą finansować swój rozwój technologiczny lub odbudowywać stracone statki.</p>
+                <p>Z wad, ich heks startowy jest warty 0 pkt, mają tylko dwa statki kolonizacyjne, tylko dwóch ambasadorów. To są rzeczy, które prowokują do agresywnej gry.</p>
+                <p>Rasa dla zaawansowanych graczy, lubiących grać agresywnie,</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="guide-chapter">
+          <div className="guide-content" id="lyra">
+            <div className="guide-race-intro">
+              <img src="/images/races/lyra.jpg" className="guide-race"></img>
+              <div>
+                <h3>Oświeceni Lyry</h3>
+                <p>Oświecona rasa budująca świątynie.</p>
+                <p>Mają dobry start jeśli chodzi o planety początkowe, po jednej każdego typu. W trakcie walki mogą zużyć statek kolonizacji by przerzucić jedną kość. Posiadają technologię Osłon zniekształcających, które dają osłony -2 przeciw rakietom wszystkim statkom (nie wymaga montażu na statku). Jest to sytuacyjne, ale gdy już dojdzie do takiej sytuacji, to robi dużą różnicę.</p>
+                <p>Na koniec każdej rundy, po fazie Walki, a przed fazą Rozliczenia, mogą zbudować jedną świątynię. Muszą wtedy opłacić koszt świątyni i położyć na planecie w odpowiednim kolorze. Jest łącznie 9 świątyń, które można podzielić wg kosztu. tj: trzy różne świątynie o koszcie 2, o koszcie 4 i o koszcie 6.</p>
+                <p>Zbudowanie jednego zestawu 3 różnych świątyń o tym samym koszcie daje nam bonusowy żeton.</p>
+                <ul>
+                  <li>Zestaw o koszcie 2 - Technologię Wormhole Generator</li>
+                  <li>Zestaw o koszcie 4 - Dodatkowy, purpurowy dysk wpływów</li>
+                  <li>Zestaw o koszcie 6 - 3 punkty</li>
+                </ul>
+                <p>Każda świątynia na kontrolowanym przez nas heksie, daje 1 punkt na koniec gry.</p>
+                <p>Rasa dla zaawansowanych graczy, którzy lubią planować mocno na przód i powoli, konsekwentnie realizować swoje cele.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="guide-chapter">
+          <h3>Rasy Shadow of the Rift</h3>
+          <div className="guide-intro">
+            <p>Rasy z drugiego dodatku do Eclipse. Posiadają własne, unikalne mechaniki, wymagające dobrej znajomości mechanik gry, dlatego sugerowane są dla bardzo doświadczonych graczy.</p>
+          </div>
+          <div className="guide-content" id="octanis">
+            <div className="guide-race-intro">
+              <img src="/images/races/octanis.jpg" className="guide-race"></img>
+              <div>
+                <h3>Octanis</h3>
+                <p>Rasa mutująca by rozwijać swoje możliwości i zdolności.</p>
+                <p>Posiadają zdolność ewolucji. Mają pulę 5 żetonów, które mogą wykupić za pomocą czwartego surowca, mutagenu, który produkują. Robią to w akcji technologii zamiast kupowania technologii. Po kupieniu mutacji uzupełniają pulę żetonów, tak by zawsze mieć ich 5 do wyboru. Mogą zużyć statek kolonizacyjny by wymienić żeton z puli na losowy z woreczka z mutacjami.</p>
+                <p>Zdolność ewolucji jest bardzo dobra, choć Octanis mają raczej spokojny start, to wraz z upływem rund stają się silniejsi, dzięki mutacjom mogą stać się każdą inną rasą obcych lub nawet mieszanką innych ras. Mutacje mogą wzmocnić nasze akcje, np. pozwalają wykonać 3 aktywacje ruchu zamiast 2, są mutacje, które dają miejsce na kostkę populacji, zwiększając dochód, możliwości jest mnóstwo. Wszechstronne możliwości oraz mutacje dające punkty to mocne strony tej rasy.</p>
+                <p>Rasa dla zdecydowanie zaawansowanych graczy, którzy posiadają dobre zrozumienie gry i jej mechanik.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="guide-chapter">
+          <div className="guide-content" id="dorado">
+            <div className="guide-race-intro">
+              <img src="/images/races/dorado.jpg" className="guide-race"></img>
+              <div>
+                <h3>Shaperzy z Dorado</h3>
+                <p>Rasa posiadająca zdolność zniekształcania czasu.</p>
+                <p>Startują z mocną technologią Soltion Cannon, która może wystarczyć nawet do końca gry, jeśli chodzi o uzbrojenie statków. Statki posiadają jedno miejsce mniej na żeton upgradu, ale za to mają 5 energii poza schematem.</p>
+                <p>Dorado posiadają zdolność zniekształcania czasu, która pozwalają im zyskać różne rzeczy w obecnej rundzie, a zapłacić za nie w przyszłych rundach. Jeśli nie opłacą tego, to dostają minusowe punkty, jednak za opłacony żeton jest +1 pkt. Startują pulą 2 żeton zniekształcenia czasu i co rundę mogą dolosować do puli maksymalnie jeden żeton. Sama pula może mieć maksymalnie 3 żetony. Mogą zużyć statek kolonizacyjny by wymienić jeden z żetonów w puli na losowy z woreczka.</p>
+                <p>Zniekształcenia Czasu pozwalają uzyskać im dużą przewagę w odpowiednim momencie, a dopiero potem zapłacić za nią, to bardzo dobra zdolność.</p>
+                <p>Rasa dla doświadczonych graczy, znających mechanikę gry i jej zależności.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="guide-chapter">
+          <div className="guide-content" id="pyxis">
+            <div className="guide-race-intro">
+              <img src="/images/races/pyxis.jpg" className="guide-race"></img>
+              <div>
+                <h3>Jedność Pyxis</h3>
+                <p>Rasa nanorobotów, przekształcająca wszystko w transmaterię.</p>
+                <p>Startują z technologią Advanced Robotics, dającą dysk wpływów, bardzo dobra technologia. Dzięki niej dopiero przy trzeciej akcji musimy płacić koszt. Zamiast standardowych pieniędzy, nauki i surowców używają Transmaterii. Zaczynają z 8 punktami transmaterii i produkują +6 co rundę.</p>
+                <p>Transmaterią płacą za wszystko: za akcje, za technologię i za statki. Posiadają tylko dwa statki kolonizacyjne, ale 4 akcje z 6 odświeżają jeden statek. Myśliwce kosztują 2 transmaterii, krążowniki 4. W ramach akcji Build mogą połączyć dwa statki tego samego typu by uzyskać jeden statek wyższego typu, przy każdej takiej zmianie ponosimy koszt 1 transmaterii, można też większy statek zamienić na dwa mniejsze płacąc taki sam koszt. Po połączeniu dwóch pancerników uzyskujemy Księżyc Śmierci - zastępuje on Bazę Gwiezdną i nie wymaga technologii, ma specjalny schemat i w przeciwieństwie do Baz Gwiezdnych może się poruszać. Każdy Księżyc Śmierci na koniec gry daje 4 punkty.</p>
+                <p>Posiadają niestandardowe akcje:</p>
+                <ul>
+                  <li><b>Research i Upgrade</b> - kupno technologii i położenie jednego żetonu upgradu na statek, można wykonać w dowolnej kolejności, jeśli najpierw kupimy technologię, to przy upgrade możemy skorzystać z niej.</li>
+                  <li><b>Build i Upgrade</b> - zbuduj maksymalnie dwa statki/struktury, dokonaj jednego upgradu. W ramach Build możesz dowolną ilość razy połączyć/rozdzielić statki, płacąc za każdym razem 1 transmaterii (Dotyczy to wszystkich akcji Build). Odśwież jeden statek kolonizacyjny.</li>
+                  <li><b>Explore i Upgrade</b> - eksploruj jeden heks, dokonaj jednego upgradu statku. Odśwież jeden statek kolonizacyjny.</li>
+                  <li><b>Explore i Move</b> - eksploruj jeden heks, aktywuj jeden statek by nim poruszyć. Odśwież jeden statek kolonizacyjny.</li>
+                  <li><b>Build i Influence</b> - zbuduj jeden statek/strukturę, połóż/zabierz jeden dysk wpływów. Odśwież jeden statek kolonizacyjny.</li>
+                  <li><b>Build i Move</b> - zbuduj jeden statek/strukturę, dwie aktywacje ruchu.</li>
+                </ul>
+                <p>W ramach akcji możemy decydować w jakiej kolejności ją wykonamy, nie możemy tylko rozdzielać jednej akcji na dwa razy, tj.: Nie możemy w akcji BUI i MOV aktywować jeden statek, zbudować i potem aktywować drugi statek, jeśli robimy Move to musimy zrobić wszystkie aktywacje, a potem dopiero Build, to tak przykładowo.</p>
+                <p>Wadą tej rasy jest powolne upgradowanie statków, by położyć trzy żetony potrzebujemy aż trzech akcji, więc wymaga to bardzo dobrego planowania ruchów. Kolejną wadą jest to, że jeśli zbankrutują na koniec rundy, to będą w bardzo ciężkiej sytuacji, nie mogą skorzystać z taktycznego bankructwa.</p>
+                <p>Rasa dla najbardziej doświadczonych graczy, którzy dobrze rozumieją grę i planują naprzód.</p>
               </div>
             </div>
           </div>

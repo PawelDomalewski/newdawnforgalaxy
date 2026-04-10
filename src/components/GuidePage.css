@@ -80,6 +80,56 @@
   text-align: center;
 }
 
+.guide-race-intro {
+  display: flex;
+  align-items: top;
+  gap: 10px;
+}
+
+.guide-race-intro p {
+  margin-top: 1rem;
+}
+
+.guide-race-intro li::marker,
+.race-list li::marker {
+  color: var(--btn-clr-hover);
+}
+
+.guide-race {
+  border-radius: 25px;
+  width: auto;
+  max-height:400px;
+  object-fit: cover;
+  transition: 500ms;
+  border: 2px solid var(--btn-clr-hover);
+}
+
+.race-list a {
+  text-decoration: none;
+  width: 100%;
+}
+
+.race-list li {
+  width: 100%;
+}
+
+.race-list a:hover {
+  color: var(--btn-clr-hover);
+  border-bottom: 1px solid var(--btn-clr-hover);
+}
+
+
+@media (max-width: 764px) {
+  .guide-race-intro {
+    flex-direction: column;
+  }
+  .guide-race {
+    max-height: auto;
+    max-width: 150px;
+  }
+}
+
+
 
 /* Reszta stylów dla treści poradnika (guide-article, guide-chapter, itd.) */
 /* Możesz przenieść tutaj wszystkie style z poprzedniej wersji poradników */
