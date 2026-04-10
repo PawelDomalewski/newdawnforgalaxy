@@ -2373,8 +2373,9 @@ const Guide9Content = () => {
                 <h3>Shaperzy z Dorado</h3>
                 <p>Rasa posiadająca zdolność zniekształcania czasu.</p>
                 <p>Startują z mocną technologią Soltion Cannon, która może wystarczyć nawet do końca gry, jeśli chodzi o uzbrojenie statków. Statki posiadają jedno miejsce mniej na żeton upgradu, ale za to mają 5 energii poza schematem.</p>
-                <p>Dorado posiadają zdolność zniekształcania czasu, która pozwalają im zyskać różne rzeczy w obecnej rundzie, a zapłacić za nie w przyszłych rundach. Jeśli nie opłacą tego, to dostają minusowe punkty, jednak za opłacony żeton jest +1 pkt. Startują pulą 2 żeton zniekształcenia czasu i co rundę mogą dolosować do puli maksymalnie jeden żeton. Sama pula może miec maksymalnie 3 żetony. Mogą zyżyć statek kolonizacyjny by wymienić jeden z żetonów w puli na losowy z woreczka.</p>
+                <p>Dorado posiadają zdolność zniekształcania czasu, która pozwalają im zyskać różne rzeczy w obecnej rundzie, a zapłacić za nie w przyszłych rundach. Jeśli nie opłacą tego, to dostają minusowe punkty, jednak za opłacony żeton jest +1 pkt. Startują pulą 2 żeton zniekształcenia czasu i co rundę mogą dolosować do puli maksymalnie jeden żeton. Sama pula może miec maksymalnie 3 żetony. Mogą zużyć statek kolonizacyjny by wymienić jeden z żetonów w puli na losowy z woreczka.</p>
                 <p>Zniekształcenia Czasu pozwalają uzyskać im dużą przewagę w odpowiednim momencie, a dopiero potem zapłacić za nią, to bardzo dobra zdolność.</p>
+                <p>Rasa dla doświadczonych graczy, znających mechanikę gry i jej zależności.</p>
               </div>
             </div>
           </div>
@@ -2385,7 +2386,7 @@ const Guide9Content = () => {
               <img src="/images/races/pyxis.jpg" className="guide-race"></img>
               <div>
                 <h3>Jedność Pyxis</h3>
-
+                <p>Rasa nanorobotów, przekształcająca wszystko transmaterię</p>
               </div>
             </div>
           </div>
