@@ -2387,7 +2387,8 @@ const Guide9Content = () => {
               <div>
                 <h3>Jedność Pyxis</h3>
                 <p>Rasa nanorobotów, przekształcająca wszystko transmaterię.</p>
-                <p></p>
+                <p>Startują z technologią Advanced Robotics, dającą dysk wpływów, bardzo dobra technologia. Dzięki niej dopiero przy trzeciej akcji musimy płacić koszt. Zamiast standardowych pieniędzy, nauki i surowców używają Transmaterii. Zaczynają z 8 punktami transmaterii i produkują +6 co rundę.</p>
+                <p>Transmaterią płacą za wszystko: za akcje, za technologię i za statki. Posiadają tylko dwa statki kolonizacyjne.</p>
               </div>
             </div>
           </div>
