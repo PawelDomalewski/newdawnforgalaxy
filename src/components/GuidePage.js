@@ -2386,7 +2386,8 @@ const Guide9Content = () => {
               <img src="/images/races/pyxis.jpg" className="guide-race"></img>
               <div>
                 <h3>Jedność Pyxis</h3>
-                <p>Rasa nanorobotów, przekształcająca wszystko transmaterię</p>
+                <p>Rasa nanorobotów, przekształcająca wszystko transmaterię.</p>
+                <p></p>
               </div>
             </div>
           </div>
