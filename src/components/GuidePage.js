@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import './GuidePage.css';
+import '../pages/Rules.css';
 
 const GuidePage = () => {
   const { guideId } = useParams();
@@ -2386,35 +2387,21 @@ const Guide9Content = () => {
               <img src="/images/races/pyxis.jpg" className="guide-race"></img>
               <div>
                 <h3>Jedność Pyxis</h3>
-                <p>Rasa nanorobotów, przekształcająca wszystko transmaterię.</p>
+                <p>Rasa nanorobotów, przekształcająca wszystko w transmaterię.</p>
                 <p>Startują z technologią Advanced Robotics, dającą dysk wpływów, bardzo dobra technologia. Dzięki niej dopiero przy trzeciej akcji musimy płacić koszt. Zamiast standardowych pieniędzy, nauki i surowców używają Transmaterii. Zaczynają z 8 punktami transmaterii i produkują +6 co rundę.</p>
-                <p>Transmaterią płacą za wszystko: za akcje, za technologię i za statki. Posiadają tylko dwa statki kolonizacyjne.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Zakończenie */}
-        <div className="guide-chapter">
-          <h3>🎲 Podsumowanie</h3>
-          <div className="guide-content">
-            <div className="guide-final-tip">
-              <h4>Pamiętaj:</h4>
-              <p>Poprawisz się tylko próbując, a najlepszy sposób na próbowanie to nie martwienie się porażką. Graj, przegrywaj, ucz się, wygrywaj.</p>
-            </div>
-
-            <div className="guide-tips-grid">
-              <div className="guide-tip-card">
-                <h5>🎯 Praktyka</h5>
-                <p>Nie bój się eksperymentować z różnymi taktykami</p>
-              </div>
-              <div className="guide-tip-card">
-                <h5>📚 Nauka</h5>
-                <p>Każda przegrana to lekcja na przyszłość</p>
-              </div>
-              <div className="guide-tip-card">
-                <h5>⚡ Adaptacja</h5>
-                <p>Dostosowuj strategię do sytuacji na planszy</p>
+                <p>Transmaterią płacą za wszystko: za akcje, za technologię i za statki. Posiadają tylko dwa statki kolonizacyjne, ale 4 akcje z 6 odświeżają jeden statek. Myśliwce kosztują 2 transmaterii, krażowniki 4. W ramach akcji Build mogą połączyć dwa statki tego samego typu by uzyskać jeden statek wyższego typu, przy każdej takiej zmianie ponosimy koszt 1 transmaterii, można też większy statek zamienić na dwa mniejsze płacąc taki sam koszt. Po połączeniu dwóch pancerników uzyskujemy Księżyc Śmierci - zastęuje on Bazę Gwiezdną i nie wymaga technologii, ma specjalny schemat i w przeciwieństwie do Baz Gwiezdnych może się poruszać. Każdy Księżyc Śmierci na koniec gry daje 4 punkty.</p>
+                <p>Posiadają niestandardowe akcje:</p>
+                <ul>
+                  <li><b>Research i Upgrade</b> - kupno technologii i położenie jednego żetonu upgradu na statek, można wykonać w dowolnej kolejności, jeśli najpierw kupimy technologię, to przy upgrade możemy skorzystać z niej.</li>
+                  <li><b>Build i Upgrade</b> - zbuduj maksymalnie dwa statki/struktury, dokonaj jednego upgradu. W ramach Build możesz dowolną ilość razy połączyć/rozdzielić statki, płacąc za każdym razem 1 transmaterii (Dotyczy to wszystkich akcji Build). Odśwież jeden statek kolonizacyjny.</li>
+                  <li><b>Explore i Upgrade</b> - eksploruj jeden heks, dokonaj jednego upgradu statku. Odśwież jeden statek kolonizacyjny.</li>
+                  <li><b>Explore i Move</b> - eksploruj jeden heks, aktywuj jeden statek by nim poruszyć. Odśwież jeden statek kolonizacyjny.</li>
+                  <li><b>Build i Influence</b> - zbuduj jeden statek/strukturę, połóż/zabierz jeden dysk wpływów. Odśwież jeden statek kolonizacyjny.</li>
+                  <li><b>Build i Move</b> - zbuduj jeden statek/strukturę, dwie aktywacje ruchu.</li>
+                </ul>
+                <p>W ramach akcji możemy decydować w jakiej kolejności ją wykonamy, nie możemy tylko rozdzielać jednej akcji na dwa razy, tj.: Nie możemy w akcji BUI i MOV aktywować jeden statek, zbudować i potem aktywować drugi statek, jeśli robimy Move to musimy zrobić wszystkie aktywacje, a potem dopiero Build, to tak przaykładowo.</p>
+                <p>Wadą tej rasy jest powolne upgradowanie statków, by położyć trzy żetony potrzebujemy aż trzech akcji, więc wymaga to bardzo dobrego planowania ruchów. Kolejną wadą jest to, że jeśli zbankrutują na koniec rundy, to będą w bardzo ciężkiej sytuacji, nie mogą skorzystać z taktycznego bankructwa.</p>
+                <p>Rasa dla najbardziej doświadczonych graczy, którzy dobrze rozumieją grę i planują naprzód.</p>
               </div>
             </div>
           </div>
