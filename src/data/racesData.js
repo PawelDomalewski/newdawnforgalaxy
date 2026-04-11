@@ -12,10 +12,10 @@ export const racesData = [
       brown: "3 (+3)"
     },
     difficulty: 1,
-    gamesPlayed: 3,
+    gamesPlayed: 4,
     firstPlaces: 0,
     secondPlaces: 0,
-    thirdPlaces: 2,
+    thirdPlaces: 3,
     fourthPlaces: 1,
     fifthPlaces: 0,
     sixthPlaces: 0
@@ -54,9 +54,9 @@ export const racesData = [
       brown: "3 (+2)"
     },
     difficulty: 2,
-    gamesPlayed: 4,
+    gamesPlayed: 5,
     firstPlaces: 1,
-    secondPlaces: 2,
+    secondPlaces: 3,
     thirdPlaces: 0,
     fourthPlaces: 1,
     fifthPlaces: 0,
@@ -117,11 +117,11 @@ export const racesData = [
       brown: "2 (+2)"
     },
     difficulty: 2,
-    gamesPlayed: 6,
+    gamesPlayed: 7,
     firstPlaces: 1,
     secondPlaces: 2,
     thirdPlaces: 3,
-    fourthPlaces: 0,
+    fourthPlaces: 1,
     fifthPlaces: 0,
     sixthPlaces: 1
   },
@@ -244,8 +244,8 @@ export const racesData = [
       mutagen: "4 (+2)"
     },
     difficulty: 4,
-    gamesPlayed: 2,
-    firstPlaces: 2,
+    gamesPlayed: 3,
+    firstPlaces: 3,
     secondPlaces: 0,
     thirdPlaces: 0,
     fourthPlaces: 0,
