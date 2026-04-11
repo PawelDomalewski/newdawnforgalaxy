@@ -1,7 +1,7 @@
 Gracz,Rasa,Hexy,Technologia,Reputacja,Ambasador,Odkrycia,Monolity,Anomalie + Straożytni,Rasowe Bonusy,Inne,Suma,Miejsce,Liczba Graczy,Data,Czas,Wygrany
 Natan,Magellanie,11,5,9,,,12,,4,,41,3,3,2024-09-07,4 Godz,Paweł D
 Paweł W,Lyra,14,5,13,,2,,,7,2,43,2,3,2024-09-07,,
-Paweł D,Octanis,17,1,18,,6,,1,11,,54,1,32024-09-07,,,
+Paweł D,Octanis,17,1,18,,6,,1,11,,54,1,3,2024-09-07,,
 Natan,Planta,23,2,10,,10,,1,10,5,61,1,3,2024-10-11,"3,5 Godz",Natan
 Paweł W,Draco,16,5,11,,6,,1,1,1,41,3,3,2024-10-11,,
 Paweł D,Hydranie,15,10,10,,8,,1,,,44,2,3,2024-10-11,,
@@ -32,9 +32,13 @@ Piotr G,Magellanie,6,8,,1,2,,,1,,18,5,6,2025-11-08,,
 Ania,Hydranie,15,6,10,,6,6,,,,43,1,6,2025-11-08,,
 Ola,Ludzie,16,1,8,2,2,,,,,29,3,6,2025-11-08,,
 Sylwia,Mechanema,3,5,10,,2,9,,,,29,2,6,2025-11-08,,
-Paweł D,Dorado,10,1,11,1,6,,1,8,,38,2,,2025-12-13,,
-Paweł W,Exiles,13,5,8,1,,9,,4,1,41,1,,2025-12-13,,
-Tymek,Ludzie,7,7,13,1,2,,,,,30,3,,2025-12-13,,
-Kacper,Orion,5,1,6,1,2,,,,,15,5,,2025-12-13,,
-Piotr,Hydranie,8,2,5,,,,,,-2,13,6,,2025-12-13,,
-Natan,Mechanema,8,3,10,,4,,,,,25,4,,2025-12-13,,
+Paweł D,Dorado,10,1,11,1,6,,1,8,,38,2,6,2025-12-13,"5,5",Paweł W
+Paweł W,Exiles,13,5,8,1,,9,,4,1,41,1,6,2025-12-13,"5,5",Paweł W
+Tymek,Ludzie,7,7,13,1,2,,,,,30,3,6,2025-12-13,"5,5",Paweł W
+Kacper,Orion,5,1,6,1,2,,,,,15,5,6,2025-12-13,"5,5",Paweł W
+Piotr,Hydranie,8,2,5,,,,,,-2,13,6,6,2025-12-13,"5,5",Paweł W
+Natan,Mechanema,8,3,10,,4,,,,,25,4,6,2025-12-13,"5,5",Paweł W
+Paweł D,Mechanema,11,5,13,,4,9,1,,,43,2,6,2026-04-11,,
+Kacper,Hydranie,14,6,8,,4,,1,,,33,4,6,2026-04-11,,
+Mateusz,Ludzie,10,5,12,,8,,,,,35,3,6,2026-04-11,,
+Natan,Octanis,10,6,10,,8,6,,8,-2,46,1,6,2026-04-12,,
