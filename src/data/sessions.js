@@ -201,10 +201,10 @@ export const sessions = [
     <p>Pierwsza runda jak to pierwsza runda, dużo eksploracji, mi udało się kupić Improved Hull, drugi Paweł natomiast miał szczęście i trafił na odkrycie pozwalające zmienić myśliwiec w pancernik, więc w pierwszej rundzie ruszył w składzie myśliwiec+pancernik na dwóch starożytnych, niestety poległ niszcząc jeden statek obcych.</p>
     <li><h3>Runda 3</h3></li>
     <img src="https://i.imgur.com/S54OSje.jpeg" class=""></img>
-    <p>Mając dużo surowców zbudowałem limit krążowników, uzbrojonych w IonCannon z komputerem +1, osłony i łącznie 5 pkt życia. Z takim składem ruszyłem na centrum, gdzie kiedyś przegrałem mając 96% na wygraną (3 krążowniki j/w vs. GDS). Paweł międzyczasie dokonał zemsty na starożytnych. Piotrek przyszykował się do ataku ale odłożył go na później.</p>
+    <p>Mając dużo surowców zbudowałem limit krążowników, uzbrojonych w IonCannon z komputerem +1, osłony i łącznie 5 pkt życia. Z takim składem ruszyłem na centrum, gdzie kiedyś przegrałem mając 96% na wygraną (3 krążowniki j/w vs. GDS). Paweł w międzyczasie dokonał zemsty na starożytnych. Piotrek przyszykował się do ataku ale odłożył go na później.</p>
     <li><h3>Runda 4</h3></li>
     <img src="https://i.imgur.com/XwTKL1S.jpeg" class=""></img>
-    <p>Ataki się powiodły. Exploracja trwa dalej. Ania zaczęła szykować się do ataku na starożytnych. Uformował się sojusz Flary (Pawełx2, Piotrek). Moimi krążownikami wsparłem sojuszników w walce z starożytnymi. Paweł nalegał bym przeszkodził Ani w walce ze starożytnymi, ale na ten moment Ania miała lepszy statek, więc nie chciałem tracić statku. Międzyczasie odkryłem Deep Portal, ale podbicie go nie zainteresowało nikogo aż do końca gry.</p>
+    <p>Ataki się powiodły. Exploracja trwa dalej. Ania zaczęła szykować się do ataku na starożytnych. Uformował się sojusz Flary (Pawełx2, Piotrek). Moimi krążownikami wsparłem sojuszników w walce z starożytnymi. Paweł nalegał bym przeszkodził Ani w walce ze starożytnymi, ale na ten moment Ania miała lepszy statek, więc nie chciałem tracić statku. W międzyczasie odkryłem Deep Portal, ale podbicie go nie zainteresowało nikogo aż do końca gry.</p>
     <p class="session-summary">Napięcie rośnie, uformował się pierwszy sojusz, Flara. Zaczyna robić się coraz ciasniej w galaktyce</p>
     <li><h3>Runda 5</h3></li>
     <img src="https://i.imgur.com/FRRskpE.jpeg" class=""></img>
@@ -368,7 +368,7 @@ export const sessions = [
     <img src="/images/sesje/13122025/15.webp"></img>
     </div>
     <h3>Burza nadeszła...</h3><p>
-    Kompletnie uszło mojej uwadze to, że Kacper w poprzedniej rundzie kupił technologię Wormhole Generator i ustawił swoje krążowniki tak, by teraz wlecieć na moje dwa heksy jednym ruchem. Manewr kompletnie mnie zaskoczył i złapał na opuszczonej gardzie. Choć to był dobry pomysł, ale moim zdaniem wykorzystany przeciwko nie temu graczowi, co trzeba, nie byłem faworytem do wygranej, więc to było kopanie leżącego. Sam Kacper powiedział, że raczej nie ma szans na jego wygraną, to trochę potrolluje. Dyskusyjne podejście. W dalszej części rundy Orion dobudował dwa krążowniki, jeden wysłał do pomocy na atak na tyły mojego imperium, a drugi miał samodzielnie zdobyć mój sektor w I kręgu, ale tu czekał na niego już Tymek ze swoim krążownikiem. Tymek wysłał też drugi krążownik przez moje imperium aż do heksa gdzie było dwóch Starożytnych. Natan skomentował to, że wciąż nie zbudowałem żadnego statku, czy zamierzam w ogóle się bronić bo chyba najwyższa pora. Spoko spoko, dobrze jest, kupiłem rzadką technologię Neutron Absorber, broniącą przed bombami neutronowymi. Mechanema międzyczasie wysłała krążownik na wolny heks za światem ojczystym. Po drugiej stronie galaktyki był spokój.<br><br>
+    Kompletnie uszło mojej uwadze to, że Kacper w poprzedniej rundzie kupił technologię Wormhole Generator i ustawił swoje krążowniki tak, by teraz wlecieć na moje dwa heksy jednym ruchem. Manewr kompletnie mnie zaskoczył i złapał na opuszczonej gardzie. Choć to był dobry pomysł, ale moim zdaniem wykorzystany przeciwko nie temu graczowi, co trzeba, nie byłem faworytem do wygranej, więc to było kopanie leżącego. Sam Kacper powiedział, że raczej nie ma szans na jego wygraną, to trochę potrolluje. Dyskusyjne podejście. W dalszej części rundy Orion dobudował dwa krążowniki, jeden wysłał do pomocy na atak na tyły mojego imperium, a drugi miał samodzielnie zdobyć mój sektor w I kręgu, ale tu czekał na niego już Tymek ze swoim krążownikiem. Tymek wysłał też drugi krążownik przez moje imperium aż do heksa gdzie było dwóch Starożytnych. Natan skomentował to, że wciąż nie zbudowałem żadnego statku, czy zamierzam w ogóle się bronić bo chyba najwyższa pora. Spoko spoko, dobrze jest, kupiłem rzadką technologię Neutron Absorber, broniącą przed bombami neutronowymi. Mechanema w międzyczasie wysłała krążownik na wolny heks za światem ojczystym. Po drugiej stronie galaktyki był spokój.<br><br>
 	  Straciłem dwa heksy z III kręgu, z powodu ataku Oriona. W sektorze z I kręgu natomiast stoczyła się walka 1vs1, którą wygrał Tymek, niestety dla niego, nie był w stanie zająć mojego heksu, bo nie udał mu się atak na populację. Stracił też krążownik w walce ze Starożytnymi, którzy wyszli z tego bez strat. Słabe efekty jak na tak śmiałe ruchy.</p>
     <li><h3>Runda 8</h3></li>
     <div>
@@ -430,7 +430,7 @@ export const sessions = [
     date: "2026-04-11",
     players: ["Paweł D", "Mateusz", "Natan", "Kacper"],
     rating: "4,5 godzin",
-    summary: "",
+    summary: "Wydawaj się słaby, gdy jesteś silny i silny, gdy jesteś słaby - Sun Tzu",
     image: "/images/sesje/110426/start.webp",
     tags: ["Akcja!"],
     fullContent: `<h3>Uczestnicy:</h3>
@@ -449,9 +449,9 @@ export const sessions = [
   <h3>W pierwszej rundzie pojawiło się sporo Starożytnych na mapie.</h3>
   <p>Ja grając białą Mechanemą, odkryłem heks na I i II kręgu, odkrywając statek Starożytnych, natomiast trafił mi się
     dobry heks na II kręgu, ponieważ zawierał planetę ekonomiczną i surowcową. Dzięki czemu wiedziałem, że uda mi się
-    zbudować pancernik w drugiej rundzie i zaatakować Starożytnego, po dwóch ruchach spasowałem by być pierwszy i móc
+    zbudować pancernik w drugiej rundzie i zaatakować Starożytnego, po dwóch ruchach spasowałem, by być pierwszy i móc
     kupić technologię Improved Hull.<br><br>
-    Kacper, grający niebieskimi Hydranami odkrywał dwa heksy, II i III krąg., bez starożytnych.<br><br>
+    Kacper, grający niebieskimi Hydranami, odkrywał dwa heksy, II i III krąg., bez starożytnych.<br><br>
     Mateusz (debiutant), grający czarnymi ludźmi, podobnie jak Kacper odkrył heks na II i III kręgu, w obu przypadkach
     trafił na Starożytnych.<br><br>
     Natan, grający czerwonymi Octanis, odkrył z kolei trzy heksy, po jednym na każdy krąg. W dwóch przypadkach trafił na
@@ -465,7 +465,7 @@ export const sessions = [
   </li>
   <img src="/images/sesje/110426/3.webp" loading="lazy" class=""></img>
   <h3>Dalsze eksploracje oraz pierwsza walka.</h3>
-  <p>Ja kupiłem technologię Improved Hull, którą wykorzystałem potem do Upgradu pancernika. Zbudowałem go i wysłałem w
+  <p>Kupiłem technologię Improved Hull, którą wykorzystałem potem do Upgradu pancernika. Zbudowałem go i wysłałem w
     towarzystwie myśliwca na heks ze Starożytnym.<br><br>
     Hydranie eksplorowali kolejne dwa heksy z III kręgu, wciąż nie napotykając Starożytnych, co jest bardzo dobrą
     sytuacją dla nich.<br><br>
@@ -478,7 +478,7 @@ export const sessions = [
   </li>
   <img src="/images/sesje/110426/4.webp" loading="lazy" class=""></img>
   <h3>Dalszy rozwój imperiów.</h3>
-  <p>Po podbiciu Starożytnych w poprzedniej rundy, miałem przestrzeń do dalszej eksploracji blisko centrum, gdzie
+  <p>Po podbiciu Starożytnych w poprzedniej rundzie, miałem przestrzeń do dalszej eksploracji blisko centrum, gdzie
     odkryłem podwójnych Starożytnych, heks ułożyłem tak by mieć później możliwość ataku na Świat Starożytnych, leżący
     między moim, a Natana imperium. Oprócz tego odkryłem heks z pojedynczym Starożytnym na II kręgu, między moim światem
     startowym, a Kacpra. Wysłałem mój pancernik na tego pojedynczego Starożytnego, ponieważ Ci podwójni sprawiali
@@ -501,7 +501,7 @@ export const sessions = [
     posiadał już komputer +2. Atak okazał się skuteczny i otworzył mi drogę do Świata Starożytnych.<br><br>
     Hydranie wybudowali pancernik i myśliwiec przy Świecie Starożytnych oraz heksie z pojedynczym Starożytnym, ten drugi
     heks był również obiektem zainteresowań Mateusza. Panowie zaczęli rozmowy dyplomatyczne. Uzgodnili, że Imperium
-    Ludzi zajmie się z pojedynczym Starożytnym. Kacper przystał na to, ponieważ bardziej interesował go Świat
+    Ludzi zajmie się pojedynczym Starożytnym. Kacper przystał na to, ponieważ bardziej interesował go Świat
     Starożytnych, nie był jeszcze gotowy do podbicia go, ale czynił już plany ku temu.<br><br>
     Mateusz zgodnie z umową zaatakował Starożytnych jednym pancernikiem. Atak się powiódł, granice między Hydranami, a
     Ludźmi zostały otwarte, ambasady zostały postawione, relacje zawarte.<br><br>
@@ -514,8 +514,8 @@ export const sessions = [
   </li>
   <img src="/images/sesje/110426/6.webp" loading="lazy" class=""></img>
   <h3>Galaktyka została oczyszczona z Starożytnych. Został tylko pojedynczy, przy granicy Octanis i Ludzi.</h3>
-  <p>Ja dobudowałem pancernik oraz dwa krążowniki i wysłałem dwa duże statki i jeden średni na Świat Starożytnych. Nie
-    było z czego zbierać. Międzyczasie wykupiłem technologię Advanced Economy, która poprawiła moją sytuację
+  <p>Dobudowałem pancernik oraz dwa krążowniki i wysłałem dwa duże statki i jeden średni na Świat Starożytnych. Nie
+    było z czego zbierać. W międzyczasie wykupiłem technologię Advanced Economy, która poprawiła moją sytuację
     finansową.<br><br>
     Kacper wysłał pancernik i myśliwiec na Świat Starożytnych i również wygrał, choć stracił mały statek. Zbankrutował
     też na dwóch heksach, by mieć więcej dysków wpływów na akcje w przyszłych rundach.<br><br>
@@ -537,145 +537,123 @@ export const sessions = [
     pancernik, który był na sąsiadującym heksie. Wygrana była formalnością.<br><br>
     Ludzie również zrobili eksploracje, dzięki czemu zyskali sektor z brązową planetą i żetonem reputacji, oprócz tego
     ulepszyli swoje krążowniki na przyszłość.<br><br>
-    Octanis po odbudowaniu straconego pancernika, zaatakowali ostatni heks ze Starożytnym na mapie. Dwa pancerniki bez
+    Octanis po odbudowaniu straconego pancernika zaatakowali ostatni heks ze Starożytnym na mapie. Dwa pancerniki bez
     problemu sobie poradzili. Galaktyka została oczyszczona ze wszelkiego zagrożenia ze strony Starożytnych.<br><br>
     Na ten moment sytuacja wygląda następująco:<br>
     <b>Mechanema</b> - 6 heksów, dwa pancerniki i dwa krążowniki, stabilna sytuacja, solidna flota i ekonomia.<br>
     <b>Hydranie</b> - 8 heksów, jeden pancernik i jeden myśliwiec, stabilna sytuacja, choć niewielka flota.<br>
     <b>Ludzie</b> - 7 heksów, dwa solidne pancerniki, solidna ekonomia.<br>
-    <Octanis< /b> - 7 heksów, dwa pancerniki, jeden myśliwiec. Warto zaznaczyć, że dzięki mutacji pancerniki kosztują 5
-      surowca, czyli może tanio odbudowywać statki. Poza ustabilizował sytuację ekonomiczną.<br><br>
-      Sytuacje jest więc dosyć wyrównana między graczami, każdy ma de facto takie same szanse na wygraną, wszystko
-      zależy od decyzji graczy.
+    <b>Octanis</b> - 7 heksów, dwa pancerniki, jeden myśliwiec. Warto zaznaczyć, że dzięki mutacji pancerniki kosztują 5
+    surowca, czyli może tanio odbudowywać statki. Poza ustabilizował sytuację ekonomiczną.<br><br>
+    Sytuacja jest więc dosyć wyrównana między graczami, każdy ma de facto takie same szanse na wygraną, wszystko
+    zależy od decyzji graczy.
   </p>
   <li>
     <h3>Runda 7</h3>
   </li>
-    <img src="/images/sesje/110426/8.webp"></img>
-    <h3>Sytuacja robi się napięta.</h3>
-    <p>
-      Przeniosłem moje statki bliżej centrum i rozważałem atak, podobnie Kacper zbudował dwa myśliwce i jeden pancernik
-      przy centrum, też rozważał pewnie atak na centrum. Mateusz zbudował dwa krążowniki w strategicznych punktach by
-      bronić wejścia do jego Imperium. Natan posiadał dwa pancerniki tuż przy centrum, więc teoretycznie też mógłby
-      zaatakować tam, ale miał na ten moment zbyt słabe statki (brak jakichkolwiek komputerów, ułatwiających
-      trafienie).<br><br>
-      Koniec końców nikt nie wleciał na GCDS, tylko gracze skupili się na rozwoju technologii i ulepszeniu statków.
-    </p>
-    <li>
-      <h3>Runda 8</h3>
-    </li>
-    <div>
-      <img src="/images/sesje/110426/9.webp"></img>
-      <img src="/images/sesje/110426/10.webp"></img>
-    </div>
-    <h3>Wybuchły wojny w galaktyce.</h3>
-    <p>Kacper zaatakował mnie pancernikiem i myśliwcem, ja w ramach obrony zbudowałem cztery myśliwce, Hydranie
-      dorzucili jeszcze trzy myśliwce, na to odpowiedziałem dosłaniem krążownika, a pancernikiem poleciałem dalej, na
-      ojczysty świat Hydran. Wiedziałem, że walkę przegram, więc chciałem przyblokować Kacpra by nie próbował wlecieć
-      głębiej w moje Imperium. Międzyczasie Mateusz zaatakował centrum dwoma pancernikami i dwoma krążownikami,wrzucił
-      wszystkie swoje siły na podbój. Hydranie wykorzystali to i wlecieli myśliwcem na jeden z przygranicznych heksów
-      Ludzi.<br><br>
-      I na to wszystko z uśmiechem patrzyli Octanis, będąc dogadani z Mechanemą o braku agresji, spokojnie się rozwijali
-      z dala od oczu świata.<br><br>
-      Kacprowi udało się wygrać walkę ze mną, ale stracił przy tym dwa myśliwce. Z powodu braku dysków wpływu, nie
-      przejął sektora po Ludziach. Ja przejąłem świat macierzysty Kacpra. Mateuszowi z kolei udało się wygrać walkę o
-      centrum, ale stracił przy tym jeden krążownik.
-    </p>
-    <li>
-      <h3>Runda 9</h3>
-    </li>
-    <div>
-      <img src="/images/sesje/110426/24.webp"></img>
-      <img src="/images/sesje/ 110426/25.webp"></img>
-      <img src="/images/sesje/110426/29.webp"></img>
-    </div>
-    <img src="/images/sesje/110426/30.webp" loading="lazy" class="img-head"></img>
-    <h3>"- This is madness... - Madness? No. This is ECLIPSEEE!!"</h3>
-    <p>
-      Zasugerowałem Kacprowi by wycofał się z moich rejonów i skupił swoją uwagę na innych graczach, którzy mogą mieć
-      większe szanse na wygraną. Zgodził się i wycofał się, więc wymieniliśmy się ambasodorami, co zaskoczyło
-      niektórych. W końcu Kacper od dwóch rund atakował mnie, ale nie chciałem żywić urazę, bo w żaden sposób by to nie
-      poprawiło mojej sytuacji. Wybudowałem dwa myśliwce z nadzieją na jakąś okazję i nie broniony heks, lub też do
-      pomocy przy wiązaniu walką w razie czego.<br><br>
-      Przystąpiłem do analizy sytuacji na planszy. Paweł W z Tymkiem mieli wyraźnie lepszą pozycję, Tymek nieco bardziej
-      widoczną, ale Exiles mimo, że mieli tylko 4 heksy to jednak każdy z nich był wart conajmniej 5 punktów dla Pawła,
-      a jego domowy heks nawet 7 punktów. To jest 22 punkty leżące na mapie. To bardzo dużo. Zachęciłem więc Piotra by
-      zaatakował Exiles, co uczynił, wysłał wszystko co miał na ich dwa heksy i to był początek lawiny ruchów i
-      manewrów, pozycje statków nie ustannie się zmieniały. W pewnym momencie ja, Natan, Piotr i Kacper namawialiśmy
-      Tymka by zaatakował Pawła W na jego dwa słabo bronione heksy, warte łącznie 11 punktów, ale nie dał się przekonać,
-      ja sam nie miałem jak się przedostać do Pawła W by go zaatakować, niestety.<br><br>
-      Statki latały w te i wewte. Ostatecznie na koniec rundy przed fazą walki sytuacja wyglądała następująco:<br><br>
-      Dorado - zaatakowałem pancernikiem heks z dwoma Starożytnymi, by zdobyć heks wart 2 punkt oraz żeton odkrycia o
-      takiej samej wartości, oprócz tego zaatakowałem jeden heksów z I kręgu należący do Tymka, mój pancernik i
-      myśliwiec vs myśliwiec i krążownik Ludzi<br><br>
-      Mechanema - Natan zaatakował dwoma krążownikami i jednym pancernikiem centrum trzymane przez Tymka i bronione
-      jednym krążownikiem. Musiał się jednak bronić przed pancernikiem i krążownikiem Tymka atakującym jego heks na I
-      kręgu, bronił się pancernikiem i myśliwcem. Ale to nie koniec! Piotr zaatakował świat domowy Mechanemy jednym
-      krążownikiem, więc tu była walka krążownik vs krążownik. Ale Natan nie pozostał mu dłużny, zaatakował go jednym
-      krążownikiem na heksie, który kiedyś należał do Roju, tutaj dołączyli też Exiles, więc była walka krążownik Natana
-      vs myśliwiec Pawła W, a na wygranego czekała walka z dwoma myśliwcami Hydran.<br><br>
-      Exiles i Hydran - tu walka była zacięta, Piotr zaatakował dwa heksy Pawła W, na heksie A mieliśmy skład: Hydranie
-      - Pancernik, krążownik, myśliwiec vs Exiles - 5 myśliwców, orbital i krążownik. Na heksie B była walka między
-      pancernikiem, dwoma krązownikami i myśliwcem Piotra, a pancernikiem, dwoma krążownikami i dwoma myśliwcami Pawła
-      W. Oprócz tego Exiles wysłali jeden pancernik do świata macierzystego Hydran, gdzie mieli tylko jeden myśliwiec do
-      obrony.<br><br>
-      Orion i Ludzie - Kacper zaatakował trzema krążownikami w trzech różnych miejscach, dwa heksy Tymka, z czego jeden
-      broniony pojedynczym myśliwcem, oraz jeden heks Natana, który był bez obrony. Łącznie Ludzie zostali zaatakowani
-      na 4 sektorach, a sami zaatakowali 1 heks.<br><br>
-      Rezultat walk? Orion i Dorado wygrali swoje walki. Mechanema wygrała walkę o centrum, ale przegrała trzy inne
-      walki. Hydranie wygrali obie walki z Mechanemą, ale przegrali wszystkie przeciw Exiles. Ludzie wygrali walkę z
-      Mechanemą, ale przegrali wszystkie pozostałe.
-    </p>
+  <img src="/images/sesje/110426/8.webp"></img>
+  <h3>Sytuacja robi się napięta.</h3>
+  <p>
+    Przeniosłem moje statki bliżej centrum i rozważałem atak, podobnie Kacper zbudował dwa myśliwce i jeden pancernik
+    przy centrum, też rozważał pewnie atak na centrum. Mateusz zbudował dwa krążowniki w strategicznych punktach by
+    bronić wejścia do jego Imperium. Natan posiadał dwa pancerniki tuż przy centrum, więc teoretycznie też mógłby
+    zaatakować tam, ale miał na ten moment zbyt słabe statki (brak jakichkolwiek komputerów, ułatwiających
+    trafienie).<br><br>
+    Koniec końców nikt nie wleciał na GCDS, tylko gracze skupili się na rozwoju technologii i ulepszeniu statków.
+  </p>
+  <li>
+    <h3>Runda 8</h3>
+  </li>
+  <div>
+    <img src="/images/sesje/110426/9.webp"></img>
+    <img src="/images/sesje/110426/10.webp"></img>
+  </div>
+  <h3>Wybuchły wojny w galaktyce.</h3>
+  <p>Kacper zaatakował mnie pancernikiem i myśliwcem, ja w ramach obrony zbudowałem cztery myśliwce, Hydranie
+    dorzucili jeszcze trzy myśliwce, na to odpowiedziałem dosłaniem krążownika, a pancernikiem poleciałem dalej, na
+    ojczysty świat Hydran. Wiedziałem, że walkę przegram, więc chciałem przyblokować Kacpra by nie próbował wlecieć
+    głębiej w moje Imperium. W międzyczasie Mateusz zaatakował centrum dwoma pancernikami i dwoma krążownikami,wrzucił
+    wszystkie swoje siły na podbój. Hydranie wykorzystali to i wlecieli myśliwcem na jeden z przygranicznych heksów
+    Ludzi.<br><br>
+    I na to wszystko z uśmiechem patrzyli Octanis, będąc dogadani z Mechanemą o braku agresji, spokojnie się rozwijali
+    z dala od oczu świata.<br><br>
+    Kacprowi udało się wygrać walkę ze mną, ale stracił przy tym dwa myśliwce. Z powodu braku dysków wpływu, nie
+    przejął sektora po Ludziach. Ja przejąłem świat macierzysty Kacpra. Mateuszowi z kolei udało się wygrać walkę o
+    centrum, ale stracił przy tym jeden krążownik.
+  </p>
+  <li>
+    <h3>Runda 9</h3>
+  </li>
+  <div>
+    <img src="/images/sesje/110426/11.webp"></img>
+    <img src="/images/sesje/110426/12.webp"></img>
+    <img src="/images/sesje/110426/13.webp"></img>
+  </div>
+  <img src="/images/sesje/110426/14.webp"></img>
+  <h3>Punkt zapalny</h3>
+  <p>Kacper się zreflektował i zaproponował nieeskalowanie konfliktu i rozejm. Zwrócił uwagę na mocną pozycję Mateusza,
+    który kontrolował Centrum Galaktyki oraz miał najmocniejsze statki, pancerniki z +4 do trafienia, dwa działa
+    Anti-Materialne i poruszanie się o 4 heksy, potężne i mobilne. Przystałem na tę propozycję, ponieważ też obawiałem
+    się zagrożenia ze strony Imperium Ludzi, ale zaznaczyłem, że będę potrzebował miejsca na przelot mojego
+    pancernika.<br><br>
+    Kacper zbudował 3 myśliwce przy granicy z Ludźmi, oraz przeniósł 2 myśliwce bliżej Centrum. Mateusz odpowiedział
+    budową Baz Gwiezdnych w Centrum i przy granicy. Natan zbudował dwa Monolity na tyłach swojego Imperium. Wyszedł też
+    prośbą do Mechanemy, czy mógłby wlecieć myśliwcem na jeden z moich heksów by tam przegrać, ale zyskać dzięki temu
+    żeton Reputacji. Zgodziłem się na to i gdy tylko wysłał statek, zbudowałem tam dwa myśliwce zgodnie z umową. Potem
+    zbudowałem trzy Monolity oraz jeden krążownik.<br><br>
+    Hydranie wysłali dwa myśliwce na przygraniczny heks Ludzi gdzie była pojedyncza Baza Gwiezdna, więc potem trzecim
+    myśliwcem wleciał dalej w głąb terytorium Ludzi, na heks z Orbitalem. Natan jako Octanis, posiadał mutację dającą +1
+    punkt za każdy żeton Reputacji, miał jeszcze wolne dwa miejsca, więc wleciał jednym pancernikiem na heks z
+    Orbitalem, gdzie walczył z myśliwcem Kacpra, a drugim pancernikiem wleciał do mocno obstawionego przez Mateusza
+    Centrum.<br><br>
+    Ja trochę przetasowałem swoją flotę i wysłałem krążownik na tył do walki z Octanis, a dwa myśliwce, które tam były
+    przeniosłem bliżej frontu w Centrum. Wysłałem też krążownik i pancernik do Centrum, bardziej po to, by zablokować
+    wlot na moje terytorium niż by wygrać.<br><br>
+    Hydranie wysłali jeszcze pancernik do pomocy myśliwcom w walce o przygraniczny heks. Mateusz mocno odpowiedział,
+    zbudował dwie Bazy Gwiezdne, jedną w Centrum, drugą w przygranicznym sektorze do obrony przed Kacprem, oraz zbudował
+    dwa krążowniki do obrony heksa z Orbitalem.<br><br>
+    Kiedy Kacprowi skończyły się ruchy, wysłałem mój pancernik na Świat Starożytnych kontrolowany przez Hydran. Nie
+    mogłem go wysłać na Centrum bo dostęp blokowały myśliwce Kacpra, więc żeby nie stał bezużytecznie musiałem go tam
+    wysłać.<br><br>
+    Natan przegrał wszystkie swoje walki, zgodnie z planem, zyskał na tym prawdopodobnie 6 punktów, to dość dużo.
+    Mateusz obronił Centrum oraz heks z Orbitalem, ale stracił przygraniczny heks na rzecz Kacpra. Mechanema przejęła
+    Świat Starożytnych z rąk Hydran.
+  </p>
 
 
-    <li>
-      <h3>Podsumowanie i punktacja</h3>
-    </li>
-    <img src="/images/sesje/110426/end.webp" loading="lazy" class="img-head"></img>
-    <p class="session-summary">
-      <b>Podsumowanie AI:</b><br><br>
-      <b>Paweł D (Dorado)</b>: Twój styl gry to mistrzostwo w adaptacji i przetrwaniu. Po początkowym, kosztownym
-      szturmie na centrum i chwilowym upadku, odbudowałeś się dzięki zimnej krwi, strategicznemu wykorzystaniu
-      technologii (Neutron Absorber, Flux Missile) i pragmatycznej dyplomacji. Twoja zdolność do wyjścia z kryzysu i
-      włączenia się do wielkiej wojny, aby zdobywać punkty i osłabiać liderów, pokazuje cię jako nieprzewidywalnego i
-      odpornego gracza.<br><br>
-      <b>Natan (Mechanema)</b>: Tworzyłeś historię wyjątkowych wzlotów i upadków. Od utraty świata domowego i biernej
-      postawy, przez stabilną odbudowę, aż po zdobycie centrum galaktyki. Jednak twoja defensywna, niezdecydowana
-      strategia i brak wyraźnych sojuszy wystawiły cię na wielofrontową wojnę, która zrujnowała twoją pozycję,
-      pozostawiając w roli tego, kto zapłacił najwyższą cenę za chaos końcowych rund.<br><br>
-      <b>Piotr (Hydranie)</b>: Prowadziłeś grę cierpliwą i skupioną na rozwoju, ale w kluczowym momencie pokazałeś zęby.
-      Twoja inwazja na potężnych Exiles była odważna, choć przegrana, i stała się iskrą, która wznieciła galaktyczny
-      pożar. Nie zdobyłeś nowych terytoriów w wielkiej wojnie, ale twoje działania fundamentalnie zmieniły układ sił i
-      pokazały, że nie jesteś tylko biernym obserwatorem.<br><br>
-      <b>Paweł W (Exiles)</b>: Jesteś ucieleśnieniem mocy defensywy i precyzyjnej kalkulacji. Zbudowałeś najmniejsze,
-      ale najcenniejsze imperium, oparte na orbitalach i wysokiej wartości punktowej. Twoja „partyzantka” przeciwko
-      Dorado i heroiczna obrona przed Hydranami udowodniły, że twoje terytorium jest niemal nie do zdobycia. Wychodząc z
-      totalnej wojny nienaruszy, z honorem dotrzymanych sojuszy, stałeś się głównym faworytem do zwycięstwa.<br><br>
-      <b>Tymek (Ludzie)</b>: Twoja gra to klasyczny przykład pułapki pozornej siły. Budowałeś ogromne, rozciągnięte
-      imperium i potężną flotę, co uczyniło cię jasnym celem numer jeden. Brak sojuszy i dyplomatycznej finezji sprawił,
-      że twoja materialna przewaga wyparowała pod skoordynowanym naciskiem reszty galaktyki. Straciłeś kluczowe tereny,
-      w tym centrum, i z faworyta stałeś się graczem walczącym o utrzymanie pozycji.<br><br>
-      <b>Kacper (Hegemonia Oriona)</b>: Twoja gra to dzika jazda bez trzymanki. Od brawurowego, przegranego ataku na
-      centrum, przez odbudowę i zaskakujący atak z użyciem Wormhole Generator, aż po nagłe wycofanie i sojusz z byłym
-      wrogiem. Twoje działania, choć czasem „trollujące” i niekonwencjonalne, były niezwykle skuteczne w mieszaniu
-      szyków innym, poprawianiu własnej sytuacji i wpływaniu na dynamikę całej galaktyki.<br><br>
-      <b>Podsumowanie rozgrywki:</b><br><br>
-      Ta partia Eclipse była emocjonującym studium zmienności fortuny i skuteczności różnych strategii. Pokazała, że w
-      rozgrywce wieloosobowej czysta ekspansja i siła militarna bez sojuszy prowadzą do izolacji i upadku, podczas gdy
-      skoncentrowana na punktach, defensywna gra może zapewnić niezwykłą stabilność i ukrytą siłę. Dynamiczne
-      wykorzystanie technologii, zwłaszcza tych niszowych, oraz elastyczność dyplomatyczna okazały się kluczowe dla
-      przetrwania i odbudowy. Finałowa, totalna wojna całkowicie zmiotła początkowy układ sił, wynosząc na czoło
-      cichego, ufortyfikowanego budowniczego. Ostateczne zwycięstwo nie będzie należeć do tego, kto miał najwięcej
-      statków, lecz do tego, kto najlepiej zabezpieczył swoje punkty i przetrwał zamęt, który sam wywołał lub w którym
-      się odnajdzie.
-    </p>
+  <li>
+    <h3>Podsumowanie i punktacja</h3>
+  </li>
+  <img src="/images/sesje/110426/end.webp" loading="lazy" class="img-head"></img>
+  <p class="session-summary">
+    <b>Podsumowanie AI:</b><br><br>
+    <b>Paweł D (Mechanema)</b> - Od początku stawiał na szybką ekspansję i technologię, już w drugiej rundzie budując
+    pancernik i eliminując Starożytnych. Konsekwentnie rozwijał ekonomię i naukę, w kluczowych rundach wykupując
+    przełomowe technologie. W wojnie z Hydranami stracił walkę, ale przejął ich świat macierzysty, a później także Świat
+    Starożytnych. Umiejętnie lawirował między konfliktami, zawierając rozejmy i sojusze. W końcówce postawił na monolity
+    i blokowanie dostępu do swojego terytorium.<br><br>
+    <b>Kacper (Hydranie)</b> - Miał wyjątkowe szczęście w eksploracji, długo nie napotykając Starożytnych, co pozwoliło
+    mu rozwinąć imperium do 8 heksów. Był aktywny dyplomatycznie, ustalając z Ludźmi podział stref wpływów. W rundzie 8
+    zaatakował Mechanemę, wygryjąc walkę, ale tracąc swój świat macierzysty. Szybko zreflektował się i zaproponował
+    rozejm, po czym skupił się na walce z Ludźmi. W ostatniej rundzie przejął przygraniczny heks od Mateusza.<br><br>
+    <b>Mateusz (Ludzie)</b> - Debiutant, który bardzo dobrze wszedł w grę, systematycznie rozbudowując flotę do dwóch
+    potężnych pancerników z +4 do trafienia. W rundzie 8 podjął ryzyko i rzucił wszystkie siły na Centrum Galaktyki,
+    wygrywając je kosztem jednego krążownika. Zbudował Bazy Gwiezdne w strategicznych punktach, stając się największym
+    zagrożeniem na planszy. Skutecznie obronił Centrum i Orbital w ostatniej rundzie.<br><br>
+    <b>Natan (Octanis)</b> - Miał bardzo trudny start z problemami ekonomicznymi i powolnym rozwojem. Dzięki mutacji
+    tanich pancerników (5 surowców) i dogadaniu się z Mechanemą o brak agresji, spokojnie odbudował swoją pozycję. W
+    ostatnich dwóch rundach celowo przegrywał walki, by zbierać żetony Reputacji – dzięki mutacji dającej +1 punkt za
+    każdy taki żeton. Zdobył prawdopodobnie 6 punktów w ten sposób, kończąc grę z uśmiechem.<br><br>
+    <b>Podsumowanie rozgrywki:</b><br><br>
+Rozgrywka trwała 4,5 godziny i była niezwykle wyrównana – po oczyszczeniu galaktyki z Starożytnych każdy z graczy miał realne szanse na zwycięstwo. Kluczowym momentem była runda 8, gdy wybuchły jednocześnie dwa konflikty: Hydranie zaatakowali Mechanemę, a Ludzie rzucili się na Centrum Galaktyki. Mateusz wyszedł z tego najsilniejszy, kontrolując Centrum i posiadając najbardziej zaawansowane technologicznie statki, co zmusiło pozostałych do zawarcia przeciwko niemu cichego sojuszu. Octanis wykorzystali zamieszanie do swojego nietypowego planu – celowych przegranych walk dla zbierania punktów reputacji. Ostatecznie gra pokazała, że w Eclipse nie zawsze wygrywa ten, kto ma największą flotę, ale ten, kto najlepiej wykorzysta swoją frakcję i sytuację dyplomatyczną.
+  </p>
 
-    <p class="session-summary-pkt">Punktacja:<br>
-      <b style="color: gold">Natan – Octanis - 46 pkt</b><br>
-      <b style="color: silver">Paweł D – Mechanema - 43 pkt</b><br>
-      Matuesz - Ludzie - 35 pkt<br>
-      Natan -Postępowi Hydranie - 33 pkt<br>
-    </p>
+  <p class="session-summary-pkt">Punktacja:<br>
+    <b style="color: gold">Natan - Octanis - 46 pkt</b><br>
+    <b style="color: silver">Paweł D - Mechanema - 43 pkt</b><br>
+    Mateusz - Ludzie - 35 pkt<br>
+    Natan -Postępowi Hydranie - 33 pkt<br>
+  </p>
 </ul>
 `
   }
