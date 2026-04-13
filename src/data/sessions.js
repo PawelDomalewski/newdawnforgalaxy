@@ -652,7 +652,7 @@ Rozgrywka trwała 4,5 godziny i była niezwykle wyrównana – po oczyszczeniu g
     <b style="color: gold">Natan - Octanis - 46 pkt</b><br>
     <b style="color: silver">Paweł D - Mechanema - 43 pkt</b><br>
     Mateusz - Ludzie - 35 pkt<br>
-    Kacper -Postępowi Hydranie - 33 pkt<br>
+    Kacper - Postępowi Hydranie - 33 pkt<br>
   </p>
 </ul>
 `
