@@ -456,7 +456,7 @@ export const sessions = [
     trafił na Starożytnych.<br><br>
     Natan, grający czerwonymi Octanis, odkrył z kolei trzy heksy, po jednym na każdy krąg. W dwóch przypadkach trafił na
     Starożytnych.<br><br>
-    Poza tym w Galaktyce były jeszcze dwa Światy Starożytnych, broniąc przez mocniejsze statki, oraz Zaawansowane
+    Poza tym w Galaktyce były jeszcze dwa Światy Starożytnych, bronione przez mocniejsze statki, oraz Zaawansowane
     Centrum Galaktyki, czyli statek z dwoma działami Anty-Materialnymi i z osłonami -2. Budził respekt wśród
     graczy.<br><br>
   </p>
